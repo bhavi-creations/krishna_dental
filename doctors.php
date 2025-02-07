@@ -9,15 +9,15 @@
 
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/breadcurmb/breadcurmb-1-1.jpg"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/docs_cover.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">About Us</h1>
+            <h1 class="breadcumb-title">  Doctors</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
-                    <li class="active">About Us</li>
+                    <li class="active">  Doctors</li>
                 </ul>
             </div>
         </div>
@@ -54,7 +54,7 @@
                             <p class="mb-4">Dr. B Suresh Kumar is a highly respected dentist based in Rajahmundry with over 26 years of experience. He specializes in dental surgery, orthodontics, dentofacial orthopedics, and implants. Dr. Kumar completed his BDS from Karnataka Dental College in 1998 and his MDS in Orthodontics and Dentofacial Orthopedics from Lenora Institute of Dental Sciences in 2018. He is the founder of Krishna Denta Cure.</p>
                         </div>
                     </div>
-                  
+
 
                 </div>
             </div>
@@ -62,126 +62,165 @@
     </div>
 </section>
 
- 
 
 
 
-<section class="vs-team-wrapper    space-md-bottom">
+
+<section class="vs-team-wrapper space-md-bottom">
     <div class="container">
-        <div class="row  text-center justify-content-center">
+        <div class="row text-center justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="section-title">
                     <div class="sec-icon">
                         <i class="flaticon-ecg"></i>
                     </div>
-                    <h2 class="h1 ">Our Teaam</h2>
+                    <h2 class="h1">Our Team</h2>
                 </div>
             </div>
         </div>
-        <div class="row vs-carousel wow fadeIn" data-wow-delay="0.3s" data-arrows="true" data-slide-show="3" data-lg-slide-show="2">
-            <div class="col-xl-4 mb-30">
-                <div class="team-card">
-                    <div class="team-head">
-                        <img src="assets/img/team/t-1-1.png" alt="Team Area" class="w-100">
-                        <div class="team-card-links">
-                            <a class="team-links-toggler" href="#"><i class="fas fa-share-alt"></i></a>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-basketball-ball"></i></a>
-                            </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper-container team-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-B-Ratna-Vineela.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. B Ratna Vineela</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Specialist</p>
                         </div>
                     </div>
-                    <div class="team-body">
-                        <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">David Smith</a></h3>
-                        <p class="fs-xs degi text-theme mb-2">Specialist</p>
-                        <p class="fs-xs">Conceptualize user-centric web-readiness via economically sound e-services. Interactively coordinate next-generation </p>
-                        <div class="">
-                            <p class="fs-xs team-info"><i class="fas fa-phone text-theme"></i><a class="text-reset" href="tel:+592201520156">+592 2015 20156</a></p>
-                            <p class="fs-xs team-info"><i class="fas fa-envelope text-theme"></i><a class="text-reset" href="mailto:info.example@mail.com">info.example@mail.com</a></p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-B-Sai-Sruthi.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. B Sai Sruthi</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Osteopathic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-G-Niharika.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. G Niharika</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Pediatrician</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-Malathi-Chakravarthy.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Malathi Chakravarthy</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                        </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                        </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-M-Ganesh.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. M Ganesh</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                        </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/about/Dr-R-SriLekhya.jpg" alt="Team Area" class="w-100">
+                        </div>
+                        <div class="team-body">
+                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. R. SriLekhya</a></h3>
+                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 mb-30">
-                <div class="team-card">
-                    <div class="team-head">
-                        <img src="assets/img/team/t-1-2.png" alt="Team Area" class="w-100">
-                        <div class="team-card-links">
-                            <a class="team-links-toggler" href="#"><i class="fas fa-share-alt"></i></a>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-basketball-ball"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-body">
-                        <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Vivi Marian</a></h3>
-                        <p class="fs-xs degi text-theme mb-2">Osteopathic</p>
-                        <p class="fs-xs">Conceptualize user-centric web-readiness via economically sound e-services. Interactively coordinate next-generation </p>
-                        <div class="">
-                            <p class="fs-xs team-info"><i class="fas fa-phone text-theme"></i><a class="text-reset" href="tel:+592201520156">+592 2015 20156</a></p>
-                            <p class="fs-xs team-info"><i class="fas fa-envelope text-theme"></i><a class="text-reset" href="mailto:info.example@mail.com">info.example@mail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 mb-30">
-                <div class="team-card">
-                    <div class="team-head">
-                        <img src="assets/img/team/t-1-3.png" alt="Team Area" class="w-100">
-                        <div class="team-card-links">
-                            <a class="team-links-toggler" href="#"><i class="fas fa-share-alt"></i></a>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-basketball-ball"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-body">
-                        <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Farhan Moris</a></h3>
-                        <p class="fs-xs degi text-theme mb-2">Pediatrician</p>
-                        <p class="fs-xs">Conceptualize user-centric web-readiness via economically sound e-services. Interactively coordinate next-generation </p>
-                        <div class="">
-                            <p class="fs-xs team-info"><i class="fas fa-phone text-theme"></i><a class="text-reset" href="tel:+592201520156">+592 2015 20156</a></p>
-                            <p class="fs-xs team-info"><i class="fas fa-envelope text-theme"></i><a class="text-reset" href="mailto:info.example@mail.com">info.example@mail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 mb-30">
-                <div class="team-card">
-                    <div class="team-head">
-                        <img src="assets/img/team/t-1-4.png" alt="Team Area" class="w-100">
-                        <div class="team-card-links">
-                            <a class="team-links-toggler" href="#"><i class="fas fa-share-alt"></i></a>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-basketball-ball"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-body">
-                        <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Jerzzy Lamot</a></h3>
-                        <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        <p class="fs-xs">Conceptualize user-centric web-readiness via economically sound e-services. Interactively coordinate next-generation </p>
-                        <div class="">
-                            <p class="fs-xs team-info"><i class="fas fa-phone text-theme"></i><a class="text-reset" href="tel:+592201520156">+592 2015 20156</a></p>
-                            <p class="fs-xs team-info"><i class="fas fa-envelope text-theme"></i><a class="text-reset" href="mailto:info.example@mail.com">info.example@mail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!-- Swiper Navigation & Pagination -->
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
+
+ 
+
+
     </div>
 </section>
 
 
-<!-- <img src="assets/img/about/krishnadentacure-team.jpg" class='img-fluid' alt=""> -->
 
- 
+
+<!-- Swiper JS Initialization -->
+<script>
+    var swiper = new Swiper(".team-slider", {
+        slidesPerView: 3, // Show exactly 3 slides
+        spaceBetween: 30, // Adjust space between slides
+        loop: true,
+        centeredSlides: false, // Ensure it aligns properly
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 2
+            },
+            0: {
+                slidesPerView: 1
+            }
+        }
+    });
+</script>
+
+
+
+<img src="assets/img/about/team.png" class='img-fluid my-4' alt="">
+
+
 
 <?php include 'footer.php'; ?>

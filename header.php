@@ -45,6 +45,14 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 </head>
 
 <body class="">
@@ -93,53 +101,48 @@
                     </li>
 
                     <li class="menu-item-has-children">
-                        <a href="#">Services</a>
+                        <a href="services.php">Services</a>
+                        <!-- Arrow for submenu toggle -->
                         <ul class="sub-menu">
                             <li><a href="shop.html">Pain Relief</a>
+                                <span class="dropdown-toggle"></span>
                                 <ul class="sub-menu">
                                     <li><a href="index.html">Root Canal Treatment </a></li>
                                     <li><a href="index.html">Wisdom Tooth Removal </a></li>
-
                                 </ul>
-
                             </li>
-
-
                             <li><a href="#">Preventive Care</a>
+                                <span class="dropdown-toggle"></span>
                                 <ul class="sub-menu">
                                     <li><a href="index.html">Bad Breath Treatment </a></li>
                                     <li><a href="index.html">Gum Treatment </a></li>
                                     <li><a href="index.html">Teeth Cleaning </a></li>
                                 </ul>
                             </li>
-
-
-                            <li><a href="#"> Cosmetic Treatment</a>
+                            <li><a href="#">Cosmetic Treatment</a>
+                                <span class="dropdown-toggle"></span>
                                 <ul class="sub-menu">
                                     <li><a href="index.html">Orthodontic Treatment</a></li>
-                                    <li><a href="index.html">Dental Crown & Bridge </a></li>
-                                    <li><a href="index.html">Dental Veneers </a></li>
-                                    <li><a href="index.html">Smile Makeover </a></li>
-                                    <li><a href="index.html">Teeth Whitening </a></li>
+                                    <li><a href="index.html">Dental Crown & Bridge</a></li>
+                                    <li><a href="index.html">Dental Veneers</a></li>
+                                    <li><a href="index.html">Smile Makeover</a></li>
+                                    <li><a href="index.html">Teeth Whitening</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Teeth Replacement</a>
+                                <span class="dropdown-toggle"></span>
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Dental Implants </a></li>
-                                    <li><a href="index.html">Dentures </a></li>
-                                    <li><a href="index.html">
-                                            Fluoride Application and Dental Sealant </a></li>
-                                    <li><a href="index.html">
-                                            Full Mouth Rehabilitation Treatment </a></li>
+                                    <li><a href="index.html">Dental Implants</a></li>
+                                    <li><a href="index.html">Dentures</a></li>
+                                    <li><a href="index.html">Fluoride Application and Dental Sealant</a></li>
+                                    <li><a href="index.html">Full Mouth Rehabilitation Treatment</a></li>
                                 </ul>
                             </li>
-
-
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children">
-                        <a href="blog.html">Blogs</a>
+                        <a href="blogs.php">Blogs</a>
                     </li>
 
                     <li>
@@ -233,7 +236,7 @@
                                         </li>
 
                                         <li class="menu-item-has-children mega-menu-wrap">
-                                            <a href="#"><span class="has-new-label">Services</span></a>
+                                            <a href="services.php"><span class="has-new-label">Services</span></a>
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pain Relief</a>
                                                     <ul>
@@ -248,7 +251,7 @@
                                                         <li><a href="index.html">Teeth Cleaning </a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#"> Cosmetic Treatment</a>
+                                                <li><a href="#">Cosmetic Treatment</a>
                                                     <ul>
                                                         <li><a href="index.html">Orthodontic Treatment</a></li>
                                                         <li><a href="index.html">Dental Crown & Bridge </a></li>
@@ -261,17 +264,16 @@
                                                     <ul>
                                                         <li><a href="index.html">Dental Implants </a></li>
                                                         <li><a href="index.html">Dentures </a></li>
-                                                        <li><a href="index.html">
-                                                                Fluoride Application and Dental Sealant </a></li>
-                                                        <li><a href="index.html">
-                                                                Full Mouth Rehabilitation Treatment </a></li>
+                                                        <li><a href="index.html">Fluoride Application and Dental Sealant </a></li>
+                                                        <li><a href="index.html">Full Mouth Rehabilitation Treatment </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
 
+
                                         <li class=" ">
-                                            <a href="blog.html">Blogs</a>
+                                            <a href="blogs.php">Blogs</a>
 
                                         </li>
                                         <li>

@@ -5,7 +5,7 @@
      <div class="widget-area v7">
          <div class="container">
              <div class="row gx-0 gy-4">
-                 <div class="col-lg-3  wow fadeInUp" data-wow-delay="400ms">
+                 <div class=" col-md-8  col-lg-3  wow fadeInUp" data-wow-delay="400ms">
                      <div class="widget footer-widget">
                          <div class="vs-widget-about-seven">
                              <div class="footer-logo"><img src="assets/img/logo/dr-suresh-kumar-logo.png" alt="logo"></div>
@@ -25,7 +25,7 @@
                      </div>
                  </div>
 
-                 <div class="col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="500ms">
+                 <div class="col-5 col-md-4 col-lg-3  wow fadeInUp" data-wow-delay="500ms">
                      <div class="widget v1 footer-widget widget-time-nav">
                          <h3 class="widget_title-seven">Links</h3>
                          <div class="menu-all-pages">
@@ -34,15 +34,15 @@
                                  <li><a href="about.php">About</a></li>
                                  <li><a href="doctors.php">Doctors</a></li>
 
-                                 <li><a href="#"> Services</a></li>
-                                 <li><a href="#"> Blogs</a></li>
+                                 <li><a href="services.php"> Services</a></li>
+                                 <li><a href="blogs.php"> Blogs</a></li>
                                  <li><a href="contact.php"> Contact Us</a></li>
                                  <li><a href="appointment.php"> Appointment</a></li>
                              </ul>
                          </div>
                      </div>
                  </div>
-                 <div class="col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="600ms">
+                 <div class="col-7 col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="600ms">
                      <div class="widget v1 footer-widget widget_nav_menu-seven">
                          <h3 class="widget_title-seven">Services</h3>
                          <div class="menu-all-pages-container">
@@ -81,13 +81,55 @@
              </div>
          </div>
      </div>
-     <div class="copyright-wrap-seven">
-         <div class="container">
-             <div class="copyright-text">
-                 <p class="mb-0">Copyright <i class="fal fa-copyright"></i> 2024 <a href="index.html">Medixi</a>. All rights reserved by <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a>.</p>
-             </div>
-         </div>
-     </div>
+   
+     
+
+     <div
+        class="footer-area-bottom theme-bg"
+        style="background: var(--primary-200, #C9D5F5);">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-md-6 col-12">
+                    <div class="footer-widget__copyright-info info-direction">
+                        <p class="last_text">
+                            <a
+                                href="terms.php"
+                                style="text-decoration: none; color:rgb(0, 0, 0); font-weight:bold;"><strong>  Terms & conditions :</strong>
+                            </a>
+                            <a
+                                href="privacy.php"
+                                style="text-decoration: none; color:black;  font-weight:bold;">
+                               <strong> Privacy & policy </strong> </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 second_divv_end_brand">
+                    <div
+                        class="footer-widget__copyright-info info-direction d-flex flex-row justify-content-end align-items-center">
+                        <a
+                            href="https://bhavicreations.com/"
+                            target="_blank"
+                            style="
+                    text-decoration: none;
+                    color:#1E1E1E;
+                    font-weight:bold;
+                    display: flex;
+                    align-items: center;
+                  ">
+                            <p class="mini_text last_text mb-0" style="color: black;"><strong> Branding By @ </strong></p>
+                            <img
+                                src="assets/img/bhavi_logo/Bhavi_Branding_Stamp.png"
+                                class="img-fluid brand_image"
+                                alt="" />
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
  </footer>
 
  <!--********************************
@@ -98,7 +140,10 @@
  <!-- Scroll To Top -->
  <a href="#" class="scrollToTop scroll-bottom  style2"><i class="fas fa-arrow-alt-up"></i></a>
 
-
+ <a href="https://api.whatsapp.com/send?phone=9246658770" style="color: #fff;" class="whatsapp-link"
+    target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
  <!--==============================
         All Js File
