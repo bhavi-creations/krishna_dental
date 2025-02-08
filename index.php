@@ -3,7 +3,7 @@
 
 
 
-<section class="vs-hero-wrapper7 position-relative" data-bg-src="assets/img/bg/banner7-1.jpg">
+<!-- <section class="vs-hero-wrapper7 position-relative" data-bg-src="assets/img/bg/banner7-1.jpg">
     <div class="banner-slider-v7">
         <div class="banner-slide-v7">
             <div class="container-style7">
@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End hero section -->
 
 <!-- about-section-seven -->

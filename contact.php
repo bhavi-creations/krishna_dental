@@ -3,7 +3,7 @@
 
 
  <div class="breadcumb-wrapper ">
- <div class="parallax" data-parallax-image="assets/img/about/cover_cont.png"></div>
+     <div class="parallax" data-parallax-image="assets/img/about/cover_cont.png"></div>
 
      <div class="container z-index-common">
          <div class="breadcumb-content">
@@ -26,40 +26,42 @@
      <div class="container">
          <div class="row gx-60 align-items-center">
              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                 <form action="mail.php" method="POST" class="ajax-contact form-wrap3 mb-30" data-bg-color="#f3f6f7">
-                     <div class="row">
-                         <div class="form-title  ">
-                             <h3 class="mt-n2 fls-n2 mb-0">Send Us a Message</h3>
-                             <p class="text-theme mb-4">Your email address will not be published*</p>
-                         </div>
-                         <div class="form-group col-6 mb-15">
-                             <input type="text" class="form-control style3" name="name" id="name" placeholder="Name">
-                             <i class="fal fa-user"></i>
-                         </div>
-                         <div class="form-group col-6 mb-15">
-                             <input type="text" class="form-control style3" name="phone" id="phone" placeholder="Phone">
-                             <i class="fal fa-phone"></i>
-                         </div>
-                         <div class="form-group col-6 mb-15">
-                             <input type="text" class="form-control style3" name="address" id="address" placeholder="Address">
-                             <i class="fal fa-map"></i>
-                         </div>
-                         <div class="form-group col-6 mb-15">
-                             <input type="text" class="form-control style3" name="email" id="email" placeholder="Email">
-                             <i class="fal fa-envelope"></i>
-                         </div>
-                         <div class="form-group mb-15  ">
-                             <textarea name="message" id="message" cols="30" rows="3" class="form-control style3" placeholder="Message"></textarea>
-                             <i class="fal fa-pencil-alt"></i>
+              
+                     <form action="contactform.php" method="post" role="form" class="php-email-form"   data-bg-color="#f3f6f7">
+                        
+                         <div class="row">
+                             <div class="form-title  ">
+                                 <h3 class="mt-n2 fls-n2 mb-0">Send Us a Message</h3>
+                                 <p class="text-theme mb-4">Your email address will not be published*</p>
+                             </div>
+                             <div class="form-group col-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactname" id="name" placeholder="Name">
+                                 <i class="fal fa-user"></i>
+                             </div>
+                             <div class="form-group col-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactnumber" id="phone" placeholder="Phone">
+                                 <i class="fal fa-phone"></i>
+                             </div>
+                             <div class="form-group col-6 mb-15">
+                                 <input type="text" class="form-control style3" name="address" id="address" placeholder="Address">
+                                 <i class="fal fa-map"></i>
+                             </div>
+                             <div class="form-group col-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactemail" id="email" placeholder="Email">
+                                 <i class="fal fa-envelope"></i>
+                             </div>
+                             <div class="form-group mb-15  ">
+                                 <textarea name="contactmessage" id="message" cols="30" rows="3" class="form-control style3" placeholder="Message"></textarea>
+                                 <i class="fal fa-pencil-alt"></i>
+                             </div>
+
+                             <div class="form-btn pt-15  col-xl-12 text-center">
+                                 <button class="vs-btn style2">Send Message<i class="fas fa-chevron-right"></i></button>
+                             </div>
                          </div>
 
-                         <div class="form-btn pt-15  col-xl-12 text-center">
-                             <button class="vs-btn style2">Send Message<i class="fas fa-chevron-right"></i></button>
-                         </div>
-                     </div>
-
-                     <p class="form-messages mb-0 mt-3"></p>
-                 </form>
+                         <p class="form-messages mb-0 mt-3"></p>
+                     </form>
              </div>
              <div class="col-lg-6">
                  <div class="contact-information mb-30">

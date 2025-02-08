@@ -24,75 +24,16 @@
     <div class="container">
         <div class="row gx-40">
 
-            <div class="col-xl-6">
-                <div class="vs-accordion accordion" id="vsaccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                Uniquely optimize reliable models before wireless results ofessionally impact progressive core.
-                            </button>
-                        </h2>
-                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#vsaccordion">
-                            <div class="accordion-body">
-                                <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
-                            </button>
-                        </h2>
-                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                            <div class="accordion-body">
-                                <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                From its medieval origins to the digital era, learn everything there is to know about the ubiquitous
-                            </button>
-                        </h2>
-                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                            <div class="accordion-body">
-                                <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero's 1st-century BC text De Finibus
-                            </button>
-                        </h2>
-                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                            <div class="accordion-body">
-                                <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                Some claim lorem ipsum threatens to promote design over content, while others defend its value process
-                            </button>
-                        </h2>
-                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                            <div class="accordion-body">
-                                <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="assets/img/about/appointmentimg.png" class="img-fluid" alt="">
             </div>
 
 
 
-            <div class="col-xl-6 mb-40 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
-                <form action="#" class="form-wrap1 shadow-none mb-0" data-bg-color="#f3f6f7">
+            <div class="col-lg-6 mb-40 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+
+
+                <form action="appointmentform.php" method="post" role="form" class="php-email-form form-wrap1 shadow-none mb-0" data-bg-color="#f3f6f7">
                     <div class="form-title-box bg-title" data-bg-src="assets/img/bg/bg-shape-9.jpg">
                         <div class="row justify-content-between align-items-center">
                             <div class="col">
@@ -105,40 +46,73 @@
                     </div>
                     <div class="form-box">
                         <div class="row">
+
                             <div class="col-lg-6 form-group">
-                                <select class="form-select style3">
-                                    <option hidden disabled selected>Select Services</option>
-                                    <option>Aerospace Medicine</option>
-                                    <option>Bariatric Surgery</option>
-                                    <option>Infectious Diseases</option>
-                                    <option>Laboratory Medicine</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6 form-group">
-                                <select class="form-select style3">
-                                    <option hidden disabled selected>Choose Doctor</option>
-                                    <option>Aerospace Medicine</option>
-                                    <option>Bariatric Surgery</option>
-                                    <option>Infectious Diseases</option>
-                                    <option>Laboratory Medicine</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="text" class="form-control  style3" placeholder="Your Name">
+                                <input type="text" class="form-control  style3" placeholder="Your Name" name="name">
                                 <i class="fal small fa-user"></i>
                             </div>
+
                             <div class="col-lg-6 form-group">
-                                <input type="email" class="form-control  style3" placeholder="Email Address">
-                                <i class="fal small fa-envelope"></i>
-                            </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="number" class="form-control  style3" placeholder="Your Phone">
+                                <input type="number" class="form-control  style3" placeholder="Your Phone" name="phone">
                                 <i class="fal small fa-phone"></i>
                             </div>
+
+
                             <div class="col-lg-6 form-group">
-                                <input type="text" class="dateTime-pick form-control  style3" placeholder="Select Date & Time">
+
+                                <select  name="doctor" class="form-select style3">
+                                    <option hidden disabled selected>Choose Doctor</option>
+                                    <option value="Dr. B. Suresh Kumar"> Dr. B. Suresh Kumar</option>
+                                    <option value="Dr. B Ratna Vineela">Dr. B Ratna Vineela</option>
+                                    <option value="Dr. B Sai Sruthi">Dr. B Sai Sruthi</option>
+                                    <option value="Dr. G Niharika">Dr. G Niharika</option>
+                                    <option value="Dr. Jyothsna Kalepu">Dr. Jyothsna Kalepu</option>
+                                    <option value="Dr. Malathi Chakravarthy">Dr. Malathi Chakravarthy</option>
+                                    <option value="Dr. M Ganesh ">Dr. M Ganesh </option>
+                                    <option value="Dr. R. SriLekhya">Dr. R. SriLekhya</option>
+                                    
+                                </select>
+
+                            </div>
+
+
+
+                            <div class="col-lg-6 form-group">
+
+                                <select name="department" class="form-select style3"  >
+                                    <option  hidden disabled selected>Select Service</option>
+                                    <option value="Root Canal"> Root Canal</option>
+                                    <option value="Wisdom Tooth Removal"> Wisdom Tooth Removal </option>
+                                    <option value="Bad Breath Treatment">Bad Breath Treatment </option>
+                                    <option value="Gum Treatment">Gum Treatment</option>
+                                    <option value="Teeth Cleaning">General Surgery </option>
+                                    <option value="Orthodontic Treatment">Orthodontic Treatment</option>
+                                    <option value="Dental Crown & Bridge">Dental Crown & Bridge</option>
+                                    <option value="Dental Veneers">Dental Veneers</option>
+                                    <option value="Smile Makeover">Smile Makeover</option>
+                                    <option value="Teeth Whitening"> Teeth Whitening</option>
+                                    <option value="Dental Implants"> Dental Implants</option>
+                                    <option value="Dentures"> Dentures</option>
+                                    <option value="Fluoride Application & Dental Sealant"> Fluoride Application & Dental Sealant</option>
+                                    <option value="Full Mouth Rehabilitation Treatment"> Full Mouth Rehabilitation Treatment</option>
+
+
+                                </select>
+
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="text" class="dateTime-pick form-control  style3" placeholder="Select Date & Time" name="date">
                                 <i class="fal small fa-calendar-alt"></i>
                             </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="email" class="form-control  style3" placeholder="Email Address" name="email">
+                                <i class="fal small fa-envelope"></i>
+                            </div>
+
+
+
+
+
                             <div class="col-xl-12 text-center">
                                 <button type="submit" class="vs-btn style2">Make Appointment<i class="far fa-calendar-alt"></i></button>
                             </div>
@@ -146,6 +120,8 @@
                     </div>
                 </form>
             </div>
+
+
         </div>
     </div>
 </section>
