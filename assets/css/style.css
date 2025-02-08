@@ -5658,17 +5658,17 @@ textarea.form-control.is-invalid {
   height: 54px;
   line-height: 59px;
   text-align: center;
-  border: 1px solid var(--white-color);
+  border: 1px solid #ffffff;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .header-contact-btn .icon-box i {
   font-size: 28px;
-  color: var(--white-color);
+  color: #ffffff;
 }
 .header-contact-btn .sub-title {
-  color: var(--white-color);
+  color:#07ccec;
   font-family: var(--title-font);
   font-size: 14px;
   font-weight: 700;
@@ -5681,7 +5681,7 @@ textarea.form-control.is-invalid {
   margin-bottom: 0;
 }
 .header-contact-btn .nmbr a {
-  color: var(--white-color);
+  color: #07ccec;
 }
 
 

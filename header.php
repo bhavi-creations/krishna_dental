@@ -104,38 +104,38 @@
                         <a href="services.php">Services</a>
                         <!-- Arrow for submenu toggle -->
                         <ul class="sub-menu">
-                            <li><a href="shop.html">Pain Relief</a>
-                                <span class="dropdown-toggle"></span>
+                            <li><a href="#">Pain Relief</a>
+                               
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Root Canal Treatment </a></li>
-                                    <li><a href="index.html">Wisdom Tooth Removal </a></li>
+                                    <li><a href="root.php">Root Canal Treatment </a></li>
+                                    <li><a href="wisdom.php">Wisdom Tooth Removal </a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Preventive Care</a>
-                                <span class="dropdown-toggle"></span>
+                                 
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Bad Breath Treatment </a></li>
-                                    <li><a href="index.html">Gum Treatment </a></li>
-                                    <li><a href="index.html">Teeth Cleaning </a></li>
+                                    <li><a href="breath.php">Bad Breath Treatment </a></li>
+                                    <li><a href="gum.php">Gum Treatment </a></li>
+                                    <li><a href="cleaning.php">Teeth Cleaning </a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Cosmetic Treatment</a>
-                                <span class="dropdown-toggle"></span>
+                                
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Orthodontic Treatment</a></li>
-                                    <li><a href="index.html">Dental Crown & Bridge</a></li>
-                                    <li><a href="index.html">Dental Veneers</a></li>
-                                    <li><a href="index.html">Smile Makeover</a></li>
-                                    <li><a href="index.html">Teeth Whitening</a></li>
+                                    <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
+                                    <li><a href="crown.php">Dental Crown & Bridge</a></li>
+                                    <li><a href="veneers.php">Dental Veneers</a></li>
+                                    <li><a href="smile.php">Smile Makeover</a></li>
+                                    <li><a href="whitening.php">Teeth Whitening</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Teeth Replacement</a>
-                                <span class="dropdown-toggle"></span>
+                                 
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Dental Implants</a></li>
-                                    <li><a href="index.html">Dentures</a></li>
-                                    <li><a href="index.html">Fluoride Application and Dental Sealant</a></li>
-                                    <li><a href="index.html">Full Mouth Rehabilitation Treatment</a></li>
+                                    <li><a href="implents.php">Dental Implants</a></li>
+                                    <li><a href="dentures.php">Dentures</a></li>
+                                    <li><a href="sealant.php">Fluoride Application and Dental Sealant</a></li>
+                                    <li><a href="fullmouth.php">Full Mouth Rehabilitation Treatment</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -240,32 +240,32 @@
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pain Relief</a>
                                                     <ul>
-                                                        <li><a href="index.html">Root Canal Treatment </a></li>
-                                                        <li><a href="index.html">Wisdom Tooth Removal </a></li>
+                                                        <li><a href="root.php">Root Canal Treatment </a></li>
+                                                        <li><a href="wisdom.php">Wisdom Tooth Removal </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Preventive Care</a>
                                                     <ul>
-                                                        <li><a href="index.html">Bad Breath Treatment </a></li>
-                                                        <li><a href="index.html">Gum Treatment </a></li>
-                                                        <li><a href="index.html">Teeth Cleaning </a></li>
+                                                        <li><a href="breath.php">Bad Breath Treatment </a></li>
+                                                        <li><a href="gum.php">Gum Treatment </a></li>
+                                                        <li><a href="cleaning.php">Teeth Cleaning </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Cosmetic Treatment</a>
                                                     <ul>
-                                                        <li><a href="index.html">Orthodontic Treatment</a></li>
-                                                        <li><a href="index.html">Dental Crown & Bridge </a></li>
-                                                        <li><a href="index.html">Dental Veneers </a></li>
-                                                        <li><a href="index.html">Smile Makeover </a></li>
-                                                        <li><a href="index.html">Teeth Whitening </a></li>
+                                                        <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
+                                                        <li><a href="crown.php">Dental Crown & Bridge </a></li>
+                                                        <li><a href="veneers.php">Dental Veneers </a></li>
+                                                        <li><a href="smile.php">Smile Makeover </a></li>
+                                                        <li><a href="whitening.php">Teeth Whitening </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
                                                     <ul>
-                                                        <li><a href="index.html">Dental Implants </a></li>
-                                                        <li><a href="index.html">Dentures </a></li>
-                                                        <li><a href="index.html">Fluoride Application and Dental Sealant </a></li>
-                                                        <li><a href="index.html">Full Mouth Rehabilitation Treatment </a></li>
+                                                        <li><a href="implents.php">Dental Implants </a></li>
+                                                        <li><a href="dentures.php">Dentures </a></li>
+                                                        <li><a href="sealant.php">Fluoride Application and Dental Sealant </a></li>
+                                                        <li><a href="fullmouth.php">Full Mouth Rehabilitation Treatment </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

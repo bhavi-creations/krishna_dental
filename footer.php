@@ -47,13 +47,13 @@
                          <h3 class="widget_title-seven">Services</h3>
                          <div class="menu-all-pages-container">
                              <ul class="menu-seven">
-                                 <li><a href="#"> Root Canal</a></li>
-                                 <li><a href="index.html">Wisdom Tooth Removal </a></li>
-                                 <li><a href="index.html">Bad Breath Treatment </a></li>
-                                 <li><a href="index.html">Gum Treatment </a></li>
-                                 <li><a href="index.html">Teeth Cleaning </a></li>
-                                 <li><a href="index.html">Orthodontic Treatment</a></li>
-                                 <li><a href="index.html">Dental Crown & Bridge </a></li>
+                                 <li><a href="root.php"> Root Canal</a></li>
+                                 <li><a href="wisdom.php">Wisdom Tooth Removal </a></li>
+                                 <li><a href="breath.php">Bad Breath Treatment </a></li>
+                                 <li><a href="gum.php">Gum Treatment </a></li>
+                                 <li><a href="cleaning.php">Teeth Cleaning </a></li>
+                                 <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
+                                 <li><a href="crown.php">Dental Crown & Bridge </a></li>
 
                              </ul>
                          </div>
@@ -64,14 +64,14 @@
                          <h3 class="widget_title-seven">Services</h3>
                          <div class="menu-all-pages-container">
                              <ul class="menu-seven">
-                                 <li><a href="index.html">Dental Veneers </a></li>
-                                 <li><a href="index.html">Smile Makeover </a></li>
-                                 <li><a href="index.html">Teeth Whitening </a></li>
-                                 <li><a href="index.html">Dental Implants </a></li>
-                                 <li><a href="index.html">Dentures </a></li>
-                                 <li><a href="index.html">
+                                 <li><a href="dentures.php">Dental Veneers </a></li>
+                                 <li><a href="smile.php">Smile Makeover </a></li>
+                                 <li><a href="whitening.php">Teeth Whitening </a></li>
+                                 <li><a href="implents.php">Dental Implants </a></li>
+                                 <li><a href="dentures.php">Dentures </a></li>
+                                 <li><a href="sealant.php">
                                          Fluoride Application & Dental Sealant </a></li>
-                                 <li><a href="index.html">
+                                 <li><a href="fullmouth.php">
                                          Full Mouth Rehabilitation Treatment </a></li>
                              </ul>
                          </div>
