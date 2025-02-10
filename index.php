@@ -114,7 +114,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                 <div class="about-img-seven">
-                    <img src="assets/img/about/About-03.png" alt="">
+                    <img src="assets/img/about/krishandentalcure_staff_and_hospital.png" alt="">
                     <div class="about-exp-box top-animation">
                         <h2>+30</h2>
                         <span>Years Experience</span>
@@ -165,7 +165,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/root_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_root_canal_home.png" alt="">
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
 
                     </div>
@@ -179,7 +179,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="500ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/wisdom_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_wisdom_toothremoval_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -193,7 +193,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/bad_breath_home.png" alt="">
+                        <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -207,7 +207,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/gum_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_gum_treatment.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -221,7 +221,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/cleaning_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_teethcleaning_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -235,7 +235,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="500ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/dental_braces.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_dental_braces_treatment.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -249,7 +249,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/crown_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_crown_and_bridges.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -263,7 +263,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/fluoride_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_dental_veneers_treatment_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -277,7 +277,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/smile_home.png" alt="">
+                        <img src="assets/img/about/krishandentacureSmile_Makeover_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -291,7 +291,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/whitening_home.png" alt="">
+                        <img src="assets/img/about/keishnadentacure_teeth_whitening_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -302,10 +302,28 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/implants_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_invisible_aligners_home.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="invisaliners.php"> Invisible Aligners </a></h6>
+                        <p>Invisible aligners straighten teeth discreetly using clear, removable trays, enhancing alignment, comfort, and confidence.</p>
+                        <a href="invisaliners.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/krishnadentacure_dental_implants_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -319,7 +337,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/dentures_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_dentures_treatment_homes.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -333,7 +351,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/sealent_img.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_Fluoride application strengthens.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -347,7 +365,7 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/full_home.png" alt="">
+                        <img src="assets/img/about/krishnadentacure_fullmouthrestoration_home.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
@@ -379,7 +397,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp need_center_part" data-wow-delay="400ms">
                 <div class="test-img7">
-                    <img src="assets/img/about/reviews.jpeg" alt="">
+                    <img src="assets/img/about/krishnadentacure_reviews.jpeg" alt="">
 
                 </div>
             </div>
@@ -402,7 +420,7 @@
                             </p>
                             <div class="testi-auther">
                                 <div class="auther-img">
-                                    <img src="assets/img/about/test1.png" class="test_img" alt="">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_1.png" class="test_img" alt="">
                                 </div>
                                 <h6 class="name">
                                     Jagu Sekhar</h6>
@@ -421,7 +439,7 @@
                             </p>
                             <div class="testi-auther">
                                 <div class="auther-img">
-                                    <img src="assets/img/about/test2.png" class="test_img" alt="">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_2.png" class="test_img" alt="">
 
                                 </div>
                                 <h6 class="name"> Pulidandi Saikishore</h6>
@@ -441,7 +459,7 @@
                             </p>
                             <div class="testi-auther">
                                 <div class="auther-img">
-                                    <img src="assets/img/about/test3.png" class="test_img" alt="">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_3.png" class="test_img" alt="">
 
                                 </div>
                                 <h6 class="name"> Prathyusha Vudatha</h6>
@@ -463,7 +481,7 @@
                             </p>
                             <div class="testi-auther">
                                 <div class="auther-img">
-                                    <img src="assets/img/about/test4.png" class="test_img" alt="">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_4.png" class="test_img" alt="">
 
                                 </div>
                                 <h6 class="name"> sriram murthy mamidi</h6>
@@ -540,7 +558,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="500ms">
                 <div class="choose-img">
-                    <img src="assets/img/about//choose_chair.png" alt="">
+                    <img src="assets/img/about//krishnadentalcure_equipment_chair.png" alt="">
                 </div>
             </div>
         </div>
@@ -587,7 +605,7 @@
                 <div class="swiper-slide"> <!-- Swiper Slide -->
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-B-Ratna-Vineela.jpg" alt="">
+                            <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. B Ratna Vineela</a></h4>
@@ -599,7 +617,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-B-Sai-Sruthi.jpg" alt="">
+                            <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. B Sai Sruthi</a></h4>
@@ -611,7 +629,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about//Dr-G-Niharika.jpg" alt="">
+                            <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. G Niharika</a></h4>
@@ -623,7 +641,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu.jpg" alt="">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. Jyothsna Kalepu</a></h4>
@@ -635,7 +653,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-Malathi-Chakravarthy.jpg" alt="">
+                            <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. Malathi Chakravarthy</a></h4>
@@ -646,7 +664,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-M-Ganesh.jpg" alt="">
+                            <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. M Ganesh</a></h4>
@@ -657,7 +675,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-R-SriLekhya.jpg" alt="">
+                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.jpg" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. R. SriLekhya</a></h4>

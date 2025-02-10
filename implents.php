@@ -20,40 +20,73 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Dental implants are a permanent solution for missing teeth, restoring both function and aesthetics. At Krishna Dental, we offer high-quality implants that provide a natural look and feel. Our expert team ensures precise placement, improving your smile, speech, and chewing ability for long-term results.
-            </p>
+            Dental Implants in Rajahmundry <br> Permanent Solution for Missing Teeth
+            <p class="fs-md text-title mb-4 pb-2 text-center">
+
+                At Krishna Dental Cure, we provide high-quality dental implants in Rajahmundry to restore missing teeth with a natural look and long-lasting durability.</p>
+
+         
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    Missing teeth can affect your confidence, speech, and ability to chew properly. Dental implants offer a long-lasting solution by replacing missing teeth with artificial tooth roots made of biocompatible titanium. At Krishna Dental, we specialize in advanced implant dentistry, ensuring a secure and comfortable fit. Implants integrate with the jawbone, providing stability similar to natural teeth. Unlike dentures, they prevent bone loss and maintain facial structure. Our skilled implant specialists use cutting-edge technology for precise placement, ensuring a seamless and functional outcome. Whether you need a single implant, multiple implants, or full-mouth reconstruction, our personalized approach guarantees optimal results. Regain your confident smile with expert dental implant solutions at Krishna Dental.
-                </p>
-            </div>
-
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/implents_sm.png" alt="Service Image" class=" my-2 img-fluid ">
-            </div>
+            <div class="row serice_space_div">
 
 
-        </div>
+                <div class="col-12 col-md-8   service_text_padding">
+                <h3>Step 1: Implant Placement</h3>
+            <p>A titanium post is surgically placed into the jawbone, acting as a strong foundation for the replacement tooth.</p>
 
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/implents_lg.png" alt="Service Image" class="img-fluid my-5">
+          
                 </div>
 
-                <p>
-                    At Krishna Dental, we provide state-of-the-art dental implant treatments customized for each patient’s needs. Our procedures involve detailed assessments, 3D imaging, and minimally invasive techniques for a smooth and pain-free experience. Implants not only replace missing teeth but also improve oral health by preventing neighboring teeth from shifting. They offer superior durability and longevity compared to traditional bridges and dentures. With proper care, dental implants can last a lifetime. We also provide implant-supported dentures for enhanced stability and comfort. If you’re struggling with missing teeth or loose dentures, schedule a consultation at Krishna Dental today. Experience the benefits of modern implant dentistry and enjoy a beautiful, fully functional smile once again.
-                </p>
+                <div class="col-12 col-md-4 service_text_padding_img  ">
+                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
+                </div>
+            </div>
+
+            <div class="row  serice_space_div">
+
+                <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+                </div>
+                <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+                <h3>Step 2: Healing and Osseointegration</h3>
+            <p>The implant fuses with the jawbone over a few months, ensuring stability and strength.</p>
+
+           
+                </div>
+            </div>
+
+
+
+
+            <div class="row  serice_space_div">
+
+
+                <div class="col-12 col-md-8 service_text_padding">
+
+                <h3>Step 3: Crown Attachment</h3>
+            <p>A custom-made dental crown is fixed onto the implant, restoring function and aesthetics.</p>
+
+
+
+                </div>
+
+                <div class="col-12 col-md-4 service_text_padding_img">
+                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+                </div>
 
             </div>
-        </div>
+    </div>
+
+
     </div>
 </section>
 

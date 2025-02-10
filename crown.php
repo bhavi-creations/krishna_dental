@@ -21,40 +21,74 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
+            
+        Dental Crown & Bridge in Rajahmundry <br> Restore Your Smile with Confidence</h1>  
+
+        <p class="fs-md text-title mb-4 pb-2 text-center">
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Dental crowns and bridges restore damaged or missing teeth, improving both function and aesthetics. At Krishna Dental, we offer durable, natural-looking restorations to strengthen weakened teeth and replace missing ones. Our customized crowns and bridges enhance your smile and restore your chewing ability.
-            </p>
+        At Krishna Dental Cure, we provide high-quality dental crowns and bridges in Rajahmundry to restore damaged or missing teeth, ensuring durability and a natural look.</p>  
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    A dental crown is a protective cap placed over a damaged or weakened tooth, while a bridge replaces one or more missing teeth by anchoring onto adjacent teeth. At Krishna Dental, we provide high-quality crowns and bridges made from porcelain, ceramic, and metal for durability and aesthetics. These restorations improve bite function, protect teeth from further damage, and enhance your smile’s appearance. Our expert dentists use precise digital impressions to create comfortable, long-lasting solutions tailored to your needs. Crowns and bridges not only restore missing teeth but also prevent shifting and misalignment. If you have a fractured, decayed, or missing tooth, visit Krishna Dental for expert restorative solutions and regain your confident smile.
-                </p>
+
+
+        <div class="row serice_space_div">
+
+
+            <div class="col-12 col-md-8   service_text_padding">
+            <h3>Step 1: Tooth Preparation and Impressions</h3>  
+<p>The affected tooth is reshaped, and impressions are taken to create a custom-fitted crown or bridge.</p>  
+
             </div>
 
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/crown_sm.png" alt="Service Image" class=" my-2 img-fluid ">
-            </div>
-
-
-        </div>
-
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/crown_lg.png" alt="Service Image" class="img-fluid my-5">
-                </div>
-
-                <p>
-                    At Krishna Dental, we ensure that dental crowns and bridges seamlessly blend with your natural teeth, providing strength and beauty. Our restorations are designed for long-term durability, allowing you to eat, speak, and smile with confidence. We offer metal-free options for a natural, aesthetic appearance, ensuring biocompatibility and comfort. The procedure is quick, minimally invasive, and tailored to each patient’s dental needs. With proper care, crowns and bridges can last for many years, making them a reliable solution for tooth restoration. Whether you need a single crown or a multi-unit bridge, our skilled dental team provides high-quality, customized treatment. Schedule a consultation at Krishna Dental today and restore your smile with precision-crafted crowns and bridges.
-                </p>
-
+            <div class="col-12 col-md-4 service_text_padding_img  ">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
+
+        <div class="row  serice_space_div">
+
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+            <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+               
+
+<h3>Step 2: Temporary and Permanent Placement</h3>  
+<p>A temporary crown or bridge is placed while the permanent one is crafted for a perfect fit and function.</p>  
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row  serice_space_div">
+
+
+            <div class="col-12 col-md-8 service_text_padding">
+
+            <h3>Step 3: Final Fitting and Adjustment</h3>  
+<p>The permanent crown or bridge is cemented securely, ensuring comfort, aesthetics, and long-lasting strength.</p>  
+
+
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+
+        </div>
+    </div>
+
+
     </div>
 </section>
 

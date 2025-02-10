@@ -21,40 +21,72 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
+            
+
+        Teeth Whitening in Rajahmundry <br> Brighten Your Smile Instantly</h1>  
+
+        <p class="fs-md text-title mb-4 pb-2 text-center">
+
+        At Krishna Dental Cure, we offer professional teeth whitening in Rajahmundry to remove stains and discoloration, giving you a whiter, more confident smile.</p>  
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Teeth whitening brightens your smile by removing stains and discoloration. At Krishna Dental, we offer professional whitening treatments that provide safe, effective, and long-lasting results. Our advanced whitening techniques restore your teeth’s natural brilliance, giving you a whiter, healthier-looking smile.
-            </p>
+
+        <div class="row serice_space_div">
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    Teeth discoloration can occur due to aging, smoking, or consumption of staining foods and drinks. At Krishna Dental, we provide professional teeth whitening solutions that safely and effectively remove stains. Our treatments include in-office whitening using advanced laser technology and at-home whitening kits for convenience. Unlike over-the-counter products, our whitening procedures deliver fast and noticeable results without damaging enamel. The process is quick, painless, and customized to your desired shade of whiteness. Regular professional whitening not only enhances aesthetics but also boosts confidence. If you want a brighter, more radiant smile, Krishna Dental offers safe and effective whitening treatments tailored to your needs.
-                </p>
+            <div class="col-12 col-md-8   service_text_padding">
+            <h3>Step 1: Teeth Cleaning and Preparation</h3>  
+<p>We remove surface plaque and tartar to ensure an even and effective whitening process.</p>  
+
+
             </div>
 
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/Whitening_sm.png" alt="Service Image" class=" my-2 img-fluid ">
-            </div>
-
-
-        </div>
-
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/Whitening_lg.png" alt="Service Image" class="img-fluid my-5">
-                </div>
-
-                <p>
-                    At Krishna Dental, we prioritize your dental health while enhancing your smile’s brightness. Our professional whitening treatments use safe and scientifically tested agents to provide long-lasting results without causing sensitivity. The procedure effectively removes deep stains and yellowing caused by coffee, tea, smoking, and aging. Our expert dentists assess your oral health before treatment to ensure the best results. We also provide post-whitening care tips to maintain your brighter smile. Whether you need instant results with in-office whitening or the flexibility of at-home whitening kits, we have a solution that suits you. Schedule a consultation at Krishna Dental today and enjoy a dazzling, confident smile with our professional teeth whitening services.
-                </p>
-
+            <div class="col-12 col-md-4 service_text_padding_img  ">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
+
+        <div class="row  serice_space_div">
+
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+            <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+            <h3>Step 2: Whitening Gel Application</h3>  
+<p>A specialized whitening gel is applied to your teeth, breaking down deep stains safely.</p>  
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row  serice_space_div">
+
+
+            <div class="col-12 col-md-8 service_text_padding">
+
+            <h3>Step 3: Activation and Final Polishing</h3>  
+<p>The gel is activated using a light source, followed by a polish for a long-lasting, radiant smile.</p>  
+
+
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+
+        </div>
+    </div>
+
+
     </div>
 </section>
 

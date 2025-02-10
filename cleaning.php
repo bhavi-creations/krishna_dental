@@ -19,40 +19,72 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
+            Teeth Cleaning in Rajahmundry <br> Brighten Your Smile with Expert Care
+
+        </h1>
+        <p class="fs-md text-title mb-4 pb-2 text-center">
+            At Krishna Dental Cure, we offer professional teeth cleaning in Rajahmundry to remove plaque, tartar, and stains, ensuring a healthy and radiant smile.</p>
+
+      
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Professional teeth cleaning is essential for maintaining optimal oral health and preventing dental issues. At Krishna Dental, we offer thorough scaling and polishing to remove plaque, tartar, and stains, ensuring a fresh, healthy smile. Regular cleanings help prevent cavities, gum disease, and bad breath.
-            </p>
+        <div class="row serice_space_div">
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    Teeth cleaning is a preventive procedure that keeps your teeth and gums healthy. At Krishna Dental, our professional cleaning process includes plaque and tartar removal, deep scaling, and polishing to eliminate surface stains. Even with regular brushing and flossing, some deposits can only be removed by professional cleaning. This procedure prevents cavities, gum disease, and persistent bad breath. Our experienced dentists use gentle, advanced techniques to make the process comfortable and effective. We recommend scheduling teeth cleaning every six months for optimal oral health. If you experience frequent plaque buildup, bad breath, or gum sensitivity, professional cleaning can help restore your smile’s freshness. Visit Krishna Dental today for expert dental cleaning and maintain a bright, healthy smile.
-                </p>
+            <div class="col-12 col-md-8   service_text_padding">
+            <h3>Step 1: Plaque and Tartar Removal</h3>
+        <p>Our experts use ultrasonic scalers to gently remove plaque and tartar buildup from your teeth and gum line.</p>
+
+     
             </div>
 
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/cleaning_sm.png" alt="Service Image" class=" my-2 img-fluid ">
-            </div>
-
-
-        </div>
-
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/cleaning_lg.png" alt="Service Image" class="img-fluid my-5">
-                </div>
-
-                <p>
-                    At Krishna Dental, we make teeth cleaning a hassle-free and pain-free experience. Our advanced ultrasonic scalers effectively remove stubborn plaque and tartar, while gentle polishing gives your teeth a smooth, refreshed feel. Regular cleanings not only enhance your smile but also prevent serious dental issues like periodontitis and enamel erosion. Our dental experts also provide personalized oral hygiene tips to maintain your clean teeth at home. Professional cleaning is especially crucial for individuals with braces, implants, or gum disease. By keeping up with routine cleanings, you ensure long-term dental health and a confident smile. Book your teeth cleaning appointment at Krishna Dental today and enjoy a brighter, fresher, and healthier mouth.
-                </p>
-
+            <div class="col-12 col-md-4 service_text_padding_img  ">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
+
+        <div class="row  serice_space_div">
+
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+            <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+            <h3>Step 2: Polishing and Stain Removal</h3>
+        <p>A specialized polishing paste is used to remove surface stains, leaving your teeth smooth and shiny.</p>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row  serice_space_div">
+
+
+            <div class="col-12 col-md-8 service_text_padding">
+
+          
+        <h3>Step 3: Fluoride Treatment for Protection</h3>
+        <p>A fluoride gel is applied to strengthen enamel, protect against cavities, and keep your teeth healthy.</p>
+
+
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+
+        </div>
+    </div>
+
+
     </div>
 </section>
 

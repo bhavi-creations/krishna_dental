@@ -3,7 +3,7 @@
 
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/cover_appoit.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_appointment_slider.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Appointment</h1>
@@ -25,7 +25,7 @@
         <div class="row gx-40">
 
             <div class="col-lg-6 d-none d-lg-block">
-                <img src="assets/img/about/appointmentimg.png" class="img-fluid" alt="">
+                <img src="assets/img/about/kroshnadentacure_appointment_image.png" class="img-fluid" alt="">
             </div>
 
 

@@ -9,7 +9,7 @@
 
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/abou_cover.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_about_slider.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">About Us</h1>
@@ -32,7 +32,7 @@
             <div class="col-lg-6 mb-40 mb-lg-0">
                 <div class="vs-surface wow" data-wow-delay="0.3s">
                     <div class="about-img3 position-relative">
-                        <img src="assets/img/about/bulding.webp" alt="About Image" class="w-100">
+                        <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_image_building_hospital.webp" alt="About Image" class="w-100">
 
                         <!-- <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">

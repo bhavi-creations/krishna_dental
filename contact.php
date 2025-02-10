@@ -3,7 +3,7 @@
 
 
  <div class="breadcumb-wrapper ">
-     <div class="parallax" data-parallax-image="assets/img/about/cover_cont.png"></div>
+     <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_contact_slider.png"></div>
 
      <div class="container z-index-common">
          <div class="breadcumb-content">

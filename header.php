@@ -21,8 +21,8 @@
 
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="assets/img/logo/dr-suresh-kumar-logo.png" type="image/x-icon">
-    <link rel="icon" href="assets/img/logo/dr-suresh-kumar-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo/krishnadentacure_logo_orginal.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/krishnadentacure_logo_orginal.png" type="image/x-icon">
 
     <!--==============================
 	    All CSS File
@@ -83,7 +83,7 @@
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <!-- <a href="index.php"><img src="assets/img/logo-mobile.svg" alt="Medixi"></a> -->
-                <a href="index.php"><img src="assets/img/logo/dr-suresh-kumar-logo_nav.png" class="img-fluid" alt="Logo"></a>
+                <a href="index.php"><img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="Logo"></a>
 
             </div>
 
@@ -105,14 +105,14 @@
                         <!-- Arrow for submenu toggle -->
                         <ul class="sub-menu">
                             <li><a href="#">Pain Relief</a>
-                               
+
                                 <ul class="sub-menu">
                                     <li><a href="root.php">Root Canal Treatment </a></li>
                                     <li><a href="wisdom.php">Wisdom Tooth Removal </a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Preventive Care</a>
-                                 
+
                                 <ul class="sub-menu">
                                     <li><a href="breath.php">Bad Breath Treatment </a></li>
                                     <li><a href="gum.php">Gum Treatment </a></li>
@@ -120,17 +120,19 @@
                                 </ul>
                             </li>
                             <li><a href="#">Cosmetic Treatment</a>
-                                
+
                                 <ul class="sub-menu">
                                     <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
                                     <li><a href="crown.php">Dental Crown & Bridge</a></li>
                                     <li><a href="veneers.php">Dental Veneers</a></li>
                                     <li><a href="smile.php">Smile Makeover</a></li>
                                     <li><a href="whitening.php">Teeth Whitening</a></li>
+                                    <li><a href="invisaliners.php"> Invisible Aligners</a></li>
+
                                 </ul>
                             </li>
                             <li><a href="#">Teeth Replacement</a>
-                                 
+
                                 <ul class="sub-menu">
                                     <li><a href="implents.php">Dental Implants</a></li>
                                     <li><a href="dentures.php">Dentures</a></li>
@@ -183,7 +185,7 @@
                 <div class="row justify-content-center justify-content-xl-between">
                     <div class="col-lg-3">
                         <div class="login-btn-eight">
-                            <a href="#" class="register-btn"> <i class="far fa-clock"></i> Monday - Saturday 10:00  — 9:00 </li></a>
+                            <a href="#" class="register-btn"> <i class="far fa-clock"></i> Monday - Saturday 10:00 — 9:00 </li></a>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -217,7 +219,7 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header8-logo">
-                                    <a href="index.php"><img src="assets/img/logo/dr-suresh-kumar-logo_nav.png" class="img-fluid" alt="Logo"></a>
+                                    <a href="index.php"><img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="Logo"></a>
 
                                 </div>
                             </div>
@@ -258,6 +260,8 @@
                                                         <li><a href="veneers.php">Dental Veneers </a></li>
                                                         <li><a href="smile.php">Smile Makeover </a></li>
                                                         <li><a href="whitening.php">Teeth Whitening </a></li>
+                                                        <li><a href="invisaliners.php"> Invisible Aligners</a></li>
+
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>

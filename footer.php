@@ -8,7 +8,7 @@
                  <div class=" col-md-8  col-lg-3  wow fadeInUp" data-wow-delay="400ms">
                      <div class="widget footer-widget">
                          <div class="vs-widget-about-seven">
-                             <div class="footer-logo"><img src="assets/img/logo/dr-suresh-kumar-logo.png" alt="logo"></div>
+                             <div class="footer-logo"><img src="assets/img/logo/krishnadentacure_logo_orginal.png" alt="logo"></div>
 
                              <p class="footer-text">
                                  <i class="far fa-map-marker-alt"></i> 29-33-9/10, Devi Chowk Circle, near Alluri Sita Rama Raju Junction, Jampet, Rajamahendravaram, Andhra Pradesh 533104.
@@ -54,6 +54,8 @@
                                  <li><a href="cleaning.php">Teeth Cleaning </a></li>
                                  <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
                                  <li><a href="crown.php">Dental Crown & Bridge </a></li>
+                                 <li><a href="invisaliners.php">   Invisible Aligners</a></li>
+
 
                              </ul>
                          </div>

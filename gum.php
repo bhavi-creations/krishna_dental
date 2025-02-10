@@ -20,40 +20,72 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
+            
+        Gum Treatment in Rajahmundry <br> Healthy Gums for a Stronger Smile
+        </h1>
+        <p class="fs-md text-title mb-4 pb-2 text-center">
+
+        At Krishna Dental Cure, we offer advanced gum treatment in Rajahmundry to prevent and treat gum disease. Our expert care ensures healthier gums, reducing swelling, bleeding, and discomfort.
+        </p>
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Healthy gums are essential for strong teeth and overall oral health. At Krishna Dental, we provide advanced gum treatments to address gingivitis, periodontitis, and gum recession. Our expert care helps prevent tooth loss, reduces inflammation, and restores gum health for a confident, beautiful smile.
-            </p>
+        <div class="row serice_space_div">
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    Gum disease is a common but serious condition caused by plaque buildup, poor oral hygiene, and bacterial infections. At Krishna Dental, we offer specialized gum treatments, including deep cleaning (scaling and root planing), laser therapy, and medication-based solutions to restore gum health. If left untreated, gum disease can lead to bleeding gums, bad breath, and even tooth loss. Our skilled periodontists provide personalized treatment plans to manage and reverse gum issues effectively. We also educate patients on maintaining proper oral hygiene to prevent recurrence. Whether you’re experiencing swollen gums, persistent bad breath, or gum recession, our expert team is here to help. Visit Krishna Dental for professional gum care and regain a healthy, pain-free smile.
-                </p>
+            <div class="col-12 col-md-8   service_text_padding">
+            <h3>Step 1: Diagnosis and Deep Cleaning</h3>  
+<p>We examine your gums and perform scaling and root planing to remove plaque, tartar, and bacteria from gum pockets.</p>  
+
+
             </div>
 
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/gum_sm.png" alt="Service Image" class=" my-2 img-fluid ">
-            </div>
-
-
-        </div>
-
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/gum_lg.png" alt="Service Image" class="img-fluid my-5">
-                </div>
-
-                <p>
-                    At Krishna Dental, we focus on early detection and effective treatment of gum diseases. Our state-of-the-art procedures, such as laser gum therapy, provide painless, non-invasive solutions for restoring gum health. We also offer advanced grafting techniques to treat receding gums and improve smile aesthetics. Maintaining healthy gums is crucial for overall dental wellness, as gum disease is linked to systemic health issues like diabetes and heart disease. Our expert team ensures personalized care, offering routine cleanings and deep periodontal treatments to keep your gums in top condition. If you notice symptoms like bleeding gums, tenderness, or gum recession, don’t wait—schedule an appointment with Krishna Dental today. Let us help you achieve strong, healthy gums for a lifetime.
-                </p>
-
+            <div class="col-12 col-md-4 service_text_padding_img  ">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
+
+        <div class="row  serice_space_div">
+
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+            <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+            <h3>Step 2: Medication and Treatment</h3>  
+<p>Antibiotics or medicated rinses may be prescribed to reduce infection and inflammation, promoting faster healing.</p>  
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row  serice_space_div">
+
+
+            <div class="col-12 col-md-8 service_text_padding">
+
+         
+<h3>Step 3: Long-Term Gum Care</h3>  
+<p>We provide guidance on oral hygiene, follow-up visits, and lifestyle changes to maintain healthy gums and prevent future issues.</p>  
+
+
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+
+        </div>
+    </div>
+
+
     </div>
 </section>
 

@@ -32,7 +32,7 @@
             <div class="col-lg-6 mb-40 mb-lg-0">
                 <div class="vs-surface wow" data-wow-delay="0.3s">
                     <div class="about-img3 position-relative">
-                        <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS.jpg" alt="About Image" style="border-radius: 10px;" class="img-fluid  ">
+                        <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS_krishnadentacure__doctor.jpg" alt="About Image" style="border-radius: 10px;" class="img-fluid  ">
 
                         <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
@@ -85,7 +85,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-B-Ratna-Vineela.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. B Ratna Vineela</a></h3>
@@ -96,7 +96,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-B-Sai-Sruthi.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. B Sai Sruthi</a></h3>
@@ -107,7 +107,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-G-Niharika.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. G Niharika</a></h3>
@@ -118,7 +118,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
@@ -129,7 +129,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-Malathi-Chakravarthy.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Malathi Chakravarthy</a></h3>
@@ -139,7 +139,7 @@
                 </div><div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
@@ -149,7 +149,7 @@
                 </div><div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-M-Ganesh.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. M Ganesh</a></h3>
@@ -159,7 +159,7 @@
                 </div><div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/about/Dr-R-SriLekhya.jpg" alt="Team Area" class="w-100">
+                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.jpg" alt="Team Area" class="w-100">
                         </div>
                         <div class="team-body">
                             <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. R. SriLekhya</a></h3>
@@ -219,7 +219,7 @@
 
 
 
-<img src="assets/img/about/team.png" class='img-fluid my-4' alt="">
+<img src="assets/img/about/krishnadental_team.png" class='img-fluid my-4' alt="">
 
 
 

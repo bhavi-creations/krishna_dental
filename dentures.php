@@ -20,43 +20,75 @@
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
-        <div class="row">
+
+        <h1 class="text-center mb-5">
+            
+
+        Dentures in Rajahmundry <br> Restore Your Smile with Comfort
+        <p class="fs-md text-title mb-4 pb-2 text-center">
 
 
-            <p class="fs-md text-title mb-4 pb-2">
-                Dentures restore missing teeth and improve oral function. At Krishna Dental, we provide high-quality full and partial dentures that fit comfortably and look natural. Our customized solutions help patients regain confidence, enjoy better chewing ability, and maintain facial structure for a youthful appearance.
-            </p>
+        At Krishna Dental Cure, we provide high-quality dentures in Rajahmundry to replace missing teeth, ensuring a natural look and improved oral function.</p>  
 
 
-            <div class="col-12 col-lg-7  order-1 order-lg-0">
-                <p>
-                    Losing teeth can impact your speech, eating habits, and overall confidence. At Krishna Dental, we offer customized dentures that restore functionality and enhance your smile. Our full dentures replace all missing teeth, while partial dentures fill in gaps, preventing remaining teeth from shifting. Made from durable, high-quality materials, our dentures ensure a comfortable and natural fit. Our expert dentists carefully assess your oral structure and customize dentures to suit your facial aesthetics. We also provide implant-supported dentures for improved stability and comfort. If you’re looking for a reliable and cost-effective tooth replacement solution, Krishna Dental offers expertly crafted dentures that restore both function and confidence.
-                </p>
+
+
+        <div class="row serice_space_div">
+
+
+            <div class="col-12 col-md-8   service_text_padding">
+            <h3>Step 1: Oral Examination and Impressions</h3>  
+<p>We assess your oral health and take precise impressions to create custom-fitted dentures.</p>  
+
+ 
+
             </div>
 
-            <div class="col-12  col-lg-5   order-0  order-lg-1">
-                <img src="assets/img/about/Dentures_sm.png" alt="Service Image" class=" my-2 img-fluid ">
+            <div class="col-12 col-md-4 service_text_padding_img  ">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
             </div>
-
-
         </div>
 
-        <div class="col-12">
-            <div class="service-content mb-30">
-                <div class="vs-surface wow" data-wow-delay="0.3s">
-                    <img src="assets/img/about/Dentures_lg.png" alt="Service Image" class="img-fluid my-5">
-                </div>
+        <div class="row  serice_space_div">
 
-                <p>
-                    At Krishna Dental, we prioritize patient comfort and satisfaction with our denture solutions. Our modern dentures are lightweight, durable, and designed for a secure fit, eliminating common issues like slipping or discomfort. We offer flexible and acrylic-based options tailored to individual preferences. Our team ensures easy adaptation by providing adjustments and guidance on maintenance. Dentures not only restore your smile but also support facial muscles, preventing premature aging. Regular dental checkups help maintain their fit and function over time. Whether you need complete dentures, partial dentures, or implant-supported options, our specialists ensure the best possible outcome. Visit Krishna Dental today and regain a confident, functional smile with our high-quality denture solutions.
-                </p>
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+            <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
+            <h3>Step 2: Trial and Adjustments</h3>  
+<p>A trial set is fitted to check comfort, bite alignment, and aesthetics before finalizing.</p>  
 
 
             </div>
+        </div>
+
+
+
+
+        <div class="row  serice_space_div">
+
+
+            <div class="col-12 col-md-8 service_text_padding">
+
+            <h3>Step 3: Final Denture Placement</h3>  
+            <p>The permanent dentures are placed, ensuring a secure fit and natural appearance.</p> 
+
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
+            </div>
+
         </div>
     </div>
-</section>
 
+
+    </div>
+</section>
 
 
 
