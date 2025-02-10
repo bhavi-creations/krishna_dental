@@ -235,14 +235,14 @@
             <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="500ms">
                 <div class="specialist-card">
                     <div class="specialist-img">
-                        <img src="assets/img/about/orthodontic_home.png" alt="">
+                        <img src="assets/img/about/dental_braces.png" alt="">
 
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Orthodontic Treatment</a></h6>
+                        <h6 class="title"><a href="orthodontic.php">Orthodontic Treatment</a></h6>
                         <p>Orthodontic treatment aligns teeth and corrects bite issues using braces, aligners, or retainers for a perfect smile. </p>
-                        <a href="#" class="specialist-btn">Know More</a>
+                        <a href="orthodontic.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -254,79 +254,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Dental Crown & Bridge</a></h6>
+                        <h6 class="title"><a href="crown.php">Dental Crown & Bridge</a></h6>
                         <p>Dental crowns and bridges restore damaged or missing teeth, improving function, appearance, and bite alignment. </p>
-                        <a href="#" class="specialist-btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
-                <div class="specialist-card">
-                    <div class="specialist-img">
-                        <img src="assets/img/about/veneers_home.png" alt="">
-
-                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
-                    </div>
-                    <div class="specialist-content">
-                        <h6 class="title"><a href="#">Dental Veneers</a></h6>
-                        <p>Dental veneers are thin shells that cover teeth to enhance appearance, correct stains, chips, and gaps. </p>
-                        <a href="#" class="specialist-btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
-                <div class="specialist-card">
-                    <div class="specialist-img">
-                        <img src="assets/img/about/smile_home.png" alt="">
-
-                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
-                    </div>
-                    <div class="specialist-content">
-                        <h6 class="title"><a href="#"> Smile Makeover </a></h6>
-                        <p>A smile makeover enhances teeth and gums using whitening, veneers, braces, or crowns for a perfect smile.</p>
-                        <a href="#" class="specialist-btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
-                <div class="specialist-card">
-                    <div class="specialist-img">
-                        <img src="assets/img/about/whitening_home.png" alt="">
-
-                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
-                    </div>
-                    <div class="specialist-content">
-                        <h6 class="title"><a href="#">Teeth Whitening</a></h6>
-                        <p>Teeth whitening brightens stained or discolored teeth using bleaching agents for a whiter, radiant smile.</p>
-                        <a href="#" class="specialist-btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
-                <div class="specialist-card">
-                    <div class="specialist-img">
-                        <img src="assets/img/about/implants_home.png" alt="">
-
-                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
-                    </div>
-                    <div class="specialist-content">
-                        <h6 class="title"><a href="#"> Dental Implants </a></h6>
-                        <p>Dental implants replace missing teeth with artificial roots and crowns, restoring function, appearance, and confidence.</p>
-                        <a href="#" class="specialist-btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
-                <div class="specialist-card">
-                    <div class="specialist-img">
-                        <img src="assets/img/about/dentures_home.png" alt="">
-
-                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
-                    </div>
-                    <div class="specialist-content">
-                        <h6 class="title"><a href="#"> Dentures</a></h6>
-                        <p>Dentures are removable prosthetic teeth that restore function and appearance for those with missing teeth. </p>
-                        <a href="#" class="specialist-btn">Know More</a>
+                        <a href="crown.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -338,9 +268,79 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#"> Fluoride Application & Dental Sealant</a></h6>
+                        <h6 class="title"><a href="veneers.php">Dental Veneers</a></h6>
+                        <p>Dental veneers are thin shells that cover teeth to enhance appearance, correct stains, chips, and gaps. </p>
+                        <a href="veneers.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/smile_home.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="smile.php"> Smile Makeover </a></h6>
+                        <p>A smile makeover enhances teeth and gums using whitening, veneers, braces, or crowns for a perfect smile.</p>
+                        <a href="smile.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/whitening_home.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="whitening.php">Teeth Whitening</a></h6>
+                        <p>Teeth whitening brightens stained or discolored teeth using bleaching agents for a whiter, radiant smile.</p>
+                        <a href="whitening.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/implants_home.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="implents.php"> Dental Implants </a></h6>
+                        <p>Dental implants replace missing teeth with artificial roots and crowns, restoring function, appearance, and confidence.</p>
+                        <a href="implents.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/dentures_home.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="dentures.php"> Dentures</a></h6>
+                        <p>Dentures are removable prosthetic teeth that restore function and appearance for those with missing teeth. </p>
+                        <a href="dentures.php" class="specialist-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="700ms">
+                <div class="specialist-card">
+                    <div class="specialist-img">
+                        <img src="assets/img/about/sealent_img.png" alt="">
+
+                        <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
+                    </div>
+                    <div class="specialist-content">
+                        <h6 class="title"><a href="sealant.php"> Fluoride Application & Dental Sealant</a></h6>
                         <p>Fluoride application strengthens enamel to prevent cavities, while dental sealants protect teeth by sealing deep grooves.</p>
-                        <a href="#" class="specialist-btn">Know More</a>
+                        <a href="sealant.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -352,9 +352,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#"> Full Mouth Rehabilitation Treatment</a></h6>
+                        <h6 class="title"><a href="fullmouth.php"> Full Mouth Rehabilitation Treatment</a></h6>
                         <p>Full mouth rehabilitation restores function and aesthetics using crowns, implants, veneers, and other dental treatments.</p>
-                        <a href="#" class="specialist-btn">Know More</a>
+                        <a href="fullmouth.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
