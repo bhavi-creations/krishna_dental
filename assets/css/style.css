@@ -18815,5 +18815,20 @@ body {
 
 
 .service_border_radius_images{
-  border-radius: 5  px;
+  border-radius: 5px;
+}
+
+
+.icon_bg{
+  background:	#ffffffd9 !important;
+  border-radius: 8px;
+}
+
+.icon{
+  width: 50px;
+  color: #07ccec !important;
+}
+
+.border{
+  border-radius: 8px;
 }
