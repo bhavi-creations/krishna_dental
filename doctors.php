@@ -9,7 +9,7 @@
 
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/docs_cover.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentalcure_doctors_sider.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">  Doctors</h1>
@@ -36,7 +36,7 @@
 
                         <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
-                                <span class="counter">40</span>+
+                                <span class="counter">30</span>+
                             </div>
                             <p class="exp-text text-title mb-0">Years of Experience</p>
                         </div>

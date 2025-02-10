@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Medixi - Medical and Health Care HTML Template - Home Eight</title>
+    <title>KrishnaDentaCure</title>
     <meta name="author" content="Vecuro">
     <meta name="description" content="Medixi - Medical and Health Care HTML Template">
     <meta name="keywords" content="Medixi - Medical and Health Care HTML Template">
@@ -21,8 +21,8 @@
 
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo/dr-suresh-kumar-logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/dr-suresh-kumar-logo.png" type="image/x-icon">
 
     <!--==============================
 	    All CSS File
@@ -183,7 +183,7 @@
                 <div class="row justify-content-center justify-content-xl-between">
                     <div class="col-lg-3">
                         <div class="login-btn-eight">
-                            <a href="#" class="register-btn"> <i class="far fa-clock"></i> Monday - Saturday 10:00 — 9:00 </li></a>
+                            <a href="#" class="register-btn"> <i class="far fa-clock"></i> Monday - Saturday 10:00  — 9:00 </li></a>
                         </div>
                     </div>
                     <div class="col-lg-9">

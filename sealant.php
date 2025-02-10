@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
  
     <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/service_cover.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Fluoride_Application_Dental_Sealant.png"></div>
 
         <div class="container z-index-common">
             <div class="breadcumb-content">

@@ -45,7 +45,7 @@
                 <div class="col-md-6 col-xl-4">
                     <div class="service-thumb">
                         <div class="sr-img">
-                        <img class="img-fluid" src="assets/img/about/Whitening_mini.png" alt="Serivce Image">
+                        <img class="img-fluid" src="assets/img/about/Wisdom_mini.png" alt="Serivce Image">
 
                         </div>
                         <div class="sr-body">

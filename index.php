@@ -170,9 +170,9 @@
 
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Root Canal</a></h6>
+                        <h6 class="title"><a href="root.php">Root Canal</a></h6>
                         <p>Root canal treatment saves infected teeth by removing decay, cleaning roots, and sealing them to prevent further damage.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="root.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -184,9 +184,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Wisdom Tooth Removal</a></h6>
+                        <h6 class="title"><a href="wisdom.php">Wisdom Tooth Removal</a></h6>
                         <p>Wisdom tooth removal extracts impacted or painful teeth to prevent infection, crowding, and discomfort. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="wisdom.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Bad Breath Treatment</a></h6>
+                        <h6 class="title"><a href="breath.php">Bad Breath Treatment</a></h6>
                         <p>Bad breath treatment targets bacteria and plaque buildup through proper oral hygiene, hydration, and professional cleaning. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="breath.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -212,9 +212,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Gum Treatment</a></h6>
+                        <h6 class="title"><a href="gum.php">Gum Treatment</a></h6>
                         <p>Gum treatment heals infections and reduces inflammation through deep cleaning, medication, and proper oral care. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="gum.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -226,9 +226,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="#">Teeth Cleaning </a></h6>
+                        <h6 class="title"><a href="cleaning.php">Teeth Cleaning </a></h6>
                         <p>Teeth cleaning removes plaque, tartar, and stains to maintain oral health and prevent cavities. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="cleaning.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -242,7 +242,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#">Orthodontic Treatment</a></h6>
                         <p>Orthodontic treatment aligns teeth and corrects bite issues using braces, aligners, or retainers for a perfect smile. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#">Dental Crown & Bridge</a></h6>
                         <p>Dental crowns and bridges restore damaged or missing teeth, improving function, appearance, and bite alignment. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#">Dental Veneers</a></h6>
                         <p>Dental veneers are thin shells that cover teeth to enhance appearance, correct stains, chips, and gaps. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -284,7 +284,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#"> Smile Makeover </a></h6>
                         <p>A smile makeover enhances teeth and gums using whitening, veneers, braces, or crowns for a perfect smile.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -298,7 +298,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#">Teeth Whitening</a></h6>
                         <p>Teeth whitening brightens stained or discolored teeth using bleaching agents for a whiter, radiant smile.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#"> Dental Implants </a></h6>
                         <p>Dental implants replace missing teeth with artificial roots and crowns, restoring function, appearance, and confidence.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -326,7 +326,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#"> Dentures</a></h6>
                         <p>Dentures are removable prosthetic teeth that restore function and appearance for those with missing teeth. </p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -340,7 +340,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#"> Fluoride Application & Dental Sealant</a></h6>
                         <p>Fluoride application strengthens enamel to prevent cavities, while dental sealants protect teeth by sealing deep grooves.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@
                     <div class="specialist-content">
                         <h6 class="title"><a href="#"> Full Mouth Rehabilitation Treatment</a></h6>
                         <p>Full mouth rehabilitation restores function and aesthetics using crowns, implants, veneers, and other dental treatments.</p>
-                        <a href="#" class="specialist-btn">More more</a>
+                        <a href="#" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -487,7 +487,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="choose-content7">
                     <div class="title-area-three choose">
-                        <span class="sub-title7">7 Star Care & Protection</span>
+                        <!-- <span class="sub-title7">7 Star Care & Protection</span> -->
                         <h2>Why choose <br> Krishna Denta Cure</h2>
                         <p>At Krishna Denta Cure, we are committed to providing top-quality dental care with a focus on patient comfort, advanced technology, and personalized treatment plans. Here’s why we stand out:
                         </p>
