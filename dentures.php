@@ -45,7 +45,7 @@
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_dentures_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -54,7 +54,7 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_dentures_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
@@ -79,7 +79,7 @@
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_dentures_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
