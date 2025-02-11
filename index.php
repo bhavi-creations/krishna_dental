@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>  
+<?php include 'header.php'; ?>
 
 
 
@@ -97,12 +97,12 @@
 
 
 
- 
-        <video autoplay muted loop playsinline class="banner-video">
-            <source src="assets/img/about/KrishnaDentaCure-Banner-Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
- 
+
+<video autoplay muted loop playsinline class="banner-video">
+    <source src="assets/img/about/KrishnaDentaCure-Banner-Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 
 
 
@@ -721,8 +721,12 @@
 <!--==============================
     Blog Area
     ==============================-->
-<section class="vs-blog-wrapper-seven space space-md-top">
+ 
+<!-- End blog-section -->
+<section class="blog_section ">
+
     <div class="container">
+
         <div class="row  text-center justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-6 wow fadeIn" data-wow-delay="400ms">
                 <div class="title-area-three text-center">
@@ -731,126 +735,88 @@
                 </div>
             </div>
         </div>
-        <div class="row vs-carousel wow fadeInUp" data-wow-delay="0.3s" data-slide-show="3" data-lg-slide-show="2">
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="400ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-1.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">What does your blood type have to do with your health?</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
+
+
+
+        <div class="row">
+
+            <?php
+            include './db.connection/db_connection.php';
+
+            // Fetch latest 3 blogs with video
+            $sql = "SELECT id, title, main_content, main_image, video FROM blogs ORDER BY created_at DESC LIMIT 3";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                echo "<div class='row'>"; // Start row for card layout
+
+                while ($row = $result->fetch_assoc()) {
+                    $blog_id = $row['id'];
+                    $title = $row['title'];
+                    $main_content = $row['main_content'];
+                    $main_image = $row['main_image'];
+                    $video = $row['video'];
+
+                    echo "<div class='col-md-4 mb-4'>"; // Create 3 equal-width columns for medium devices
+                    echo "<div class='card h-100'>"; // Start card
+
+                    // Display the blog title
+                    echo "<div class='card-body'>";
+
+
+                    // Display video if available
+                    if (!empty($video)) {
+                        $video_path = "./admin/uploads/videos/{$video}";
+                        echo "<video class='main-video img-fluid' controls>
+                    <source src='{$video_path}' type='video/mp4'>
+                    Your browser does not support the video tag.
+                  </video>";
+                    }
+                    // If no video, display main image
+                    elseif (!empty($main_image)) {
+                        $main_image_path = "./admin/uploads/photos/{$main_image}";
+                        echo "<img class='card-img-top img-fluid' src='{$main_image_path}' alt='Blog Image'>";
+                    }
+                    echo "<h5 class='card-title my-3'>" . htmlspecialchars($title) . "</h5>";
+                    // Display a short portion of the blog content
+                    echo "<p class='card-text'>" . substr($main_content, 0, 90) . "...</p>";
+
+                    // Link to full blog post
+                    echo "<a href='fullblog.php?id={$blog_id}' class='btn-style7 v6 wow fadeInUp animated'>Read more</a>";
+
+
+                    echo "</div>"; // End card body
+                    echo "</div>"; // End card
+                    echo "</div>"; // End column
+                }
+
+                echo "</div>"; // End row
+            } else {
+                echo "No blog posts found.";
+            }
+
+            $conn->close();
+            ?>
+
+
+
+            <div class="mt-5 d-none d-md-block">
+                <a href="blogs.php" style="text-decoration: none;">
+                    <p class="view_more_btn mb-5 d-flex flex-row justify-content-start">View More<i class=" arrowmark_right  fas fa-arrow-right"></i>
+                    </p>
+                </a>
             </div>
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="500ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-2.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">Healthy habits to reduce the risks of heart diseases</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
+
+            <div class="d-flex flex-row justify-content-center mt-4">
+                <a href="blogs.php" style="text-decoration: none;">
+                    <p class="view_more_btn d-md-none">View More<i class="fas fa-arrow-right ml-3"></i></p>
+                </a>
             </div>
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="600ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-3.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">Why men should stay on top of health screenings</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="400ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-1.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">What does your blood type have to do with your health?</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="500ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-2.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">Healthy habits to reduce the risks of heart diseases</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 wow fadeInUp" data-wow-delay="600ms">
-                <div class="vs-blog blog-card-seven">
-                    <div class="blog-img-seven">
-                        <img src="assets/img/blog/b-7-3.jpg" alt="Blog Image" class="w-100">
-                        <a href="#" class="search-icon"><i class="far fa-search"></i></a>
-                        <div class="blog-date-seven">
-                            <span>18 July, 2022</span>
-                        </div>
-                    </div>
-                    <div class="blog-content-seven">
-                        <div class="blog-meta-seven">
-                            <a href="blog.html"><i class="fa fa-user"></i>Admin</a>
-                            <a href="blog.html"><i class="fa fa-comments"></i>Comments</a>
-                        </div>
-                        <h3 class="blog-title h5 font-body lh-base"><a href="blog.html">Why men should stay on top of health screenings</a></h3>
-                        <a href="blog.html" class="btn-style7 v6 wow fadeInUp animated">Read More</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
-</section>
-<!-- End blog-section -->
 
+</section>
 
 
 

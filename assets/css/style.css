@@ -10871,7 +10871,7 @@ blockquote cite:before {
   line-height: var(--size-icon);
   margin-left: calc(var(--size-icon) / -2);
   text-align: center;
-  background-color: var(--white-color);
+  background-color:rgb(81 200 242 / 80%);
   border-radius: 50%;
   color: #1b1b1b;
   z-index: 2;
@@ -19000,4 +19000,31 @@ background-color: #94beeb;
   .sectionForm{
     margin-bottom: 120px !important;
   }
+}
+
+@media (max-width:768px) {
+
+  .view_more_btn {
+    color: #000a2d;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width:768px) {
+
+  .view_more_btn {
+    color: #000a2d;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 50px;
+  }
+
+}
+
+
+.arrowmark_right{
+  margin-top:8px;
+  margin-left: 5px;
 }

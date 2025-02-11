@@ -90,5 +90,86 @@
 
 
 
+<section class="vs-team-wrapper space-md-bottom">
+    <div class="container">
+
+        <!-- Swiper Container -->
+        <div class="swiper-container team-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Smile_Makeover_1.png" alt="Team Area" class="w-100">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Smile_Makeover_2.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Smile_Makeover_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Smile_Makeover_4.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Swiper JS Initialization -->
+<script>
+    var swiper = new Swiper(".team-slider", {
+        slidesPerView: 3, // Show exactly 3 slides
+        spaceBetween: 30, // Adjust space between slides
+        loop: true,
+        centeredSlides: false, // Ensure it aligns properly
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 2
+            },
+            0: {
+                slidesPerView: 1
+            }
+        }
+    });
+</script>
 
 <?php include 'footer.php'; ?>
