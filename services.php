@@ -18,11 +18,14 @@
 </div>
 
 
+<!-- <img src="assets/img/bg/ptn_top.png" alt=""> -->
+
 
 <!--==============================
     Service Area
     ==============================-->
-<section class="vs-service-wrapper space-top space-md-bottom">
+<section class="vs-service-wrapper space-top space-md-bottom       " >
+    <img src="assets/img/special/cutie_teeth.png" class="special_teeth img-fluid" alt="">
     <div class="container">
         <div class="row">
 

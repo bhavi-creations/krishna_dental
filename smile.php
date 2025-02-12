@@ -16,6 +16,7 @@
         </div>
     </div>
 </div>
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
@@ -55,8 +56,8 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-            <h3>Step 2: Cosmetic and Restorative Treatments</h3>
-            <p>Depending on your needs, treatments may include teeth whitening, veneers, crowns, or orthodontics.</p>  
+                <h3>Step 2: Cosmetic and Restorative Treatments</h3>
+                <p>Depending on your needs, treatments may include teeth whitening, veneers, crowns, or orthodontics.</p>
 
 
             </div>
@@ -71,8 +72,8 @@
             <div class="col-12 col-md-8 service_text_padding">
 
 
-<h3>Step 3: Final Adjustments and Smile Reveal</h3>  
-<p>We ensure proper fit and aesthetics, making final refinements for a stunning and confident smile.</p>  
+                <h3>Step 3: Final Adjustments and Smile Reveal</h3>
+                <p>We ensure proper fit and aesthetics, making final refinements for a stunning and confident smile.</p>
 
             </div>
 
@@ -136,6 +137,7 @@
 
     </div>
 </section>
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 

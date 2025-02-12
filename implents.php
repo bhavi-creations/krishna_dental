@@ -17,6 +17,7 @@
     </div>
 </div>
 
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
@@ -29,17 +30,17 @@
 
                 At Krishna Dental Cure, we provide high-quality dental implants in Rajahmundry to restore missing teeth with a natural look and long-lasting durability.</p>
 
-         
+
 
 
             <div class="row serice_space_div">
 
 
                 <div class="col-12 col-md-8   service_text_padding">
-                <h3>Step 1: Implant Placement</h3>
-            <p>A titanium post is surgically placed into the jawbone, acting as a strong foundation for the replacement tooth.</p>
+                    <h3>Step 1: Implant Placement</h3>
+                    <p>A titanium post is surgically placed into the jawbone, acting as a strong foundation for the replacement tooth.</p>
 
-          
+
                 </div>
 
                 <div class="col-12 col-md-4 service_text_padding_img  ">
@@ -56,10 +57,10 @@
 
                 </div>
                 <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                <h3>Step 2: Healing and Osseointegration</h3>
-            <p>The implant fuses with the jawbone over a few months, ensuring stability and strength.</p>
+                    <h3>Step 2: Healing and Osseointegration</h3>
+                    <p>The implant fuses with the jawbone over a few months, ensuring stability and strength.</p>
 
-           
+
                 </div>
             </div>
 
@@ -71,8 +72,8 @@
 
                 <div class="col-12 col-md-8 service_text_padding">
 
-                <h3>Step 3: Crown Attachment</h3>
-            <p>A custom-made dental crown is fixed onto the implant, restoring function and aesthetics.</p>
+                    <h3>Step 3: Crown Attachment</h3>
+                    <p>A custom-made dental crown is fixed onto the implant, restoring function and aesthetics.</p>
 
 
 
@@ -138,6 +139,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->

@@ -17,7 +17,12 @@
     </div>
 </div>
 
+
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
+
 <section class="vs-service-wrapper space-top space-md-bottom">
+
+
     <div class="container">
 
         <h1 class="text-center mb-5">
@@ -106,7 +111,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                     <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_2.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_2_image.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -133,6 +138,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->

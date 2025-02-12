@@ -25,9 +25,9 @@
  <section class="vs-contact-wrapper vs-contact-layout1 space-top space-md-bottom">
      <div class="container">
          <div class="row gx-60 align-items-center">
-             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+             <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.3s ">
               
-                     <form action="contactform.php" method="post" role="form" class="php-email-form"   data-bg-color="#f3f6f7">
+                     <form action="contactform.php" method="post" role="form" class="php-email-form p-5 "    data-bg-color="#f3f6f7">
                         
                          <div class="row">
                              <div class="form-title  ">

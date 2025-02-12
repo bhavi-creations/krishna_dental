@@ -5460,16 +5460,21 @@ textarea.form-control.is-invalid {
   background: #27477d;
 }
 
+.header_layout_top{
+  background: #ff6600 !important;
+
+}
+
 .header-top-eight {
-  padding: 23px 0 18px;
+  padding: 10px 0 10px;
   border-bottom: 1px solid #42598B;
 }
 
 .login-btn-eight .register-btn {
   color: var(--white-color);
   font-family: var(--title-font);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
 }
 .login-btn-eight .register-btn img {
   margin-right: 10px;
@@ -5548,8 +5553,8 @@ textarea.form-control.is-invalid {
 .header-top-info-eight li {
   color: var(--white-color);
   font-family: var(--title-font);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19027,4 +19032,47 @@ background-color: #94beeb;
 .arrowmark_right{
   margin-top:8px;
   margin-left: 5px;
+}
+
+
+
+.special_teeth{
+  margin-left: -150px !important;
+  margin-top: -350px;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: -120px;
+  margin-right: 0px;
+}
+
+.cleaning_teeth{
+  width: 20%;
+}
+
+ 
+.special_teeth_service {
+  position: absolute;
+  left: 0; /* Stick to the left */
+  top: 90%; /* Adjust vertical positioning */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: -1; /* Place behind other content */
+  width: 25%; /* Adjust width as needed */
+  max-height: 100vh; /* Keep it within viewport */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.special_teeth_edge{
+  position: absolute;
+  left: 0; /* Stick to the left */
+  top:  300%; /* Adjust vertical positioning */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: -1; /* Place behind other content */
+  width: 100%; /* Adjust width as needed */
+  max-height: 100vh; /* Keep it within viewport */
+  object-fit: cover; /* Maintain aspect ratio */
 }

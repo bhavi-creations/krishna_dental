@@ -16,6 +16,7 @@
         </div>
     </div>
 </div>
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
@@ -137,6 +138,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->

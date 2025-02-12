@@ -17,18 +17,19 @@
     </div>
 </div>
 
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
-        Dental Veneers in Rajahmundry – Transform Your Smile with Precision</h1>  
+            Dental Veneers in Rajahmundry – Transform Your Smile with Precision</h1>
 
 
-       
+
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-        At Krishna Dental Cure, we offer high-quality dental veneers in Rajahmundry to enhance your smile by correcting discoloration, chips, and minor misalignment.</p>  
+            At Krishna Dental Cure, we offer high-quality dental veneers in Rajahmundry to enhance your smile by correcting discoloration, chips, and minor misalignment.</p>
 
 
 
@@ -36,8 +37,8 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-            <h3>Step 1: Consultation and Tooth Preparation</h3>  
-<p>We assess your teeth and remove a thin enamel layer to prepare the surface for veneer placement.</p>  
+                <h3>Step 1: Consultation and Tooth Preparation</h3>
+                <p>We assess your teeth and remove a thin enamel layer to prepare the surface for veneer placement.</p>
 
             </div>
 
@@ -55,10 +56,10 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-             
 
-<h3>Step 2: Custom Veneer Fabrication</h3>  
-<p>Impressions are taken, and custom veneers are crafted to match your tooth shape, color, and aesthetics.</p>  
+
+                <h3>Step 2: Custom Veneer Fabrication</h3>
+                <p>Impressions are taken, and custom veneers are crafted to match your tooth shape, color, and aesthetics.</p>
 
             </div>
         </div>
@@ -71,9 +72,9 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-            
-<h3>Step 3: Bonding and Final Adjustments</h3>  
-<p>The veneers are securely bonded to your teeth, ensuring a natural appearance and long-lasting durability.</p>  
+
+                <h3>Step 3: Bonding and Final Adjustments</h3>
+                <p>The veneers are securely bonded to your teeth, ensuring a natural appearance and long-lasting durability.</p>
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
@@ -136,6 +137,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->

@@ -16,19 +16,20 @@
         </div>
     </div>
 </div>
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
-            
-        Orthodontic Treatment in Rajahmundry <br> Perfectly Aligned Teeth for a Confident Smile</h1>  
 
-      
+            Orthodontic Treatment in Rajahmundry <br> Perfectly Aligned Teeth for a Confident Smile</h1>
+
+
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-        At Krishna Dental Cure, we offer expert orthodontic treatment in Rajahmundry to correct misaligned teeth and jaw issues, improving both aesthetics and function.</p>  
+            At Krishna Dental Cure, we offer expert orthodontic treatment in Rajahmundry to correct misaligned teeth and jaw issues, improving both aesthetics and function.</p>
 
 
 
@@ -37,8 +38,8 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-            <h3>Step 1: Consultation and Treatment Planning</h3>  
-<p>Our specialists assess your teeth alignment and bite to recommend the best orthodontic solution, such as braces or aligners.</p>  
+                <h3>Step 1: Consultation and Treatment Planning</h3>
+                <p>Our specialists assess your teeth alignment and bite to recommend the best orthodontic solution, such as braces or aligners.</p>
 
             </div>
 
@@ -56,9 +57,9 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-        
-<h3>Step 2: Braces or Aligner Placement</h3>  
-<p>Customized braces or clear aligners are fitted to gradually shift teeth into the desired position for a straight smile.</p>  
+
+                <h3>Step 2: Braces or Aligner Placement</h3>
+                <p>Customized braces or clear aligners are fitted to gradually shift teeth into the desired position for a straight smile.</p>
 
 
 
@@ -73,8 +74,8 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-            <h3>Step 3: Regular Adjustments and Retention</h3>  
-<p>Periodic check-ups ensure proper progress. After treatment, retainers help maintain your newly aligned smile.</p>  
+                <h3>Step 3: Regular Adjustments and Retention</h3>
+                <p>Periodic check-ups ensure proper progress. After treatment, retainers help maintain your newly aligned smile.</p>
 
 
             </div>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="team-card">
-                    <div class="team-head">
+                        <div class="team-head">
                             <img src="assets/img/service_sliders/krishnadentacure_Orthodontic_Treatment_2.png" alt="Team Area" class="w-100">
                         </div>
 
@@ -116,7 +117,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="team-card">
-                    <div class="team-head">
+                        <div class="team-head">
                             <img src="assets/img/service_sliders/krishnadentacure_Orthodontic_Treatment_3.png" alt="Team Area" class="w-100">
                         </div>
 
@@ -124,7 +125,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="team-card">
-                    <div class="team-head">
+                        <div class="team-head">
                             <img src="assets/img/service_sliders/krishnadentacure_Orthodontic_Treatment_4.png" alt="Team Area" class="w-100">
                         </div>
 
@@ -136,6 +137,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->

@@ -16,19 +16,20 @@
         </div>
     </div>
 </div>
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
-            
 
-        Fluoride Application & Dental Sealant in Rajahmundry – Protect Your Teeth</h1> 
+
+            Fluoride Application & Dental Sealant in Rajahmundry – Protect Your Teeth</h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
 
-        At Krishna Dental Cure, we provide fluoride applications and dental sealants in Rajahmundry to strengthen teeth and prevent cavities, especially in children.</p>  
+            At Krishna Dental Cure, we provide fluoride applications and dental sealants in Rajahmundry to strengthen teeth and prevent cavities, especially in children.</p>
 
 
 
@@ -36,8 +37,8 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-            <h3>Step 1: Teeth Cleaning and Preparation</h3>  
-<p>We clean and dry the teeth to ensure the fluoride and sealant adhere properly.</p>  
+                <h3>Step 1: Teeth Cleaning and Preparation</h3>
+                <p>We clean and dry the teeth to ensure the fluoride and sealant adhere properly.</p>
 
 
             </div>
@@ -56,8 +57,8 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-            <h3>Step 2: Fluoride and Sealant Application</h3>  
-<p>A fluoride gel is applied to strengthen enamel, followed by a protective sealant on molars.</p>  
+                <h3>Step 2: Fluoride and Sealant Application</h3>
+                <p>A fluoride gel is applied to strengthen enamel, followed by a protective sealant on molars.</p>
 
 
 
@@ -71,8 +72,8 @@
 
 
             <div class="col-12 col-md-8 service_text_padding">
-            <h3>Step 3: Drying and Final Check</h3>  
-<p>The fluoride and sealant are set using a curing light, ensuring long-lasting protection.</p>  
+                <h3>Step 3: Drying and Final Check</h3>
+                <p>The fluoride and sealant are set using a curing light, ensuring long-lasting protection.</p>
 
 
             </div>
@@ -137,6 +138,7 @@
 
     </div>
 </section>
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 

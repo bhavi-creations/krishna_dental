@@ -64,12 +64,7 @@
     <div class="preloader  ">
         <button class="vs-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
-            <svg width="88px" height="108px" viewBox="0 0 54 64">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <path class="beat-loader" d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2" stroke-width="2"></path>
-                </g>
-            </svg>
+            <img src="assets/img/logo/krishnadentacure_logo.png" alt="">
         </div>
     </div>
 
@@ -180,7 +175,7 @@
     ==============================-->
     <header class="header-wrapper header-layout8">
         <!-- Header Top -->
-        <div class="header-top-eight d-none d-lg-block">
+        <div class="header-top-eight d-none d-lg-block  header_layout_top">
             <div class="container-style8">
                 <div class="row justify-content-center justify-content-xl-between">
                     <div class="col-lg-3">
@@ -246,34 +241,34 @@
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pain Relief</a>
                                                     <ul>
-                                                        <li><a href="root.php">Root Canal Treatment </a></li>
-                                                        <li><a href="wisdom.php">Wisdom Tooth Removal </a></li>
+                                                        <li><a href="root.php"><img src="assets/img/icons/root-canal.png" alt=""> Root Canal Treatment </a></li>
+                                                        <li><a href="wisdom.php"><img src="assets/img/icons/wisdom-tooth.png" alt=""> Wisdom Tooth Removal </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Preventive Care</a>
                                                     <ul>
-                                                        <li><a href="breath.php">Bad Breath Treatment </a></li>
-                                                        <li><a href="gum.php">Gum Treatment </a></li>
-                                                        <li><a href="cleaning.php">Teeth Cleaning </a></li>
+                                                        <li><a href="breath.php"><img src="assets/img/icons/bad-breath.png" alt=""> Bad Breath Treatment </a></li>
+                                                        <li><a href="gum.php"><img src="assets/img/icons/gum-treatment.png" alt=""> Gum Treatment </a></li>
+                                                        <li><a href="cleaning.php"><img src="assets/img/icons/dental-cleaning.png" alt=""> Teeth Cleaning </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Cosmetic Treatment</a>
                                                     <ul>
-                                                        <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
-                                                        <li><a href="crown.php">Dental Crown & Bridge </a></li>
-                                                        <li><a href="veneers.php">Dental Veneers </a></li>
-                                                        <li><a href="smile.php">Smile Makeover </a></li>
-                                                        <li><a href="whitening.php">Teeth Whitening </a></li>
-                                                        <li><a href="invisaliners.php"> Invisible Aligners</a></li>
+                                                        <li><a href="orthodontic.php"><img src="assets/img/icons/braces.png" alt=""> Orthodontic Treatment</a></li>
+                                                        <li><a href="crown.php"><img src="assets/img/icons/crown.png" alt=""> Dental Crown & Bridge </a></li>
+                                                        <li><a href="veneers.php"><img src="assets/img/icons/veneer.png" alt=""> Dental Veneers </a></li>
+                                                        <li><a href="smile.php"><img src="assets/img/icons/smile.png" alt=""> Smile Makeover </a></li>
+                                                        <li><a href="whitening.php"><img src="assets/img/icons/tooth-whitening.png" alt=""> Teeth Whitening </a></li>
+                                                        <li><a href="invisaliners.php"><img src="assets/img/icons/retainer.png" alt="">  Invisible Aligners</a></li>
 
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
                                                     <ul>
-                                                        <li><a href="implents.php">Dental Implants </a></li>
-                                                        <li><a href="dentures.php">Dentures </a></li>
-                                                        <li><a href="sealant.php">Fluoride Application and Dental Sealant </a></li>
-                                                        <li><a href="fullmouth.php">Full Mouth Rehabilitation Treatment </a></li>
+                                                        <li><a href="implents.php"> <img src="assets/img/icons/dental-implant.png" alt="">     Dental Implants </a></li>
+                                                        <li><a href="dentures.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
+                                                        <li><a href="sealant.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
+                                                        <li><a href="fullmouth.php"><img src="assets/img/icons/face.png" alt=""> Full Mouth Rehabilitation Treatment </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

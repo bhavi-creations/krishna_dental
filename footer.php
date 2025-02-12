@@ -1,6 +1,12 @@
  <!--==============================
 			Footer Area
 	==============================-->
+
+ <div class="image-container">
+     <img src="assets/img/special/cutie_cleaning.png" class="cleaning_teeth img-fluid" alt="">
+ </div>
+
+
  <footer class="footer-wrapper footer-layout7" data-bg-src="assets/img/bg/footer-bg-7-1.jpg">
      <div class="widget-area v7">
          <div class="container">
@@ -55,7 +61,7 @@
                                  <li><a href="cleaning.php">Teeth Cleaning </a></li>
                                  <li><a href="orthodontic.php">Orthodontic Treatment</a></li>
                                  <li><a href="crown.php">Dental Crown & Bridge </a></li>
-                                 <li><a href="invisaliners.php">   Invisible Aligners</a></li>
+                                 <li><a href="invisaliners.php"> Invisible Aligners</a></li>
 
 
                              </ul>
@@ -84,55 +90,55 @@
              </div>
          </div>
      </div>
-   
-     
+
+
 
      <div
-        class="footer-area-bottom theme-bg"
-        style="background: var(--primary-200, #C9D5F5);">
-        <div class="container">
-            <div class="row pt-4">
-                <div class="col-md-6 col-12">
-                    <div class="footer-widget__copyright-info info-direction">
-                        <p class="last_text">
-                            <a
-                                href="terms.php"
-                                style="text-decoration: none; color:rgb(0, 0, 0); font-weight:bold;"><strong>  Terms & conditions :</strong>
-                            </a>
-                            <a
-                                href="privacy.php"
-                                style="text-decoration: none; color:black;  font-weight:bold;">
-                               <strong> Privacy & policy </strong> </a>
-                        </p>
-                    </div>
-                </div>
+         class="footer-area-bottom theme-bg"
+         style="background: var(--primary-200, #C9D5F5);">
+         <div class="container">
+             <div class="row pt-4">
+                 <div class="col-md-6 col-12">
+                     <div class="footer-widget__copyright-info info-direction">
+                         <p class="last_text">
+                             <a
+                                 href="terms.php"
+                                 style="text-decoration: none; color:rgb(0, 0, 0); font-weight:bold;"><strong> Terms & conditions :</strong>
+                             </a>
+                             <a
+                                 href="privacy.php"
+                                 style="text-decoration: none; color:black;  font-weight:bold;">
+                                 <strong> Privacy & policy </strong> </a>
+                         </p>
+                     </div>
+                 </div>
 
-                <div class="col-md-6 col-12 second_divv_end_brand">
-                    <div
-                        class="footer-widget__copyright-info info-direction d-flex flex-row justify-content-end align-items-center">
-                        <a
-                            href="https://bhavicreations.com/"
-                            target="_blank"
-                            style="
+                 <div class="col-md-6 col-12 second_divv_end_brand">
+                     <div
+                         class="footer-widget__copyright-info info-direction d-flex flex-row justify-content-end align-items-center">
+                         <a
+                             href="https://bhavicreations.com/"
+                             target="_blank"
+                             style="
                     text-decoration: none;
                     color:#1E1E1E;
                     font-weight:bold;
                     display: flex;
                     align-items: center;
                   ">
-                            <p class="mini_text last_text mb-0" style="color: black;"><strong> Branding By @ </strong></p>
-                            <img
-                                src="assets/img/bhavi_logo/Bhavi_Branding_Stamp.png"
-                                class="img-fluid brand_image"
-                                alt="" />
-                        </a>
-                    </div>
-                </div>
+                             <p class="mini_text last_text mb-0" style="color: black;"><strong> Branding By @ </strong></p>
+                             <img
+                                 src="assets/img/bhavi_logo/Bhavi_Branding_Stamp.png"
+                                 class="img-fluid brand_image"
+                                 alt="" />
+                         </a>
+                     </div>
+                 </div>
 
 
-            </div>
-        </div>
-    </div>
+             </div>
+         </div>
+     </div>
  </footer>
 
  <!--********************************
@@ -144,9 +150,9 @@
  <a href="#" class="scrollToTop scroll-bottom  style2"><i class="fas fa-arrow-alt-up"></i></a>
 
  <a href="https://api.whatsapp.com/send?phone=9246658770" style="color: #fff;" class="whatsapp-link"
-    target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
+     target="_blank">
+     <i class="fab fa-whatsapp"></i>
+ </a>
 
  <!--==============================
         All Js File

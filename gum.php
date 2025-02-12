@@ -16,18 +16,19 @@
         </div>
     </div>
 </div>
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
-            
-        Gum Treatment in Rajahmundry <br> Healthy Gums for a Stronger Smile
+
+            Gum Treatment in Rajahmundry <br> Healthy Gums for a Stronger Smile
         </h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-        At Krishna Dental Cure, we offer advanced gum treatment in Rajahmundry to prevent and treat gum disease. Our expert care ensures healthier gums, reducing swelling, bleeding, and discomfort.
+            At Krishna Dental Cure, we offer advanced gum treatment in Rajahmundry to prevent and treat gum disease. Our expert care ensures healthier gums, reducing swelling, bleeding, and discomfort.
         </p>
 
 
@@ -35,8 +36,8 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-            <h3>Step 1: Diagnosis and Deep Cleaning</h3>  
-<p>We examine your gums and perform scaling and root planing to remove plaque, tartar, and bacteria from gum pockets.</p>  
+                <h3>Step 1: Diagnosis and Deep Cleaning</h3>
+                <p>We examine your gums and perform scaling and root planing to remove plaque, tartar, and bacteria from gum pockets.</p>
 
 
             </div>
@@ -55,8 +56,8 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-            <h3>Step 2: Medication and Treatment</h3>  
-<p>Antibiotics or medicated rinses may be prescribed to reduce infection and inflammation, promoting faster healing.</p>  
+                <h3>Step 2: Medication and Treatment</h3>
+                <p>Antibiotics or medicated rinses may be prescribed to reduce infection and inflammation, promoting faster healing.</p>
 
 
             </div>
@@ -70,9 +71,9 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-         
-<h3>Step 3: Long-Term Gum Care</h3>  
-<p>We provide guidance on oral hygiene, follow-up visits, and lifestyle changes to maintain healthy gums and prevent future issues.</p>  
+
+                <h3>Step 3: Long-Term Gum Care</h3>
+                <p>We provide guidance on oral hygiene, follow-up visits, and lifestyle changes to maintain healthy gums and prevent future issues.</p>
 
 
             </div>
@@ -138,6 +139,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->
