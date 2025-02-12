@@ -397,7 +397,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp need_center_part" data-wow-delay="400ms">
                 <div class="test-img7">
-                    <img src="assets/img/about/krishnadentacure_reviews.jpeg" alt="">
+                    <img src="assets/img/about/krishnadentacure_reviews.png" alt="">
 
                 </div>
             </div>
@@ -605,7 +605,7 @@
                 <div class="swiper-slide"> <!-- Swiper Slide -->
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. B Ratna Vineela</a></h4>
@@ -617,7 +617,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. B Sai Sruthi</a></h4>
@@ -629,7 +629,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. G Niharika</a></h4>
@@ -641,7 +641,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. Jyothsna Kalepu</a></h4>
@@ -653,7 +653,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. Malathi Chakravarthy</a></h4>
@@ -664,7 +664,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. M Ganesh</a></h4>
@@ -675,7 +675,7 @@
                 <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
-                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.jpg" alt="">
+                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#">Dr. R. SriLekhya</a></h4>

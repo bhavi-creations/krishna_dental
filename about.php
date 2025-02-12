@@ -32,7 +32,7 @@
             <div class="col-lg-6 mb-40 mb-lg-0">
                 <div class="vs-surface wow" data-wow-delay="0.3s">
                     <div class="about-img3 position-relative">
-                        <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_image_building_hospital.webp" alt="About Image" class="w-100">
+                        <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_image_building_hospital.png" alt="About Image" class="w-100">
 
                         <!-- <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
@@ -161,7 +161,7 @@
                 <div class="col-xl-8">
                     <div class="vs-accordion accordion accordion-style2" id="vsaccordion">
                     
-                         <img src="assets/img/about/krishnadentacure-team.jpg" class='img-fluid' alt="">
+                         <img src="assets/img/about/krishnadentacure-team.png" class='img-fluid' alt="">
                     </div>
                 </div>
             </div>

@@ -192,7 +192,11 @@
                         <div class="head-top-links-eight">
                             <ul class="header-top-info-eight list-unstyled mb-0">
 
-                                <li><i class="far fa-map-marker-alt"></i>29-33-9/10, Devi Chowk Circle, Jampet, Rajamahendravaram</li>
+                                <li><i class="far fa-map-marker-alt"></i>Krishna denta cure
+                                    29-33-9/10
+                                    Alluri Sita rama raju junction
+                                    Devichowk
+                                    Rajahmundry</li>
                             </ul>
                             <ul class="header-social-eight">
                                 <li>

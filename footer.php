@@ -11,7 +11,8 @@
                              <div class="footer-logo"><img src="assets/img/logo/krishnadentacure_logo_orginal.png" alt="logo"></div>
 
                              <p class="footer-text">
-                                 <i class="far fa-map-marker-alt"></i> 29-33-9/10, Devi Chowk Circle, near Alluri Sita Rama Raju Junction, Jampet, Rajamahendravaram, Andhra Pradesh 533104.
+                                 <i class="far fa-map-marker-alt"></i> Krishna denta cure, 29-33-9/10, Alluri Sita rama raju junction, Devichowk,
+                                 Rajahmundry
                              </p>
 
 
