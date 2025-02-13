@@ -10864,7 +10864,7 @@ blockquote cite:before {
   position: relative;
   --size-icon: 88px;
   padding-bottom: 60px;
-  margin-bottom: 30px;
+  
 }
 .service-thumb .sr-icon {
   display: inline-block;
@@ -10891,7 +10891,7 @@ blockquote cite:before {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom:-150px;
   -webkit-box-shadow: 0px 15px 42.75px 2.25px rgba(39, 71, 125, 0.07);
           box-shadow: 0px 15px 42.75px 2.25px rgba(39, 71, 125, 0.07);
   background-color: var(--white-color);
@@ -10902,6 +10902,43 @@ blockquote cite:before {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+@media (min-width:992px) {
+  .service-thumb .sr-body {
+    
+    bottom:-135px;
+  
+  }
+  .service-thumb {
+    
+    margin-bottom:230px;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .service-thumb .sr-body {
+    
+    bottom:-55px;
+  
+  }
+  .service-thumb {
+    
+    margin-bottom:130px;
+  }
+}
+
+@media (max-width:768px) {
+  .service-thumb .sr-body {
+    
+    bottom:-50px;
+  
+  }
+  .service-thumb {
+ 
+    margin-bottom:130px;
+  }
 }
 .service-thumb .sr-title {
   -webkit-transition: all ease 0.4s;
