@@ -19103,6 +19103,17 @@ background-color: #94beeb;
   object-fit: cover; /* Maintain aspect ratio */
 }
 
+.special_teeth_service_left {
+  position: absolute;
+  left: 0; /* Stick to the left */
+  top: 230%; /* Adjust vertical positioning */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: -1; /* Place behind other content */
+  width: 15%; /* Adjust width as needed */
+  max-height: 100vh; /* Keep it within viewport */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
 .special_teeth_edge{
   position: absolute;
   left: 0; /* Stick to the left */
@@ -19110,6 +19121,17 @@ background-color: #94beeb;
   transform: translateY(-50%); /* Center vertically */
   z-index: -1; /* Place behind other content */
   width: 100%; /* Adjust width as needed */
+  max-height: 100vh; /* Keep it within viewport */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.special_teeth_edge_left{
+  position: absolute;
+  right: 0; /* Stick to the left */
+  top: 200%; /* Adjust vertical positioning */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: -1; /* Place behind other content */
+  width: 15%; /* Adjust width as needed */
   max-height: 100vh; /* Keep it within viewport */
   object-fit: cover; /* Maintain aspect ratio */
 }

@@ -19,6 +19,7 @@
 
 
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
+<img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
@@ -92,6 +93,7 @@
 
     </div>
 </section>
+<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 
 <section class="vs-team-wrapper space-md-bottom">

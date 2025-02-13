@@ -17,18 +17,20 @@
     </div>
 </div>
 
+<img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
+<img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
-            
 
-        Full Mouth Rehabilitation in Rajahmundry – Restore Your Smile & Function</h1>  
+
+            Full Mouth Rehabilitation in Rajahmundry – Restore Your Smile & Function</h1>
 
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-        At Krishna Dental Cure, we offer full mouth rehabilitation in Rajahmundry to restore damaged teeth, improve bite alignment, and enhance oral health.</p>  
+            At Krishna Dental Cure, we offer full mouth rehabilitation in Rajahmundry to restore damaged teeth, improve bite alignment, and enhance oral health.</p>
 
 
 
@@ -37,8 +39,8 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-            <h3>Step 1: Comprehensive Oral Evaluation</h3>  
-<p>We assess teeth, gums, and jaw function to create a personalized treatment plan.</p>  
+                <h3>Step 1: Comprehensive Oral Evaluation</h3>
+                <p>We assess teeth, gums, and jaw function to create a personalized treatment plan.</p>
 
 
             </div>
@@ -57,8 +59,8 @@
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-            <h3>Step 2: Restorative and Cosmetic Procedures</h3>  
-<p>Treatments like crowns, bridges, implants, or veneers are done to rebuild the smile.</p>  
+                <h3>Step 2: Restorative and Cosmetic Procedures</h3>
+                <p>Treatments like crowns, bridges, implants, or veneers are done to rebuild the smile.</p>
 
 
             </div>
@@ -72,9 +74,9 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-            
-<h3>Step 3: Final Adjustments and Smile Enhancement</h3>  
-<p>We ensure proper bite alignment and aesthetics for a long-lasting, confident smile.</p>  
+
+                <h3>Step 3: Final Adjustments and Smile Enhancement</h3>
+                <p>We ensure proper bite alignment and aesthetics for a long-lasting, confident smile.</p>
 
 
             </div>
@@ -91,6 +93,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
@@ -139,6 +142,7 @@
     </div>
 </section>
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 
 <!-- Swiper JS Initialization -->
