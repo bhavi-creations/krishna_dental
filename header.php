@@ -62,7 +62,7 @@
 
 
     <div class="preloader  ">
-        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+      
         <div class="preloader-inner">
             <img src="assets/img/logo/krishnadentacure_logo.png" alt="">
         </div>
