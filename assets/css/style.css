@@ -19125,6 +19125,12 @@ background-color: #94beeb;
   object-fit: cover; /* Maintain aspect ratio */
 }
 
+@media (max-width:922px) {
+  .special_teeth_edge{
+display: none;
+  }
+}
+
 .special_teeth_edge_left{
   position: absolute;
   right: 0; /* Stick to the left */
