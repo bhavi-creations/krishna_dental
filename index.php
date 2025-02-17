@@ -116,7 +116,7 @@
                 <div class="about-img-seven">
                     <img src="assets/img/about/krishandentalcure_staff_and_hospital.png" alt="">
                     <div class="about-exp-box top-animation">
-                        <h2>+30</h2>
+                        <h2>26+</h2>
                         <span>Years Experience</span>
                     </div>
                 </div>

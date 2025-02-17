@@ -36,7 +36,7 @@
 
                         <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
-                                <span class="counter">30</span>+
+                                <span class="counter">26</span>+
                             </div>
                             <p class="exp-text text-title mb-0">Years of Experience</p>
                         </div>
