@@ -64,7 +64,7 @@
     <div class="preloader  ">
       
         <div class="preloader-inner">
-            <img src="assets/img/logo/krishna_new_logo-removebg-preview.png" class="img-fluid" alt="">
+            <img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="">
         </div>
     </div>
 
