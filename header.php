@@ -64,7 +64,7 @@
     <div class="preloader  ">
       
         <div class="preloader-inner">
-            <img src="assets/img/logo/krishnadentacure_logo.png" alt="">
+            <img src="assets/img/logo/krishna_new_logo-removebg-preview.png" class="img-fluid" alt="">
         </div>
     </div>
 
@@ -78,7 +78,7 @@
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <!-- <a href="index.php"><img src="assets/img/logo-mobile.svg" alt="Medixi"></a> -->
-                <a href="index.php"><img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="Logo"></a>
+                <a href="index.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
 
             </div>
 
@@ -218,7 +218,7 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header8-logo">
-                                    <a href="index.php"><img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="Logo"></a>
+                                    <a href="index.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
 
                                 </div>
                             </div>

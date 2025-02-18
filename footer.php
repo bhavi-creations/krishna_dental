@@ -14,7 +14,7 @@
                  <div class=" col-md-8  col-lg-3  wow fadeInUp" data-wow-delay="400ms">
                      <div class="widget footer-widget">
                          <div class="vs-widget-about-seven">
-                             <div class="footer-logo"><img src="assets/img/logo/krishnadentacure_logo_orginal.png" alt="logo"></div>
+                             <div class="footer-logo"><img src="assets/img/logo/krishna_new_logo-removebg-preview.png" alt="logo"></div>
 
                              <p class="footer-text">
                                  <i class="far fa-map-marker-alt"></i> Krishna denta cure, 29-33-9/10, Alluri Sita rama raju junction, Devichowk,
