@@ -98,14 +98,17 @@
 
 
 
-<video autoplay muted loop playsinline class="banner-video">
+<!-- <video autoplay muted loop playsinline class="banner-video">
     <source src="assets/img/about/KrishnaDentaCure-Banner-Video.mp4" type="video/mp4">
     Your browser does not support the video tag.
+</video> -->
+
+
+
+<video autoplay muted loop playsinline class="banner-video">
+    <source src="assets/img/about/new_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
 </video>
-
-
-
-
 
 
 <!-- about-section-seven -->
