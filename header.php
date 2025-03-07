@@ -6,8 +6,32 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>KrishnaDentaCure</title>
     <meta name="author" content="Vecuro">
-    <meta name="description" content="Medixi - Medical and Health Care HTML Template">
-    <meta name="keywords" content="Medixi - Medical and Health Care HTML Template">
+    <meta name="description" content="Krishna Denta Cure, led by Dr. B. Suresh Kumar, offers comprehensive dental services in Rajahmundry, including implants, orthodontics, and cosmetic dentistry, utilizing advanced technology for painless treatments.">
+    <meta name="keywords" content="Best dental clinic in Rajahmundry
+Top dentist in Rajahmundry
+Krishna Denta Cure Rajahmundry
+Affordable dental treatment in Rajahmundry
+Best orthodontist in Rajahmundry
+Dental implants in Rajahmundry
+Root canal treatment in Rajahmundry
+Cosmetic dentistry in Rajahmundry
+Advanced dental care in Rajahmundry
+Best smile makeover clinic in Rajahmundry
+Pediatric dentist in Rajahmundry
+Gum disease treatment in Rajahmundry
+Tooth extraction in Rajahmundry
+Dental bridge and crown in Rajahmundry
+Invisalign treatment in Rajahmundry
+Teeth whitening services in Rajahmundry
+Which is the best dental clinic near me in Rajahmundry?
+Affordable braces treatment in Rajahmundry
+Painless root canal treatment near me
+Best dental hospital in Rajahmundry for implants
+How much does a dental implant cost in Rajahmundry?
+Emergency dentist in Rajahmundry for tooth pain
+Best laser dentistry clinic in Rajahmundry
+Dental clinic near Devi Chowk, Rajahmundry
+Best dental specialist in Rajahmundry">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -62,7 +86,7 @@
 
 
     <div class="preloader  ">
-      
+
         <div class="preloader-inner">
             <img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="">
         </div>
@@ -259,13 +283,13 @@
                                                         <li><a href="veneers.php"><img src="assets/img/icons/veneer.png" alt=""> Dental Veneers </a></li>
                                                         <li><a href="smile.php"><img src="assets/img/icons/smile.png" alt=""> Smile Makeover </a></li>
                                                         <li><a href="whitening.php"><img src="assets/img/icons/tooth-whitening.png" alt=""> Teeth Whitening </a></li>
-                                                        <li><a href="invisaliners.php"><img src="assets/img/icons/retainer.png" alt="">  Invisible Aligners</a></li>
+                                                        <li><a href="invisaliners.php"><img src="assets/img/icons/retainer.png" alt=""> Invisible Aligners</a></li>
 
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
                                                     <ul>
-                                                        <li><a href="implents.php"> <img src="assets/img/icons/dental-implant.png" alt="">     Dental Implants </a></li>
+                                                        <li><a href="implents.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
                                                         <li><a href="dentures.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
                                                         <li><a href="sealant.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
                                                         <li><a href="fullmouth.php"><img src="assets/img/icons/face.png" alt=""> Full Mouth Rehabilitation Treatment </a></li>
@@ -301,5 +325,70 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <?php
+        // Define hospital details dynamically
+        $hospital_name = "Krishna Denta Cure";
+        $hospital_url = "https://krishnadentacure.com/";
+        $hospital_address = [
+            "streetAddress" => "29-33-9/10, Devi Chowk Circle, near Alluri Sita Rama Raju Junction, Jampet",
+            "addressLocality" => "Rajamahendravaram",
+            "addressRegion" => "Andhra Pradesh",
+            "postalCode" => "533104",
+            "addressCountry" => "India"
+        ];
+        $hospital_phone = ["+91 92466 58770"];
+        $hospital_logo = "https://krishnadentacure.com/logo.png";
+        $hospital_description = "Krishna Denta Cure is a leading dental clinic in Rajamahendravaram, offering advanced treatments in orthodontics, implants, and cosmetic dentistry.";
+        $hospital_specialties = ["Dentistry", "Orthodontics", "Cosmetic Dentistry", "Implant Dentistry"];
+        $hospital_opening_hours = [
+            "Monday-Saturday" => "09:00-19:00",
+            "Sunday" => "Closed"
+        ];
+
+        // Convert opening hours to Schema.org format
+        $opening_hours_array = [];
+        foreach ($hospital_opening_hours as $day => $time) {
+            $opening_hours_array[] = "$day $time";
+        }
+
+        // Generate JSON-LD Schema Markup
+        $schema_data = [
+            "@context" => "https://schema.org",
+            "@type" => "DentalClinic",
+            "name" => $hospital_name,
+            "url" => $hospital_url,
+            "logo" => $hospital_logo,
+            "description" => $hospital_description,
+            "telephone" => $hospital_phone,
+            "address" => [
+                "@type" => "PostalAddress",
+                "streetAddress" => $hospital_address["streetAddress"],
+                "addressLocality" => $hospital_address["addressLocality"],
+                "addressRegion" => $hospital_address["addressRegion"],
+                "postalCode" => $hospital_address["postalCode"],
+                "addressCountry" => $hospital_address["addressCountry"]
+            ],
+            "medicalSpecialty" => $hospital_specialties,
+            "openingHours" => $opening_hours_array,
+            "founder" => [
+                "@type" => "Person",
+                "name" => "Dr. [Founder’s Name]",
+                "jobTitle" => "Chief Dental Surgeon",
+                "sameAs" => "https://krishnadentacure.com/about-doctor"
+            ],
+            "sameAs" => [
+                "https://www.facebook.com/KrishnaDentaCure",
+                "https://www.instagram.com/KrishnaDentaCure"
+            ],
+        ];
+
+        ?>
+        <script type="application/ld+json">
+            <?= json_encode($schema_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
+        </script>
     </header>
     <!-- End header-section -->

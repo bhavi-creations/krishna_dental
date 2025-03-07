@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /private/
+Allow: /
+
+Sitemap: https://krishnadentacure.com/sitemap.xml
