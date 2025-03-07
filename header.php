@@ -32,6 +32,9 @@ Emergency dentist in Rajahmundry for tooth pain
 Best laser dentistry clinic in Rajahmundry
 Dental clinic near Devi Chowk, Rajahmundry
 Best dental specialist in Rajahmundry">
+
+<link rel="canonical" href="https://krishnadentacure.com/">
+
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
