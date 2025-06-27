@@ -80,6 +80,94 @@ Best dental specialist in Rajahmundry">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are clear aligners and how do they work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clear aligners are transparent, custom-made trays designed to straighten your teeth gradually. They are a comfortable and discreet alternative to traditional braces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are clear aligners better than metal braces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clear aligners are removable, nearly invisible, and cause less discomfort. They’re especially preferred by adults and teens looking for a more aesthetic option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does clear aligner treatment take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatment usually takes 6 to 18 months, depending on the severity of misalignment. Regular check-ups at Krishna Denta Cure help ensure effective and timely results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are clear aligners painful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer clear aligner treatment in Rajahmundry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the best dentist in Rajahmundry for clear aligners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr. B. Suresh Kumar, with over 25 years of experience, is a trusted name in Rajahmundry for orthodontics and cosmetic dental treatments, including clear aligners."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose Krishna Denta Cure for dental care in Rajahmundry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is root canal treatment available at Krishna Denta Cure, Rajahmundry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment. With expert care and high patient satisfaction, we are widely recognized as one of the best dental hospitals in Rajahmundry for endodontic procedures."
+      }
+    }
+  ]
+}
+</script>
+
+
 </head>
 
 <body class="">

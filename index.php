@@ -823,4 +823,224 @@
 
 
 
+
+
+
+
+
+
+
+<section class="py-5">
+    <div class="container">
+
+        <h1 class="text-center">Frequently Ask Question (FAQ)</h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="accordion">
+                    <!-- Accordion 1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="faq_section">
+
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">What are clear aligners and how do they work?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Clear aligners are transparent, custom-made trays designed to straighten your teeth gradually. They are a comfortable and discreet alternative to traditional braces                        </div>
+                    </div>
+
+
+
+                    <div class="faq_section">
+
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Are clear aligners better than metal braces?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Yes. Clear aligners are removable, nearly invisible, and cause less discomfort. They’re especially preferred by adults and teens looking for a more aesthetic option                        </div>
+                    </div>
+
+
+
+
+                    <!-- Accordion 3 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">How long does clear aligner treatment take?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Treatment usually takes 6 to 18 months, depending on the severity of misalignment. Regular check-ups at Krishna Denta Cure help ensure effective and timely results                        </div>
+                    </div>
+
+                    <!-- Accordion 4 -->
+                   
+
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Is root canal treatment available at Krishna Denta Cure, Rajahmundry?
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment. With expert care and high patient satisfaction, we are widely recognized as one of the best dental hospitals in Rajahmundry for endodontic procedures                        </div>
+                    </div>
+                    <!-- Accordion 5 -->
+                    <!-- <div class="faq_section">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h2 class="faq_heading_section">Can cancer be prevented?
+                </h2>
+                <h2 class="accordion-icon">+</h2>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Not all cancers are preventable, but up to 30-50% of cases can be avoided through healthy lifestyle choices, regular screenings, vaccinations (like HPV), and avoiding carcinogens such as tobacco and processed foods
+                </p>
+              </div> 
+            </div>-->
+
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+
+                <div class="accordion">
+                    <!-- Accordion 1 -->
+
+                    <!-- Accordion 2 -->
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Do you offer clear aligner treatment in Rajahmundry?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction                        </div>
+                    </div>
+                    <!-- Accordion 2 -->
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Who is the best dentist in Rajahmundry for clear aligners?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Dr. B. Suresh Kumar, with over 25 years of experience, is a trusted name in Rajahmundry for orthodontics and cosmetic dental treatments, including clear aligners                        </div>
+                    </div>
+
+
+
+                    <!-- Accordion 3 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Why choose Krishna Denta Cure for dental care in Rajahmundry?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city                        </div>
+                    </div>
+                    <!-- Accordion 4 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Are clear aligners painful?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned                            </p>
+                        </div>
+                    </div>
+                    <!-- Accordion 5 -->
+                    <!-- <div class="faq_section">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h2 class="faq_heading_section"> Can cancer be cured if detected early?
+                </h2>
+                <h2 class="accordion-icon">+</h2>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Yes, many types of cancer can be effectively treated or even cured if detected at an early stage. Regular screenings, awareness of symptoms, and early intervention improve survival rates significantly
+                </p>
+              </div>
+            </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script>
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        content.classList.toggle("open");
+        icon.classList.toggle("rotate");
+
+        icon.textContent = content.classList.contains("open") ? "−" : "+";
+    }
+</script>
+
+
+
+
 <?php include 'footer.php'; ?>

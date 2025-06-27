@@ -93,52 +93,37 @@
 
 
 
-     <div
-         class="footer-area-bottom theme-bg"
-         style="background: var(--primary-200, #C9D5F5);">
+     <div class="footer-area-bottom theme-bg" style="background: var(--primary-200, #C9D5F5);">
          <div class="container">
              <div class="row pt-4">
                  <div class="col-md-6 col-12">
                      <div class="footer-widget__copyright-info info-direction">
                          <p class="last_text">
-                             <a
-                                 href="terms.php"
-                                 style="text-decoration: none; color:rgb(0, 0, 0); font-weight:bold;"><strong> Terms & conditions :</strong>
+                             <a href="terms.php" style="text-decoration: none; color:rgb(0, 0, 0); font-weight:bold;">
+                                 <strong> Terms & conditions :</strong>
                              </a>
-                             <a
-                                 href="privacy.php"
-                                 style="text-decoration: none; color:black;  font-weight:bold;">
-                                 <strong> Privacy & policy </strong> </a>
+                             <a href="privacy.php" style="text-decoration: none; color:black; font-weight:bold;">
+                                 <strong> Privacy & policy </strong>
+                             </a>
                          </p>
                      </div>
                  </div>
 
-                 <div class="col-md-6 col-12 second_divv_end_brand">
-                     <div
-                         class="footer-widget__copyright-info info-direction d-flex flex-row justify-content-end align-items-center">
-                         <a
-                             href="https://bhavicreations.com/"
-                             target="_blank"
-                             style="
-                    text-decoration: none;
-                    color:#1E1E1E;
-                    font-weight:bold;
-                    display: flex;
-                    align-items: center;
-                  ">
-                             <p class="mini_text last_text mb-0" style="color: black;"><strong> Branding By @ </strong></p>
-                             <img
-                                 src="assets/img/bhavi_logo/Bhavi_Branding_Stamp.png"
-                                 class="img-fluid brand_image"
-                                 alt="" />
+                 <div class="col-md-6 col-12 " style="margin-top: -15px;">
+                     <div class="footer-widget__copyright-info info-direction d-flex justify-content-end justify-content-lg-center align-items-center">
+                         <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none; color:#1E1E1E; font-weight:bold; display: flex; align-items: center;">
+                             <p class="mini_text last_text mb-0 me-2" style="color: black; line-height: 1; font-size: 16px;">
+                                 <strong>Branding By @</strong>
+                             </p>
+                             <img src="assets/img/bhavi_logo/Bhavi_Branding_Stamp.png" alt="Brand Logo" style="height: 54px; width: auto;" />
                          </a>
                      </div>
                  </div>
-
-
              </div>
          </div>
      </div>
+
+
  </footer>
 
  <!--********************************
