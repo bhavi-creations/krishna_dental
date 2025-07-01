@@ -45,6 +45,7 @@
                                  <li><a href="blogs.php"> Blogs</a></li>
                                  <li><a href="contact.php"> Contact Us</a></li>
                                  <li><a href="appointment.php"> Appointment</a></li>
+                                 <li><a href="https://g.co/kgs/GfmdtLu" target="_blank"> Gmb</a></li>
                              </ul>
                          </div>
                      </div>
