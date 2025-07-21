@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
                             <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
@@ -125,7 +125,8 @@
                             <p class="fs-xs degi text-theme mb-2">Surgeon</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
+               
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">

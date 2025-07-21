@@ -33,7 +33,7 @@ Best laser dentistry clinic in Rajahmundry
 Dental clinic near Devi Chowk, Rajahmundry
 Best dental specialist in Rajahmundry">
 
-<link rel="canonical" href="https://krishnadentacure.com/">
+    <link rel="canonical" href="https://krishnadentacure.com/">
 
     <meta name="robots" content="INDEX,FOLLOW">
 
@@ -94,7 +94,7 @@ Best dental specialist in Rajahmundry">
 
 
 
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -165,7 +165,79 @@ Best dental specialist in Rajahmundry">
     }
   ]
 }
-</script>
+</script> -->
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": ["DentalClinic", "Dentist"],
+            "name": "Krishna Denta Cure",
+            "url": "https://krishnadentacure.com/",
+            "logo": "https://krishnadentacure.com/logo.png",
+            "description": "Krishna Denta Cure is a leading dental clinic in Rajamahendravaram, offering advanced treatments in orthodontics, implants, and cosmetic dentistry.",
+            "telephone": ["+91 92466 58770"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "29-33-9/10, Devi Chowk Circle, near Alluri Sita Rama Raju Junction, Jampet",
+                "addressLocality": "Rajamahendravaram",
+                "addressRegion": "Andhra Pradesh",
+                "postalCode": "533104",
+                "addressCountry": "India"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 17.0088626,
+                "longitude": 81.7762509
+            },
+            "medicalSpecialty": [
+                "Dentistry",
+                "Orthodontics",
+                "Cosmetic Dentistry",
+                "Implant Dentistry"
+            ],
+            "openingHours": [
+                "Monday-Saturday 09:00-19:00",
+                "Sunday Closed"
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Dr. D.V.S. Kiran Raju",
+                "jobTitle": "Chief Dental Surgeon",
+                "sameAs": "https://krishnadentacure.com/about-doctor"
+            },
+            "priceRange": "₹₹",
+            "sameAs": [
+                "https://www.facebook.com/KrishnaDentaCure",
+                "https://www.instagram.com/KrishnaDentaCure",
+                "https://g.co/kgs/MndBkhZ"
+            ]
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </head>
