@@ -23,9 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // ========== Handle Title Image ==========
-    $title_image_path = '';
+    $title_image_path = 'default.jpg';
     if (!empty($_FILES['title_image']['name'])) {
-        $title_image_directory = __DIR__ . "/../../uploads/photos/";
+        $title_image_directory = __DIR__ . "/../public/uploads/photos/"; // ✅ Correct path
 
         if (!is_dir($title_image_directory)) {
             mkdir($title_image_directory, 0777, true);
@@ -35,16 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $title_image_path = $title_image_name;
 
         if (!move_uploaded_file($_FILES['title_image']['tmp_name'], $title_image_directory . $title_image_name)) {
-            die("Error uploading title image.");
+            die("Error uploading title image. Path tried: " . $title_image_directory . $title_image_name);
         }
-    } else {
-        $title_image_path = 'default.jpg'; // default placeholder if no image uploaded
     }
 
     // ========== Handle Main Image ==========
-    $main_image_path = '';
+    $main_image_path = 'default.jpg';
     if (!empty($_FILES['main_image']['name'])) {
-        $main_image_directory = __DIR__ . "/../../uploads/photos/";
+        $main_image_directory = __DIR__ . "/../public/uploads/photos/"; // ✅ Correct path
 
         if (!is_dir($main_image_directory)) {
             mkdir($main_image_directory, 0777, true);
@@ -54,17 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $main_image_path = $main_image_name;
 
         if (!move_uploaded_file($_FILES['main_image']['tmp_name'], $main_image_directory . $main_image_name)) {
-            die("Error uploading main image.");
-            
+            die("Error uploading main image. Path tried: " . $main_image_directory . $main_image_name);
         }
-    } else {
-        $main_image_path = 'default.jpg'; // prevent NULL error
     }
 
     // ========== Handle Video ==========
     $video_path = '';
     if (!empty($_FILES['video']['name'])) {
-        $video_directory = __DIR__ . "/../uploads/videos/";
+        $video_directory = __DIR__ . "/../public/uploads/videos/"; // ✅ Correct path
 
         if (!is_dir($video_directory)) {
             mkdir($video_directory, 0777, true);
@@ -74,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $video_path = $video_name;
 
         if (!move_uploaded_file($_FILES['video']['tmp_name'], $video_directory . $video_name)) {
-            die("Error uploading video.");
+            die("Error uploading video. Path tried: " . $video_directory . $video_name);
         }
     }
 
