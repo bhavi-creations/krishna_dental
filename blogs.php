@@ -91,7 +91,7 @@ $result = $stmt->get_result();
           <?php
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-              $image_path = !empty($row['main_image']) ? "admin/uploads/photos/{$row['main_image']}" : "default_image.png";
+              $image_path = !empty($row['main_image']) ? "./admin/public/uploads/photos/{$row['main_image']}" : "default_image.png";
               echo "
                                     <div class='grid-item col-sm-12 col-lg-4 mb-5'>
                                         <div class='post-box card_bg_div_box'>

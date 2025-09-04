@@ -31,7 +31,7 @@ $conn->close();
         <!-- <div class="page-header bg-more-light tittle-image">
             <?php
             if (!empty($title_image)) {
-                $title_image_path = "./admin/uploads/photos/{$title_image}";
+                $title_image_path = "./admin/public/uploads/photos/{$title_image}";
                 echo "<img class='img-fluid img_sts' src='{$title_image_path}' style='width: 3000px;  ' alt='Title Image'>";
             } else {
                 echo "<img class='img-fluid img_sts' src='assets/images/title images2/Deep_vein_thrombosis_title_image_one_stop_vascular_solutions.webp' style='width: 3000px;' alt='Deep_vein_thrombosis_title_image_one_stop_vascular_solutions'>";
@@ -60,7 +60,7 @@ $conn->close();
                         }
                         // If no video, display the image
                         elseif (!empty($main_image)) {
-                            $main_image_path = "./admin/uploads/photos/{$main_image}";
+                            $main_image_path = "./admin/public/uploads/photos/{$main_image}";
                             echo "<img class='main-image img-fluid blog_main_img' src='{$main_image_path}'  alt='Main Image'>";
                         }
                         ?>
@@ -91,7 +91,7 @@ $conn->close();
 
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
-                                    $sidebar_image_path = !empty($row['main_image']) ? "./admin/uploads/photos/{$row['main_image']}" : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
+                                    $sidebar_image_path = !empty($row['main_image']) ? "./admin/public/uploads/photos/{$row['main_image']}" : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
                                     $title = strlen($row['title']) > 20 ? substr($row['title'], 0, 50) . '...' : $row['title'];
 
                                     echo "

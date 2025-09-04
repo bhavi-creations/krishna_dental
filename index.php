@@ -777,7 +777,7 @@
                     }
                     // If no video, display main image
                     elseif (!empty($main_image)) {
-                        $main_image_path = "./admin/uploads/photos/{$main_image}";
+                        $main_image_path = "../uploads/photos/{$main_image}";
                         echo "<img class='card-img-top img-fluid' src='{$main_image_path}' alt='Blog Image'>";
                     }
                     echo "<h5 class='card-title my-3'>" . htmlspecialchars($title) . "</h5>";
