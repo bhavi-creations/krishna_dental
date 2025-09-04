@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ========== Handle Main Image ==========
     $main_image_path = 'default.jpg';
     if (!empty($_FILES['main_image']['name'])) {
-        $main_image_directory = __DIR__ . "/../public/uploads/photos/"; // ✅ Correct path
+        $main_image_directory = __DIR__ . "/admin/public/uploads/photos/"; // ✅ Correct path
 
         if (!is_dir($main_image_directory)) {
             mkdir($main_image_directory, 0777, true);
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ========== Handle Video ==========
     $video_path = '';
     if (!empty($_FILES['video']['name'])) {
-        $video_directory = __DIR__ . "/../public/uploads/videos/"; // ✅ Correct path
+        $video_directory = __DIR__ . "/admin/uploads/videos/"; // ✅ Correct path
 
         if (!is_dir($video_directory)) {
             mkdir($video_directory, 0777, true);
