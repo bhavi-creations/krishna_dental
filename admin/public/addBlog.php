@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ========== Handle Title Image ==========
     $title_image_path = '';
     if (!empty($_FILES['title_image']['name'])) {
-        $title_image_directory = __DIR__ . "/../uploads/photos/";
+        $title_image_directory = __DIR__ . "/../../uploads/photos/";
 
         if (!is_dir($title_image_directory)) {
             mkdir($title_image_directory, 0777, true);
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ========== Handle Main Image ==========
     $main_image_path = '';
     if (!empty($_FILES['main_image']['name'])) {
-        $main_image_directory = __DIR__ . "/../uploads/photos/";
+        $main_image_directory = __DIR__ . "/../../uploads/photos/";
 
         if (!is_dir($main_image_directory)) {
             mkdir($main_image_directory, 0777, true);
@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (!move_uploaded_file($_FILES['main_image']['tmp_name'], $main_image_directory . $main_image_name)) {
             die("Error uploading main image.");
+            
         }
     } else {
         $main_image_path = 'default.jpg'; // prevent NULL error
