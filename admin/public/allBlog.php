@@ -72,7 +72,7 @@
                                 while ($row = $result->fetch_assoc()) {
                                     // ✅ Fix: Correct image path
                                     $image_path = (!empty($row['main_image']))
-                                        ? "uploads/photos/" . $row['main_image']
+                                        ? "/admin/public/uploads/photos/" . $row['main_image']
                                         : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
 
                                     echo "
