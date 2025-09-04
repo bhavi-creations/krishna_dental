@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ========== Handle Title Image ==========
     $title_image_path = '';
     if (!empty($_FILES['title_image']['name'])) {
-        $title_image_directory = __DIR__ . "../uploads/photos/";
+        $title_image_directory = __DIR__ . "/../uploads/photos/";
 
         if (!is_dir($title_image_directory)) {
             mkdir($title_image_directory, 0777, true);
