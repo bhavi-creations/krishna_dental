@@ -442,23 +442,30 @@ if ($blog_id > 0) {
 
 
                                 <div class="container">
-                                    <div class="row mb-3">
+                                    <div class="row mb-3 justify-content-center align-items-stretch">
+
                                         <?php if (!empty($blog['main_image'])): ?>
-                                            <div class="col-12 col-lg-6 mb-3 mb-md-0 text-center">
+                                            <div class="col-12 col-md-6 mb-3 text-center d-flex">
                                                 <img src="./admin/uploads/photos/<?php echo htmlspecialchars($blog['main_image']); ?>"
-                                                    alt="Main Image" class="img-fluid" style="max-height:200px; width:auto; object-fit:cover;">
+                                                    alt="Main Image"
+                                                    class="img-fluid rounded shadow-sm w-100"
+                                                    style="max-height: 300px; object-fit: cover;">
                                             </div>
                                         <?php endif; ?>
 
                                         <?php if (!empty($blog['video'])): ?>
-                                            <div class="col-12 col-lg-6 text-center  blog_video_section  ">
-                                                <video src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
-                                                    controls style="max-height:200px; width:auto; object-fit:cover;"></video>
-                                                <!-- controls style="max-height:200px; width:auto; object-fit:cover;"></video> -->
+                                            <div class="col-12 col-md-6 mb-3 text-center d-flex">
+                                                <video class="rounded shadow-sm w-100"
+                                                    src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
+                                                    controls
+                                                    style="max-height: 300px; object-fit: cover;">
+                                                </video>
                                             </div>
                                         <?php endif; ?>
+
                                     </div>
                                 </div>
+
 
 
 
@@ -971,25 +978,31 @@ if ($blog_id > 0) {
                                     <?php endif; ?>
                                 </div> -->
 
-                                <div class="container ">
-                                    <div class="row mb-3 px-3">
+                                <div class="container">
+                                    <div class="row mb-3 justify-content-center align-items-stretch">
+
                                         <?php if (!empty($blog['main_image'])): ?>
-                                            <div class="col-12 col-lg-6 mb-3 mb-md-0 text-center">
+                                            <div class="col-12 col-md-6 mb-3 text-center d-flex">
                                                 <img src="./admin/uploads/photos/<?php echo htmlspecialchars($blog['main_image']); ?>"
-                                                    alt="Main Image" class="img-fluid" style="max-height:200px; width:auto; object-fit:cover;">
+                                                    alt="Main Image"
+                                                    class="img-fluid rounded shadow-sm w-100"
+                                                    style="max-height: 300px; object-fit: cover;">
                                             </div>
                                         <?php endif; ?>
 
                                         <?php if (!empty($blog['video'])): ?>
-                                            <div class="col-12 col-lg-6 text-center  blog_video_section">
-                                                <video src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
-                                                    controls style="max-height:200px; width:auto; object-fit:cover;"></video>
-                                                <!-- controls style="max-height:200px; width:auto; object-fit:cover;"></video> -->
+                                            <div class="col-12 col-md-6 mb-3 text-center d-flex">
+                                                <video class="rounded shadow-sm w-100"
+                                                    src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
+                                                    controls
+                                                    style="max-height: 300px; object-fit: cover;">
+                                                </video>
                                             </div>
                                         <?php endif; ?>
-                                    </div>
 
+                                    </div>
                                 </div>
+
 
 
 
