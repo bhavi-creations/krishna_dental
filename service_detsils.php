@@ -1410,7 +1410,7 @@ if ($blog_id > 0) {
 
                     <div class=" col-md-6 blogs_side_branding ">
 
-                        <img src="./assets/img/service_side_image1.png" alt="" style="height:280px; width: 330px;">
+                        <img src="./assets/img/service_side_image1.png" alt="" class="img-fluid">
 
 
 

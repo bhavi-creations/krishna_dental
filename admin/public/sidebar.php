@@ -67,7 +67,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">COMMENTS</h6>
                 <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
-                <!-- <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> -->
+                 <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> 
             </div>
         </div>
     </li> -->
