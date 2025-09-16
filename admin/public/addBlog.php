@@ -11,23 +11,24 @@ function generateUniqueFileName($fileName)
 
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Check for existence of $_POST keys to avoid undefined index warnings
-    $blog_id = isset($_POST['id']) ? intval($_POST['id']) : 0;
-    $title = isset($_POST['title']) ? $_POST['title'] : '';
-    $main_content = isset($_POST['main_content']) ? $_POST['main_content'] : '';
-    $full_content = isset($_POST['full_content']) ? $_POST['full_content'] : '';
-    $service = isset($_POST['service']) ? $_POST['service'] : '';  // Capture selected service
+    // Collect inputs safely
+    $blog_id      = isset($_POST['id']) ? intval($_POST['id']) : 0;
+    $title        = isset($_POST['title']) ? trim($_POST['title']) : '';
+    $main_content = isset($_POST['main_content']) ? trim($_POST['main_content']) : '';
+    $full_content = isset($_POST['full_content']) ? trim($_POST['full_content']) : '';
+    $service      = isset($_POST['service']) ? trim($_POST['service']) : '';
 
-    // Ensure required fields are not empty
+    // Validate required fields
     if (empty($title) || empty($main_content) || empty($full_content) || empty($service)) {
         die("Error: Title, Main Content, Full Content, and Service cannot be empty.");
     }
 
-    // Handle file uploads for title image and main image
-    // Handle title image upload
+    // ------------------------
+    // Handle Title Image Upload
+    // ------------------------
     $title_image_path = '';
     if (!empty($_FILES['title_image']['name'])) {
-        $title_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/uploads/photos/";
+        $title_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
         if (!is_dir($title_image_directory)) {
             mkdir($title_image_directory, 0777, true);
         }
@@ -44,10 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Handle main image upload
+    // ------------------------
+    // Handle Main Image Upload
+    // ------------------------
     $main_image_path = '';
     if (!empty($_FILES['main_image']['name'])) {
-        $main_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/uploads/photos/";
+        $main_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
         if (!is_dir($main_image_directory)) {
             mkdir($main_image_directory, 0777, true);
         }
@@ -64,10 +67,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Handle video upload
+    // ------------------------
+    // Handle Video Upload
+    // ------------------------
     $video_path = '';
     if (!empty($_FILES['video']['name'])) {
-        $video_directory = $_SERVER['DOCUMENT_ROOT'] . "/uploads/videos/";
+        $video_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/videos/";
         if (!is_dir($video_directory)) {
             mkdir($video_directory, 0777, true);
         }
@@ -84,21 +89,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Prepare SQL statement based on whether it's an insert or update
+    // ------------------------
+    // Insert / Update Blog Post
+    // ------------------------
     if ($blog_id > 0) {
-        // Update existing blog post
-        $stmt = $conn->prepare("UPDATE blogs SET title = ?, main_content = ?, full_content = ?, title_image = ?, main_image = ?, video = ?, service = ? WHERE id = ?");
+        // Update existing blog
+        $stmt = $conn->prepare("UPDATE blogs 
+            SET title = ?, main_content = ?, full_content = ?, title_image = ?, main_image = ?, video = ?, service = ? 
+            WHERE id = ?");
         $stmt->bind_param("sssssssi", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service, $blog_id);
     } else {
-        // Insert new blog post
-        $stmt = $conn->prepare("INSERT INTO blogs (title, main_content, full_content, title_image, main_image, video, service, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
+        // Insert new blog
+        $stmt = $conn->prepare("INSERT INTO blogs 
+            (title, main_content, full_content, title_image, main_image, video, service, created_at) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
         $stmt->bind_param("sssssss", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service);
     }
 
-    // Execute the SQL statement
+    // Execute query
     if ($stmt->execute()) {
         echo "Blog post published/updated successfully!";
-        header("Location: allBlog.php");  // Redirect after successful submission
+        header("Location: allBlog.php"); 
         exit();
     } else {
         echo "Error: " . $stmt->error;
@@ -110,3 +121,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $conn->close();
+?>
