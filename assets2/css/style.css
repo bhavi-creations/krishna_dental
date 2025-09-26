@@ -6998,3 +6998,10 @@ margin-top: 100px !important;
 .comment_reply{
   background-color: red !important;
 }
+
+.ul-service-details-title,
+.ul-service-details-full-content,
+.ul-service-details-descr{
+  font-family: "Roboto", sans-serif !important;
+  font-size: 15px !important;
+}

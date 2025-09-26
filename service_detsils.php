@@ -364,12 +364,12 @@ if ($blog_id > 0) {
                             </h3> -->
 
                             <p style="font-size:18px; margin:5px 0; color:#444;">
-                                Clear Aligners
+                                Aligners
                             </p>
 
-                            <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
+                            <!-- <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
                                 Starting at <span style="color:#e63946;">₹9,999</span>
-                            </p>
+                            </p> -->
 
                             <!-- <strong>
                                 <a href="tel:+919290019948"
@@ -478,7 +478,7 @@ if ($blog_id > 0) {
 
                                 <!-- Full Content -->
                                 <?php if (!empty($blog['full_content'])): ?>
-                                    <div class="ul-service-details-full-content mt-3">
+                                    <div class="ul-service-details-full-content mt-3" id="service_full_content">
                                         <?php
                                         // Allow basic formatting tags: p, br, ul, ol, li, b, i, strong, em
                                         echo strip_tags($blog['full_content'], '<p><br><ul><ol><li><b><i><strong><em>');
@@ -900,13 +900,16 @@ if ($blog_id > 0) {
 
 
 
-                            <p style="font-size:18px; margin:5px 0; color:#444;">
+                            <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a>
+
+
+                            <!-- <p style="font-size:18px; margin:5px 0; color:#444;">
                                 krishnadental
                             </p>
 
                             <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
                                 Dental <span style="color:#e63946;">Hospital</span>
-                            </p>
+                            </p> -->
 
 
                         </div>
@@ -1437,12 +1440,12 @@ if ($blog_id > 0) {
                             </h3> -->
 
                             <p style="font-size:18px; margin:5px 0; color:#444;">
-                                Clear Aligners
+                                Aligners
                             </p>
 
-                            <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
+                            <!-- <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
                                 Starting at <span style="color:#e63946;">₹9,999</span>
-                            </p>
+                            </p> -->
 
                             <!-- <strong>
                                 <a href="tel:+919290019948"
@@ -1471,13 +1474,16 @@ if ($blog_id > 0) {
 
 
 
-                            <p style="font-size:18px; margin:5px 0; color:#444;">
+                            <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a>
+
+
+                            <!-- <p style="font-size:18px; margin:5px 0; color:#444;">
                                 krishnadental
                             </p>
 
                             <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
                                 Dental <span style="color:#e63946;">Hospital</span>
-                            </p>
+                            </p> -->
 
 
                         </div>
