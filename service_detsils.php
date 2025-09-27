@@ -363,7 +363,7 @@ if ($blog_id > 0) {
                                 Contact Us
                             </h3> -->
 
-                            <p style="font-size:18px; margin:5px 0; color:#444;">
+                            <p class="logo-link">
                                 Aligners
                             </p>
 
@@ -900,7 +900,18 @@ if ($blog_id > 0) {
 
 
 
-                            <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a>
+                            <!-- <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a> -->
+
+
+
+
+                            <a href="https://krishnadentacureclinic.com/" class="shake-link">
+                                <img src="./assets/img/logo/krishna_new_logo.png"
+                                    alt="Vision Dental"
+                                    class="img-fluid shake-img">
+                            </a>
+
+
 
 
                             <!-- <p style="font-size:18px; margin:5px 0; color:#444;">
@@ -1439,7 +1450,7 @@ if ($blog_id > 0) {
                                 Contact Us
                             </h3> -->
 
-                            <p style="font-size:18px; margin:5px 0; color:#444;">
+                            <p class="logo-link">
                                 Aligners
                             </p>
 
@@ -1474,7 +1485,15 @@ if ($blog_id > 0) {
 
 
 
-                            <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a>
+                            <!-- <a href="https://krishnadentacureclinic.com/"> <img src="./assets/img/logo/krishna_new_logo.png" alt="" class="img-fluid"></a> -->
+
+                            <a href="https://krishnadentacureclinic.com/" class="shake-link">
+                                <img src="./assets/img/logo/krishna_new_logo.png"
+                                    alt="Vision Dental"
+                                    class="img-fluid shake-img">
+                            </a>
+
+
 
 
                             <!-- <p style="font-size:18px; margin:5px 0; color:#444;">

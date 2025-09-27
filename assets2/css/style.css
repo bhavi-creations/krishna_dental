@@ -7002,6 +7002,55 @@ margin-top: 100px !important;
 .ul-service-details-title,
 .ul-service-details-full-content,
 .ul-service-details-descr{
-  font-family: "Roboto", sans-serif !important;
+  font-family: "poppins", sans-serif !important;
   font-size: 15px !important;
+}
+
+
+
+
+/* aligners  */
+
+.logo-link {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #444;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-block;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* Hover pop-up effect */
+.logo-link:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #a5d7f9 !important;
+  color: black;
+  font-weight: 900;
+}
+
+/* img shake   */
+.shake-img {
+  width: 200px;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-3px, 0) rotate(-2deg); }
+  40% { transform: translate(3px, 0) rotate(2deg); }
+  60% { transform: translate(-3px, 0) rotate(-2deg); }
+  80% { transform: translate(3px, 0) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Hover effect */
+.shake-link:hover .shake-img {
+  animation: shake 0.5s;
 }
