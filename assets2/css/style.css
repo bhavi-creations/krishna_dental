@@ -7036,7 +7036,7 @@ margin-top: 100px !important;
 /* img shake   */
 .shake-img {
   width: 200px;
-  padding: 4px;
+  padding: 10px;
   transition: all 0.3s ease;
 }
 

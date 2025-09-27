@@ -793,7 +793,7 @@ if ($blog_id > 0) {
                                         ";
                                             }
                                         } else {
-                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment!</p></div>";
+                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
                                         }
                                         ?>
                                     </div>
@@ -1349,7 +1349,7 @@ if ($blog_id > 0) {
                                         ";
                                             }
                                         } else {
-                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment!</p></div>";
+                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
                                         }
                                         ?>
                                     </div>
