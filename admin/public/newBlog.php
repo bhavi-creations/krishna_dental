@@ -55,26 +55,27 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <form style='color:black;' id="addblogform" action="addBlog.php" method="POST" enctype="multipart/form-data">
+                                    <form style="color:black;" id="addblogform" action="addBlog.php" method="POST" enctype="multipart/form-data">
 
+                                        <!-- Blog Title -->
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label text-primary">ENTER TITLE</label>
-                                            <input type="text" class="form-control text-grey-900" name='title' id="exampleFormControlInput1" placeholder="Title" required>
+                                            <label class="form-label text-primary">ENTER TITLE</label>
+                                            <input type="text" class="form-control text-grey-900" name="title" placeholder="Title" required>
                                         </div>
 
-                                        <!-- Filter Section for Service -->
+                                        <!-- Select Service -->
                                         <div class="filter-section mb-3">
-                                            <label for="service" class="form-label text-primary">Select Service:</label>
-                                            <select id="service" name="service" class="form-control" required>
+                                            <label class="form-label text-primary">Select Service:</label>
+                                            <select name="service" class="form-control" required>
                                                 <option value="">Select a Service</option>
                                                 <option value="Root Canal">Root Canal</option>
                                                 <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
                                                 <option value="Bad Breath Treatment">Bad Breath Treatment</option>
                                                 <option value="Gum Treatment">Gum Treatment</option>
-                                                <option value="Teeth Cleaning">Teeth Cleaning </option>     
+                                                <option value="Teeth Cleaning">Teeth Cleaning</option>
                                                 <option value="Orthodontic Treatment">Orthodontic Treatment</option>
                                                 <option value="Dental Crown & Bridge">Dental Crown & Bridge</option>
-                                                <option value="Invisible Aligners">Invisible Aligners </option>
+                                                <option value="Invisible Aligners">Invisible Aligners</option>
                                                 <option value="Dental Veneers">Dental Veneers</option>
                                                 <option value="Smile Makeover">Smile Makeover</option>
                                                 <option value="Teeth Whitening">Teeth Whitening</option>
@@ -82,163 +83,123 @@
                                                 <option value="Dentures">Dentures</option>
                                                 <option value="Fluoride Application & Dental Sealant">Fluoride Application & Dental Sealant</option>
                                                 <option value="Full Mouth Rehabilitation Treatment">Full Mouth Rehabilitation Treatment</option>
-                                                
-                                               
-                                                <!-- <option value="Laser Gum">Laser & Gum</option>
-                                                <option value="Tooth Extraction">Tooth Extraction</option>
-                                                <option value="Tooth Cleaning">Teeth Cleaning</option>
-                                                <option value="Gum Depigment">Gum Depigment</option>
-                                                <option value="Teeth Whitening">Teeth Whitening</option>
-                                                <option value="Laser Gum Surgery">Laser Gum Surgery </option>
-                                                <option value="Mouth Ulcers">Mouth Ulcers </option> 
-                                                <option value="Precancerous Lesion">Precancerous Lesion</option>
-                                                <option value="Laser Crown Lengthening">Laser Crown Lengthening</option> -->
-                                               
                                             </select>
                                         </div>
 
-
-                                
-
-
-                                        <!-- Main Content Quill Editor -->
+                                        <!-- Main Content -->
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput2" class="form-label text-primary">ENTER MAIN CONTENT</label>
+                                            <label class="form-label text-primary">ENTER MAIN CONTENT</label>
                                             <div id="mainEditor" style="height: 200px;"></div>
-                                            <input name="main_content" id="mainContentData" style="display: none">
+                                            <input type="hidden" name="main_content" id="mainContentData">
                                         </div>
 
+                                        <!-- Main Image -->
                                         <div class="mb-3">
-                                            <label for="formFileMainImage" class="form-label text-primary my-2">Choose Main Image</label>
-                                            <input class="form-control" name="main_image" type="file" id="formFileMainImage" required>
+                                            <label class="form-label text-primary my-2">Choose Main Image</label>
+                                            <input class="form-control" name="main_image" type="file">
                                         </div>
 
+                                        <!-- Video -->
                                         <div class="mb-3">
-                                            <label for="formFileVideo" class="form-label text-primary">Choose Video</label>
-                                            <input class="form-control" name="video" type="file" id="formFileVideo" required>
+                                            <label class="form-label text-primary">Choose Video</label>
+                                            <input class="form-control" name="video" type="file">
                                         </div>
 
                                         <!-- Full Content Quill Editor -->
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput3" class="form-label text-primary">ENTER FULL CONTENT</label>
-                                            <div id="editor" style="height: 400px;"></div>
-                                            <input name="full_content" id="formcontentdata" style="display: none">
+                                            <label class="form-label text-primary">ENTER FULL CONTENT</label>
+                                            <div id="fullEditor" style="height: 400px;"></div>
+                                            <input type="hidden" name="full_content" id="fullContentData">
                                         </div>
 
-                                        <!-- Include the Quill library -->
-                                        <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
-                                        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+                                        <!-- Repeatable Sections: Section 1,2,3 -->
+                                        <!-- <?php for ($i = 1; $i <= 3; $i++): ?>
+                                            <div class="mb-3">
+                                                <label class="form-label text-primary">Section <?php echo $i; ?> Content</label>
+                                                <div id="editor<?php echo $i; ?>" style="height: 200px;"></div>
+                                                <input type="hidden" name="section<?php echo $i; ?>_content" id="sectionContent<?php echo $i; ?>">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label text-primary">Section <?php echo $i; ?> Image (optional)</label>
+                                                <input class="form-control" name="section<?php echo $i; ?>_image" type="file">
+                                            </div>
+                                        <?php endfor; ?> -->
 
-                                        <!-- Initialize Quill editors for both Main Content and Full Content -->
-                                        <script>
-                                            const quillMain = new Quill('#mainEditor', {
-                                                theme: 'snow',
-                                                modules: {
-                                                    toolbar: [
-                                                        [{
-                                                            'header': '1'
-                                                        }, {
-                                                            'header': '2'
-                                                        }, {
-                                                            'font': []
-                                                        }],
-                                                        [{
-                                                            size: []
-                                                        }],
-                                                        ['bold', 'italic', 'underline', 'strike'],
-                                                        ['link', 'blockquote', 'code-block'],
-                                                        [{
-                                                            'list': 'ordered'
-                                                        }, {
-                                                            'list': 'bullet'
-                                                        }],
-                                                        [{
-                                                            'script': 'sub'
-                                                        }, {
-                                                            'script': 'super'
-                                                        }],
-                                                        [{
-                                                            'indent': '-1'
-                                                        }, {
-                                                            'indent': '+1'
-                                                        }],
-                                                        [{
-                                                            'direction': 'rtl'
-                                                        }],
-                                                        [{
-                                                            'color': []
-                                                        }, {
-                                                            'background': []
-                                                        }],
-                                                        [{
-                                                            'align': []
-                                                        }],
-                                                        ['clean']
-                                                    ]
-                                                },
-                                                placeholder: 'Enter main content...',
-                                            });
-
-                                            const quillFull = new Quill('#editor', {
-                                                theme: 'snow',
-                                                modules: {
-                                                    toolbar: [
-                                                        [{
-                                                            'header': '1'
-                                                        }, {
-                                                            'header': '2'
-                                                        }, {
-                                                            'font': []
-                                                        }],
-                                                        [{
-                                                            size: []
-                                                        }],
-                                                        ['bold', 'italic', 'underline', 'strike'],
-                                                        ['link', 'blockquote', 'code-block'],
-                                                        [{
-                                                            'list': 'ordered'
-                                                        }, {
-                                                            'list': 'bullet'
-                                                        }],
-                                                        [{
-                                                            'script': 'sub'
-                                                        }, {
-                                                            'script': 'super'
-                                                        }],
-                                                        [{
-                                                            'indent': '-1'
-                                                        }, {
-                                                            'indent': '+1'
-                                                        }],
-                                                        [{
-                                                            'direction': 'rtl'
-                                                        }],
-                                                        [{
-                                                            'color': []
-                                                        }, {
-                                                            'background': []
-                                                        }],
-                                                        [{
-                                                            'align': []
-                                                        }],
-                                                        ['clean']
-                                                    ]
-                                                },
-                                                placeholder: 'Compose full content...',
-                                            });
-
-                                            document.querySelector('#addblogform').onsubmit = function() {
-                                                document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
-                                                document.querySelector('#formcontentdata').value = quillFull.root.innerHTML;
-                                            };
-                                        </script>
-
-                                        <div class='row p-3'>
-                                            <div class='col-xl-7 col-sm-2'></div>
-                                            <button type='reset' class='btn btn-danger mx-1 my-2 col-xl-2'>Clear</button>
-                                            <button type='submit' class='btn btn-success mx-1 my-2 col-xl-2'>Publish</button>
+                                        <!-- Section 1 -->
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 1 Content</label>
+                                            <div id="editor1" style="height: 200px;"></div>
+                                            <input type="hidden" name="section1_content" id="sectionContent1">
                                         </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 1 Image (optional)</label>
+                                            <input class="form-control" name="section1_image" type="file">
+                                        </div>
+
+                                        <!-- Section 2 -->
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 2 Content</label>
+                                            <div id="editor2" style="height: 200px;"></div>
+                                            <input type="hidden" name="section2_content" id="sectionContent2">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 2 Image (optional)</label>
+                                            <input class="form-control" name="section2_image" type="file">
+                                        </div>
+
+                                        <!-- Section 3 -->
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 3 Content</label>
+                                            <div id="editor3" style="height: 200px;"></div>
+                                            <input type="hidden" name="section3_content" id="sectionContent3">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-primary">Section 3 Image (optional)</label>
+                                            <input class="form-control" name="section3_image" type="file">
+                                        </div>
+
+
+                                        <button type="reset" class="btn btn-danger">Clear</button>
+                                        <button type="submit" class="btn btn-success">Publish</button>
                                     </form>
+
+                                    <!-- Include Quill -->
+                                    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+                                    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+
+                                    <script>
+                                        // Initialize Quill editors
+                                        const quillMain = new Quill('#mainEditor', {
+                                            theme: 'snow',
+                                            placeholder: 'Enter main content...'
+                                        });
+                                        const quillFull = new Quill('#fullEditor', {
+                                            theme: 'snow',
+                                            placeholder: 'Enter full content...'
+                                        });
+
+                                        const sections = [];
+                                        for (let i = 1; i <= 3; i++) {
+                                            sections[i] = new Quill('#editor' + i, {
+                                                theme: 'snow',
+                                                placeholder: 'Enter content for section ' + i
+                                            });
+                                        }
+
+                                        // On submit, copy HTML to hidden inputs
+                                        document.querySelector('#addblogform').onsubmit = function() {
+                                            document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
+                                            document.querySelector('#fullContentData').value = quillFull.root.innerHTML;
+
+                                            for (let i = 1; i <= 3; i++) {
+                                                document.querySelector('#sectionContent' + i).value = sections[i].root.innerHTML;
+                                            }
+                                        }
+                                    </script>
+
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -261,6 +222,7 @@
                 <!-- End of Footer -->
 
             </div>
+
             <!-- End of Content Wrapper -->
 
         </div>

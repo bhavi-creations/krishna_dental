@@ -2,7 +2,9 @@
 // Database connection
 include './db.connection/db_connection.php';
 
+// =====================
 // 1️⃣ Fetch ALL blogs (latest first)
+// =====================
 $sql = "SELECT id, title, service, main_content, full_content, main_image, video
         FROM blogs ORDER BY created_at DESC";
 $result = $conn->query($sql);
@@ -17,7 +19,7 @@ if ($result && $result->num_rows > 0) {
 // Count total blogs
 $total_blogs = count($blogs);
 
-// Split equally (left/right sidebar)
+// Split equally (left/right sidebar if needed)
 $left_count = ceil($total_blogs / 2);
 $right_count = $total_blogs - $left_count;
 
@@ -28,12 +30,17 @@ function get_words($text, $limit)
     return implode(" ", array_slice($words, 0, $limit));
 }
 
+// =====================
 // 2️⃣ Fetch single blog for service_details.php
+// =====================
 $blog_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
 $blog = null;
 if ($blog_id > 0) {
-    $stmt = $conn->prepare("SELECT id, title, service, main_content, full_content, main_image, video
+    $stmt = $conn->prepare("SELECT id, title, service, main_content, full_content, main_image, video,
+                                   section1_content, section1_image,
+                                   section2_content, section2_image,
+                                   section3_content, section3_image
                             FROM blogs WHERE id = ?");
     $stmt->bind_param("i", $blog_id);
     $stmt->execute();
@@ -41,6 +48,9 @@ if ($blog_id > 0) {
     $blog = $result->fetch_assoc();
     $stmt->close();
 }
+
+// Uploads directory
+$uploadsDir = "uploads/blogs/";
 ?>
 
 
@@ -270,7 +280,7 @@ if ($blog_id > 0) {
 
                             <!-- Title -->
                             <?php if (!empty($blog['title'])): ?>
-                                <h3 class="ul-service-details-title mt-5">
+                                <h3 class="ul-service-details-title mt-5 " style="font: size 16px;">
                                     <a href="<?php echo $redirect_link; ?>" target="_blank" style="text-decoration:none; color:inherit;">
                                         <?php echo htmlspecialchars($blog['title']); ?>
                                     </a>
@@ -344,6 +354,7 @@ if ($blog_id > 0) {
         </section>
 
 
+
         <section class="ul-service-details  second_section_blogs  d-none  d-lg-block">
             <div class="container-fluid">
                 <div class="row g-xl-5 g-4 mx-3">
@@ -360,23 +371,23 @@ if ($blog_id > 0) {
                         <div class="card aligner-card" style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:8px 5px 5px 0px; border-radius:12px; background:linear-gradient(135deg, #f1f5ff, #ffffff); box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
 
                             <!-- <h3 class="mani" style="color:#333; font-weight:600; margin-bottom:10px;">
-                                Contact Us
-                            </h3> -->
+                                            Contact Us
+                                        </h3> -->
 
                             <p class="logo-link">
                                 Aligners
                             </p>
 
                             <!-- <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
-                                Starting at <span style="color:#e63946;">₹9,999</span>
-                            </p> -->
+                                            Starting at <span style="color:#e63946;">₹9,999</span>
+                                        </p> -->
 
                             <!-- <strong>
-                                <a href="tel:+919290019948"
-                                    style="text-decoration:none; color:#fff; background:#007bff; padding:10px 18px; border-radius:8px; font-size:16px; display:inline-block; margin-top:10px; transition:0.3s;">
-                                    📞 Call Now: +91 9290019948
-                                </a>
-                            </strong> -->
+                                            <a href="tel:+919290019948"
+                                                style="text-decoration:none; color:#fff; background:#007bff; padding:10px 18px; border-radius:8px; font-size:16px; display:inline-block; margin-top:10px; transition:0.3s;">
+                                                📞 Call Now: +91 9290019948
+                                            </a>
+                                        </strong> -->
                         </div>
 
 
@@ -393,17 +404,17 @@ if ($blog_id > 0) {
                             <div style="max-height: 380px; overflow-y: auto; padding-right:10px;">
                                 <!-- Logo -->
                                 <!-- <?php if (!empty($blog['logo'])): ?>
-                                    <div class="text-center mb-3">
-                                        <a href="<?php echo !empty($blog['logo_link']) ? htmlspecialchars($blog['logo_link']) : '#'; ?>" target="_blank">
-                                            <img src="uploads/logos/<?php echo htmlspecialchars($blog['logo']); ?>"
-                                                style="max-height:100px; width:auto;" alt="Blog Logo">
-                                        </a>
-                                    </div>
-                                <?php endif; ?> -->
+                                                            <div class="text-center mb-3">
+                                                                <a href="<?php echo !empty($blog['logo_link']) ? htmlspecialchars($blog['logo_link']) : '#'; ?>" target="_blank">
+                                                                    <img src="uploads/logos/<?php echo htmlspecialchars($blog['logo']); ?>"
+                                                                        style="max-height:100px; width:auto;" alt="Blog Logo">
+                                                                </a>
+                                                            </div>
+                                                        <?php endif; ?> -->
 
                                 <!-- Service Name -->
                                 <?php if (!empty($blog['service'])): ?>
-                                    <h2 class="ul-service-details-title text-center"><?php echo htmlspecialchars($blog['service']); ?></h2>
+                                    <h2 class="ul-service-details-title text-center" style="font: size 18px;"><?php echo htmlspecialchars($blog['service']); ?></h2>
                                 <?php endif; ?>
 
 
@@ -424,21 +435,21 @@ if ($blog_id > 0) {
 
 
                                 <!-- 
-                                <div class="row mb-3 mx-2">
-                                    <?php if (!empty($blog['main_image'])): ?>
-                                        <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
-                                            <img src="./admin/uploads/photos/<?php echo htmlspecialchars($blog['main_image']); ?>"
-                                                alt="Main Image" class="img-fluid" style="max-height:200px; width:auto;">
-                                        </div>
-                                    <?php endif; ?>
+                                                        <div class="row mb-3 mx-2">
+                                                            <?php if (!empty($blog['main_image'])): ?>
+                                                                <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+                                                                    <img src="./admin/uploads/photos/<?php echo htmlspecialchars($blog['main_image']); ?>"
+                                                                        alt="Main Image" class="img-fluid" style="max-height:200px; width:auto;">
+                                                                </div>
+                                                            <?php endif; ?>
 
-                                    <?php if (!empty($blog['video'])): ?>
-                                        <div class="col-12 col-md-6 text-center">
-                                            <video src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
-                                                controls style="max-width:100%; height:auto;"></video>
-                                        </div>
-                                    <?php endif; ?>
-                                </div> -->
+                                                            <?php if (!empty($blog['video'])): ?>
+                                                                <div class="col-12 col-md-6 text-center">
+                                                                    <video src="./admin/uploads/videos/<?php echo htmlspecialchars($blog['video']); ?>"
+                                                                        controls style="max-width:100%; height:auto;"></video>
+                                                                </div>
+                                                            <?php endif; ?>
+                                                        </div> -->
 
 
                                 <div class="container">
@@ -485,6 +496,82 @@ if ($blog_id > 0) {
                                         ?>
                                     </div>
                                 <?php endif; ?>
+
+
+
+                                <!-- option images   -->
+
+                                <?php if (!empty($blog['section1_content'])): ?>
+                                    <div class="section1-content mt-3" style="font-size: 18px;">
+                                        <?php echo $blog['section1_content']; // HTML content 
+                                        ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <!-- <?php if (!empty($blog['section1_image'])): ?>
+
+                                                            <img src="./admin/uploads/photos/<?php echo htmlspecialchars($blog['section1_image']); ?>"
+                                                                alt="Section 1 Image"
+                                                                class="img-fluid rounded shadow-sm w-100"
+                                                                style="max-height: 300px; object-fit: cover;">
+
+                                                        <?php endif; ?> -->
+
+                                <?php
+                                $section1_image_path = './admin/uploads/photos/' . $blog['section1_image'];
+
+                                if (!empty($blog['section1_image']) && file_exists($section1_image_path)): ?>
+                                    <div style="display:flex; justify-content:center; align-items:center; width:500px; height:500px; margin:auto; overflow:hidden; border:1px solid #ddd; border-radius:8px;">
+                                        <img src="<?php echo htmlspecialchars($section1_image_path); ?>"
+                                            alt="Section 1 Image"
+                                            style="width:100%; height:100%; object-fit:cover;">
+                                    </div>
+                                <?php endif; ?>
+
+
+
+
+
+
+                                <?php if (!empty($blog['section2_content'])): ?>
+                                    <div class="section2-content mt-3" style="font-size: 18px;">
+                                        <?php echo $blog['section2_content']; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php
+                                $section2_image_path = './admin/uploads/photos/' . $blog['section2_image'];
+
+                                if (!empty($blog['section2_image']) && file_exists($section2_image_path)): ?>
+                                    <div style="display:flex; justify-content:center; align-items:center; width:500px; height:500px; margin:auto; overflow:hidden; border:1px solid #ddd; border-radius:8px;">
+                                        <img src="<?php echo htmlspecialchars($section2_image_path); ?>"
+                                            alt="Section 2 Image"
+                                            style="width:100%; height:100%; object-fit:cover;">
+                                    </div>
+                                <?php endif; ?>
+
+
+
+                                <?php if (!empty($blog['section3_content'])): ?>
+                                    <div class="section3-content mt-3" style="font-size: 18px;">
+                                        <?php echo $blog['section3_content']; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php
+                                $section3_image_path = './admin/uploads/photos/' . $blog['section3_image'];
+
+                                if (!empty($blog['section3_image']) && file_exists($section3_image_path)): ?>
+                                    <div style="display:flex; justify-content:center; align-items:center; width:500px; height:500px; margin:auto; overflow:hidden; border:1px solid #ddd; border-radius:8px;">
+                                        <img src="<?php echo htmlspecialchars($section3_image_path); ?>"
+                                            alt="Section 3 Image"
+                                            style="width:100%; height:100%; object-fit:cover;">
+                                    </div>
+                                <?php endif; ?>
+
+
+
+
 
 
 
@@ -658,9 +745,9 @@ if ($blog_id > 0) {
 
                                     // ✅ Fetch all comments for this blog
                                     $stmt = $pdo->prepare("SELECT user_name, comment 
-                           FROM blog_comments 
-                           WHERE blog_id = :blog_id 
-                           ORDER BY created_at DESC");
+                                                FROM blog_comments 
+                                                WHERE blog_id = :blog_id 
+                                                ORDER BY created_at DESC");
                                     $stmt->bindParam(':blog_id', $blog_id, PDO::PARAM_INT);
                                     $stmt->execute();
                                     $comment_result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -751,10 +838,10 @@ if ($blog_id > 0) {
                                                 $dislikes   = (int)$row['dislikes'];
 
                                                 echo "
-                                        <div class='col-md-6 mb-3'>
-                                            <div class='comment-item p-3 border rounded shadow-sm h-100'>
-                                                <p><strong>Name:</strong> $user_name</p>
-                                                <p><strong>Comment:</strong> $comment</p>";
+                                                                <div class='col-md-6 mb-3'>
+                                                                    <div class='comment-item p-3 border rounded shadow-sm h-100'>
+                                                                        <p><strong>Name:</strong> $user_name</p>
+                                                                        <p><strong>Comment:</strong> $comment</p>";
 
                                                 // ✅ If reply exists, show replies count (split by || for multiple replies)
                                                 if (!empty($reply_text)) {
@@ -762,35 +849,35 @@ if ($blog_id > 0) {
                                                     $reply_count = count($replies);
 
                                                     echo "
-                                                <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
-                                                    $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
-                                                </a>
-                                                <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
+                                                                        <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
+                                                                            $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
+                                                                        </a>
+                                                                        <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
 
                                                     foreach ($replies as $reply) {
                                                         $reply = htmlspecialchars(trim($reply));
                                                         echo "
-                                                    <div class='p-2 mb-1 bg-light border rounded'>
-                                                        <strong>krishnadental Dental Hospital :</strong> $reply
-                                                    </div>";
+                                                                            <div class='p-2 mb-1 bg-light border rounded'>
+                                                                                <strong>krishnadental Dental Hospital :</strong> $reply
+                                                                            </div>";
                                                     }
 
                                                     echo "</div>";
                                                 }
 
                                                 echo "
-                                                <!-- Like / Dislike buttons -->
-                                                <div class='mt-2 d-flex justify-content-between'>
-                                                    <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
-                                                        👍 Like (<span id='like-count-$comment_id'>$likes</span>)
-                                                    </button>
-                                                    <button class='btn btn-sm btn-outline-danger' onclick='updateReaction($comment_id, \"dislike\")'>
-                                                        👎 Dislike (<span id='dislike-count-$comment_id'>$dislikes</span>)
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        ";
+                                                                        <!-- Like / Dislike buttons -->
+                                                                        <div class='mt-2 d-flex justify-content-between'>
+                                                                            <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
+                                                                                👍 Like (<span id='like-count-$comment_id'>$likes</span>)
+                                                                            </button>
+                                                                            <button class='btn btn-sm btn-outline-danger' onclick='updateReaction($comment_id, \"dislike\")'>
+                                                                                👎 Dislike (<span id='dislike-count-$comment_id'>$dislikes</span>)
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                ";
                                             }
                                         } else {
                                             echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
@@ -915,12 +1002,12 @@ if ($blog_id > 0) {
 
 
                             <!-- <p style="font-size:18px; margin:5px 0; color:#444;">
-                                krishnadental
-                            </p>
+                                            krishnadental
+                                        </p>
 
-                            <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
-                                Dental <span style="color:#e63946;">Hospital</span>
-                            </p> -->
+                                        <p style="font-size:20px; font-weight:600; color:#28a745; margin:8px 0;">
+                                            Dental <span style="color:#e63946;">Hospital</span>
+                                        </p> -->
 
 
                         </div>

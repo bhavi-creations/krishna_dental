@@ -1,0 +1,66 @@
+[30-Sep-2025 09:38:54 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:14
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14
+[30-Sep-2025 13:42:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:14
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14
+[30-Sep-2025 13:46:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:19
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(19): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 19
+[30-Sep-2025 13:48:54 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'krishnadentacureclinic' in C:\xampp\htdocs\krishna_dental\save_comment.php:18
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(18): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 18
+[30-Sep-2025 13:49:08 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\krishna_dental\save_comment.php on line 19
+[30-Sep-2025 13:49:08 Europe/Berlin] PHP Warning:  Attempt to read property "connect_error" on null in C:\xampp\htdocs\krishna_dental\save_comment.php on line 19
+[30-Sep-2025 13:49:08 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\krishna_dental\save_comment.php on line 47
+[30-Sep-2025 13:49:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\krishna_dental\save_comment.php:47
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 47
+[30-Sep-2025 13:49:17 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\krishna_dental\save_comment.php on line 47
+[30-Sep-2025 13:49:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\krishna_dental\save_comment.php:47
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 47
+[30-Sep-2025 13:49:26 Europe/Berlin] PHP Warning:  Undefined variable $stmt in C:\xampp\htdocs\krishna_dental\save_comment.php on line 51
+[30-Sep-2025 13:49:26 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\krishna_dental\save_comment.php on line 52
+[30-Sep-2025 13:49:26 Europe/Berlin] PHP Warning:  Attempt to read property "error" on null in C:\xampp\htdocs\krishna_dental\save_comment.php on line 52
+[30-Sep-2025 13:49:26 Europe/Berlin] Prepare failed: 
+[30-Sep-2025 13:49:32 Europe/Berlin] PHP Warning:  Undefined variable $stmt in C:\xampp\htdocs\krishna_dental\save_comment.php on line 57
+[30-Sep-2025 13:49:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in C:\xampp\htdocs\krishna_dental\save_comment.php:57
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 57
+[30-Sep-2025 13:49:39 Europe/Berlin] PHP Warning:  Undefined variable $stmt in C:\xampp\htdocs\krishna_dental\save_comment.php on line 60
+[30-Sep-2025 13:49:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in C:\xampp\htdocs\krishna_dental\save_comment.php:60
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 60
+[30-Sep-2025 13:49:47 Europe/Berlin] PHP Warning:  Undefined variable $stmt in C:\xampp\htdocs\krishna_dental\save_comment.php on line 71
+[30-Sep-2025 13:49:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in C:\xampp\htdocs\krishna_dental\save_comment.php:71
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 71
+[30-Sep-2025 13:57:57 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'krishnadentacureclinic' in C:\xampp\htdocs\krishna_dental\save_comment.php:18
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(18): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 18
+[30-Sep-2025 13:59:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:14
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14
+[01-Oct-2025 07:12:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:14
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14

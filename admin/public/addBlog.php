@@ -1,124 +1,145 @@
 <?php
-// Database connection (replace with your actual database connection details)
 include '../../db.connection/db_connection.php';
 
-// Function to generate a unique file name
-function generateUniqueFileName($fileName)
-{
+// Allowed image formats
+$allowedImageFormats = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+// Generate unique filename
+function generateUniqueFileName($fileName) {
     $ext = pathinfo($fileName, PATHINFO_EXTENSION);
     return uniqid() . '_' . time() . '.' . $ext;
 }
 
-// Check if the form was submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Collect inputs safely
-    $blog_id      = isset($_POST['id']) ? intval($_POST['id']) : 0;
-    $title        = isset($_POST['title']) ? trim($_POST['title']) : '';
-    $main_content = isset($_POST['main_content']) ? trim($_POST['main_content']) : '';
-    $full_content = isset($_POST['full_content']) ? trim($_POST['full_content']) : '';
-    $service      = isset($_POST['service']) ? trim($_POST['service']) : '';
+// Upload file function
+function uploadFile($fileKey, $uploadDir, $allowedFormats = []) {
+    if (!empty($_FILES[$fileKey]['name'])) {
+        if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
 
-    // Validate required fields
+        $ext = strtolower(pathinfo($_FILES[$fileKey]['name'], PATHINFO_EXTENSION));
+        if(!empty($allowedFormats) && !in_array($ext, $allowedFormats)) {
+            die("Error: Invalid file format for $fileKey.");
+        }
+
+        if ($_FILES[$fileKey]['error'] !== UPLOAD_ERR_OK) {
+            die("Upload error for $fileKey: " . $_FILES[$fileKey]['error']);
+        }
+
+        $fileName = generateUniqueFileName($_FILES[$fileKey]['name']);
+        if(move_uploaded_file($_FILES[$fileKey]['tmp_name'], $uploadDir . $fileName)) {
+            return $fileName;
+        } else {
+            die("Error uploading $fileKey.");
+        }
+    }
+    return '';
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $blog_id      = isset($_POST['id']) ? intval($_POST['id']) : 0;
+    $title        = trim($_POST['title'] ?? '');
+    $main_content = trim($_POST['main_content'] ?? '');
+    $full_content = trim($_POST['full_content'] ?? '');
+    $service      = trim($_POST['service'] ?? '');
+
     if (empty($title) || empty($main_content) || empty($full_content) || empty($service)) {
         die("Error: Title, Main Content, Full Content, and Service cannot be empty.");
     }
 
-    // ------------------------
-    // Handle Title Image Upload
-    // ------------------------
-    $title_image_path = '';
-    if (!empty($_FILES['title_image']['name'])) {
-        $title_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
-        if (!is_dir($title_image_directory)) {
-            mkdir($title_image_directory, 0777, true);
-        }
+    $uploadsDir = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
+    $videosDir  = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/videos/";
 
-        if ($_FILES['title_image']['error'] !== UPLOAD_ERR_OK) {
-            die("Title image upload error: " . $_FILES['title_image']['error']);
-        }
+    // Upload main files
+    $main_image_path  = uploadFile('main_image', $uploadsDir, $allowedImageFormats);
+    $video_path       = uploadFile('video', $videosDir);
+    $title_image_path = uploadFile('title_image', $uploadsDir, $allowedImageFormats);
 
-        $title_image_name = generateUniqueFileName($_FILES['title_image']['name']);
-        $title_image_path = $title_image_name;
-
-        if (!move_uploaded_file($_FILES['title_image']['tmp_name'], $title_image_directory . $title_image_name)) {
-            die("Error uploading title image.");
-        }
+    // Sections content & images
+    $section_contents = [];
+    $section_images   = [];
+    for($i=1; $i<=3; $i++){
+        $section_contents[$i] = $_POST["section{$i}_content"] ?? '';
+        $section_images[$i] = uploadFile("section{$i}_image", $uploadsDir, $allowedImageFormats);
     }
 
-    // ------------------------
-    // Handle Main Image Upload
-    // ------------------------
-    $main_image_path = '';
-    if (!empty($_FILES['main_image']['name'])) {
-        $main_image_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
-        if (!is_dir($main_image_directory)) {
-            mkdir($main_image_directory, 0777, true);
-        }
-
-        if ($_FILES['main_image']['error'] !== UPLOAD_ERR_OK) {
-            die("Main image upload error: " . $_FILES['main_image']['error']);
-        }
-
-        $main_image_name = generateUniqueFileName($_FILES['main_image']['name']);
-        $main_image_path = $main_image_name;
-
-        if (!move_uploaded_file($_FILES['main_image']['tmp_name'], $main_image_directory . $main_image_name)) {
-            die("Error uploading main image.");
-        }
-    }
-
-    // ------------------------
-    // Handle Video Upload
-    // ------------------------
-    $video_path = '';
-    if (!empty($_FILES['video']['name'])) {
-        $video_directory = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/videos/";
-        if (!is_dir($video_directory)) {
-            mkdir($video_directory, 0777, true);
-        }
-
-        if ($_FILES['video']['error'] !== UPLOAD_ERR_OK) {
-            die("Video upload error: " . $_FILES['video']['error']);
-        }
-
-        $video_name = generateUniqueFileName($_FILES['video']['name']);
-        $video_path = $video_name;
-
-        if (!move_uploaded_file($_FILES['video']['tmp_name'], $video_directory . $video_name)) {
-            die("Error uploading video.");
-        }
-    }
-
-    // ------------------------
-    // Insert / Update Blog Post
-    // ------------------------
+    // Preserve existing files if editing
     if ($blog_id > 0) {
-        // Update existing blog
-        $stmt = $conn->prepare("UPDATE blogs 
-            SET title = ?, main_content = ?, full_content = ?, title_image = ?, main_image = ?, video = ?, service = ? 
-            WHERE id = ?");
-        $stmt->bind_param("sssssssi", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service, $blog_id);
-    } else {
-        // Insert new blog
-        $stmt = $conn->prepare("INSERT INTO blogs 
-            (title, main_content, full_content, title_image, main_image, video, service, created_at) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
-        $stmt->bind_param("sssssss", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service);
+        $existing = $conn->query("SELECT * FROM blogs WHERE id=$blog_id")->fetch_assoc();
+
+        $main_image_path  = $main_image_path  ?: ($existing['main_image'] ?? '');
+        $video_path       = $video_path       ?: ($existing['video'] ?? '');
+        $title_image_path = $title_image_path ?: ($existing['title_image'] ?? '');
+        for($i=1;$i<=3;$i++){
+            $section_images[$i] = $section_images[$i] ?: ($existing["section{$i}_image"] ?? '');
+        }
     }
 
-    // Execute query
+    if ($blog_id > 0) {
+        // UPDATE BLOG
+        $stmt = $conn->prepare("UPDATE blogs 
+            SET title=?, main_content=?, full_content=?, title_image=?, main_image=?, video=?, service=?,
+                section1_content=?, section1_image=?, 
+                section2_content=?, section2_image=?,
+                section3_content=?, section3_image=?
+            WHERE id=?");
+
+        if (!$stmt) die("Prepare failed: " . $conn->error);
+
+        $stmt->bind_param(
+            "sssssssssssssi",
+            $title,
+            $main_content,
+            $full_content,
+            $title_image_path,
+            $main_image_path,
+            $video_path,
+            $service,
+            $section_contents[1],
+            $section_images[1],
+            $section_contents[2],
+            $section_images[2],
+            $section_contents[3],
+            $section_images[3],
+            $blog_id
+        );
+
+    } else {
+        // INSERT NEW BLOG
+        $stmt = $conn->prepare("INSERT INTO blogs 
+            (title, main_content, full_content, title_image, main_image, video, service,
+             section1_content, section1_image,
+             section2_content, section2_image,
+             section3_content, section3_image, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())");
+
+        if (!$stmt) die("Prepare failed: " . $conn->error);
+
+        $stmt->bind_param(
+            "sssssssssssss",
+            $title,
+            $main_content,
+            $full_content,
+            $title_image_path,
+            $main_image_path,
+            $video_path,
+            $service,
+            $section_contents[1],
+            $section_images[1],
+            $section_contents[2],
+            $section_images[2],
+            $section_contents[3],
+            $section_images[3]
+        );
+    }
+
     if ($stmt->execute()) {
-        echo "Blog post published/updated successfully!";
-        header("Location: allBlog.php"); 
+        header("Location: allBlog.php");
         exit();
     } else {
-        echo "Error: " . $stmt->error;
-        header("Location: newBlog.php");
-        exit();
+        die("Execute Error: " . $stmt->error);
     }
 
     $stmt->close();
+    $conn->close();
 }
-
-$conn->close();
 ?>
