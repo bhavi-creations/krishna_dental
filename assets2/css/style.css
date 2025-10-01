@@ -7056,3 +7056,10 @@ margin-top: 100px !important;
 .shake-link:hover .shake-img {
   animation: shake 0.5s;
 }
+
+@media (min-width:768px) and (max-width:992px) {
+  .tab_device_logo{
+    margin-top: 100px !important;
+  }
+  
+}
