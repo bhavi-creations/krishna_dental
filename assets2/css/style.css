@@ -4864,7 +4864,7 @@ button {
 }
 
 .ul-service-details-sidebar-widget {
-  background-color: #c4e3f9;
+  background-color: #084c7d !important;
   /* background-color: #fffdee; */
   padding: clamp(16px, 1.68vw, 32px);
   border-radius: 16px;
@@ -6746,8 +6746,9 @@ button {
 /* srinivasa blog   */
 .blog-sidebar-list {
   /* background: #b6d1ec !important; */
+  background-color: #084c7d !important;
 
-  background-image: radial-gradient(circle, #e8f2f9, #dcedf9, #d0e8f9, #c4e3f9, #b7def9, #b1dcf9, #abd9f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9) !important;
+  /* background-image: radial-gradient(circle, #e8f2f9, #dcedf9, #d0e8f9, #c4e3f9, #b7def9, #b1dcf9, #abd9f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9) !important; */
   /* background: #f8f9fa; */
 
 
@@ -6755,7 +6756,7 @@ button {
   padding: 10px;
   border-radius: 8px;
   scrollbar-width: thin;
-  scrollbar-color: #007bff #e9ecef;
+  scrollbar-color:#084c7d !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
 }
 
@@ -6818,6 +6819,7 @@ button {
 .latest_blog_section {
   font-weight: 700 !important;
   font-family: "poppins", sans-serif;
+  color: white !important;
 }
 
 
