@@ -347,13 +347,13 @@ $uploadsDir = "uploads/blogs/";
 
                         <div class="card aligner-card" style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:8px 5px 5px 0px; border-radius:12px; background:linear-gradient(135deg, #f1f5ff, #ffffff); box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
 
-                           
+
 
                             <p class="logo-link">
                                 Aligners
                             </p>
 
-                           
+
                         </div>
 
 
