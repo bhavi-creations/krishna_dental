@@ -49,8 +49,38 @@ if ($blog_id > 0) {
     $stmt->close();
 }
 
-// Uploads directory
-$uploadsDir = "uploads/blogs/";
+// =====================
+// 3️⃣ Uploads directory
+// =====================
+$uploadsDir = __DIR__ . "/uploads/blogs/";
+
+// =====================
+// 4️⃣ Optional: Display Section Images (responsive for mobile)
+// =====================
+function displaySectionImage($imagePath, $alt = 'Section Image')
+{
+    if (!empty($imagePath) && file_exists($imagePath)) {
+        echo '<div style="
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            width:100%; 
+            max-width:500px; 
+            height:auto; 
+            margin:auto; 
+            overflow:hidden; 
+            border:1px solid #ddd; 
+            border-radius:8px;">
+            <img src="' . htmlspecialchars($imagePath) . '" alt="' . htmlspecialchars($alt) . '" 
+                 style="width:100%; height:auto; object-fit:cover;">
+        </div>';
+    }
+}
+
+// Example usage:
+// displaySectionImage($uploadsDir . $blog['section1_image'], 'Section 1 Image');
+// displaySectionImage($uploadsDir . $blog['section2_image'], 'Section 2 Image');
+// displaySectionImage($uploadsDir . $blog['section3_image'], 'Section 3 Image');
 ?>
 
 
@@ -472,6 +502,10 @@ $uploadsDir = "uploads/blogs/";
 
                                                         <?php endif; ?> -->
 
+
+
+
+
                                 <!-- option images   -->
 
                                 <?php if (!empty($blog['section1_content'])): ?>
@@ -534,6 +568,7 @@ $uploadsDir = "uploads/blogs/";
                                             style="width:100%; height:100%; object-fit:cover;">
                                     </div>
                                 <?php endif; ?>
+
 
 
 

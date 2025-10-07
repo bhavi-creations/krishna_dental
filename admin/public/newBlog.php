@@ -164,7 +164,7 @@
                                     </form>
 
                                     <!-- Include Quill -->
-                                    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+                                    <!-- <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
                                     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 
                                     <script>
@@ -195,7 +195,97 @@
                                                 document.querySelector('#sectionContent' + i).value = sections[i].root.innerHTML;
                                             }
                                         }
+                                    </script> -->
+
+                                    <!-- Include Quill CSS & JS (ensure paths are correct for live server) -->
+                                    <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+                                    <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+
+                                    <script>
+                                        // Define full toolbar options
+                                        const fullToolbarOptions = [
+                                            [{
+                                                'header': '1'
+                                            }, {
+                                                'header': '2'
+                                            }, {
+                                                'font': []
+                                            }],
+                                            [{
+                                                'size': []
+                                            }],
+                                            ['bold', 'italic', 'underline', 'strike'],
+                                            ['link', 'blockquote', 'code-block'], // link button included
+                                            [{
+                                                'list': 'ordered'
+                                            }, {
+                                                'list': 'bullet'
+                                            }],
+                                            [{
+                                                'script': 'sub'
+                                            }, {
+                                                'script': 'super'
+                                            }],
+                                            [{
+                                                'indent': '-1'
+                                            }, {
+                                                'indent': '+1'
+                                            }],
+                                            [{
+                                                'direction': 'rtl'
+                                            }],
+                                            [{
+                                                'color': []
+                                            }, {
+                                                'background': []
+                                            }],
+                                            [{
+                                                'align': []
+                                            }],
+                                            ['clean']
+                                        ];
+
+                                        // Initialize main editor
+                                        const quillMain = new Quill('#mainEditor', {
+                                            theme: 'snow',
+                                            modules: {
+                                                toolbar: fullToolbarOptions
+                                            },
+                                            placeholder: 'Enter main content...'
+                                        });
+
+                                        // Initialize full editor
+                                        const quillFull = new Quill('#fullEditor', {
+                                            theme: 'snow',
+                                            modules: {
+                                                toolbar: fullToolbarOptions
+                                            },
+                                            placeholder: 'Enter full content...'
+                                        });
+
+                                        // Initialize section editors (section1, section2, section3)
+                                        const sections = [];
+                                        for (let i = 1; i <= 3; i++) {
+                                            sections[i] = new Quill('#editor' + i, {
+                                                theme: 'snow',
+                                                modules: {
+                                                    toolbar: fullToolbarOptions
+                                                },
+                                                placeholder: 'Enter content for section ' + i
+                                            });
+                                        }
+
+                                        // On form submit, copy HTML content to hidden inputs
+                                        document.querySelector('#addblogform').onsubmit = function() {
+                                            document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
+                                            document.querySelector('#fullContentData').value = quillFull.root.innerHTML;
+
+                                            for (let i = 1; i <= 3; i++) {
+                                                document.querySelector('#sectionContent' + i).value = sections[i].root.innerHTML;
+                                            }
+                                        };
                                     </script>
+
 
 
 
