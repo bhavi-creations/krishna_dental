@@ -46,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Error: Title, Main Content, Full Content, and Service cannot be empty.");
     }
 
-    $uploadsDir = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/photos/";
-    $videosDir  = $_SERVER['DOCUMENT_ROOT'] . "/krishna_dental/admin/uploads/videos/";
+    $uploadsDir = $_SERVER['DOCUMENT_ROOT'] . "admin/uploads/photos/";
+    $videosDir  = $_SERVER['DOCUMENT_ROOT'] . "admin/uploads/videos/";
 
     // Upload main files
     $main_image_path  = uploadFile('main_image', $uploadsDir, $allowedImageFormats);
