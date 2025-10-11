@@ -64,3 +64,13 @@ Stack trace:
 #0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
 #1 {main}
   thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14
+[10-Oct-2025 13:24:28 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:14
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(14): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 14
+[10-Oct-2025 13:33:01 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'krishnadentacureclinic'@'localhost' (using password: YES) in C:\xampp\htdocs\krishna_dental\save_comment.php:18
+Stack trace:
+#0 C:\xampp\htdocs\krishna_dental\save_comment.php(18): mysqli->__construct('localhost', 'krishnadentacur...', Object(SensitiveParameterValue), 'krishnadentacur...')
+#1 {main}
+  thrown in C:\xampp\htdocs\krishna_dental\save_comment.php on line 18

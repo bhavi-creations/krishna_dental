@@ -578,15 +578,8 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
 
 
-
-
-
-
-
-
-
-
                                 <style>
+                                    /* ------------------- GLOBAL STYLING ------------------- */
                                     .comment-overlay {
                                         position: fixed;
                                         top: 0;
@@ -601,11 +594,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                     }
 
                                     .comment-box {
-                                        background: #fff;
+                                        background-image: radial-gradient(circle, #e8f2f9, #a5d7f9) !important;
                                         padding: 20px;
                                         border-radius: 8px;
+                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
                                         width: 90%;
-                                        max-width: 500px;
+                                        max-width: 600px;
                                         position: relative;
                                     }
 
@@ -618,53 +612,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         color: #333;
                                     }
 
-                                    .comment-box input,
-                                    .comment-box textarea,
-                                    .comment-box button {
-                                        width: 100%;
-                                        margin-bottom: 10px;
-                                        padding: 10px;
-                                        border-radius: 5px;
-                                        border: 1px solid #ccc;
+                                    .comment-box h3 {
+                                        margin-bottom: 15px;
+                                        color: #333;
                                     }
 
-                                    .comment-box button {
-                                        background-color: #007bff;
-                                        color: #fff;
-                                        border: none;
-                                        cursor: pointer;
-                                    }
-
-                                    .comment-list {
-                                        margin-top: 20px;
-                                        padding: 10px;
-                                        background: #f9f9f9;
-                                        border-radius: 8px;
-                                    }
-
-                                    .comment-item {
-                                        padding: 10px;
-                                        border-bottom: 1px solid #ddd;
-                                    }
-
-                                    .comment-item:last-child {
-                                        border-bottom: none;
-                                    }
-
-                                    .comment-item strong {
-                                        display: block;
-                                        margin-bottom: 5px;
-                                    }
-
-                                    .comment-item p {
-                                        margin: 0;
-                                    }
-                                </style>
-
-
-
-                                <!-- Styling -->
-                                <style>
+                                    /* ------------------- BUTTONS & INPUTS ------------------- */
                                     .show-comment-btn {
                                         background: #007bff;
                                         color: white;
@@ -680,20 +633,6 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         background: #0056b3;
                                     }
 
-                                    .comment-box {
-                                        /* background: red; */
-                                        background-image: radial-gradient(circle, #e8f2f9, #dcedf9, #d0e8f9, #c4e3f9, #b7def9, #b1dcf9, #abd9f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9) !important;
-                                        padding: 20px;
-                                        border-radius: 8px;
-                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-                                        max-width: 600px;
-                                    }
-
-                                    .comment-box h3 {
-                                        margin-bottom: 15px;
-                                        color: #333;
-                                    }
-
                                     .comment-box input,
                                     .comment-box textarea {
                                         width: 100%;
@@ -703,7 +642,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 5px;
                                     }
 
-                                    .comment-box button {
+                                    .comment-box button[type="submit"] {
                                         background: #28a745;
                                         color: white;
                                         padding: 10px 16px;
@@ -711,181 +650,181 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 6px;
                                         cursor: pointer;
                                         transition: background 0.3s ease;
+                                        width: 100%;
+                                        margin-bottom: 10px;
                                     }
 
-                                    .comment-box button:hover {
+                                    .comment-box button[type="submit"]:hover {
                                         background: #1e7e34;
+                                    }
+
+                                    /* ------------------- COMMENT LIST ------------------- */
+                                    .comment-list {
+                                        margin-top: 20px;
+                                        padding: 10px;
+                                        background: #f9f9f9;
+                                        border-radius: 8px;
+                                    }
+
+                                    .comment-item {
+                                        padding: 10px;
+                                        border-bottom: 1px solid #ddd;
+                                    }
+
+                                    .comment-item:last-child {
+                                        border-bottom: none;
                                     }
                                 </style>
 
 
 
 
-
-
-
                                 <?php
-                                // Auto DB Connection (localhost / live)
+                                // NOTE: session_start() MUST be called once at the very top of your main page, 
+                                // BEFORE any HTML, for the reaction logic (which should be in update_reaction.php) to work.
+
+                                // --- Configuration ---
+                                $section_suffix = '_D3'; // Unique identifier for this block (e.g., if you have multiple on one page)
+                                $device_name = 'Smartwatch Z'; // Placeholder name (you can remove this if you don't use it)
+
+                                // --------------------------------------------------------------------------
+                                // !!! KEY UPDATE: Automatically get blog_id from the URL (The Dynamic ID) !!!
+                                // --------------------------------------------------------------------------
+                                // Assuming the unique ID for the blog post is passed in the URL, like: yourblog.php?id=123
+                                $blog_id_from_url = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+                                // Use the fetched ID. If the ID is 0 (or missing/invalid), we won't fetch/save comments.
+                                $blog_id = ($blog_id_from_url > 0) ? $blog_id_from_url : 0;
+
+                                // --- Database Connection Setup (MySQLi) ---
                                 $host = 'localhost';
-                                if ($_SERVER['SERVER_NAME'] == 'localhost') {
-                                    $user = "root";
-                                    $pass = "";
-                                    $db = "krishnadental";
-                                } else {
-                                    $user = "krishnadentacureclinic";
-                                    $pass = "ip4IvBVvK8TlT7y";
-                                    $db = "krishnadentacureclinic";
-                                }
+                                $user = ($_SERVER['SERVER_NAME'] == 'localhost') ? "root" : "krishnadentacureclinic";
+                                $pass = ($_SERVER['SERVER_NAME'] == 'localhost') ? "" : "ip4IvBVvK8TlT7y";
+                                $db = ($_SERVER['SERVER_NAME'] == 'localhost') ? "krishnadental" : "krishnadentacureclinic";
+                                $conn = null;
+                                $all_comment_result = null; // Initialize results
 
                                 try {
-                                    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-                                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                                    // ✅ Blog ID check
-                                    $blog_id = isset($blog['id']) ? intval($blog['id']) : 0;
-
-                                    // ✅ Fetch all comments for this blog
-                                    $stmt = $pdo->prepare("SELECT user_name, comment 
-                                                FROM blog_comments 
-                                                WHERE blog_id = :blog_id 
-                                                ORDER BY created_at DESC");
-                                    $stmt->bindParam(':blog_id', $blog_id, PDO::PARAM_INT);
-                                    $stmt->execute();
-                                    $comment_result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                } catch (PDOException $e) {
-                                    die("❌ DB Error: " . $e->getMessage());
-                                }
-                                ?>
-
-
-                                <!-- Write Comment Button -->
-                                <button class="show-comment-btn mt-5" onclick="toggleCommentBox()">✍️ Write a Comment</button>
-
-                                <!-- Comment Form Popup -->
-                                <div id="comment-overlay" class="comment-overlay" style="display:none;">
-                                    <div class="comment-box">
-                                        <span class="close-btn" onclick="toggleCommentBox()">&times;</span>
-                                        <h3>💬 Leave a Comment</h3>
-                                        <form action="save_comment.php" method="POST">
-                                            <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
-
-                                            <input type="text" name="user_name" placeholder="Your Name" required>
-                                            <input type="email" name="user_email" placeholder="Your Email" required>
-                                            <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
-
-                                            <button type="submit">Post Comment</button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <!-- Display Comments -->
-                                <?php
-                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                                    $comment_id = intval($_POST['comment_id']);
-                                    $type = $_POST['type'];
-
-                                    if (!in_array($type, ['like', 'dislike'])) {
-                                        echo json_encode(["success" => false, "message" => "Invalid type"]);
-                                        exit;
+                                    $conn = new mysqli($host, $user, $pass, $db);
+                                    if ($conn->connect_error) {
+                                        throw new Exception("MySQLi Connection failed: " . $conn->connect_error);
                                     }
 
-                                    if (!isset($_SESSION['reactions'])) {
-                                        $_SESSION['reactions'] = [];
-                                    }
-
-                                    // Check if user already reacted
-                                    if (isset($_SESSION['reactions'][$comment_id])) {
-                                        echo json_encode(["success" => false, "message" => "You can only react once."]);
-                                        exit;
-                                    }
-
-                                    // Update database count
-                                    if ($type === 'like') {
-                                        $conn->query("UPDATE blog_comments SET likes = likes + 1 WHERE id=$comment_id");
-                                    } else {
-                                        $conn->query("UPDATE blog_comments SET dislikes = dislikes + 1 WHERE id=$comment_id");
-                                    }
-
-                                    // Store reaction in session
-                                    $_SESSION['reactions'][$comment_id] = $type;
-
-                                    // Fetch updated counts
-                                    $res = $conn->query("SELECT likes, dislikes FROM blog_comments WHERE id=$comment_id");
-                                    $row = $res->fetch_assoc();
-
-                                    echo json_encode([
-                                        "success" => true,
-                                        "likes" => (int)$row['likes'],
-                                        "dislikes" => (int)$row['dislikes']
-                                    ]);
-                                }
-                                ?>
-
-                                <div class="comment-list">
-                                    <h4>📝 Latest Comments</h4>
-                                    <div class="row">
-                                        <?php
-                                        // All comments fetch
-                                        $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
+                                    // Only fetch comments if we have a valid blog_id from the URL
+                                    if ($blog_id > 0) {
+                                        // Fetch comments ONLY for this specific blog_id
+                                        // Using $blog_id (which is an integer) directly in the WHERE clause is safe.
+                                        $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = $blog_id ORDER BY id DESC";
                                         $all_comment_result = $conn->query($all_comments_sql);
+                                    }
+                                } catch (Exception $e) {
+                                    echo "<div>❌ Comment Section Error: " . $e->getMessage() . "</div>";
+                                    $all_comment_result = null;
+                                }
+                                ?>
 
-                                        if ($all_comment_result && $all_comment_result->num_rows > 0) {
-                                            while ($row = $all_comment_result->fetch_assoc()) {
-                                                $comment_id = $row['id'];
-                                                $user_name  = htmlspecialchars($row['user_name']);
-                                                $comment    = htmlspecialchars($row['comment']);
-                                                $reply_text = htmlspecialchars($row['reply_text']);
-                                                $likes      = (int)$row['likes'];
-                                                $dislikes   = (int)$row['dislikes'];
+                                <div class="device-section-D3">
+                                    <!-- <h3>Comments for Blog ID: <?php echo $blog_id; ?></h3> -->
 
-                                                echo "
-                                                                <div class='col-md-6 mb-3'>
-                                                                    <div class='comment-item p-3 border rounded shadow-sm h-100'>
-                                                                        <p><strong>Name:</strong> $user_name</p>
-                                                                        <p><strong>Comment:</strong> $comment</p>";
+                                    <button class="show-comment-btn mt-5" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">
+                                        ✍️ Write a Comment
+                                    </button>
 
-                                                // ✅ If reply exists, show replies count (split by || for multiple replies)
-                                                if (!empty($reply_text)) {
-                                                    $replies = explode("||", $reply_text); // multiple replies stored as text separated by ||
-                                                    $reply_count = count($replies);
+                                    <div id="comment-overlay<?php echo $section_suffix; ?>" class="comment-overlay" style="display:none;">
+                                        <div class="comment-box">
+                                            <span class="close-btn" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">&times;</span>
+                                            <h3>💬 Leave a Comment</h3>
 
+                                            <form action="save_comment.php" method="POST">
+                                                <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
+                                                <input type="text" name="user_name" placeholder="Your Name" required>
+                                                <input type="email" name="user_email" placeholder="Your Email" required>
+                                                <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
+
+                                                <?php if ($blog_id > 0): ?>
+                                                    <button type="submit">Post Comment</button>
+                                                <?php else: ?>
+                                                    <p class="text-danger">Cannot post comment: Missing Blog ID.</p>
+                                                <?php endif; ?>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="comment-list">
+                                        <h4>📝 Latest Comments</h4>
+                                        <div class="row">
+                                            <?php
+                                            if ($blog_id == 0) {
+                                                echo "<div class='col-12'><p class='text-danger'>⚠️ **ERROR**: No Blog ID found in the URL (e.g., ?id=123). Comments are disabled.</p></div>";
+                                            } elseif ($all_comment_result && $all_comment_result->num_rows > 0) {
+                                                while ($row = $all_comment_result->fetch_assoc()) {
+                                                    $comment_id = $row['id'];
+                                                    $user_name  = htmlspecialchars($row['user_name']);
+                                                    $comment    = htmlspecialchars($row['comment']);
+                                                    $reply_text = htmlspecialchars($row['reply_text']);
+                                                    $likes      = (int)$row['likes'];
+                                                    $dislikes   = (int)$row['dislikes'];
+
+                                                    // HTML to display a single comment (re-inserted here for completeness)
                                                     echo "
-                                                                        <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
-                                                                            $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
-                                                                        </a>
-                                                                        <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
+                    <div class='col-md-6 mb-3'>
+                        <div class='comment-item p-3 border rounded shadow-sm h-100'>
+                            <p><strong>Name:</strong> $user_name</p>
+                            <p><strong>Comment:</strong> $comment</p>";
 
-                                                    foreach ($replies as $reply) {
-                                                        $reply = htmlspecialchars(trim($reply));
+                                                    // Replies logic
+                                                    if (!empty($reply_text)) {
+                                                        $replies = explode("||", $reply_text);
+                                                        $reply_count = count($replies);
                                                         echo "
-                                                                            <div class='p-2 mb-1 bg-light border rounded'>
-                                                                                <strong>krishnadental Dental Hospital :</strong> $reply
-                                                                            </div>";
+                                <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
+                                    $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
+                                </a>
+                                <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
+                                                        foreach ($replies as $reply) {
+                                                            $reply = htmlspecialchars(trim($reply));
+                                                            echo "
+                                        <div class='p-2 mb-1 bg-light border rounded'>
+                                            <strong>Ask-Oncologist Hospital :</strong> $reply
+                                        </div>";
+                                                        }
+                                                        echo "</div>";
                                                     }
 
-                                                    echo "</div>";
+                                                    // Reaction buttons (call the global JavaScript updateReaction function)
+                                                    echo "
+                            <div class='mt-2 d-flex justify-content-between'>
+                                <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
+                                    👍 Like (<span id='like-count-$comment_id'>$likes</span>)
+                                </button>
+                                <button class='btn btn-sm btn-outline-danger' onclick='updateReaction($comment_id, \"dislike\")'>
+                                    👎 Dislike (<span id='dislike-count-$comment_id'>$dislikes</span>)
+                                </button>
+                            </div>
+                        </div>
+                    </div>";
                                                 }
-
-                                                echo "
-                                                                        <!-- Like / Dislike buttons -->
-                                                                        <div class='mt-2 d-flex justify-content-between'>
-                                                                            <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
-                                                                                👍 Like (<span id='like-count-$comment_id'>$likes</span>)
-                                                                            </button>
-                                                                            <button class='btn btn-sm btn-outline-danger' onclick='updateReaction($comment_id, \"dislike\")'>
-                                                                                👎 Dislike (<span id='dislike-count-$comment_id'>$dislikes</span>)
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                ";
+                                            } else {
+                                                echo "<div class='col-12'><p>No comments yet for this blog. Be the first to comment!</p></div>";
                                             }
-                                        } else {
-                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
-                                        }
-                                        ?>
+                                            if ($conn) $conn->close();
+                                            ?>
+                                        </div>
                                     </div>
                                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 <script>
                                     function toggleReply(commentId) {
@@ -1310,19 +1249,8 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
                                 <style>
+                                    /* ------------------- GLOBAL STYLING ------------------- */
                                     .comment-overlay {
                                         position: fixed;
                                         top: 0;
@@ -1337,11 +1265,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                     }
 
                                     .comment-box {
-                                        background: #fff;
+                                        background-image: radial-gradient(circle, #e8f2f9, #a5d7f9) !important;
                                         padding: 20px;
                                         border-radius: 8px;
+                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
                                         width: 90%;
-                                        max-width: 500px;
+                                        max-width: 600px;
                                         position: relative;
                                     }
 
@@ -1354,53 +1283,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         color: #333;
                                     }
 
-                                    .comment-box input,
-                                    .comment-box textarea,
-                                    .comment-box button {
-                                        width: 100%;
-                                        margin-bottom: 10px;
-                                        padding: 10px;
-                                        border-radius: 5px;
-                                        border: 1px solid #ccc;
+                                    .comment-box h3 {
+                                        margin-bottom: 15px;
+                                        color: #333;
                                     }
 
-                                    .comment-box button {
-                                        background-color: #007bff;
-                                        color: #fff;
-                                        border: none;
-                                        cursor: pointer;
-                                    }
-
-                                    .comment-list {
-                                        margin-top: 20px;
-                                        padding: 10px;
-                                        background: #f9f9f9;
-                                        border-radius: 8px;
-                                    }
-
-                                    .comment-item {
-                                        padding: 10px;
-                                        border-bottom: 1px solid #ddd;
-                                    }
-
-                                    .comment-item:last-child {
-                                        border-bottom: none;
-                                    }
-
-                                    .comment-item strong {
-                                        display: block;
-                                        margin-bottom: 5px;
-                                    }
-
-                                    .comment-item p {
-                                        margin: 0;
-                                    }
-                                </style>
-
-
-
-                                <!-- Styling -->
-                                <style>
+                                    /* ------------------- BUTTONS & INPUTS ------------------- */
                                     .show-comment-btn {
                                         background: #007bff;
                                         color: white;
@@ -1416,20 +1304,6 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         background: #0056b3;
                                     }
 
-                                    .comment-box {
-                                        /* background: red; */
-                                        background-image: radial-gradient(circle, #e8f2f9, #dcedf9, #d0e8f9, #c4e3f9, #b7def9, #b1dcf9, #abd9f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9) !important;
-                                        padding: 20px;
-                                        border-radius: 8px;
-                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-                                        max-width: 600px;
-                                    }
-
-                                    .comment-box h3 {
-                                        margin-bottom: 15px;
-                                        color: #333;
-                                    }
-
                                     .comment-box input,
                                     .comment-box textarea {
                                         width: 100%;
@@ -1439,7 +1313,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 5px;
                                     }
 
-                                    .comment-box button {
+                                    .comment-box button[type="submit"] {
                                         background: #28a745;
                                         color: white;
                                         padding: 10px 16px;
@@ -1447,10 +1321,29 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 6px;
                                         cursor: pointer;
                                         transition: background 0.3s ease;
+                                        width: 100%;
+                                        margin-bottom: 10px;
                                     }
 
-                                    .comment-box button:hover {
+                                    .comment-box button[type="submit"]:hover {
                                         background: #1e7e34;
+                                    }
+
+                                    /* ------------------- COMMENT LIST ------------------- */
+                                    .comment-list {
+                                        margin-top: 20px;
+                                        padding: 10px;
+                                        background: #f9f9f9;
+                                        border-radius: 8px;
+                                    }
+
+                                    .comment-item {
+                                        padding: 10px;
+                                        border-bottom: 1px solid #ddd;
+                                    }
+
+                                    .comment-item:last-child {
+                                        border-bottom: none;
                                     }
                                 </style>
 
@@ -1460,154 +1353,148 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
 
 
+
+
+
                                 <?php
-                                // Auto DB Connection (localhost / live)
+                                // NOTE: session_start() MUST be called once at the very top of your main page, 
+                                // BEFORE any HTML, or the reaction logic will fail.
+
+                                // --- Configuration for Device 1 ---
+                                // $section_suffix = '_D1';
+                                // $device_name = 'Mobile Phone X';
+                                // $blog_id = 101; 
+                                // --- Database Connection Setup (PDO & MySQLi) ---
                                 $host = 'localhost';
-                                if ($_SERVER['SERVER_NAME'] == 'localhost') {
-                                    $user = "root";
-                                    $pass = "";
-                                    $db = "krishnadental";
-                                } else {
-                                    $user = "krishnadentacureclinic";
-                                    $pass = "ip4IvBVvK8TlT7y";
-                                    $db = "krishnadentacureclinic";
-                                }
+                                $user = ($_SERVER['SERVER_NAME'] == 'localhost') ? "root" : "krishnadentacureclinic";
+                                $pass = ($_SERVER['SERVER_NAME'] == 'localhost') ? "" : "ip4IvBVvK8TlT7y";
+                                $db = ($_SERVER['SERVER_NAME'] == 'localhost') ? "krishnadental" : "krishnadentacureclinic";
+                                $conn = null;
 
                                 try {
-                                    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-                                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                    $conn = new mysqli($host, $user, $pass, $db);
+                                    if ($conn->connect_error) {
+                                        throw new Exception("MySQLi Connection failed: " . $conn->connect_error);
+                                    }
 
-                                    // ✅ Blog ID check
-                                    $blog_id = isset($blog['id']) ? intval($blog['id']) : 0;
-
-                                    // ✅ Fetch all comments for this blog
-                                    $stmt = $pdo->prepare("SELECT user_name, comment 
-                           FROM blog_comments 
-                           WHERE blog_id = :blog_id 
-                           ORDER BY created_at DESC");
-                                    $stmt->bindParam(':blog_id', $blog_id, PDO::PARAM_INT);
-                                    $stmt->execute();
-                                    $comment_result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                } catch (PDOException $e) {
-                                    die("❌ DB Error: " . $e->getMessage());
+                                    // Fetch comments for this specific blog_id
+                                    $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
+                                    $all_comment_result = $conn->query($all_comments_sql);
+                                } catch (Exception $e) {
+                                    echo "<div>❌ Comment Section Error: " . $e->getMessage() . "</div>";
+                                    $all_comment_result = null; // Ensure loop doesn't try to run
                                 }
                                 ?>
 
+                                <div class="device-section-D1">
+                                    <!-- <h3>Comments for <?php echo $device_name; ?></h3> -->
 
-                                <!-- Write Comment Button -->
-                                <button class="show-comment-btn mt-5" onclick="toggleCommentBox()">✍️ Write a Comment</button>
+                                    <button class="show-comment-btn mt-5" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">
+                                        ✍️ Write a Comment for <?php echo $device_name; ?>
+                                    </button>
 
-                                <!-- Comment Form Popup -->
-                                <div id="comment-overlay" class="comment-overlay" style="display:none;">
-                                    <div class="comment-box">
-                                        <span class="close-btn" onclick="toggleCommentBox()">&times;</span>
-                                        <h3>💬 Leave a Comment</h3>
-                                        <form action="save_comment.php" method="POST">
-                                            <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
-
-                                            <input type="text" name="user_name" placeholder="Your Name" required>
-                                            <input type="email" name="user_email" placeholder="Your Email" required>
-                                            <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
-
-                                            <button type="submit">Post Comment</button>
-                                        </form>
+                                    <div id="comment-overlay<?php echo $section_suffix; ?>" class="comment-overlay" style="display:none;">
+                                        <div class="comment-box">
+                                            <span class="close-btn" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">&times;</span>
+                                            <h3>💬 Leave a Comment (<?php echo $device_name; ?>)</h3>
+                                            <form action="save_comment.php" method="POST">
+                                                <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
+                                                <input type="text" name="user_name" placeholder="Your Name" required>
+                                                <input type="email" name="user_email" placeholder="Your Email" required>
+                                                <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
+                                                <button type="submit">Post Comment</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Display Comments -->
-                                <?php
+                                    <?php
+                                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                        $comment_id = intval($_POST['comment_id']);
+                                        $type = $_POST['type'];
 
+                                        if (!in_array($type, ['like', 'dislike'])) {
+                                            echo json_encode(["success" => false, "message" => "Invalid type"]);
+                                            exit;
+                                        }
 
-                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                                    $comment_id = intval($_POST['comment_id']);
-                                    $type = $_POST['type'];
+                                        if (!isset($_SESSION['reactions'])) {
+                                            $_SESSION['reactions'] = [];
+                                        }
 
-                                    if (!in_array($type, ['like', 'dislike'])) {
-                                        echo json_encode(["success" => false, "message" => "Invalid type"]);
-                                        exit;
+                                        // Check if user already reacted
+                                        if (isset($_SESSION['reactions'][$comment_id])) {
+                                            echo json_encode(["success" => false, "message" => "You can only react once."]);
+                                            exit;
+                                        }
+
+                                        // Update database count
+                                        if ($type === 'like') {
+                                            $conn->query("UPDATE blog_comments SET likes = likes + 1 WHERE id=$comment_id");
+                                        } else {
+                                            $conn->query("UPDATE blog_comments SET dislikes = dislikes + 1 WHERE id=$comment_id");
+                                        }
+
+                                        // Store reaction in session
+                                        $_SESSION['reactions'][$comment_id] = $type;
+
+                                        // Fetch updated counts
+                                        $res = $conn->query("SELECT likes, dislikes FROM blog_comments WHERE id=$comment_id");
+                                        $row = $res->fetch_assoc();
+
+                                        echo json_encode([
+                                            "success" => true,
+                                            "likes" => (int)$row['likes'],
+                                            "dislikes" => (int)$row['dislikes']
+                                        ]);
                                     }
+                                    ?>
 
-                                    if (!isset($_SESSION['reactions'])) {
-                                        $_SESSION['reactions'] = [];
-                                    }
+                                    <div class="comment-list">
+                                        <h4>📝 Latest Comments</h4>
+                                        <div class="row">
+                                            <?php
+                                            // All comments fetch
+                                            $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
+                                            $all_comment_result = $conn->query($all_comments_sql);
 
-                                    // Check if user already reacted
-                                    if (isset($_SESSION['reactions'][$comment_id])) {
-                                        echo json_encode(["success" => false, "message" => "You can only react once."]);
-                                        exit;
-                                    }
+                                            if ($all_comment_result && $all_comment_result->num_rows > 0) {
+                                                while ($row = $all_comment_result->fetch_assoc()) {
+                                                    $comment_id = $row['id'];
+                                                    $user_name  = htmlspecialchars($row['user_name']);
+                                                    $comment    = htmlspecialchars($row['comment']);
+                                                    $reply_text = htmlspecialchars($row['reply_text']);
+                                                    $likes      = (int)$row['likes'];
+                                                    $dislikes   = (int)$row['dislikes'];
 
-                                    // Update database count
-                                    if ($type === 'like') {
-                                        $conn->query("UPDATE blog_comments SET likes = likes + 1 WHERE id=$comment_id");
-                                    } else {
-                                        $conn->query("UPDATE blog_comments SET dislikes = dislikes + 1 WHERE id=$comment_id");
-                                    }
-
-                                    // Store reaction in session
-                                    $_SESSION['reactions'][$comment_id] = $type;
-
-                                    // Fetch updated counts
-                                    $res = $conn->query("SELECT likes, dislikes FROM blog_comments WHERE id=$comment_id");
-                                    $row = $res->fetch_assoc();
-
-                                    echo json_encode([
-                                        "success" => true,
-                                        "likes" => (int)$row['likes'],
-                                        "dislikes" => (int)$row['dislikes']
-                                    ]);
-                                }
-                                ?>
-
-
-
-
-                                <div class="comment-list">
-                                    <h4>📝 Latest Comments</h4>
-                                    <div class="row">
-                                        <?php
-                                        // All comments fetch
-                                        $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
-                                        $all_comment_result = $conn->query($all_comments_sql);
-
-                                        if ($all_comment_result && $all_comment_result->num_rows > 0) {
-                                            while ($row = $all_comment_result->fetch_assoc()) {
-                                                $comment_id = $row['id'];
-                                                $user_name  = htmlspecialchars($row['user_name']);
-                                                $comment    = htmlspecialchars($row['comment']);
-                                                $reply_text = htmlspecialchars($row['reply_text']);
-                                                $likes      = (int)$row['likes'];
-                                                $dislikes   = (int)$row['dislikes'];
-
-                                                echo "
+                                                    echo "
                                         <div class='col-md-6 mb-3'>
                                             <div class='comment-item p-3 border rounded shadow-sm h-100'>
                                                 <p><strong>Name:</strong> $user_name</p>
                                                 <p><strong>Comment:</strong> $comment</p>";
 
-                                                // ✅ If reply exists, show replies count (split by || for multiple replies)
-                                                if (!empty($reply_text)) {
-                                                    $replies = explode("||", $reply_text); // multiple replies stored as text separated by ||
-                                                    $reply_count = count($replies);
+                                                    // ✅ If reply exists, show replies count (split by || for multiple replies)
+                                                    if (!empty($reply_text)) {
+                                                        $replies = explode("||", $reply_text); // multiple replies stored as text separated by ||
+                                                        $reply_count = count($replies);
 
-                                                    echo "
+                                                        echo "
                                                 <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
                                                     $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
                                                 </a>
                                                 <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
 
-                                                    foreach ($replies as $reply) {
-                                                        $reply = htmlspecialchars(trim($reply));
-                                                        echo "
+                                                        foreach ($replies as $reply) {
+                                                            $reply = htmlspecialchars(trim($reply));
+                                                            echo "
                                                     <div class='p-2 mb-1 bg-light border rounded'>
-                                                        <strong>krishnadental Dental Hospital :</strong> $reply
+                                                        <strong>Ask-Oncologist Hospital :</strong> $reply
                                                     </div>";
+                                                        }
+
+                                                        echo "</div>";
                                                     }
 
-                                                    echo "</div>";
-                                                }
-
-                                                echo "
+                                                    echo "
                                                 <!-- Like / Dislike buttons -->
                                                 <div class='mt-2 d-flex justify-content-between'>
                                                     <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
@@ -1620,13 +1507,15 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                             </div>
                                         </div>
                                         ";
+                                                }
+                                            } else {
+                                                echo "<div class='col-12'><p>No comments yet. Be the first to comment!</p></div>";
                                             }
-                                        } else {
-                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
-                                        }
-                                        ?>
+                                            ?>
+                                        </div>
                                     </div>
                                 </div>
+
 
 
                                 <script>
@@ -1775,7 +1664,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
 
 
-            </div>
+                </d>
             </div>
             </div>
         </section>
@@ -1957,15 +1846,8 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
 
 
-
-
-
-
-
-
-
-
                                 <style>
+                                    /* ------------------- GLOBAL STYLING ------------------- */
                                     .comment-overlay {
                                         position: fixed;
                                         top: 0;
@@ -1980,11 +1862,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                     }
 
                                     .comment-box {
-                                        background: #fff;
+                                        background-image: radial-gradient(circle, #e8f2f9, #a5d7f9) !important;
                                         padding: 20px;
                                         border-radius: 8px;
+                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
                                         width: 90%;
-                                        max-width: 500px;
+                                        max-width: 600px;
                                         position: relative;
                                     }
 
@@ -1997,53 +1880,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         color: #333;
                                     }
 
-                                    .comment-box input,
-                                    .comment-box textarea,
-                                    .comment-box button {
-                                        width: 100%;
-                                        margin-bottom: 10px;
-                                        padding: 10px;
-                                        border-radius: 5px;
-                                        border: 1px solid #ccc;
+                                    .comment-box h3 {
+                                        margin-bottom: 15px;
+                                        color: #333;
                                     }
 
-                                    .comment-box button {
-                                        background-color: #007bff;
-                                        color: #fff;
-                                        border: none;
-                                        cursor: pointer;
-                                    }
-
-                                    .comment-list {
-                                        margin-top: 20px;
-                                        padding: 10px;
-                                        background: #f9f9f9;
-                                        border-radius: 8px;
-                                    }
-
-                                    .comment-item {
-                                        padding: 10px;
-                                        border-bottom: 1px solid #ddd;
-                                    }
-
-                                    .comment-item:last-child {
-                                        border-bottom: none;
-                                    }
-
-                                    .comment-item strong {
-                                        display: block;
-                                        margin-bottom: 5px;
-                                    }
-
-                                    .comment-item p {
-                                        margin: 0;
-                                    }
-                                </style>
-
-
-
-                                <!-- Styling -->
-                                <style>
+                                    /* ------------------- BUTTONS & INPUTS ------------------- */
                                     .show-comment-btn {
                                         background: #007bff;
                                         color: white;
@@ -2059,20 +1901,6 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         background: #0056b3;
                                     }
 
-                                    .comment-box {
-                                        /* background: red; */
-                                        background-image: radial-gradient(circle, #e8f2f9, #dcedf9, #d0e8f9, #c4e3f9, #b7def9, #b1dcf9, #abd9f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9, #a5d7f9) !important;
-                                        padding: 20px;
-                                        border-radius: 8px;
-                                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-                                        max-width: 600px;
-                                    }
-
-                                    .comment-box h3 {
-                                        margin-bottom: 15px;
-                                        color: #333;
-                                    }
-
                                     .comment-box input,
                                     .comment-box textarea {
                                         width: 100%;
@@ -2082,7 +1910,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 5px;
                                     }
 
-                                    .comment-box button {
+                                    .comment-box button[type="submit"] {
                                         background: #28a745;
                                         color: white;
                                         padding: 10px 16px;
@@ -2090,186 +1918,115 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                         border-radius: 6px;
                                         cursor: pointer;
                                         transition: background 0.3s ease;
+                                        width: 100%;
+                                        margin-bottom: 10px;
                                     }
 
-                                    .comment-box button:hover {
+                                    .comment-box button[type="submit"]:hover {
                                         background: #1e7e34;
+                                    }
+
+                                    /* ------------------- COMMENT LIST ------------------- */
+                                    .comment-list {
+                                        margin-top: 20px;
+                                        padding: 10px;
+                                        background: #f9f9f9;
+                                        border-radius: 8px;
+                                    }
+
+                                    .comment-item {
+                                        padding: 10px;
+                                        border-bottom: 1px solid #ddd;
+                                    }
+
+                                    .comment-item:last-child {
+                                        border-bottom: none;
                                     }
                                 </style>
 
 
 
 
-
-
-
                                 <?php
-                                // Auto DB Connection (localhost / live)
+                                // --- Configuration for Device 2 ---
+                                $section_suffix = '_D2';
+                                $device_name = 'Laptop Pro 2';
+                                $blog_id = 102; // !!! CHANGE this to the actual ID for Device 2's content !!! 
+
+                                // --- Database Connection Setup (PDO & MySQLi) ---
                                 $host = 'localhost';
-                                if ($_SERVER['SERVER_NAME'] == 'localhost') {
-                                    $user = "root";
-                                    $pass = "";
-                                    $db = "krishnadental";
-                                } else {
-                                    $user = "krishnadentacureclinic";
-                                    $pass = "ip4IvBVvK8TlT7y";
-                                    $db = "krishnadentacureclinic";
-                                }
+                                $user = ($_SERVER['SERVER_NAME'] == 'localhost') ? "root" : "krishnadentacureclinic";
+                                $pass = ($_SERVER['SERVER_NAME'] == 'localhost') ? "" : "ip4IvBVvK8TlT7y";
+                                $db = ($_SERVER['SERVER_NAME'] == 'localhost') ? "krishnadental" : "krishnadentacureclinic";
+                                $conn = null;
 
                                 try {
-                                    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-                                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                    $conn = new mysqli($host, $user, $pass, $db);
+                                    if ($conn->connect_error) {
+                                        throw new Exception("MySQLi Connection failed: " . $conn->connect_error);
+                                    }
 
-                                    // ✅ Blog ID check
-                                    $blog_id = isset($blog['id']) ? intval($blog['id']) : 0;
-
-                                    // ✅ Fetch all comments for this blog
-                                    $stmt = $pdo->prepare("SELECT user_name, comment 
-                           FROM blog_comments 
-                           WHERE blog_id = :blog_id 
-                           ORDER BY created_at DESC");
-                                    $stmt->bindParam(':blog_id', $blog_id, PDO::PARAM_INT);
-                                    $stmt->execute();
-                                    $comment_result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                } catch (PDOException $e) {
-                                    die("❌ DB Error: " . $e->getMessage());
+                                    // Fetch comments for this specific blog_id
+                                    $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
+                                    $all_comment_result = $conn->query($all_comments_sql);
+                                } catch (Exception $e) {
+                                    echo "<div>❌ Comment Section Error: " . $e->getMessage() . "</div>";
+                                    $all_comment_result = null;
                                 }
                                 ?>
 
+                                <div class="device-section-D2">
+                                    <!-- <h3>Comments for <?php echo $device_name; ?></h3> -->
 
-                                <!-- Write Comment Button -->
-                                <button class="show-comment-btn mt-5" onclick="toggleCommentBox()">✍️ Write a Comment</button>
+                                    <button class="show-comment-btn mt-5" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">
+                                        ✍️ Write a Comment for <?php echo $device_name; ?>
+                                    </button>
 
-                                <!-- Comment Form Popup -->
-                                <div id="comment-overlay" class="comment-overlay" style="display:none;">
-                                    <div class="comment-box">
-                                        <span class="close-btn" onclick="toggleCommentBox()">&times;</span>
-                                        <h3>💬 Leave a Comment</h3>
-                                        <form action="save_comment.php" method="POST">
-                                            <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
-
-                                            <input type="text" name="user_name" placeholder="Your Name" required>
-                                            <input type="email" name="user_email" placeholder="Your Email" required>
-                                            <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
-
-                                            <button type="submit">Post Comment</button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <!-- Display Comments -->
-                                <?php
-
-
-                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                                    $comment_id = intval($_POST['comment_id']);
-                                    $type = $_POST['type'];
-
-                                    if (!in_array($type, ['like', 'dislike'])) {
-                                        echo json_encode(["success" => false, "message" => "Invalid type"]);
-                                        exit;
-                                    }
-
-                                    if (!isset($_SESSION['reactions'])) {
-                                        $_SESSION['reactions'] = [];
-                                    }
-
-                                    // Check if user already reacted
-                                    if (isset($_SESSION['reactions'][$comment_id])) {
-                                        echo json_encode(["success" => false, "message" => "You can only react once."]);
-                                        exit;
-                                    }
-
-                                    // Update database count
-                                    if ($type === 'like') {
-                                        $conn->query("UPDATE blog_comments SET likes = likes + 1 WHERE id=$comment_id");
-                                    } else {
-                                        $conn->query("UPDATE blog_comments SET dislikes = dislikes + 1 WHERE id=$comment_id");
-                                    }
-
-                                    // Store reaction in session
-                                    $_SESSION['reactions'][$comment_id] = $type;
-
-                                    // Fetch updated counts
-                                    $res = $conn->query("SELECT likes, dislikes FROM blog_comments WHERE id=$comment_id");
-                                    $row = $res->fetch_assoc();
-
-                                    echo json_encode([
-                                        "success" => true,
-                                        "likes" => (int)$row['likes'],
-                                        "dislikes" => (int)$row['dislikes']
-                                    ]);
-                                }
-                                ?>
-
-
-
-
-                                <div class="comment-list">
-                                    <h4>📝 Latest Comments</h4>
-                                    <div class="row">
-                                        <?php
-                                        // All comments fetch
-                                        $all_comments_sql = "SELECT * FROM blog_comments WHERE blog_id = '$blog_id' ORDER BY id DESC";
-                                        $all_comment_result = $conn->query($all_comments_sql);
-
-                                        if ($all_comment_result && $all_comment_result->num_rows > 0) {
-                                            while ($row = $all_comment_result->fetch_assoc()) {
-                                                $comment_id = $row['id'];
-                                                $user_name  = htmlspecialchars($row['user_name']);
-                                                $comment    = htmlspecialchars($row['comment']);
-                                                $reply_text = htmlspecialchars($row['reply_text']);
-                                                $likes      = (int)$row['likes'];
-                                                $dislikes   = (int)$row['dislikes'];
-
-                                                echo "
-                                        <div class='col-md-6 mb-3'>
-                                            <div class='comment-item p-3 border rounded shadow-sm h-100'>
-                                                <p><strong>Name:</strong> $user_name</p>
-                                                <p><strong>Comment:</strong> $comment</p>";
-
-                                                // ✅ If reply exists, show replies count (split by || for multiple replies)
-                                                if (!empty($reply_text)) {
-                                                    $replies = explode("||", $reply_text); // multiple replies stored as text separated by ||
-                                                    $reply_count = count($replies);
-
-                                                    echo "
-                                                <a href='javascript:void(0)' class='text-primary small' onclick='toggleReply($comment_id)'>
-                                                    $reply_count Reply" . ($reply_count > 1 ? "ies" : "") . "
-                                                </a>
-                                                <div id='reply-box-$comment_id' class='mt-2' style='display:none;'>";
-
-                                                    foreach ($replies as $reply) {
-                                                        $reply = htmlspecialchars(trim($reply));
-                                                        echo "
-                                                    <div class='p-2 mb-1 bg-light border rounded'>
-                                                        <strong>krishnadental Dental Hospital :</strong> $reply
-                                                    </div>";
-                                                    }
-
-                                                    echo "</div>";
-                                                }
-
-                                                echo "
-                                                <!-- Like / Dislike buttons -->
-                                                <div class='mt-2 d-flex justify-content-between'>
-                                                    <button class='btn btn-sm btn-outline-success' onclick='updateReaction($comment_id, \"like\")'>
-                                                        👍 Like (<span id='like-count-$comment_id'>$likes</span>)
-                                                    </button>
-                                                    <button class='btn btn-sm btn-outline-danger' onclick='updateReaction($comment_id, \"dislike\")'>
-                                                        👎 Dislike (<span id='dislike-count-$comment_id'>$dislikes</span>)
-                                                    </button>
-                                                </div>
-                                            </div>
+                                    <div id="comment-overlay<?php echo $section_suffix; ?>" class="comment-overlay" style="display:none;">
+                                        <div class="comment-box">
+                                            <span class="close-btn" onclick="toggleCommentBox('<?php echo $section_suffix; ?>')">&times;</span>
+                                            <h3>💬 Leave a Comment (<?php echo $device_name; ?>)</h3>
+                                            <form action="save_comment.php" method="POST">
+                                                <input type="hidden" name="blog_id" value="<?php echo $blog_id; ?>">
+                                                <input type="text" name="user_name" placeholder="Your Name" required>
+                                                <input type="email" name="user_email" placeholder="Your Email" required>
+                                                <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
+                                                <button type="submit">Post Comment</button>
+                                            </form>
                                         </div>
-                                        ";
+                                    </div>
+
+                                    <div class="comment-list">
+                                        <h4>📝 Latest Comments</h4>
+                                        <div class="row">
+                                            <?php
+                                            if ($all_comment_result && $all_comment_result->num_rows > 0) {
+                                                while ($row = $all_comment_result->fetch_assoc()) {
+                                                    $comment_id = $row['id'];
+                                                    $user_name = htmlspecialchars($row['user_name']);
+                                                    $comment = htmlspecialchars($row['comment']);
+                                                    $reply_text = htmlspecialchars($row['reply_text']);
+                                                    $likes = (int)$row['likes'];
+                                                    $dislikes = (int)$row['dislikes'];
+
+                                                    // Display HTML output
+                                                    // include 'comment_template.php'; 
+                                                }
+                                            } else {
+                                                echo "<div class='col-12'><p>No comments yet for " . $device_name . ". Be the first to comment.!</p></div>";
                                             }
-                                        } else {
-                                            echo "<div class='col-12'><p>No comments yet. Be the first to comment.!</p></div>";
-                                        }
-                                        ?>
+                                            if ($conn) $conn->close();
+                                            ?>
+                                        </div>
                                     </div>
                                 </div>
+
+
+
+
+
+
+
 
 
                                 <script>
@@ -2440,5 +2197,66 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
     <script src="assets2/js/tab.js"></script>
     <script src="assets2/js/accordion.js"></script>
     <script src="assets2/js/progressbar.js"></script>
+
+    <script>
+        /**
+         * Toggles the visibility of the comment form pop-up overlay.
+         * @param {string} sectionId - The unique ID suffix (e.g., '_D1')
+         */
+        function toggleCommentBox(sectionId) {
+            var overlay = document.getElementById("comment-overlay" + sectionId);
+            if (overlay) {
+                if (overlay.style.display === "none" || overlay.style.display === "") {
+                    overlay.style.display = "flex"; // Show
+                } else {
+                    overlay.style.display = "none"; // Hide
+                }
+            }
+        }
+
+        /**
+         * Toggles the visibility of the replies section for a specific comment.
+         */
+        function toggleReply(commentId) {
+            var replyBox = document.getElementById('reply-box-' + commentId);
+            if (replyBox) {
+                replyBox.style.display = (replyBox.style.display === "none" || replyBox.style.display === "") ? "block" : "none";
+            }
+        }
+
+        /**
+         * Sends an AJAX POST request to update the like/dislike count.
+         * NOTE: This calls the separate 'update_reaction.php' file.
+         */
+        function updateReaction(commentId, type) {
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "update_reaction.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    try {
+                        let res = JSON.parse(xhr.responseText);
+                        if (res.success) {
+                            // Update the displayed counts on success
+                            document.getElementById("like-count-" + commentId).innerText = res.likes;
+                            document.getElementById("dislike-count-" + commentId).innerText = res.dislikes;
+                        } else {
+                            // Alert user if reaction failed (e.g., already reacted)
+                            alert("❌ " + res.message);
+                        }
+                    } catch (e) {
+                        console.error("Invalid JSON response:", xhr.responseText);
+                    }
+                }
+            };
+            xhr.send("comment_id=" + commentId + "&type=" + type);
+        }
+
+
+
+
+
+        // COMMENT 
+    </script>
 
 </body>
