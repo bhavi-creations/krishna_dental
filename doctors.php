@@ -36,7 +36,7 @@
 
                         <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
-                                <span class="counter">26</span>+
+                                <span class="counter">27</span>+
                             </div>
                             <p class="exp-text text-title mb-0">Years of Experience</p>
                         </div>
@@ -51,7 +51,7 @@
                             <h2 class="h1 mb-3">Dr. B. Suresh Kumar MDD(Ortho)</h2>
                         </div>
                         <div class="col-xl-10">
-                            <p class="mb-4">Dr. B Suresh Kumar is a highly respected dentist based in Rajahmundry with over 26 years of experience. He specializes in dental surgery, orthodontics, dentofacial orthopedics, and implants. Dr. Kumar completed his BDS from Karnataka Dental College in 1998 and his MDS in Orthodontics and Dentofacial Orthopedics from Lenora Institute of Dental Sciences in 2018. He is the founder of Krishna Denta Cure.</p>
+                            <p class="mb-4">Dr. B Suresh Kumar is a highly respected dentist based in Rajahmundry with over 27 years of experience. He specializes in dental surgery, orthodontics, dentofacial orthopedics, and implants. Dr. Kumar completed his BDS from Karnataka Dental College in 1998 and his MDS in Orthodontics and Dentofacial Orthopedics from Lenora Institute of Dental Sciences in 2018. He is the founder of Krishna Denta Cure.</p>
                         </div>
                     </div>
 

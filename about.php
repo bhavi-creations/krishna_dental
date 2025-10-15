@@ -82,7 +82,7 @@
                         <div class="d-xl-flex text-center text-xl-start skill-box">
                             <span class="ripple-icon hover-style2  align-self-start mb-20 mb-xl-0 mr-20"><i class="flaticon-discuss"></i></span>
                             <div class="media-body">
-                                <h2 class="mt-n2 mb-0 text-theme">26+</h2>
+                                <h2 class="mt-n2 mb-0 text-theme">27+</h2>
                                 <p class="text-title fs-md fw-medium mt-1 mt-xl-0 mb-2 mb-xl-2">Years Of Experience</p>
                             </div>
                         </div>
