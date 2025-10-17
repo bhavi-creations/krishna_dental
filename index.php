@@ -611,8 +611,8 @@
                             <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. B Ratna Vineela</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. B Ratna Vineela</a></h4>
+                            <span class="designation">Cosmetic Dentistry</span>
                         </div>
                     </div>
                 </div>
@@ -623,8 +623,8 @@
                             <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. B Sai Sruthi</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. B Sai Sruthi</a></h4>
+                            <span class="designation">ortho co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -635,8 +635,8 @@
                             <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. G Niharika</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. G Niharika</a></h4>
+                            <span class="designation">Pediatrician</span>
                         </div>
                     </div>
                 </div>
@@ -647,8 +647,8 @@
                             <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. Jyothsna Kalepu</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. Jyothsna Kalepu</a></h4>
+                            <span class="designation">patient hygiene & diet co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -659,8 +659,8 @@
                             <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. Malathi Chakravarthy</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. Malathi Chakravarthy</a></h4>
+                            <span class="designation">Surgeon</span>
                         </div>
                     </div>
                 </div>
@@ -670,8 +670,8 @@
                             <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. M Ganesh</a></h4>
-                            <span class="designation">Specialist</span>
+                            <h4 class="name"><a href="doctors.php">Dr. M Ganesh</a></h4>
+                            <span class="designation">Surgery co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -681,11 +681,55 @@
                             <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="">
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dr. R. SriLekhya</a></h4>
+                            <h4 class="name"><a href="doctors.php">Dr. R. SriLekhya</a></h4>
                             <span class="designation">Specialist</span>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+                <div class="swiper-slide">
+                    <div class="team-card-three">
+                        <div class="team-img-three">
+                            <img src="assets/img/about/divya.png" alt="">
+                        </div>
+                        <div class="info-box">
+                            <h4 class="name"><a href="doctors.php">Dr. Divya</a></h4>
+                            <span class="designation">Surgeon</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="team-card-three">
+                        <div class="team-img-three">
+                            <img src="assets/img/about/sravani.png" alt="">
+                        </div>
+                        <div class="info-box">
+                            <h4 class="name"><a href="doctors.php">Dr. sravani</a></h4>
+                            <span class="designation">Surgeon</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="swiper-slide">
+                    <div class="team-card-three">
+                        <div class="team-img-three">
+                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="">
+                        </div>
+                        <div class="info-box">
+                            <h4 class="name"><a href="doctors.php">Dr. R. SriLekhya</a></h4>
+                            <span class="designation">Specialist</span>
+                        </div>
+                    </div>
+                </div> -->
             </div>
             <!-- Pagination and Navigation Buttons -->
 

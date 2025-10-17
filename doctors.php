@@ -12,12 +12,12 @@
     <div class="parallax" data-parallax-image="assets/img/about/krishnadentalcure_doctors_sider.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">  Doctors</h1>
+            <h1 class="breadcumb-title"> Doctors</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
-                    <li class="active">  Doctors</li>
+                    <li class="active"> Doctors</li>
                 </ul>
             </div>
         </div>
@@ -79,104 +79,162 @@
             </div>
         </div>
 
-        <!-- Swiper Container -->
-        <div class="swiper-container team-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. B Ratna Vineela</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Specialist</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. B Sai Sruthi</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Osteopathic</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset"> Dr. G Niharika</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Pediatrician</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        </div>
-                    </div>
-                </div> -->
-               
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Malathi Chakravarthy</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        </div>
-                    </div>
-                </div><div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. Jyothsna Kalepu</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        </div>
-                    </div>
-                </div><div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. M Ganesh</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        </div>
-                    </div>
-                </div><div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
-                        </div>
-                        <div class="team-body">
-                            <h3 class="h4 mb-0"><a href="team-details.html" class="text-reset">Dr. R. SriLekhya</a></h3>
-                            <p class="fs-xs degi text-theme mb-2">Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
 
-            <!-- Swiper Navigation & Pagination -->
-            <!-- <div class="swiper-pagination"></div>
+
+
+                <!-- Swiper Container -->
+                <div class="swiper-container team-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset"> Dr. B Ratna Vineela</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Cosmetic Dentistry</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. B Sai Sruthi</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">ortho co-ordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset"> Dr. G Niharika</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Pediatrician</p>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- <div class="swiper-slide">
+                                <div class="team-card">
+                                    <div class="team-head">
+                                        <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                    </div>
+                                    <div class="team-body">
+                                        <h3 class="h4 mb-0"><a class="text-reset">Dr. Jyothsna Kalepu</a></h3>
+                                        <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. Malathi Chakravarthy</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. Jyothsna sri Kalepu</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">patient hygiene & diet co-ordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. M Sai Ganesh</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgery co-ordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. R. SriLekhya</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/divya.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. Divya</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/sravani.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. sravani</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
+                                    <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset">Dr. mmm kumar</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- Swiper Navigation & Pagination -->
+                    <!-- <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
-        </div>
+                </div>
 
- 
+
+
+
+  
+
+
 
 
     </div>
