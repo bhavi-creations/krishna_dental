@@ -19209,3 +19209,8 @@ display: none;
   color:#07ccec;
   font-weight: 600;
 }
+
+
+.breadcumb-title{
+  color: white !important;
+}

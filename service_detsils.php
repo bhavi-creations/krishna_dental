@@ -104,11 +104,19 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets2/css/style.css">
+
+
+
+
+
+    <link rel="shortcut icon" href="assets/img/logo/krishnadentacure_logo_orginal.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/krishnadentacure_logo_orginal.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="preloader" id="preloader">
-        <div class="loader"></div>
+        <!-- <div class="loader"></div> -->
+        <img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="">
     </div>
 
     <!-- SIDEBAR SECTION START -->
