@@ -44,23 +44,34 @@
                             <h2 class="h1 mb-3">Krishna Denta Cure</h2>
                         </div>
                         <div class="col-xl-10">
-                            <p class="mb-4">At Krishna Denta Cure, we are dedicated to providing exceptional dental care. Our team of experienced dentists and support staff led by Dr. Suresh Kumar, a renowned dentist, and orthodontist, along with our mission to enhance smiles and promote oral health, combine expertise with advanced technology to ensure the best possible outcomes for our patients. This emphasis on advanced technology instills confidence in the quality of care we provide.</p>
-                            <p class="mb-4">We offer painless dental treatments for all ages and a wide range of oral health services to help you maintain beautiful smiles for a lifetime. We follow a conservative and cosmetic treatment approach. We always employ a comprehensive approach to identify and treat dental issues before they become serious and expensive, providing the best solutions for dental diseases.</p>
-                        </div>
-                    </div>
-                    <div class="media-style1">
-                        <div class="media-icon"><i class="fas fa-phone"></i></div>
-                        <div class="media-body">
-                            <h3 class="media-title">CALL US</h3>
-                            <p class="media-text"><a href="tel:+4412345996">+91 92466 58770
-                                </a></p>
-                        </div>
-                    </div>
+                            <p>
+                                At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion.
+                                Led by Dr. B. Suresh Kumar (MDS, Orthodontist), our skilled team ensures personalized and high-quality treatments.
+                                We use advanced dental technology for accurate diagnosis and painless procedures for all age groups.
+                                From routine check-ups to orthodontic and cosmetic care, we offer safe and long-lasting solutions. </p>
 
+                            <p class="text">
+                                Our focus on preventive and conservative dentistry helps detect and treat issues early.
+                                We aim to restore smiles, strengthen oral health, and boost confidence for every patient.
+                                Comfort, safety, and precision define every treatment at our clinic.
+                                We follow ethical, transparent, and patient-first practices in all we do.
+                                Our trusted care ensures a naturally beautiful and confident smile for life.
+                                That’s why Krishna Denta Cure is among the best dental clinics in Rajahmundry.
+                            </p>
+                        </div>
+                        <div class="media-style1">
+                            <div class="media-icon"><i class="fas fa-phone"></i></div>
+                            <div class="media-body">
+                                <h3 class="media-title">CALL US</h3>
+                                <p class="media-text"><a href="tel:+4412345996">+91 92466 58770
+                                    </a></p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 
@@ -110,7 +121,7 @@
                     <div class="about-content">
                         <span class="h3 text-theme sec-subtitle mb-2 mb-md-0">7 Star Care & Protection</span>
                         <h2 class="h1">Why Choose Us?</h2>
-                        <p class="pe-xl-2 text-title">At Krishna Denta Cure, we are committed to providing top-quality dental care with a focus on patient comfort, advanced technology, and personalized treatment plans. Here’s why we stand out:</p>
+                        <p class="pe-xl-2 text-title">At Krishna Denta Cure, we are dedicated to delivering premium-quality dental care focused on patient comfort, advanced technology, and personalized treatment plans. Here’s what makes us different:</p>
                         <div class="row pt-3">
                             <div class="col-sm-6 col-lg-5 col-xl-6">
                                 <div class="d-flex mb-25">
@@ -153,8 +164,8 @@
                 </div>
                 <div class="col-xl-8">
                     <div class="vs-accordion accordion accordion-style2" id="vsaccordion">
-                    
-                         <img src="assets/img/about/krishnadentacure-team.png" class='img-fluid' alt="">
+
+                        <img src="assets/img/about/krishnadentacure-team.png" class='img-fluid' alt="">
                     </div>
                 </div>
             </div>

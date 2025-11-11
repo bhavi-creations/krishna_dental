@@ -130,10 +130,33 @@
                         <span class="sub-title7">Welcome To</span>
                         <h2>Krishna Denta Cure </h2>
 
-                        <p>At Krishna Denta Cure, we are dedicated to providing exceptional dental care. Our team of experienced dentists and support staff led by Dr. Suresh Kumar, a renowned dentist, and orthodontist, along with our mission to enhance smiles and promote oral health, combine expertise with advanced technology to ensure the best possible outcomes for our patients. This emphasis on advanced technology instills confidence in the quality of care we provide.
-                        </p>
+                        <p>
+                            At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion.
+                            Led by Dr. B. Suresh Kumar (MDS, Orthodontist), our skilled team ensures personalized and high-quality treatments.
+                            We use advanced dental technology for accurate diagnosis and painless procedures for all age groups.
+                            From routine check-ups to orthodontic and cosmetic care, we offer safe and long-lasting solutions. </p>
 
-                        <p class="text">We offer painless dental treatments for all ages and a wide range of oral health services to help you maintain beautiful smiles for a lifetime. We follow a conservative and cosmetic treatment approach. We always employ a comprehensive approach to identify and treat dental issues before they become serious and expensive, providing the best solutions for dental diseases.</p>
+                        <p class="text">
+                            Our focus on preventive and conservative dentistry helps detect and treat issues early.
+                            We aim to restore smiles, strengthen oral health, and boost confidence for every patient.
+                            Comfort, safety, and precision define every treatment at our clinic.
+                            We follow ethical, transparent, and patient-first practices in all we do.
+                            Our trusted care ensures a naturally beautiful and confident smile for life.
+                            That’s why Krishna Denta Cure is among the best dental clinics in Rajahmundry.
+                         </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                     <!-- <div class="about-block-content seven">
                         <div class="about-block one">
@@ -768,7 +791,7 @@
 <!--==============================
     Blog Area
     ==============================-->
- 
+
 <!-- End blog-section -->
 <section class="blog_section ">
 
@@ -907,7 +930,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Clear aligners are transparent, custom-made trays designed to straighten your teeth gradually. They are a comfortable and discreet alternative to traditional braces                        </div>
+                                Clear aligners are transparent, custom-made trays designed to straighten your teeth gradually. They are a comfortable and discreet alternative to traditional braces
+                        </div>
                     </div>
 
 
@@ -923,7 +947,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Yes. Clear aligners are removable, nearly invisible, and cause less discomfort. They’re especially preferred by adults and teens looking for a more aesthetic option                        </div>
+                                Yes. Clear aligners are removable, nearly invisible, and cause less discomfort. They’re especially preferred by adults and teens looking for a more aesthetic option
+                        </div>
                     </div>
 
 
@@ -940,11 +965,12 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Treatment usually takes 6 to 18 months, depending on the severity of misalignment. Regular check-ups at Krishna Denta Cure help ensure effective and timely results                        </div>
+                                Treatment usually takes 6 to 18 months, depending on the severity of misalignment. Regular check-ups at Krishna Denta Cure help ensure effective and timely results
+                        </div>
                     </div>
 
                     <!-- Accordion 4 -->
-                   
+
 
 
 
@@ -958,7 +984,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment. With expert care and high patient satisfaction, we are widely recognized as one of the best dental hospitals in Rajahmundry for endodontic procedures                        </div>
+                                Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment. With expert care and high patient satisfaction, we are widely recognized as one of the best dental hospitals in Rajahmundry for endodontic procedures
+                        </div>
                     </div>
                     <!-- Accordion 5 -->
                     <!-- <div class="faq_section">
@@ -997,7 +1024,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction                        </div>
+                                Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction
+                        </div>
                     </div>
                     <!-- Accordion 2 -->
 
@@ -1014,7 +1042,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Dr. B. Suresh Kumar, with over 25 years of experience, is a trusted name in Rajahmundry for orthodontics and cosmetic dental treatments, including clear aligners                        </div>
+                                Dr. B. Suresh Kumar, with over 25 years of experience, is a trusted name in Rajahmundry for orthodontics and cosmetic dental treatments, including clear aligners
+                        </div>
                     </div>
 
 
@@ -1030,7 +1059,8 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city                        </div>
+                                We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city
+                        </div>
                     </div>
                     <!-- Accordion 4 -->
                     <div class="faq_section">
@@ -1044,7 +1074,7 @@
                         </div>
                         <div class="accordion-content">
                             <p>
-                            Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned                            </p>
+                                Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned </p>
                         </div>
                     </div>
                     <!-- Accordion 5 -->
