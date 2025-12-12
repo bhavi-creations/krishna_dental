@@ -40,7 +40,7 @@
 
                 <div class="col-12 col-md-8   service_text_padding">
                     <h3>Step 1: Oral Examination and Impressions</h3>
-                    <p>We assess your oral health and take precise impressions to create custom-fitted dentures.</p>
+                    <p class="fs-md">We assess your oral health and take precise impressions to create custom-fitted dentures.</p>
 
 
 
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
                     <h3>Step 2: Trial and Adjustments</h3>
-                    <p>A trial set is fitted to check comfort, bite alignment, and aesthetics before finalizing.</p>
+                    <p class="fs-md">A trial set is fitted to check comfort, bite alignment, and aesthetics before finalizing.</p>
 
 
                 </div>
@@ -76,7 +76,7 @@
                 <div class="col-12 col-md-8 service_text_padding">
 
                     <h3>Step 3: Final Denture Placement</h3>
-                    <p>The permanent dentures are placed, ensuring a secure fit and natural appearance.</p>
+                    <p class="fs-md">The permanent dentures are placed, ensuring a secure fit and natural appearance.</p>
 
                 </div>
 

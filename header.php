@@ -33,7 +33,8 @@ Best laser dentistry clinic in Rajahmundry
 Dental clinic near Devi Chowk, Rajahmundry
 Best dental specialist in Rajahmundry">
 
-    <link rel="canonical" href="https://krishnadentacure.com/">
+
+    <link rel="canonical" href="https://krishnadentacureclinic.com/" />
 
     <meta name="robots" content="INDEX,FOLLOW">
 
@@ -128,9 +129,20 @@ Best dental specialist in Rajahmundry">
     </script>
 
 
-    <meta name="google-site-verification" content="JDS_jictIoYQDNxW1AQ_NnVduJ72DZigoUTERTYmI_c" />
+    <meta name="google-site-verification" content="JDS_jictIoYQDNxW1AQ_NnVduJ72DZigoUTERTYmI_c"   />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDBRQGVEF2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EDBRQGVEF2');
+    </script>
 
 
 </head>

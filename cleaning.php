@@ -102,7 +102,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders" alt="Team Area" class="w-100">
+                            <img src="assets/img/services_steps/krishnadentacure_services_teeth_cleaning_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -110,16 +110,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders" alt="Team Area" class="w-100">
+                            <img src="assets/img/services_steps/krishnadentacure_services_teeth_cleaning_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -128,7 +119,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders" alt="Team Area" class="w-100">
+                            <img src="assets/img/services_steps/krishnadentacure_services_teeth_cleaning_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/services_steps/krishnadentacure_services_teeth_cleaning_2.png" alt="Team Area" class="w-100">
 
                         </div>
 

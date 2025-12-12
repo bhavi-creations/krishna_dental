@@ -128,7 +128,7 @@
                 <div class="about-content7">
                     <div class="title-area-three seven">
                         <span class="sub-title7">Welcome To</span>
-                        <h2>Krishna Denta Cure </h2>
+                        <h1>Krishna Denta Cure </h1>
 
                         <p>
                             At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion.
@@ -900,23 +900,11 @@
 <section class="py-5">
     <div class="container">
 
-        <h1 class="text-center">Frequently Ask Question (FAQ)</h1>
+        <h3 class="text-center">Frequently Ask Question (FAQ)</h3>
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="accordion">
                     <!-- Accordion 1 -->
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <div class="faq_section">
 

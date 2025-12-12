@@ -39,7 +39,7 @@
 
                 <div class="col-12 col-md-8   service_text_padding">
                     <h3>Step 1: Implant Placement</h3>
-                    <p>A titanium post is surgically placed into the jawbone, acting as a strong foundation for the replacement tooth.</p>
+                    <p class="fs-md">A titanium post is surgically placed into the jawbone, acting as a strong foundation for the replacement tooth.</p>
 
 
                 </div>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
                     <h3>Step 2: Healing and Osseointegration</h3>
-                    <p>The implant fuses with the jawbone over a few months, ensuring stability and strength.</p>
+                    <p class="fs-md">The implant fuses with the jawbone over a few months, ensuring stability and strength.</p>
 
 
                 </div>
@@ -74,7 +74,7 @@
                 <div class="col-12 col-md-8 service_text_padding">
 
                     <h3>Step 3: Crown Attachment</h3>
-                    <p>A custom-made dental crown is fixed onto the implant, restoring function and aesthetics.</p>
+                    <p class="fs-md">A custom-made dental crown is fixed onto the implant, restoring function and aesthetics.</p>
 
 
 
