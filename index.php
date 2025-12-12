@@ -1,8 +1,5 @@
 <?php include 'header.php'; ?>
 
-
-
-
 <!-- <section class="vs-hero-wrapper7 position-relative" data-bg-src="assets/img/bg/banner7-1.jpg">
     <div class="banner-slider-v7">
         <div class="banner-slide-v7">
@@ -94,10 +91,6 @@
 <!-- End hero section -->
 
 
-
-
-
-
 <!-- <video autoplay muted loop playsinline class="banner-video">
     <source src="assets/img/about/KrishnaDentaCure-Banner-Video.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -131,19 +124,11 @@
                         <h1>Krishna Denta Cure </h1>
 
                         <p>
-                            At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion.
-                            Led by Dr. B. Suresh Kumar (MDS, Orthodontist), our skilled team ensures personalized and high-quality treatments.
-                            We use advanced dental technology for accurate diagnosis and painless procedures for all age groups.
-                            From routine check-ups to orthodontic and cosmetic care, we offer safe and long-lasting solutions. </p>
+                            At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion. Led by Dr. B. Suresh Kumar (MDS, Orthodontist)—one of the best dentists in Rajahmundry—our skilled team ensures personalized and high-quality treatments for every patient. We use advanced dental technology for accurate diagnosis and painless procedures suitable for all age groups.</p>
 
                         <p class="text">
-                            Our focus on preventive and conservative dentistry helps detect and treat issues early.
-                            We aim to restore smiles, strengthen oral health, and boost confidence for every patient.
-                            Comfort, safety, and precision define every treatment at our clinic.
-                            We follow ethical, transparent, and patient-first practices in all we do.
-                            Our trusted care ensures a naturally beautiful and confident smile for life.
-                            That’s why Krishna Denta Cure is among the best dental clinics in Rajahmundry.
-                         </p>
+                        From routine check-ups to orthodontic and cosmetic care, we offer safe, effective, and long-lasting solutions. Our focus on preventive and conservative dentistry helps detect issues early and protect your natural teeth for life. Comfort, safety, and precision define every treatment at our clinic, making us a best dental clinic in Rajahmundry for trusted and ethical dental care. At Krishna Denta Cure, our patient-first approach ensures a healthy, confident, and naturally beautiful smile for every individual.
+                        </p>
 
 
 
@@ -175,11 +160,6 @@
     </div>
 </section>
 <!-- End about-section-seven -->
-
-
-
-
-
 
 <section class="specialist-section space" data-bg-src="assets/img/bg/specialist1-1.jpg">
     <div class="container-style7">
@@ -406,16 +386,6 @@
     </div>
 </section>
 <!-- End specialist-section -->
-
-
-
-
-
-
-
-
-
-
 
 <!-- testinial-section7 -->
 <section class="testinial-section7 space">
@@ -887,13 +857,6 @@
     </div>
 
 </section>
-
-
-
-
-
-
-
 
 
 
