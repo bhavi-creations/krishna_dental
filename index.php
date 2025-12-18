@@ -130,18 +130,6 @@
                         From routine check-ups to orthodontic and cosmetic care, we offer safe, effective, and long-lasting solutions. Our focus on preventive and conservative dentistry helps detect issues early and protect your natural teeth for life. Comfort, safety, and precision define every treatment at our clinic, making us a best dental clinic in Rajahmundry for trusted and ethical dental care. At Krishna Denta Cure, our patient-first approach ensures a healthy, confident, and naturally beautiful smile for every individual.
                         </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                     <!-- <div class="about-block-content seven">
                         <div class="about-block one">
@@ -822,7 +810,7 @@
                     echo "<p class='card-text'>" . substr($main_content, 0, 90) . "...</p>";
 
                     // Link to full blog post
-                    echo "<a href='service_detsils.php?id={$blog_id}' class='btn-style7 v6 wow fadeInUp animated'>Read more</a>";
+                    echo "<a href='fullblog.php?id={$blog_id}' class='btn-style7 v6 wow fadeInUp animated'>Read more</a>";
 
 
                     echo "</div>"; // End card body

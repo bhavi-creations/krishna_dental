@@ -1,12 +1,3 @@
-<?php
-// Ensure session is started
-if (session_status() === PHP_SESSION_NONE) {
-    // session_start();
-}
-
-// Safely get username
-$username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest';
-?>
 
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 

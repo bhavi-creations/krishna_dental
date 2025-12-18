@@ -1,24 +1,61 @@
 <?php
-// Database connection (replace with your actual database connection details)
+// DB Connection
 include '../../db.connection/db_connection.php';
 
-// Get blog ID from URL
+// Blog ID
 $blog_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-if ($blog_id > 0) {
-    // Fetch blog data
-    $stmt = $conn->prepare("SELECT title, main_content, full_content, service FROM blogs WHERE id = ?");
-    $stmt->bind_param("i", $blog_id);
-    $stmt->execute();
-    $stmt->bind_result($title, $main_content, $full_content, $service);
-    $stmt->fetch();
-    $stmt->close();
-} else {
-    echo "Invalid blog ID.";
+if ($blog_id <= 0) {
+    echo "Invalid blog ID";
     exit;
 }
 
-$conn->close();
+// ---------------------------------------------
+// FETCH BLOG DATA
+// ---------------------------------------------
+$stmt = $conn->prepare("
+    SELECT 
+        title,
+        main_content,
+        full_content,
+        service,
+        telugu_title,
+        telugu_main_content,
+        telugu_full_content,
+        video,
+        section1_image
+    FROM blogs
+    WHERE id = ?
+");
+$stmt->bind_param("i", $blog_id);
+$stmt->execute();
+$stmt->bind_result(
+    $title,
+    $main_content,
+    $full_content,
+    $service,
+    $telugu_title,
+    $telugu_main_content,
+    $telugu_full_content,
+    $video,
+    $section1_image
+);
+$stmt->fetch();
+$stmt->close();
+
+// ---------------------------------------------
+// FETCH SERVICES FROM DATABASE
+// ---------------------------------------------
+$services = [];
+
+$service_sql = "SELECT service_name FROM services ORDER BY service_name ASC";
+$service_result = $conn->query($service_sql);
+
+if ($service_result && $service_result->num_rows > 0) {
+    while ($row = $service_result->fetch_assoc()) {
+        $services[] = $row['service_name'];
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,324 +63,183 @@ $conn->close();
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Krishnadentacure </title>
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <!-- Custom styles for this template-->
+    <title>Edit Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <!-- Include Quill CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
+
     <div id="wrapper">
-        <!-- Sidebar -->
         <?php include 'sidebar.php'; ?>
-        <!-- End of Sidebar -->
+
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                <!-- Topbar -->
                 <?php include 'navbar.php'; ?>
-                <!-- End of Topbar -->
+
                 <div class="container-fluid">
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Edit BLOG</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-11">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-success">EDIT CONTENT</h6>
+
+                    <h1 class="h3 mb-4 text-gray-800">Edit Blog</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-success">Edit Blog Content</h6>
+                        </div>
+
+                        <div class="card-body">
+
+                            <form id="editblogform" action="addBlog.php" method="POST" enctype="multipart/form-data">
+
+                                <!-- ENGLISH TITLE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Title (English)</label>
+                                    <input type="text" name="title" class="form-control"
+                                        value="<?= htmlspecialchars($title) ?>" required>
                                 </div>
-                                <div class="card-body">
-                                    <?php
-                                    include '../../db.connection/db_connection.php';
 
-                                    // Initialize variables
-                                    $blog_id = $_GET['id'] ?? 0;
-                                    $blog_id = intval($blog_id);
-
-                                    // Fetch blog data if editing
-                                    $title = $service = $main_content = $full_content = '';
-                                    $main_image = $video = '';
-                                    $section_contents = [1 => '', 2 => '', 3 => ''];
-                                    $section_images = [1 => '', 2 => '', 3 => ''];
-
-                                    if ($blog_id > 0) {
-                                        $result = $conn->query("SELECT * FROM blogs WHERE id=$blog_id");
-                                        if ($result->num_rows > 0) {
-                                            $row = $result->fetch_assoc();
-                                            $title = $row['title'];
-                                            $service = $row['service'];
-                                            $main_content = $row['main_content'];
-                                            $full_content = $row['full_content'];
-                                            $main_image = $row['main_image'];
-                                            $video = $row['video'];
-                                            $section_contents[1] = $row['section1_content'];
-                                            $section_contents[2] = $row['section2_content'];
-                                            $section_contents[3] = $row['section3_content'];
-                                            $section_images[1] = $row['section1_image'];
-                                            $section_images[2] = $row['section2_image'];
-                                            $section_images[3] = $row['section3_image'];
-                                        }
-                                    }
-                                    ?>
-
-                                    <form style='color:black;' id="editblogform" action="addBlog.php" method="POST" enctype="multipart/form-data">
-
-                                        <input type="hidden" name="id" value="<?php echo $blog_id; ?>">
-
-                                        <!-- Title -->
-                                        <div class="mb-3">
-                                            <label class="form-label text-primary">ENTER TITLE</label>
-                                            <input type="text" class="form-control" name='title' value="<?php echo htmlspecialchars($title); ?>" placeholder="Title" required>
-                                        </div>
-
-                                        <!-- Service Dropdown -->
-                                        <div class="filter-section mb-3">
-                                            <label class="form-label text-primary">Select Service:</label>
-                                            <select name="service" class="form-control" required>
-                                                <option value="">Select a Service</option>
-                                                <?php
-                                                $services = ["Root Canal", "Wisdom Tooth Removal", "Bad Breath Treatment", "Gum Treatment", "Teeth Cleaning", "Orthodontic Treatment", "Dental Crown & Bridge", "Invisible Aligners", "Dental Veneers", "Smile Makeover", "Teeth Whitening", "Dental Implants", "Dentures", "Smile Designing", "Full Mouth Rehabilitation Treatment"];
-                                                foreach ($services as $s) {
-                                                    $selected = ($service == $s) ? 'selected' : '';
-                                                    echo "<option value=\"$s\" $selected>$s</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-
-                                        <!-- Main Content Quill -->
-                                        <div class="mb-3">
-                                            <label class="form-label text-primary">ENTER MAIN CONTENT</label>
-                                            <div id="mainEditor" style="height:200px;"></div>
-                                            <input type="hidden" name="main_content" id="mainContentData">
-                                        </div>
-
-                                        <!-- Main Image -->
-                                        <div class="mb-3">
-                                            <label class="form-label text-primary">Choose Main Image</label>
-                                            <input type="file" name="main_image" class="form-control">
-                                            <?php if (!empty($main_image)) { ?>
-                                                <img src="uploads/blogs/<?php echo $main_image; ?>" style="max-width:200px;" class="img-thumbnail mt-2">
-                                            <?php } ?>
-                                        </div>
-
-                                        <!-- Video -->
-                                        <div class="mb-3">
-                                            <label class="form-label text-primary">Choose Video</label>
-                                            <input type="file" name="video" class="form-control">
-                                            <?php if (!empty($video)) { ?>
-                                                <video width="300" controls class="mt-2">
-                                                    <source src="uploads/blogs/<?php echo $video; ?>" type="video/mp4">
-                                                </video>
-                                            <?php } ?>
-                                        </div>
-
-                                        <!-- Full Content Quill -->
-                                        <div class="mb-3">
-                                            <label class="form-label text-primary">ENTER FULL CONTENT</label>
-                                            <div id="editor" style="height:400px;"></div>
-                                            <input type="hidden" name="full_content" id="formcontentdata">
-                                        </div>
-
-                                        <!-- Sections -->
-                                        <?php for ($i = 1; $i <= 3; $i++): ?>
-                                            <div class="mb-3">
-                                                <label class="form-label text-primary">Section <?php echo $i; ?> Content</label>
-                                                <div id="editor<?php echo $i; ?>" style="height:200px;"></div>
-                                                <input type="hidden" name="section<?php echo $i; ?>_content" id="sectionContent<?php echo $i; ?>">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label class="form-label text-primary">Section <?php echo $i; ?> Image (optional)</label>
-                                                <input type="file" name="section<?php echo $i; ?>_image" class="form-control">
-                                                <?php if (!empty($section_images[$i])) { ?>
-                                                    <img src="uploads/blogs/<?php echo $section_images[$i]; ?>" style="max-width:200px;" class="img-thumbnail mt-2">
-                                                <?php } ?>
-                                            </div>
-                                        <?php endfor; ?>
-
-                                        <div class='row p-3'>
-                                            <div class='col-xl-7 col-sm-2'></div>
-                                            <button type='reset' class='btn btn-danger mx-1 my-2 col-xl-2'>Clear</button>
-                                            <button type='submit' class='btn btn-success mx-1 my-2 col-xl-2'>Update</button>
-                                        </div>
-                                    </form>
-
-                                    <!-- Quill JS -->
-                                    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-                                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-                                    <script>
-                                        const quillMain = new Quill('#mainEditor', {
-                                            theme: 'snow'
-                                        });
-                                        const quillFull = new Quill('#editor', {
-                                            theme: 'snow'
-                                        });
-                                        const quill1 = new Quill('#editor1', {
-                                            theme: 'snow'
-                                        });
-                                        const quill2 = new Quill('#editor2', {
-                                            theme: 'snow'
-                                        });
-                                        const quill3 = new Quill('#editor3', {
-                                            theme: 'snow'
-                                        });
-
-                                        // Load existing content
-                                        quillMain.root.innerHTML = <?php echo json_encode($main_content); ?>;
-                                        quillFull.root.innerHTML = <?php echo json_encode($full_content); ?>;
-                                        quill1.root.innerHTML = <?php echo json_encode($section_contents[1]); ?>;
-                                        quill2.root.innerHTML = <?php echo json_encode($section_contents[2]); ?>;
-                                        quill3.root.innerHTML = <?php echo json_encode($section_contents[3]); ?>;
-
-                                        // On submit, set hidden inputs
-                                        document.querySelector('#editblogform').onsubmit = function() {
-                                            document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
-                                            document.querySelector('#formcontentdata').value = quillFull.root.innerHTML;
-                                            document.querySelector('#sectionContent1').value = quill1.root.innerHTML;
-                                            document.querySelector('#sectionContent2').value = quill2.root.innerHTML;
-                                            document.querySelector('#sectionContent3').value = quill3.root.innerHTML;
-                                        };
-                                    </script>
-
+                                <!-- TELUGU TITLE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Title (Telugu)</label>
+                                    <input type="text" name="telugu_title" class="form-control"
+                                        value="<?= htmlspecialchars($telugu_title) ?>">
                                 </div>
-                            </div>
+
+                                <!-- SERVICE (DATABASE) -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Service</label>
+                                    <select name="service" class="form-control" required>
+                                        <option value="">-- Select Service --</option>
+
+                                        <?php foreach ($services as $s) { ?>
+                                            <option value="<?= htmlspecialchars($s) ?>"
+                                                <?= ($service == $s) ? 'selected' : '' ?>>
+                                                <?= htmlspecialchars($s) ?>
+                                            </option>
+                                        <?php } ?>
+
+                                    </select>
+                                </div>
+
+                                <!-- MAIN CONTENT EN -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Main Content (English)</label>
+                                    <div id="mainEditor" style="height:200px"></div>
+                                    <input type="hidden" name="main_content" id="mainContentData">
+                                </div>
+
+                                <!-- MAIN CONTENT TE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Main Content (Telugu)</label>
+                                    <div id="teluguMainEditor" style="height:200px"></div>
+                                    <input type="hidden" name="telugu_main_content" id="teluguMainContentData">
+                                </div>
+
+                                <!-- FULL CONTENT EN -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Full Content (English)</label>
+                                    <div id="fullEditor" style="height:300px"></div>
+                                    <input type="hidden" name="full_content" id="fullContentData">
+                                </div>
+
+                                <!-- FULL CONTENT TE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Full Content (Telugu)</label>
+                                    <div id="teluguFullEditor" style="height:300px"></div>
+                                    <input type="hidden" name="telugu_full_content" id="teluguFullContentData">
+                                </div>
+
+                                <!-- MAIN IMAGE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Main Image</label>
+                                    <input type="file" name="main_image" class="form-control">
+                                </div>
+
+                                <!-- VIDEO -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Video</label>
+                                    <input type="file" name="video" class="form-control">
+                                    <?php if ($video) { ?>
+                                        <small>Current Video :
+                                            <a href="../../uploads/videos/<?= $video ?>" target="_blank">View</a>
+                                        </small>
+                                    <?php } ?>
+                                </div>
+
+                                <!-- SECTION 1 IMAGE -->
+                                <div class="mb-3">
+                                    <label class="text-primary">Section 1 Image</label>
+                                    <input type="file" name="section1_image" class="form-control">
+
+                                    <?php if ($section1_image) { ?>
+                                        <div class="mt-2">
+                                            <small>Current Image:</small><br>
+                                            <img src="../../uploads/photos/<?= $section1_image ?>"
+                                                style="max-width:220px;border:1px solid #ccc;padding:5px;">
+                                        </div>
+                                    <?php } ?>
+                                </div>
+
+                                <input type="hidden" name="id" value="<?= $blog_id ?>">
+                                <input type="hidden" name="old_section1_image" value="<?= $section1_image ?>">
+
+                                <div class="row mt-4">
+                                    <div class="col-md-8"></div>
+                                    <button type="reset" class="btn btn-danger col-md-2">Clear</button>
+                                    <button type="submit" class="btn btn-success col-md-2">Update</button>
+                                </div>
+
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
-            <!-- End of Footer -->
         </div>
     </div>
 
-    <!-- Include Quill JS -->
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 
-    <!-- Initialize Quill Editors and Load Existing Data -->
     <script>
-        // Initialize Quill editors with color options in the toolbar
         const quillMain = new Quill('#mainEditor', {
-            theme: 'snow',
-            modules: {
-                toolbar: [
-                    [{
-                        'header': '1'
-                    }, {
-                        'header': '2'
-                    }, {
-                        'font': []
-                    }],
-                    [{
-                        'size': []
-                    }],
-                    ['bold', 'italic', 'underline', 'strike'],
-                    [{
-                        'color': []
-                    }, {
-                        'background': []
-                    }], // Color and background color options
-                    ['link', 'blockquote'],
-                    [{
-                        'list': 'ordered'
-                    }, {
-                        'list': 'bullet'
-                    }],
-                    [{
-                        'script': 'sub'
-                    }, {
-                        'script': 'super'
-                    }],
-                    [{
-                        'indent': '-1'
-                    }, {
-                        'indent': '+1'
-                    }],
-                    [{
-                        'direction': 'rtl'
-                    }],
-                    [{
-                        'align': []
-                    }],
-                    ['clean'] // Remove formatting button
-                ]
-            },
-            placeholder: 'Enter main content...',
+            theme: 'snow'
+        });
+        const quillTeluguMain = new Quill('#teluguMainEditor', {
+            theme: 'snow'
+        });
+        const quillFull = new Quill('#fullEditor', {
+            theme: 'snow'
+        });
+        const quillTeluguFull = new Quill('#teluguFullEditor', {
+            theme: 'snow'
         });
 
-        const quillFull = new Quill('#editor', {
-            theme: 'snow',
-            modules: {
-                toolbar: [
-                    [{
-                        'header': '1'
-                    }, {
-                        'header': '2'
-                    }, {
-                        'font': []
-                    }],
-                    [{
-                        'size': []
-                    }],
-                    ['bold', 'italic', 'underline', 'strike'],
-                    [{
-                        'color': []
-                    }, {
-                        'background': []
-                    }], // Color and background color options
-                    ['link', 'blockquote'],
-                    [{
-                        'list': 'ordered'
-                    }, {
-                        'list': 'bullet'
-                    }],
-                    [{
-                        'script': 'sub'
-                    }, {
-                        'script': 'super'
-                    }],
-                    [{
-                        'indent': '-1'
-                    }, {
-                        'indent': '+1'
-                    }],
-                    [{
-                        'direction': 'rtl'
-                    }],
-                    [{
-                        'align': []
-                    }],
-                    ['clean'] // Remove formatting button
-                ]
-            },
-            placeholder: 'Compose full content...',
-        });
+        // Load content
+        quillMain.root.innerHTML = <?= json_encode($main_content) ?>;
+        quillTeluguMain.root.innerHTML = <?= json_encode($telugu_main_content) ?>;
+        quillFull.root.innerHTML = <?= json_encode($full_content) ?>;
+        quillTeluguFull.root.innerHTML = <?= json_encode($telugu_full_content) ?>;
 
-        // Load existing data into Quill editors
-        quillMain.root.innerHTML = <?php echo json_encode($main_content); ?>;
-        quillFull.root.innerHTML = <?php echo json_encode($full_content); ?>;
-
-        // On form submission, set Quill content into hidden input fields
-        document.querySelector('#editblogform').onsubmit = function() {
-            document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
-            document.querySelector('#formcontentdata').value = quillFull.root.innerHTML;
+        document.getElementById('editblogform').onsubmit = function() {
+            document.getElementById('mainContentData').value = quillMain.root.innerHTML;
+            document.getElementById('teluguMainContentData').value = quillTeluguMain.root.innerHTML;
+            document.getElementById('fullContentData').value = quillFull.root.innerHTML;
+            document.getElementById('teluguFullContentData').value = quillTeluguFull.root.innerHTML;
         };
     </script>
 
-    <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
 </body>
 
 </html>
+
+<?php $conn->close(); ?>
+
+
+

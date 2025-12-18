@@ -7,7 +7,7 @@
         </div>
         <div class="sidebar-brand-text mx-3">Krishna <br> Dentacure</div>
     </a>
- 
+
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
@@ -52,6 +52,23 @@
                 <h6 class="collapse-header">COMMENTS</h6>
                 <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
                 <!-- <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> -->
+            </div>
+        </div>
+    </li>
+
+
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseservice" aria-expanded="true" aria-controls="collapseservice">
+            <i class="fas fa-fw fa-file-pdf"></i>
+            <span>Service</span>
+        </a>
+        <div id="collapseservice" class="collapse" aria-labelledby="headingservice" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">NEW Service</h6>
+                <a class="collapse-item" href="addservice.php"> <i class="fas fa-fw fa-upload"></i> UPLOAD Service</a>
+                <a class="collapse-item" href="view_services.php"> <i class="fas fa-fw fa-list"></i> All Service</a>
             </div>
         </div>
     </li>
