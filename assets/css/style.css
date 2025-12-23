@@ -21778,7 +21778,7 @@ body {
 
 .badge_service_name {
   display: inline-block;
-  background: linear-gradient(135deg, #283779, #4e6cef);
+  background: #26282a;
   /* premium look */
   color: #ffffff;
   font-weight: 600;
