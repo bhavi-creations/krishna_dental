@@ -466,23 +466,7 @@
 
 
 
-            fetch("save_appointment.php", {
-                    method: "POST",
-                    body: new FormData(form)
-                })
-                .then(res => res.json())
-                .then(resp => {
-                    if (resp.status === 'success') {
-                        const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
-                        modal.hide();
-                        showSuccessModal(name, email, phone, date, slot);
-                        loadSlots();
-                    } else if (resp.status === 'full') {
-                        showAlert('❌ This slot is already full!', 'danger');
-                    } else {
-                        showAlert('⚠️ Booking failed!', 'danger');
-                    }
-                });
+          
 
         }
 
@@ -681,3 +665,101 @@ Your appointment has been cancelled. Book again anytime at our portal.
 </html>
 
 <?php include 'footer.php'; ?>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4 class="mb-0">Book Appointment</h4>
+                    </div>
+
+                    <div class="card-body p-4">
+                        <form action="save_appointment.php" method="POST">
+
+                            <div class="mb-3">
+                                <label class="form-label">Patient Name</label>
+                                <input type="text" name="patient_name" class="form-control" placeholder="Enter patient name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Enter phone number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Appointment Date</label>
+                                <input type="date" name="appointment_date" class="form-control" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Select Time Slot</label>
+                                <select name="appointment_time" class="form-select" required>
+                                    <option value="">Choose Slot</option>
+                                    <option value="10:00 AM">10:00 AM - 10:30 AM</option>
+                                    <option value="11:00 AM">10:30 AM - 11:00 AM</option>
+                                    <option value="12:00 PM">11:00 AM - 11:30 AM</option>
+                                    <option value="04:00 PM">11:30 AM - 12:00 PM</option>
+                                    <option value="05:00 PM">12:00 PM - 12:30 PM</option>
+                                    <option value="05:00 PM">12:30 PM - 1:00 PM</option>
+                                    <option value="05:00 PM">1:00  PM - 1:30 AM</option>
+                                    <option value="05:00 PM">1:30 PM  -   2:00 PM</option>
+                                    <option value="05:00 PM"> 2:00 PM  -   2:30 PM</option>
+                                    <option value="05:00 PM">2:30 PM  -   3:00 PM</option>
+                                    <option value="05:00 PM">3:30 PM  -   4:00 PM</option>
+                                    <option value="05:00 PM">4:00 PM  -   4:30 PM</option>
+                                    <option value="05:00 PM">4:30 PM  -   5:00 PM</option>
+                                    <option value="05:00 PM">5:00 PM  -   5:30 PM</option>
+                                    <option value="05:00 PM">5:30 PM  -   6:00 PM</option>
+                                    <option value="05:00 PM">6:00 PM  -   6:30 PM</option>
+                                    <option value="05:00 PM">6:30 PM  -   7:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Book Slot
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="card-footer text-center text-muted">
+                        Krishna Dental Care
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
