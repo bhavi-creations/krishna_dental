@@ -10,9 +10,9 @@ require 'PHPMailer/src/SMTP.php';
    1. DB CONNECTION
 ===================== */
 $host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "krishnadental";
+$user = "krishnadentacureclinic";
+$pass = "ip4IvBVvK8TlT7y";
+$db   = "krishnadentacureclinic";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
