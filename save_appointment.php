@@ -9,16 +9,7 @@ require 'PHPMailer/src/SMTP.php';
 /* =====================
    1. DB CONNECTION
 ===================== */
-$host = "localhost";
-$user = "krishnadentacureclinic";
-$pass = "ip4IvBVvK8TlT7y";
-$db   = "krishnadentacureclinic";
-
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("DB Connection Failed: " . $conn->connect_error);
-}
+include './db.connection/db_connection.php';
 
 /* =====================
    2. FORM DATA
@@ -99,8 +90,4 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conn->close();
-
-
-
-
 ?>
