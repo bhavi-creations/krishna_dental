@@ -31,7 +31,7 @@ foreach($slots as $slot){
     $stmt->fetch();
     $stmt->close();
 
-    $available = 5 - $count;
+    $available = 3 - $count;
 
     $response[$slot] = [
         "booked" => $count,

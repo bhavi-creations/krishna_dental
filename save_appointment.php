@@ -103,21 +103,4 @@ $conn->close();
 
 
 
-$stmt = $conn->prepare(
-    "SELECT COUNT(*) FROM appointments WHERE appointment_date=? AND appointment_time=?"
-);
-$stmt->bind_param("ss",$date,$time);
-$stmt->execute();
-$stmt->bind_result($count);
-$stmt->fetch();
-$stmt->close();
-
-if($count >= 5){
-    echo "<script>
-        alert('This slot is FULL. Please select another time.');
-        window.history.back();
-    </script>";
-    exit; // STOP further insert
-}
-
 ?>
