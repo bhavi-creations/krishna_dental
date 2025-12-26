@@ -1,9 +1,34 @@
 <?php
-include __DIR__ . '/db.connection/db_connection.php';
+include './db.connection/db_connection.php';
 
-$date = $_POST['date'];
+$date = $_POST['date'] ?? '';
 
-/* 1 hour slots */
+if (!$date) {
+    echo json_encode([]);
+    exit;
+}
+
+/* =====================
+   CHECK HOLIDAY (ADMIN SET)
+===================== */
+$holiday = $conn->prepare(
+    "SELECT id FROM holidays WHERE holiday_date = ?"
+);
+$holiday->bind_param("s", $date);
+$holiday->execute();
+$res = $holiday->get_result();
+
+if ($res->num_rows > 0) {
+    echo json_encode([
+        "holiday" => true,
+        "message" => "Clinic closed"
+    ]);
+    exit;
+}
+
+/* =====================
+   SLOT CONFIG
+===================== */
 $slots = [
     "10:00 - 11:00AM",
     "11:00 - 12:00PM",
@@ -11,29 +36,27 @@ $slots = [
     "01:00 - 02:00PM",
     "02:00 - 03:00PM",
     "03:00 - 04:00PM",
-    "04:00 - 05:00PM",
-    "05:00 - 06:00PM",
-    "06:00 - 07:00PM",
-    "07:00 - 08:00PM",
-    "08:00 - 09:00PM"
+    "04:00 - 05:00PM"
 ];
 
-/* Initialize counts */
+$maxPerSlot = 3;
 $data = [];
+
 foreach ($slots as $slot) {
-    $data[$slot] = 0;
-}
 
-/* Count bookings per slot */
-$result = $conn->query("
-    SELECT appointment_time, COUNT(*) as total 
-    FROM appointments 
-    WHERE appointment_date = '$date'
-    GROUP BY appointment_time
-");
+    $stmt = $conn->prepare(
+        "SELECT COUNT(*) total 
+         FROM appointments 
+         WHERE appointment_date = ? 
+         AND appointment_time = ?"
+    );
+    $stmt->bind_param("ss", $date, $slot);
+    $stmt->execute();
+    $count = $stmt->get_result()->fetch_assoc()['total'];
 
-while ($row = $result->fetch_assoc()) {
-    $data[$row['appointment_time']] = (int)$row['total'];
+    $data[$slot] = [
+        "available" => max(0, $maxPerSlot - $count)
+    ];
 }
 
 echo json_encode($data);

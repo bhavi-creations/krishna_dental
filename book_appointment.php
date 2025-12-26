@@ -148,4 +148,46 @@
         });
     </script>
 
+<script>
+document.getElementById("appointment_date").addEventListener("change", function () {
+
+    let date = this.value;
+    let slot = document.getElementById("appointment_time");
+
+    slot.innerHTML = '<option>Loading...</option>';
+    slot.style.display = "block";
+
+    fetch("check_slots.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "date=" + date
+    })
+    .then(res => res.json())
+    .then(data => {
+
+        if (data.holiday) {
+            slot.style.display = "none";
+            alert("Clinic closed on selected date");
+            return;
+        }
+
+        slot.innerHTML = '<option value="">Choose Slot</option>';
+
+        for (let s in data) {
+            let opt = document.createElement("option");
+
+            if (data[s].available <= 0) {
+                opt.text = s + " (FULL)";
+                opt.disabled = true;
+            } else {
+                opt.text = s + " (Available: " + data[s].available + ")";
+                opt.value = s;
+            }
+
+            slot.appendChild(opt);
+        }
+    });
+});
+</script>
+
     <?php include 'footer.php'; ?>
