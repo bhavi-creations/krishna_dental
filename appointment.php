@@ -17,10 +17,15 @@
         </div>
     </div>
 </div>
+
+
+
+
 <!--==============================
     Appointment Form Area 
     ==============================-->
 <section class="appointment-wrapper space">
+
     <div class="container">
         <div class="row gx-40">
 
@@ -32,93 +37,54 @@
 
             <div class="col-lg-6 mb-40 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
 
+                <div class="card shadow-lg border-0 appointment-card">
 
-                <form action="appointmentform.php" method="post" role="form" class="php-email-form form-wrap1 shadow-none mb-0" data-bg-color="#f3f6f7">
-                    <div class="form-title-box bg-title" data-bg-src="assets/img/bg/bg-shape-9.jpg">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col">
-                                <h2 class="h4 mb-2 text-white">Book An Appointment</h2>
-                            </div>
-                            <div class="col-auto d-none d-sm-block">
-                                <a href="tel:0088123456789" class="ripple-icon style2"><i class="fas fa-phone"></i></a>
-                            </div>
-                        </div>
+                    <div class="appointment-header text-center text-white " style="  background: linear-gradient(135deg, #0d6efd, #084298);
+        padding: 20px; ">
+                        <h4 class="book_slot" style=" color: white;">Book Your Appointment</h4>
+                        <small>Krishna Dental Care</small>
                     </div>
-                    <div class="form-box">
-                        <div class="row">
 
-                            <div class="col-lg-6 form-group">
-                                <input type="text" class="form-control  style3" placeholder="Your Name" name="name">
-                                <i class="fal small fa-user"></i>
+                    <div class="card-body p-4 bg-white">
+                        <form action="save_appointment.php" method="POST">
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Patient Name</label>
+                                <input type="text" name="patient_name" class="form-control" placeholder="Enter patient name" required>
                             </div>
 
-                            <div class="col-lg-6 form-group">
-                                <input type="number" class="form-control  style3" placeholder="Your Phone" name="phone">
-                                <i class="fal small fa-phone"></i>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Enter phone number" required>
                             </div>
 
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Appointment Date</label>
+                                <input type="date" name="appointment_date" id="appointment_date" class="form-control" required>
+                            </div>
 
-                            <div class="col-lg-6 form-group">
-
-                                <select  name="doctor" class="form-select style3">
-                                    <option hidden disabled selected>Choose Doctor</option>
-                                    <option value="Dr. B. Suresh Kumar"> Dr. B. Suresh Kumar</option>
-                                    <option value="Dr. B Ratna Vineela">Dr. B Ratna Vineela</option>
-                                    <option value="Dr. B Sai Sruthi">Dr. B Sai Sruthi</option>
-                                    <option value="Dr. G Niharika">Dr. G Niharika</option>
-                                    <option value="Dr. Jyothsna Kalepu">Dr. Jyothsna Kalepu</option>
-                                    <option value="Dr. Malathi Chakravarthy">Dr. Malathi Chakravarthy</option>
-                                    <option value="Dr. M Ganesh ">Dr. M Ganesh </option>
-                                    <option value="Dr. R. SriLekhya">Dr. R. SriLekhya</option>
-                                    
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Select Time Slot</label>
+                                <select name="appointment_time" id="appointment_time" class="form-select" required>
+                                    <option value="">Choose Slot</option>
                                 </select>
-
                             </div>
 
-
-
-                            <div class="col-lg-6 form-group">
-
-                                <select name="department" class="form-select style3"  >
-                                    <option  hidden disabled selected>Select Service</option>
-                                    <option value="Root Canal"> Root Canal</option>
-                                    <option value="Wisdom Tooth Removal"> Wisdom Tooth Removal </option>
-                                    <option value="Bad Breath Treatment">Bad Breath Treatment </option>
-                                    <option value="Gum Treatment">Gum Treatment</option>
-                                    <option value="Teeth Cleaning">General Surgery </option>
-                                    <option value="Orthodontic Treatment">Orthodontic Treatment</option>
-                                    <option value="Dental Crown & Bridge">Dental Crown & Bridge</option>
-                                    <option value="Dental Veneers">Dental Veneers</option>
-                                    <option value="Smile Makeover">Smile Makeover</option>
-                                    <option value="Teeth Whitening"> Teeth Whitening</option>
-                                    <option value="Dental Implants"> Dental Implants</option>
-                                    <option value="Dentures"> Dentures</option>
-                                    <option value="Fluoride Application & Dental Sealant"> Fluoride Application & Dental Sealant</option>
-                                    <option value="Full Mouth Rehabilitation Treatment"> Full Mouth Rehabilitation Treatment</option>
-
-
-                                </select>
-
-                            </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="text" class="dateTime-pick form-control  style3" placeholder="Select Date & Time" name="date">
-                                <i class="fal small fa-calendar-alt"></i>
-                            </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="email" class="form-control  style3" placeholder="Email Address" name="email">
-                                <i class="fal small fa-envelope"></i>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-book">
+                                    Book Appointment
+                                </button>
                             </div>
 
-
-
-
-
-                            <div class="col-xl-12 text-center">
-                                <button type="submit" class="vs-btn style2">Make Appointment<i class="far fa-calendar-alt"></i></button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+
+                    <div class="card-footer text-center bg-light footer-text" style="font-size: 20px;">
+                        © Krishna Dental Care
+                    </div>
+
+                </div>
+
             </div>
 
 
@@ -126,6 +92,105 @@
     </div>
 </section>
 
+<script>
+    /* ✅ 1 Hour Slots */
+    const slots = [
+        "10:00 - 11:00AM",
+        "11:00 - 12:00PM",
+        "12:00 - 01:00PM",
+        "01:00 - 02:00PM",
+        "02:00 - 03:00PM",
+        "03:00 - 04:00PM",
+        "04:00 - 05:00PM",
+        "05:00 - 06:00PM",
+        "06:00 - 07:00PM",
+        "07:00 - 08:00PM",
+        "08:00 - 09:00PM"
+    ];
+
+    document.getElementById("appointment_date").addEventListener("change", function() {
+
+        let date = this.value;
+        let slotSelect = document.getElementById("appointment_time");
+
+        slotSelect.innerHTML = '<option value="">Loading slots...</option>';
+
+        fetch("check_slots.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "date=" + date
+            })
+            .then(res => res.json())
+            .then(data => {
+
+                slotSelect.innerHTML = '<option value="">Choose Slot</option>';
+
+                slots.forEach(slot => {
+
+                    let bookedCount = data[slot] ?? 0;
+                    let available = 3 - bookedCount;
+
+                    let option = document.createElement("option");
+
+                    if (available <= 0) {
+                        option.text = slot + " (FULL)";
+                        option.disabled = true;
+                    } else {
+                        option.text = slot + " (Available: " + available + ")";
+                        option.value = slot;
+                    }
+
+                    slotSelect.appendChild(option);
+                });
+            });
+    });
+</script>
+
+<script>
+    document.getElementById("appointment_date").addEventListener("change", function() {
+
+        let date = this.value;
+        let slot = document.getElementById("appointment_time");
+
+        slot.innerHTML = '<option>Loading...</option>';
+        slot.style.display = "block";
+
+        fetch("check_slots.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "date=" + date
+            })
+            .then(res => res.json())
+            .then(data => {
+
+                if (data.holiday) {
+                    slot.style.display = "none";
+                    alert("Clinic closed on selected date");
+                    return;
+                }
+
+                slot.innerHTML = '<option value="">Choose Slot</option>';
+
+                for (let s in data) {
+                    let opt = document.createElement("option");
+
+                    if (data[s].available <= 0) {
+                        opt.text = s + " (FULL)";
+                        opt.disabled = true;
+                    } else {
+                        opt.text = s + " (Available: " + data[s].available + ")";
+                        opt.value = s;
+                    }
+
+                    slot.appendChild(opt);
+                }
+            });
+    });
+</script>
 
 
 
