@@ -21830,3 +21830,112 @@ body {
   color: #ffffff;
 
 }
+
+
+
+
+
+/* live icons  */
+
+
+/* live count stylings  */
+/* live visters  */
+.page-views {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+
+
+#visitor-eye {
+position: fixed;
+bottom: 20px;
+left: 20px;
+font-size: 24px;
+background: #000;
+color: #fff;
+padding: 12px 15px;
+border-radius: 50%;
+text-decoration: none;
+cursor: pointer;
+z-index: 9999;
+
+/* Animation */
+animation: eyePulse 2.5s infinite;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover bounce + glow */
+#visitor-eye:hover {
+transform: scale(1.15);
+box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Tooltip animation */
+.visitor-tooltip {
+opacity: 0;
+visibility: hidden;
+transform: translateY(10px);
+transition: all 0.3s ease;
+
+position: absolute;
+bottom: 60px;
+left: 0;
+background: #fff;
+color: #000;
+padding: 10px 12px;
+border-radius: 8px;
+box-shadow: 0 0 12px rgba(0,0,0,0.25);
+font-size: 13px;
+width: 220px;
+}
+
+/* Tooltip show on hover */
+#visitor-eye:hover .visitor-tooltip {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+
+/* Pulse animation */
+#visitor-eye {
+  animation: eyeLook 5s infinite;
+}
+
+@keyframes eyeLook {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}
+
+
+/* mobile device stylings  */
+.page-name {
+white-space: normal;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.page-name {
+    max-width: 100%;
+    line-height: 1.4;
+
+    /* 🔥 3 rows only */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;      /* EXACT 3 lines */
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+}
