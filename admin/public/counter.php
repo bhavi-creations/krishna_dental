@@ -1,43 +1,74 @@
 <?php
-include './db.connection/db_connection.php';
+include __DIR__ . '/../../db.connection/db_connection.php';
 
+// ----------------------------
+// PAGE NAME
+// ----------------------------
 $page = basename($_SERVER['PHP_SELF']);
-$cookie_name = "visited_page_" . md5($page);
 
-if (!isset($_COOKIE[$cookie_name])) {
+// USER IP
+$ip = $_SERVER['REMOTE_ADDR'];
 
-    // 1 year cookie
-    // setcookie($cookie_name, 'yes', time() + (60 * 60 * 24 * 365), "/");
+// TODAY DATE
+$today = date('Y-m-d');
 
-    /* =========================
-       MAIN VISITOR COUNT TABLE
-    ========================= */
-    $stmt = $conn->prepare("SELECT id FROM visitors WHERE page_name = ?");
-    $stmt->bind_param("s", $page);
-    $stmt->execute();
-    $res = $stmt->get_result();
+// ----------------------------
+// CHECK IF ALREADY VISITED TODAY
+// ----------------------------
+$logCheck = $conn->prepare(
+    "SELECT id FROM visitor_logs 
+     WHERE page_name = ? AND ip_address = ? AND visit_date = ?"
+);
+$logCheck->bind_param("sss", $page, $ip, $today);
+$logCheck->execute();
+$logResult = $logCheck->get_result();
 
-    if ($res->num_rows > 0) {
+// 👉 IF NOT VISITED TODAY
+if ($logResult->num_rows == 0) {
+
+    // INSERT INTO LOG TABLE
+    $logInsert = $conn->prepare(
+        "INSERT INTO visitor_logs (page_name, ip_address, visit_date)
+         VALUES (?, ?, ?)"
+    );
+    $logInsert->bind_param("sss", $page, $ip, $today);
+    $logInsert->execute();
+    $logInsert->close();
+
+    // ----------------------------
+    // UPDATE / INSERT MAIN COUNT
+    // ----------------------------
+    $check = $conn->prepare(
+        "SELECT id FROM visitors WHERE page_name = ?"
+    );
+    $check->bind_param("s", $page);
+    $check->execute();
+    $result = $check->get_result();
+
+    if ($result->num_rows > 0) {
+
         $update = $conn->prepare(
-            "UPDATE visitors SET visit_count = visit_count + 1 WHERE page_name = ?"
+            "UPDATE visitors 
+             SET visit_count = visit_count + 1 
+             WHERE page_name = ?"
         );
         $update->bind_param("s", $page);
         $update->execute();
+        $update->close();
+
     } else {
+
         $insert = $conn->prepare(
-            "INSERT INTO visitors (page_name, visit_count) VALUES (?, 1)"
+            "INSERT INTO visitors (page_name, visit_count) 
+             VALUES (?, 1)"
         );
         $insert->bind_param("s", $page);
         $insert->execute();
+        $insert->close();
     }
 
-    /* =========================
-       DATE-WISE LOG TABLE
-    ========================= */
-    // $log = $conn->prepare(
-    //     "INSERT INTO visitor_logs (page_name) VALUES (?)"
-    // );
-    // $log->bind_param("s", $page);
-    // $log->execute();
+    $check->close();
 }
+
+$logCheck->close();
 ?>

@@ -24,7 +24,7 @@ $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
 <html>
 
 <head>
-    <title>Apple  Multispeciality Dental Hospital Kakinada</title>
+    <title>Krishna  Dental Hospital Kakinada</title>
 </head>
 
 <body>  

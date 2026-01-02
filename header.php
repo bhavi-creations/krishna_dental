@@ -146,7 +146,7 @@ Best dental specialist in Rajahmundry">
 
 
 </head>
-
+<?php include 'view_count.php' ; ?>
 <body class="">
 
     <div class="preloader  ">
