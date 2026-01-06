@@ -37,9 +37,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/root-canal (1).png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="root_treatment_in_rajahmundry.php">Root Canal</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="rootcanal_treatment_in_rajahmundry.php">Root Canal</a></h3>
                         <div class="sr-content">
-                            <a href="root_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="rootcanal_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -54,9 +54,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/wisdom-tooth.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="wisdom_treatment_in_rajahmundry.php"> Wisdom Tooth Removal</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="wisdomteeth_treatment_in_rajahmundry.php"> Wisdom Tooth Removal</a></h3>
                         <div class="sr-content">
-                            <a href="wisdom_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="wisdomteeth_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -70,9 +70,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/breath.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="breath_treatment_in_rajahmundry.php">Bad Breath Treatment</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="badbreath_treatment_in_rajahmundry.php">Bad Breath Treatment</a></h3>
                         <div class="sr-content">
-                            <a href="breath_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="badbreath_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -86,9 +86,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/dental-surgery.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="gum_treatment_in_rajahmundry.php">Gum Treatment</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="gum_care_treatment_in_rajahmundry.php">Gum Treatment</a></h3>
                         <div class="sr-content">
-                            <a href="gum_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="gum_care_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -102,9 +102,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/teeth.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="cleaning_treatment_in_rajahmundry.php">Teeth Cleaning</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="teethcleaning_treatment_in_rajahmundry.php">Teeth Cleaning</a></h3>
                         <div class="sr-content">
-                            <a href="cleaning_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="teethcleaning_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,9 +137,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/bridge.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="crown_treatment_in_rajahmundry.php">Dental Crown & Bridge </a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="dentalcrown_bridge_treatment_in_rajahmundry.php">Dental Crown & Bridge </a></h3>
                         <div class="sr-content">
-                            <a href="crown_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="dentalcrown_bridge_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -153,9 +153,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/veener.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="veneers_treatment_in_rajahmundry.php">Dental Veneers</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="dentalveneers_treatment_in_rajahmundry.php">Dental Veneers</a></h3>
                         <div class="sr-content">
-                            <a href="veneers_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="dentalveneers_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -169,9 +169,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/smile.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="smile_treatment_in_rajahmundry.php">Smile Makeover</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="smilemakeover_treatment_in_rajahmundry.php">Smile Makeover</a></h3>
                         <div class="sr-content">
-                            <a href="smile_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="smilemakeover_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -185,9 +185,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/tooth-whitening.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="whitening_treatment_in_rajahmundry.php">Teeth Whitening</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="teethwhitening_treatment_in_rajahmundry.php">Teeth Whitening</a></h3>
                         <div class="sr-content">
-                            <a href="whitening_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="teethwhitening_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -201,10 +201,10 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/invisligners.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="invisaliners_treatment_in_rajahmundry.php">Invisible Aligners
+                        <h3 class="h4 sr-title "><a class="text-reset" href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php">Invisible Aligners
                             </a></h3>
                         <div class="sr-content">
-                            <a href="invisaliners_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -218,9 +218,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/implant.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="implents_treatment_in_rajahmundry.php">Dental Implants</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="dentalimplants_treatment_in_rajahmundry.php">Dental Implants</a></h3>
                         <div class="sr-content">
-                            <a href="implents_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="dentalimplants_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -234,9 +234,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/denture.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="dentures_treatment_in_rajahmundry.php"> Dentures </a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="dentaldentures_treatment_in_rajahmundry.php"> Dentures </a></h3>
                         <div class="sr-content">
-                            <a href="dentures_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="dentaldentures_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -250,9 +250,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/sealant.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="sealant_treatment_in_rajahmundry.php"> Fluoride Application & Dental Sealant</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php"> Fluoride Application & Dental Sealant</a></h3>
                         <div class="sr-content">
-                            <a href="sealant_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -266,9 +266,9 @@
                     <div class="sr-body icon_bg">
                         <span class="sr-icon"><img src="assets/img/service img/dental.png" alt="" class="icon"></span>
 
-                        <h3 class="h4 sr-title "><a class="text-reset" href="fullmouth_treatment_in_rajahmundry.php"> Full Mouth Rehabilitation Treatment</a></h3>
+                        <h3 class="h4 sr-title "><a class="text-reset" href="fullmouth_rehabilitation_treatment_in_rajahmundry.php"> Full Mouth Rehabilitation Treatment</a></h3>
                         <div class="sr-content">
-                            <a href="fullmouth_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
+                            <a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
