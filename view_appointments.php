@@ -174,7 +174,7 @@ $result = $conn->query($sql);
                                     <td><?= htmlspecialchars($row['appointment_date']); ?></td>
                                     <td><?= htmlspecialchars($row['appointment_time']); ?></td>
                                     <td>
-                                        <span class="eye-icon me-2" onclick="openModal(<?= $row['id']; ?>)">👁️</span>
+                                        <!-- <span class="eye-icon me-2" onclick="openModal(<?= $row['id']; ?>)">👁️</span> -->
                                         <a href="delete_appointment.php?id=<?= $row['id']; ?>" class="btn btn-sm btn-danger"
                                             onclick="return confirm('Are you sure you want to delete this appointment?');">
                                             Delete

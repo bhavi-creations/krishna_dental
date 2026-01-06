@@ -155,7 +155,7 @@ if ($isFiltered) {
 
         <!-- TOTAL VISITORS -->
         <div class="va-box">
-            <h3>👥 Total Website Visitors</h3>
+            <h3>👥 Total pages Visitors</h3>
             <div class="va-total"><?php echo $totalCount; ?></div>
             <?php if ($isFiltered) { ?>
                 <small><?php echo $from; ?> → <?php echo $to; ?></small>
