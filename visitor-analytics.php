@@ -7,56 +7,57 @@ $to   = $_GET['to'] ?? '';
 $isFiltered = (!empty($from) && !empty($to));
 
 /* =========================
-    TOTAL VISITORS
-    ========================= */
+   TOTAL VISITORS
+========================= */
 if ($isFiltered) {
     $stmt = $conn->prepare("
-            SELECT COUNT(*) AS total
-            FROM visitors
-            WHERE DATE(visited_at) BETWEEN ? AND ?
-        ");
+        SELECT COUNT(*) AS total
+        FROM visitors
+        WHERE DATE(visited_at) BETWEEN ? AND ?
+    ");
     $stmt->bind_param("ss", $from, $to);
     $stmt->execute();
     $totalRes = $stmt->get_result();
 } else {
     $totalRes = $conn->query("
-            SELECT COUNT(*) AS total
-            FROM visitors
-        ");
+        SELECT COUNT(*) AS total
+        FROM visitors
+    ");
 }
 
 $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
 
 /* =========================
-    PAGE-WISE VISITORS
-    ========================= */
+   PAGE-WISE VISITORS
+========================= */
 if ($isFiltered) {
     $stmt = $conn->prepare("
-            SELECT page_name, COUNT(*) AS visit_count
-            FROM visitors
-            WHERE DATE(visited_at) BETWEEN ? AND ?
-            GROUP BY page_name
-            ORDER BY visit_count DESC
-        ");
+        SELECT page_name, COUNT(*) AS visit_count
+        FROM visitors
+        WHERE DATE(visited_at) BETWEEN ? AND ?
+        GROUP BY page_name
+        ORDER BY visit_count DESC
+    ");
     $stmt->bind_param("ss", $from, $to);
     $stmt->execute();
     $pages = $stmt->get_result();
 } else {
     $pages = $conn->query("
-            SELECT page_name, COUNT(*) AS visit_count
-            FROM visitors
-            GROUP BY page_name
-            ORDER BY visit_count DESC
-        ");
+        SELECT page_name, COUNT(*) AS visit_count
+        FROM visitors
+        GROUP BY page_name
+        ORDER BY visit_count DESC
+    ");
 }
 ?>
+
 
 
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Krishna Dental Hospital Kakinada</title>
+    <title>Srinivasa Multispeciality Dental Hospital Kakinada</title>
     <style>
         body {
             font-family: Arial;
@@ -123,46 +124,38 @@ if ($isFiltered) {
             font-weight: bold;
             padding: 20px;
         }
-
-        .back-btn {
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background: #2c7be5;
-            color: #fff;
-            text-decoration: none;
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            z-index: 9999;
-        }
-
-        .back-btn:hover {
-            background: #1a5fd0;
-        }
     </style>
 </head>
 
 <body>
 
-
-
-    <div class="va-container" style="margin-top:50px;">
+    <div class="va-container">
 
         <h2 class="va-title">📊 Visitor Analytics</h2>
 
         <!-- TOTAL VISITORS -->
         <div class="va-box">
-            <h3>👥 Total pages Visitors</h3>
+            <h3>👥 Total Page Visitors</h3>
             <div class="va-total"><?php echo $totalCount; ?></div>
             <?php if ($isFiltered) { ?>
                 <small><?php echo $from; ?> → <?php echo $to; ?></small>
             <?php } ?>
         </div>
 
-
+        <!-- DATE FILTER -->
+        <div class="va-box">
+            <h3>📅 Filter by Date</h3>
+            <form method="GET" class="va-filter-form">
+                <input type="date" name="from" value="<?php echo htmlspecialchars($from); ?>" required>
+                <input type="date" name="to" value="<?php echo htmlspecialchars($to); ?>" required>
+                <button type="submit">Show</button>
+                <?php if ($isFiltered) { ?>
+                    <a href="visitor-analytics.php">
+                        <button type="button" class="va-reset-btn">Reset</button>
+                    </a>
+                <?php } ?>
+            </form>
+        </div>
 
         <!-- PAGE-WISE VISITORS -->
         <div class="va-box">
@@ -190,7 +183,7 @@ if ($isFiltered) {
                 <?php } ?>
             </table>
         </div>
-        <a href="index.php" class="back-btn">← Back</a>
+
     </div>
 
 </body>
