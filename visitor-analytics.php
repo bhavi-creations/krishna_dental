@@ -2,22 +2,33 @@
 include './db.connection/db_connection.php';
 session_start();
 
-// Current page & visitor info
+// ===============================
+// Page & IP
+// ===============================
 $page  = basename($_SERVER['PHP_SELF']);
 $ip    = $_SERVER['REMOTE_ADDR'];
 $today = date('Y-m-d');
 
+// Localhost testing fix
+if ($ip == '127.0.0.1' || $ip == '::1') {
+    $ip = '8.8.8.8'; // test public IP
+}
+
 // ===============================
-// Get City from IP if not in session
+// Get City from IP (once per session)
 // ===============================
 if (!isset($_SESSION['city'])) {
+    $city = 'Unknown';
     $ipApiUrl = "http://ip-api.com/json/{$ip}";
     $ipData = @file_get_contents($ipApiUrl);
-    $city = 'Unknown';
+
     if ($ipData) {
         $ipData = json_decode($ipData, true);
-        if (isset($ipData['city']) && !empty($ipData['city'])) {
+        if (!empty($ipData['city'])) {
             $city = $ipData['city'];
+            if (!empty($ipData['regionName'])) {
+                $city .= ' - ' . $ipData['regionName'];
+            }
         }
     }
     $_SESSION['city'] = $city;
@@ -37,46 +48,23 @@ $check->execute();
 $res = $check->get_result();
 
 if ($res->num_rows == 0) {
-    // Insert visitor log
     $ins = $conn->prepare("
         INSERT INTO visitor_logs (page_name, ip_address, visit_date, visited_at, city)
         VALUES (?, ?, ?, NOW(), ?)
     ");
     $ins->bind_param("ssss", $page, $ip, $today, $city);
     $ins->execute();
-
-    // Update visitors table
-    $v = $conn->prepare("SELECT id FROM visitors WHERE page_name = ?");
-    $v->bind_param("s", $page);
-    $v->execute();
-    $vr = $v->get_result();
-
-    if ($vr->num_rows > 0) {
-        $up = $conn->prepare("
-            UPDATE visitors SET visit_count = visit_count + 1
-            WHERE page_name = ?
-        ");
-        $up->bind_param("s", $page);
-        $up->execute();
-    } else {
-        $in = $conn->prepare("
-            INSERT INTO visitors (page_name, visit_count)
-            VALUES (?, 1)
-        ");
-        $in->bind_param("s", $page);
-        $in->execute();
-    }
 }
 
 // ===============================
-// Filter dates
+// Filters
 // ===============================
 $from = $_GET['from'] ?? '';
 $to   = $_GET['to'] ?? '';
 $isFiltered = (!empty($from) && !empty($to));
 
 // ===============================
-// Total Unique Visitors
+// Total Unique Visitors (IP-wise)
 // ===============================
 if ($isFiltered) {
     $stmt = $conn->prepare("
@@ -208,7 +196,7 @@ $cities = $conn->query("
 
         .va-total-views {
             /* background: linear-gradient(135deg, #43e97b, #38f9d7); */
-              background-color: #ff6600;
+            background-color: #ff6600;
         }
 
         /* Filter Form */
@@ -277,7 +265,7 @@ $cities = $conn->query("
 
         thead+thead.va-city {
             background-color: #43e97b;
-          
+
         }
 
         th,
