@@ -27,26 +27,26 @@
          <div class="row gx-60 align-items-center">
              <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.3s ">
               
-                     <form action="contactform.php" method="post" role="form" class="php-email-form p-5 "    data-bg-color="#f3f6f7">
+                     <form action="contactform.php" method="post" role="form" class="php-email-form p-3 "    data-bg-color="#f3f6f7">
                         
                          <div class="row">
                              <div class="form-title  ">
                                  <h3 class="mt-n2 fls-n2 mb-0">Send Us a Message</h3>
                                  <p class="text-theme mb-4">Your email address will not be published*</p>
                              </div>
-                             <div class="form-group col-6 mb-15">
+                             <div class="form-group col-md-6 mb-15">
                                  <input type="text" class="form-control style3" name="contactname" id="name" placeholder="Name">
                                  <i class="fal fa-user"></i>
                              </div>
-                             <div class="form-group col-6 mb-15">
+                             <div class="form-group col-md-6 mb-15">
                                  <input type="text" class="form-control style3" name="contactnumber" id="phone" placeholder="Phone">
                                  <i class="fal fa-phone"></i>
                              </div>
-                             <div class="form-group col-6 mb-15">
+                             <div class="form-group col-md-6 mb-15">
                                  <input type="text" class="form-control style3" name="address" id="address" placeholder="Address">
                                  <i class="fal fa-map"></i>
                              </div>
-                             <div class="form-group col-6 mb-15">
+                             <div class="form-group col-md-6 mb-15">
                                  <input type="text" class="form-control style3" name="contactemail" id="email" placeholder="Email">
                                  <i class="fal fa-envelope"></i>
                              </div>
@@ -63,7 +63,7 @@
                          <p class="form-messages mb-0 mt-3"></p>
                      </form>
              </div>
-             <div class="col-lg-6">
+             <div class="col-lg-6 mt-5">
                  <div class="contact-information mb-30">
                      <h2 class="mt-n2">We are here for help you! Arrange a meeting.</h2>
 
