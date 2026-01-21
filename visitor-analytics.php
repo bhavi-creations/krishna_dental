@@ -2,10 +2,71 @@
 include './db.connection/db_connection.php';
 session_start();
 
-// Optional: page & IP info (future use if needed)
-$page = basename($_SERVER['PHP_SELF']);
-$ip   = $_SERVER['REMOTE_ADDR'];
+// Current page & visitor info
+$page  = basename($_SERVER['PHP_SELF']);
+$ip    = $_SERVER['REMOTE_ADDR'];
 $today = date('Y-m-d');
+
+// ===============================
+// Get City from IP if not in session
+// ===============================
+if (!isset($_SESSION['city'])) {
+    $ipApiUrl = "http://ip-api.com/json/{$ip}";
+    $ipData = @file_get_contents($ipApiUrl);
+    $city = 'Unknown';
+    if ($ipData) {
+        $ipData = json_decode($ipData, true);
+        if (isset($ipData['city']) && !empty($ipData['city'])) {
+            $city = $ipData['city'];
+        }
+    }
+    $_SESSION['city'] = $city;
+} else {
+    $city = $_SESSION['city'];
+}
+
+// ===============================
+// Record visitor only once per page per day
+// ===============================
+$check = $conn->prepare("
+    SELECT id FROM visitor_logs
+    WHERE page_name = ? AND ip_address = ? AND visit_date = ?
+");
+$check->bind_param("sss", $page, $ip, $today);
+$check->execute();
+$res = $check->get_result();
+
+if ($res->num_rows == 0) {
+    // Insert visitor log
+    $ins = $conn->prepare("
+        INSERT INTO visitor_logs (page_name, ip_address, visit_date, visited_at, city)
+        VALUES (?, ?, ?, NOW(), ?)
+    ");
+    $ins->bind_param("ssss", $page, $ip, $today, $city);
+    $ins->execute();
+
+    // Update visitors table
+    $v = $conn->prepare("SELECT id FROM visitors WHERE page_name = ?");
+    $v->bind_param("s", $page);
+    $v->execute();
+    $vr = $v->get_result();
+
+    if ($vr->num_rows > 0) {
+        $up = $conn->prepare("
+            UPDATE visitors SET visit_count = visit_count + 1
+            WHERE page_name = ?
+        ");
+        $up->bind_param("s", $page);
+        $up->execute();
+    } else {
+        $in = $conn->prepare("
+            INSERT INTO visitors (page_name, visit_count)
+            VALUES (?, 1)
+        ");
+        $in->bind_param("s", $page);
+        $in->execute();
+    }
+}
 
 // ===============================
 // Filter dates
@@ -15,7 +76,7 @@ $to   = $_GET['to'] ?? '';
 $isFiltered = (!empty($from) && !empty($to));
 
 // ===============================
-// Total Unique Visitors (IP-wise)
+// Total Unique Visitors
 // ===============================
 if ($isFiltered) {
     $stmt = $conn->prepare("
@@ -88,6 +149,7 @@ $cities = $conn->query("
     ORDER BY total DESC
 ");
 ?>
+
 
 
 <!DOCTYPE html>
