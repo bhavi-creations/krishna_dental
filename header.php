@@ -348,8 +348,8 @@ Best dental specialist in Rajahmundry">
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
-                                                    <ul>
-                                                        <li><a href="dentalimplants_treatment_in_rajahmundry.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
+                                                    <ul>              
+                                                        <li><a href="dentalimplents_treatment_in_rajahmundry.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
                                                         <li><a href="dentaldentures_treatment_in_rajahmundry.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
                                                         <li><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
                                                         <li><a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php"><img src="assets/img/icons/face.png" alt=""> Full Mouth Rehabilitation Treatment </a></li>
