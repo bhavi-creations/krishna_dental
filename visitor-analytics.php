@@ -1,40 +1,67 @@
 <?php
 include './db.connection/db_connection.php';
+session_start();
 
+// Optional: page & IP info (future use if needed)
+$page = basename($_SERVER['PHP_SELF']);
+$ip   = $_SERVER['REMOTE_ADDR'];
+$today = date('Y-m-d');
+
+// ===============================
+// Filter dates
+// ===============================
 $from = $_GET['from'] ?? '';
 $to   = $_GET['to'] ?? '';
-
 $isFiltered = (!empty($from) && !empty($to));
 
-/* =========================
-   TOTAL VISITORS
-========================= */
+// ===============================
+// Total Unique Visitors (IP-wise)
+// ===============================
 if ($isFiltered) {
     $stmt = $conn->prepare("
-        SELECT COUNT(*) AS total
-        FROM visitors
-        WHERE DATE(visited_at) BETWEEN ? AND ?
+        SELECT COUNT(DISTINCT ip_address) AS total
+        FROM visitor_logs
+        WHERE visit_date BETWEEN ? AND ?
     ");
     $stmt->bind_param("ss", $from, $to);
     $stmt->execute();
     $totalRes = $stmt->get_result();
 } else {
     $totalRes = $conn->query("
-        SELECT COUNT(*) AS total
-        FROM visitors
+        SELECT COUNT(DISTINCT ip_address) AS total
+        FROM visitor_logs
     ");
 }
-
 $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
 
-/* =========================
-   PAGE-WISE VISITORS
-========================= */
+// ===============================
+// Total Page Views
+// ===============================
 if ($isFiltered) {
     $stmt = $conn->prepare("
-        SELECT page_name, COUNT(*) AS visit_count
-        FROM visitors
-        WHERE DATE(visited_at) BETWEEN ? AND ?
+        SELECT COUNT(*) AS total_views
+        FROM visitor_logs
+        WHERE visit_date BETWEEN ? AND ?
+    ");
+    $stmt->bind_param("ss", $from, $to);
+    $stmt->execute();
+    $viewRes = $stmt->get_result();
+} else {
+    $viewRes = $conn->query("
+        SELECT COUNT(*) AS total_views
+        FROM visitor_logs
+    ");
+}
+$totalViews = $viewRes->fetch_assoc()['total_views'] ?? 0;
+
+// ===============================
+// Page-wise Unique Visitors
+// ===============================
+if ($isFiltered) {
+    $stmt = $conn->prepare("
+        SELECT page_name, COUNT(DISTINCT ip_address) AS visit_count
+        FROM visitor_logs
+        WHERE visit_date BETWEEN ? AND ?
         GROUP BY page_name
         ORDER BY visit_count DESC
     ");
@@ -43,33 +70,124 @@ if ($isFiltered) {
     $pages = $stmt->get_result();
 } else {
     $pages = $conn->query("
-        SELECT page_name, COUNT(*) AS visit_count
-        FROM visitors
+        SELECT page_name, COUNT(DISTINCT ip_address) AS visit_count
+        FROM visitor_logs
         GROUP BY page_name
         ORDER BY visit_count DESC
     ");
 }
-?>
 
+// ===============================
+// Today City-wise Visitors
+// ===============================
+$cities = $conn->query("
+    SELECT city, COUNT(DISTINCT ip_address) AS total
+    FROM visitor_logs
+    WHERE visit_date = CURDATE()
+    GROUP BY city
+    ORDER BY total DESC
+");
+?>
 
 
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Srinivasa Multispeciality Dental Hospital Kakinada</title>
+    <title>Visitor Analytics</title>
     <style>
-        body {
-            font-family: Arial;
-            padding: 20px;
-            background: #fafafa;
-        }
-
         .va-container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
         }
 
+        /* Heading */
+        .va-container h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #2c7be5;
+        }
+
+        /* Cards */
+        .va-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .va-card {
+            flex: 1 1 200px;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .va-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .va-number {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Gradient backgrounds for cards */
+        .va-total-visitors {
+            /* background: linear-gradient(135deg, #4facfe, #00f2fe); */
+            background-color: #007aff;
+        }
+
+        .va-total-views {
+            /* background: linear-gradient(135deg, #43e97b, #38f9d7); */
+              background-color: #ff6600;
+        }
+
+        /* Filter Form */
+        .va-filter {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .va-filter form {
+            display: inline-flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .va-filter input {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .va-filter button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            background: #2c7be5;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .va-filter a {
+            padding: 8px 15px;
+            border-radius: 6px;
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ccc;
+        }
+
+        /* Boxes */
         .va-box {
             background: #fff;
             border: 1px solid #ddd;
@@ -78,51 +196,52 @@ if ($isFiltered) {
             margin-bottom: 20px;
         }
 
-        .va-title {
-            margin-bottom: 10px;
+        /* Table Wrapper for responsive scroll */
+        .va-table-wrapper {
+            overflow-x: auto;
         }
 
-        .va-total {
-            font-size: 26px;
-            color: #2c7be5;
-        }
-
-        .va-filter-form input,
-        .va-filter-form button {
-            padding: 7px 10px;
-            margin-right: 10px;
-        }
-
-        .va-reset-btn {
-            background: #f44336;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            padding: 7px 12px;
-            border-radius: 5px;
-        }
-
-        table.va-table {
+        /* Tables */
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
         }
 
-        .va-table th,
-        .va-table td {
-            padding: 10px;
-            border: 1px solid #ddd;
+        thead {
+            background-color: #2c7be5;
+            color: #fff;
         }
 
-        .va-table th {
-            background: #f2f2f2;
+        thead+thead.va-city {
+            background-color: #43e97b;
+          
         }
 
-        .va-no-data {
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        td:last-child,
+        th:last-child {
+            text-align: right;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s;
+        }
+
+        tbody tr:hover {
+            background: #f0f8ff;
+        }
+
+        .no-data {
             text-align: center;
             color: red;
             font-weight: bold;
-            padding: 20px;
         }
     </style>
 </head>
@@ -131,61 +250,89 @@ if ($isFiltered) {
 
     <div class="va-container">
 
-        <h2 class="va-title">📊 Visitor Analytics</h2>
+        <h2>📊 Visitor Analytics</h2>
 
-        <!-- TOTAL VISITORS -->
-        <div class="va-box">
-            <h3>👥 Total Page Visitors</h3>
-            <div class="va-total"><?php echo $totalCount; ?></div>
-            <?php if ($isFiltered) { ?>
-                <small><?php echo $from; ?> → <?php echo $to; ?></small>
-            <?php } ?>
+        <!-- Cards -->
+        <div class="va-cards">
+            <div class="va-card va-total-visitors">
+                <h3>👥 Total Unique Visitors</h3>
+                <div class="va-number"><?= $totalCount ?></div>
+            </div>
+            <div class="va-card va-total-views">
+                <h3>👁️ Total Page Views</h3>
+                <div class="va-number"><?= $totalViews ?></div>
+            </div>
         </div>
 
-        <!-- DATE FILTER -->
-        <div class="va-box">
-            <h3>📅 Filter by Date</h3>
-            <form method="GET" class="va-filter-form">
-                <input type="date" name="from" value="<?php echo htmlspecialchars($from); ?>" required>
-                <input type="date" name="to" value="<?php echo htmlspecialchars($to); ?>" required>
-                <button type="submit">Show</button>
-                <?php if ($isFiltered) { ?>
-                    <a href="visitor-analytics.php">
-                        <button type="button" class="va-reset-btn">Reset</button>
-                    </a>
-                <?php } ?>
+        <!-- Filter Form -->
+        <div class="va-filter">
+            <form method="GET">
+                <input type="date" name="from" value="<?= htmlspecialchars($from) ?>">
+                <input type="date" name="to" value="<?= htmlspecialchars($to) ?>">
+                <button type="submit">Filter</button>
+                <a href="visitor-analytics.php">Reset</a>
             </form>
         </div>
 
-        <!-- PAGE-WISE VISITORS -->
+        <!-- Page-wise Unique Visitors -->
         <div class="va-box">
-            <h3>📄 Page-wise Visitors</h3>
-
-            <table class="va-table">
-                <tr>
-                    <th>Page Name</th>
-                    <th>Total Visitors</th>
-                </tr>
-
-                <?php if ($pages && $pages->num_rows > 0) { ?>
-                    <?php while ($row = $pages->fetch_assoc()) { ?>
+            <h3>📄 Page-wise Unique Visitors</h3>
+            <div class="va-table-wrapper">
+                <table>
+                    <thead>
                         <tr>
-                            <td><?php echo htmlspecialchars($row['page_name']); ?></td>
-                            <td><?php echo $row['visit_count']; ?></td>
+                            <th>Page</th>
+                            <th>Visitors</th>
                         </tr>
-                    <?php } ?>
-                <?php } else { ?>
-                    <tr>
-                        <td colspan="2" class="va-no-data">
-                            ❌ No visitors in this date range
-                        </td>
-                    </tr>
-                <?php } ?>
-            </table>
+                    </thead>
+                    <tbody>
+                        <?php if ($pages && $pages->num_rows > 0): ?>
+                            <?php while ($row = $pages->fetch_assoc()): ?>
+                                <tr>
+                                    <td><?= htmlspecialchars($row['page_name']) ?></td>
+                                    <td><?= $row['visit_count'] ?></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="2" class="no-data">No Data Found</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Today City-wise Visitors -->
+        <div class="va-box">
+            <h3>🌍 Today City-wise Visitors</h3>
+            <div class="va-table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Visitors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if ($cities && $cities->num_rows > 0): ?>
+                            <?php while ($c = $cities->fetch_assoc()): ?>
+                                <tr>
+                                    <td><?= htmlspecialchars($c['city']) ?></td>
+                                    <td><?= $c['total'] ?></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="2" class="no-data">No Data Found</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </div>
-
 </body>
 
 </html>
