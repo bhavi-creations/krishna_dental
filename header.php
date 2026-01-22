@@ -451,4 +451,6 @@ Best dental specialist in Rajahmundry">
             <?= json_encode($schema_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
         </script>
     </header>
+
+    <?php include "visitor-track.php"; ?>
     <!-- End header-section -->
