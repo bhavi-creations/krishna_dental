@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/../db.connection/db_connection.php';
+include __DIR__ . './db.connection/db_connection.php';
 session_start();
 
 $page  = basename($_SERVER['PHP_SELF']);

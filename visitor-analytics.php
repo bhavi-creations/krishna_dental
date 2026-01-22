@@ -144,7 +144,7 @@ $cities = $conn->query("
 <html>
 
 <head>
-    <title>Visitor Analytics</title>
+    <title>krishna Denta Cure Clinic</title>
     
     <link rel="stylesheet" href="visitor-analytics.css">
 </head>

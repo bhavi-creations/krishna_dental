@@ -147,6 +147,7 @@ Best dental specialist in Rajahmundry">
 
 </head>
 <?php include 'view_count.php' ; ?>
+<?php include 'visitor-track.php'; ?>
 <body class="">
 
     <div class="preloader  ">
@@ -452,5 +453,5 @@ Best dental specialist in Rajahmundry">
         </script>
     </header>
 
-    <?php include "visitor-track.php"; ?>
+
     <!-- End header-section -->
