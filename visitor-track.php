@@ -1,6 +1,6 @@
 <?php
 include './db.connection/db_connection.php';
-
+session_start();
 
 // ===============================
 // Page & IP
