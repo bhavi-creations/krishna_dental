@@ -173,6 +173,33 @@
  <!-- Main Js File -->
  <script src="assets/js/main.js"></script>
 
+
+
+ <!-- Footer end -->
+ <script>
+     if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(function(pos) {
+
+             fetch("save_location.php", {
+                 method: "POST",
+                 headers: {
+                     "Content-Type": "application/json"
+                 },
+                 body: JSON.stringify({
+                     lat: pos.coords.latitude,
+                     lon: pos.coords.longitude
+                 })
+             });
+
+         });
+     }
+ </script>
+ </body>
+
+ </html>
+
+
+
  </body>
 
  </html>
