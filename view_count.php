@@ -1,16 +1,57 @@
 <?php
+// session_start();
+
 include __DIR__ . '/db.connection/db_connection.php';
+
+// ❌ Analytics page ni count cheyyakudadhu
+if (basename($_SERVER['PHP_SELF']) === 'visitor-analytics.php') {
+    return;
+}
 
 $page  = basename($_SERVER['PHP_SELF']);
 $ip    = $_SERVER['REMOTE_ADDR'];
 $today = date('Y-m-d');
 
-// City (ippatiki default)
-$city = 'Unknown';
+// Localhost testing fix
+if ($ip == '127.0.0.1' || $ip == '::1') {
+    $ip = '8.8.8.8';
+}
 
-/*
-  Same IP + Same Page + Same Day already unda?
-*/
+/* ===============================
+   GET LOCATION (AUTO & FREE)
+================================ */
+
+// City not set OR Unknown unna malli try cheyyali
+if (!isset($_SESSION['city']) || $_SESSION['city'] === 'Unknown') {
+
+    $city = 'Unknown';
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "http://ip-api.com/json/{$ip}");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    if ($response) {
+        $data = json_decode($response, true);
+        if (!empty($data['city'])) {
+            $city = $data['city'];
+            if (!empty($data['regionName'])) {
+                $city .= ' - ' . $data['regionName'];
+            }
+        }
+    }
+
+    $_SESSION['city'] = $city;
+} else {
+    $city = $_SESSION['city'];
+}
+
+/* ===============================
+   INSERT VISITOR (ONCE PER DAY)
+================================ */
+
 $check = $conn->prepare("
     SELECT id FROM visitor_logs
     WHERE page_name = ? AND ip_address = ? AND visit_date = ?
@@ -21,7 +62,6 @@ $res = $check->get_result();
 
 if ($res->num_rows == 0) {
 
-    // Insert into visitor_logs
     $ins = $conn->prepare("
         INSERT INTO visitor_logs
         (page_name, ip_address, visit_date, visited_at, city)
@@ -29,78 +69,36 @@ if ($res->num_rows == 0) {
     ");
     $ins->bind_param("ssss", $page, $ip, $today, $city);
     $ins->execute();
-
-    // Update visitors table
-    $v = $conn->prepare("SELECT id FROM visitors WHERE page_name = ?");
-    $v->bind_param("s", $page);
-    $v->execute();
-    $vr = $v->get_result();
-
-    if ($vr->num_rows > 0) {
-        $up = $conn->prepare("
-            UPDATE visitors SET visit_count = visit_count + 1
-            WHERE page_name = ?
-        ");
-        $up->bind_param("s", $page);
-        $up->execute();
-    } else {
-        $in = $conn->prepare("
-            INSERT INTO visitors (page_name, visit_count)
-            VALUES (?, 1)
-        ");
-        $in->bind_param("s", $page);
-        $in->execute();
-    }
 }
 
-/* =========================
-   COUNTS FOR DISPLAY
-========================= */
+/* ===============================
+   COUNTS (FROM visitor_logs)
+================================ */
 
-// Total website visitors (all pages sum)
-$totalRes = $conn->query("SELECT SUM(visit_count) AS total FROM visitors");
+// Total unique visitors
+$totalRes = $conn->query("
+    SELECT COUNT(DISTINCT ip_address) AS total
+    FROM visitor_logs
+");
 $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
 
-// Current page visitors
-$pstmt = $conn->prepare("SELECT visit_count FROM visitors WHERE page_name = ?");
+// Current page unique visitors
+$pstmt = $conn->prepare("
+    SELECT COUNT(DISTINCT ip_address) AS total
+    FROM visitor_logs
+    WHERE page_name = ?
+");
 $pstmt->bind_param("s", $page);
 $pstmt->execute();
-$pres = $pstmt->get_result();
-$pageCount = $pres->fetch_assoc()['visit_count'] ?? 0;
+$pageRes = $pstmt->get_result();
+$pageCount = $pageRes->fetch_assoc()['total'] ?? 0;
 ?>
 
-<style>
-/* #visitor-eye{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-    z-index: 9999;
-}
-.visitor-tooltip{
-    display:none;
-    position:absolute;
-    bottom:40px;
-    right:0;
-    background:#000;
-    color:#fff;
-    padding:8px 12px;
-    border-radius:6px;
-    font-size:12px;
-    white-space:nowrap;
-} */
-#visitor-eye:hover .visitor-tooltip{
-    display:block;
-}
-</style>
-
+<!-- Eye Icon -->
 <a href="visitor-analytics.php" id="visitor-eye">
-    <img src=".\assets\img\eye.png" class="img-fluid" alt="" style="width: 30px; height: 30px;">
+    <img src="./assets/img/eye.png" style="width:30px;height:30px;">
     <div class="visitor-tooltip">
-        <div>Total Pages Visitors: <b><?php echo $totalCount; ?></b></div>
-        <div>This Page Visitors: <b><?php echo $pageCount; ?></b></div>
+        <div>Total Website Visitors: <b><?= $totalCount ?></b></div>
+        <div>This Page Visitors: <b><?= $pageCount ?></b></div>
     </div>
 </a>
-
-
-
