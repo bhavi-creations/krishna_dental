@@ -57,10 +57,10 @@ $pageCount = $pageRes->fetch_assoc()['total'] ?? 0;
 }
 </style>
 
-<a href="visitor-analytics.php" id="visitor-eye">
+<!-- <a href="visitor-analytics.php" id="visitor-eye">
     <img src="./assets/img/eye.png" style="width:30px;height:30px;">
     <div class="visitor-tooltip">
         <div>Total Website Visitors: <b><?= $totalCount ?></b></div>
         <div>This Page Visitors: <b><?= $pageCount ?></b></div>
     </div>
-</a>
+</a> -->
