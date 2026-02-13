@@ -1,273 +1,282 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://krishnadentacureclinic.com/</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://krishnadentacureclinic.com/</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/index</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/index</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/about</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/about</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/doctors</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/doctors</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/services</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/services</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/rootcanal_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/rootcanal_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/wisdomteeth_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/wisdomteeth_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/badbreath_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/badbreath_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/gum_care_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/gum_care_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/teethcleaning_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/teethcleaning_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/orthodontic_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/orthodontic_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/dentalcrown_bridge_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/dentalcrown_bridge_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/dentalveneers_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/dentalveneers_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/smilemakeover_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/smilemakeover_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/teethwhitening_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/teethwhitening_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/invisalignaligners_clearaligners_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/invisalignaligners_clearaligners_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/dentaldentures_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/dentaldentures_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fluoride_application_&_dental_sealant_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/fluoride_application_&amp;_dental_sealant_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullmouth_rehabilitation_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/fullmouth_rehabilitation_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/blogs</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/contact</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/contact</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/appointment</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/appointment</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/dentalimplants_treatment_in_rajahmundry</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/dentalimplants_treatment_in_rajahmundry</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=68</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=68</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=63</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=63</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=61</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=61</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/terms</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/terms</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/privacy</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://krishnadentacureclinic.com/privacy</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Root%20Canal</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Root%20Canal</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Wisdom%20Tooth%20Removal</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Wisdom%20Tooth%20Removal</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Bad%20Breath%20Treatment</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Bad%20Breath%20Treatment</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Gum%20Treatment</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Gum%20Treatment</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Teeth%20Cleaning</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Teeth%20Cleaning</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Orthodontic%20Treatment</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Orthodontic%20Treatment</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Crown%20&%20Bridge</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Crown%20&amp;%20Bridge</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Invisible%20Aligners</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Invisible%20Aligners</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Veneers</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Veneers</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Smile%20Makeover</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Smile%20Makeover</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Teeth%20Whitening</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Teeth%20Whitening</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Implant</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Dental%20Implant</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Dentures</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Dentures</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Fluoride%20Application%20&%20Dental%20Sealant</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Fluoride%20Application%20&amp;%20Dental%20Sealant</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=Full%20Mouth%20Rehabilitation%20Treatment</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=Full%20Mouth%20Rehabilitation%20Treatment</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=68</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=68</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=63</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=63</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=61</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=61</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=58</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=58</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=56</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=56</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/fullblog?id=54</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/fullblog?id=54</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=58</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=58</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=56</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=56</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/service_detsils?id=54</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://krishnadentacureclinic.com/service_detsils?id=54</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/blogs?service=</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://krishnadentacureclinic.com/blogs?service=</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://krishnadentacureclinic.com/gum</loc>
-<lastmod>2026-02-10T06:41:11+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://krishnadentacureclinic.com/gum</loc>
+  <lastmod>2026-02-10T06:41:11+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
+
+
 </urlset>
