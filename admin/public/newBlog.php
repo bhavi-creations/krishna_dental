@@ -9,12 +9,11 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 
 <head>
     <meta charset="utf-8">
-    <title>Krishna dental hospital - Dashboard</title>
+    <title>Apple dental hospital - Dashboard</title>
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Quill CSS -->
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 
@@ -36,23 +35,26 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 
                             <form id="addblogform" action="addBlog.php" method="POST" enctype="multipart/form-data">
 
-                                <!-- ================= ENGLISH ================= -->
                                 <h4 class="text-primary">English Content</h4>
                                 <hr>
 
                                 <div class="mb-3">
                                     <label>English Title</label>
-                                    <input type="text" class="form-control" name="title" required>
+                                    <input type="text" class="form-control" name="title" id="blog_title" required>
                                 </div>
 
+                                <div class="mb-3">
+                                    <label class="text-danger">URL Slug (e.g., best-dental-hospital-in-rajahmundry)</label>
+                                    <input type="text" class="form-control" name="slug" id="blog_slug" placeholder="custom-url-path" required>
+                                    <small class="text-muted">Idi URL lo display avtundi. Spaces badulu hyphens (-) use cheyali.</small>
+                                </div>
 
                                 <div class="mb-3">
-                                    <!-- <label class="form-label text-primary">Select Service</label> -->
+                                    <label>Select Service</label>
                                     <select id="service" name="service" class="form-control" required>
                                         <option value="">Select a Service</option>
                                         <?php if ($services_result->num_rows > 0): ?>
                                             <?php while ($service = $services_result->fetch_assoc()): ?>
-                                                <!-- Use service_name as value instead of id -->
                                                 <option value="<?= htmlspecialchars($service['service_name']) ?>">
                                                     <?= htmlspecialchars($service['service_name']) ?>
                                                 </option>
@@ -60,7 +62,6 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
                                         <?php endif; ?>
                                     </select>
                                 </div>
-
 
                                 <div class="mb-3">
                                     <label>English Main Content</label>
@@ -74,7 +75,6 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
                                     <input type="hidden" name="full_content" id="fullContentData">
                                 </div>
 
-                                <!-- ================= TELUGU ================= -->
                                 <h4 class="text-primary mt-5">Telugu Content</h4>
                                 <hr>
 
@@ -95,7 +95,21 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
                                     <input type="hidden" name="telugu_full_content" id="teluguFullData">
                                 </div>
 
-                                <!-- ================= IMAGES ================= -->
+                                <h4 class="text-primary mt-5">SEO Tags</h4>
+                                <hr>
+
+                                <div class="mb-3">
+                                    <label>Hashtags (Comma separated)</label>
+                                    <input type="text" class="form-control" name="hashtags"
+                                        placeholder="#dental,#rootcanal,#implants,#smile,#clinic">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label>Key Points (Comma separated)</label>
+                                    <input type="text" class="form-control" name="keypoints"
+                                        placeholder="Painless treatment, Advanced equipment, Expert doctors, Affordable cost">
+                                </div>
+
                                 <h4 class="text-primary mt-5">Images</h4>
                                 <hr>
 
@@ -119,11 +133,9 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Quill JS -->
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 
     <script>
@@ -138,6 +150,16 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
         });
         const tqFull = new Quill("#teluguFullEditor", {
             theme: "snow"
+        });
+
+        // Automatic Slug Generator: Title type chestunte slug automatically fill avtundi
+        document.getElementById('blog_title').addEventListener('input', function() {
+            let title = this.value;
+            let slug = title.toLowerCase()
+                .replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+                .replace(/\s+/g, '-') // collapse whitespace and replace by -
+                .replace(/-+/g, '-'); // collapse dashes
+            document.getElementById('blog_slug').value = slug;
         });
 
         document.querySelector("#addblogform").onsubmit = function() {
