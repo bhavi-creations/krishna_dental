@@ -1,3 +1,22 @@
+<?php
+include './db.connection/db_connection.php';
+
+// Initial Load కోసం (ఈ PHP పార్ట్ కేవలం డేట్ సెలెక్ట్ చేయనప్పుడు డిఫాల్ట్ కోసం)
+$selected_date = date('Y-m-d');
+$slots = [
+    "10:30 AM - 11:30 AM",
+    "11:30 AM - 12:30 PM",
+    "12:30 PM - 01:30 PM",
+    "01:30 PM - 02:30 PM",
+    "04:00 PM - 05:00 PM",
+    "05:00 PM - 06:00 PM",
+    "06:00 PM - 07:00 PM",
+    "07:00 PM - 08:00 PM",
+    "08:00 PM - 08:30 PM"
+];
+?>
+
+
 <?php include 'header.php'; ?>
 
 
@@ -46,7 +65,7 @@
                     </div>
 
                     <div class="card-body p-4 bg-white">
-                        <form action="save_appointment.php" method="POST">
+                        <!-- <form action="save_appointment.php" method="POST">
 
                             <div class="mb-3">
                                 <label class="form-label fw-semibold">Patient Name</label>
@@ -76,7 +95,45 @@
                                 </button>
                             </div>
 
+                        </form> -->
+
+                        <form id="appointmentForm" method="POST" action="save_appointment.php" class="row">
+                            <div class="mb-3 col-md-6">
+                                <label>Name</label>
+                                <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-control" required placeholder="Email">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>Contact Number</label>
+                                <input type="text" name="phone" class="form-control" required placeholder="Number">
+                            </div>
+
+                            <div class="mb-3 col-md-6">
+                                <label>Select Date</label>
+                                <input type="date" id="appointment_date" name="appointment_date"
+                                    min="<?= date('Y-m-d') ?>" class="form-control" required>
+                            </div>
+
+                            <div id="slotContainer" class="col-md-12 mb-3">
+                                <label>Select Time Slot</label>
+                                <select id="time_slot" name="time_slot" class="form-control" required>
+                                    <option value="">-- First Select Date --</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 col-md-12">
+                                <label>Message</label>
+                                <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
                         </form>
+
+
+
+
                     </div>
 
                     <div class="card-footer text-center bg-light footer-text" style="font-size: 20px;">
@@ -188,6 +245,45 @@
 
                     slot.appendChild(opt);
                 }
+            });
+    });
+</script>
+
+<script>
+    document.getElementById('appointment_date').addEventListener('change', function() {
+        const date = this.value;
+        const slotSelect = document.getElementById('time_slot');
+        slotSelect.innerHTML = '<option>Loading...</option>';
+
+        fetch('get_slots.php?date=' + date)
+            .then(r => r.json())
+            .then(data => {
+
+                if (data.isHoliday && data.type == 'fullday') {
+                    alert("Holiday: " + data.reason);
+                    slotSelect.innerHTML = '<option>No Slots Available</option>';
+                    return;
+                }
+
+                if (data.isHoliday) {
+                    alert("Note: " + data.reason);
+                }
+
+                let html = '<option value="">--Select Slot--</option>';
+
+                data.slots.forEach(s => {
+                    let dis = s.available <= 0 ? 'disabled' : '';
+                    let text = s.available <= 0 ?
+                        `${s.time} (FULL)` :
+                        `${s.time} (${s.available} Slots Available)`;
+
+                    html += `<option ${dis} value="${s.time}">${text}</option>`;
+                });
+
+                slotSelect.innerHTML = html;
+            })
+            .catch(() => {
+                slotSelect.innerHTML = '<option>Error loading slots</option>';
             });
     });
 </script>

@@ -1,24 +1,76 @@
 <?php
-include __DIR__ . '/db.connection/db_connection.php';
+include './db.connection/db_connection.php';
 
 $date = $_GET['date'];
 
-$sql = "
-    SELECT appointment_slot, COUNT(*) AS total 
-    FROM appointments 
-    WHERE appointment_date = ? 
-    AND status = 'Booked'
-    GROUP BY appointment_slot
-";
+$slots_list = [
+  
+  "10:00 AM - 11:00 AM",
+  "11:00 AM - 12:00 PM",
+  "12:00 PM - 01:00 PM",
+  "01:00 PM - 02:00 PM",
+  "02:00 PM - 03:00 PM",
+  "03:00 PM - 04:00 PM",
+  "04:00 PM - 05:00 PM",
+  "05:00 PM - 06:00 PM",
+  "06:00 PM - 07:00 PM",
+  "07:00 PM - 08:00 PM"
+];
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("s", $date);
-$stmt->execute();
+$res = $conn->query("SELECT * FROM holidays WHERE holiday_date='$date'");
+$holiday = $res->fetch_assoc();
 
-$data = [];
-$result = $stmt->get_result();
-while ($row = $result->fetch_assoc()) {
-    $data[$row['appointment_slot']] = $row['total'];
+$response = [
+  'isHoliday' => false,
+  'type' => '',
+  'reason' => '',
+  'slots' => []
+];
+
+if ($holiday) {
+  $response['isHoliday'] = true;
+  $response['type'] = $holiday['holiday_type'];
+  $response['reason'] = $holiday['reason'];
 }
 
-echo json_encode($data);
+$morningSlots = [
+  "9:00 AM - 10:00 AM",
+  "10:00 AM - 11:00 AM",
+  "11:00 AM - 12:00 PM",
+  "12:00 PM - 01:00 PM"
+];
+
+$afternoonSlots = [
+  "02:00 PM - 03:00 PM",
+  "03:00 PM - 04:00 PM",
+  "04:00 PM - 05:00 PM",
+  "05:00 PM - 06:00 PM",
+  "06:00 PM - 07:00 PM",
+  "07:00 PM - 08:30 PM"
+];
+
+foreach ($slots_list as $slot) {
+
+  // Holiday filtering
+  if ($holiday) {
+    if ($holiday['holiday_type'] == 'fullday') continue;
+    if ($holiday['holiday_type'] == 'morning' && in_array($slot, $morningSlots)) continue;
+    if ($holiday['holiday_type'] == 'afternoon' && in_array($slot, $afternoonSlots)) continue;
+  }
+
+  $q = $conn->query("SELECT COUNT(*) as total FROM appointments 
+                     WHERE appointment_date='$date' AND time_slot='$slot'");
+  $r = $q->fetch_assoc();
+
+  $max = 3; // per slot limit
+  $available = $max - $r['total'];
+  if ($available < 0) $available = 0;
+
+  $response['slots'][] = [
+    'time' => $slot,
+    'available' => $available
+  ];
+}
+
+echo json_encode($response);
+   

@@ -3,13 +3,13 @@ include '../../db.connection/db_connection.php'; // DB connection
 
 // Fetch all services from services table
 $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY service_name ASC");
-?>
+?>       
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Apple dental hospital - Dashboard</title>
+    <title>Krishna dental hospital - Dashboard</title>
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -173,7 +173,6 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 </body>
 
 </html>
-
 
 
 <!-- <label class="form-label text-primary">Select Service</label>
