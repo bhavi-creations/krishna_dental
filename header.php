@@ -131,22 +131,18 @@ Best dental specialist in Rajahmundry">
 
     <meta name="google-site-verification" content="JDS_jictIoYQDNxW1AQ_NnVduJ72DZigoUTERTYmI_c"   />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDBRQGVEF2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18194143256"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-EDBRQGVEF2');
-    </script>
-
+  gtag('config', 'AW-18194143256');
+</script>
 
 </head>
-<?php include 'view_count.php' ; ?>
+<?php include 'view_count.php'; ?>
 <?php include 'visitor-track.php'; ?>
 
 <body class="">
@@ -187,7 +183,7 @@ Best dental specialist in Rajahmundry">
                             <li><a href="#">Pain Relief</a>
 
                                 <ul class="sub-menu">
-                                    
+
                                     <li><a href="rootcanal_treatment_in_rajahmundry.php">Root Canal Treatment </a></li>
                                     <li><a href="wisdomteeth_treatment_in_rajahmundry.php">Wisdom Tooth Removal </a></li>
                                 </ul>
@@ -350,7 +346,7 @@ Best dental specialist in Rajahmundry">
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
-                                                    <ul>              
+                                                    <ul>
                                                         <li><a href="dentalimplents_treatment_in_rajahmundry.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
                                                         <li><a href="dentaldentures_treatment_in_rajahmundry.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
                                                         <li><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
