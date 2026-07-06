@@ -1,22 +1,21 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Dental_Veneers.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_rootcanal_slider.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Dental Veneers</h1>
+            <h1 class="breadcumb-title">Root Canal</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Dental Veneers</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Root Canal</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 
@@ -24,13 +23,12 @@
     <div class="container">
 
         <h1 class="text-center mb-5">
-            Dental Veneers in Rajahmundry – Transform Your Smile with Precision</h1>
 
-
-
+            Root Canal Treatment in Rajahmundry <br> Painless & Effective Dental Care</h1>
+        </h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-            At Krishna Dental Cure, we offer high-quality dental veneers in Rajahmundry to enhance your smile by correcting discoloration, chips, and minor misalignment.</p>
+            At Krishna Dental Cure, we offer advanced root canal treatment in Rajahmundry to save infected teeth and relieve pain. Our expert procedure restores your tooth’s function while ensuring a comfortable and painless experience.</p>
 
 
 
@@ -38,13 +36,14 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-                <h3>Step 1: Consultation and Tooth Preparation</h3>
-                <p>We assess your teeth and remove a thin enamel layer to prepare the surface for veneer placement.</p>
+
+                <h3>Step 1: Diagnosis and Preparation</h3>
+                <p>Our specialists examine your tooth using X-rays to assess infection severity. The area is numbed for a pain-free experience before starting the procedure.</p>
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_veneers_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -53,14 +52,14 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_veneers_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
 
+                <h3>Step 2: Cleaning and Disinfection</h3>
+                <p>The infected pulp is removed, and the root canals are thoroughly cleaned and disinfected to eliminate bacteria and prevent further infection.</p>
 
-                <h3>Step 2: Custom Veneer Fabrication</h3>
-                <p>Impressions are taken, and custom veneers are crafted to match your tooth shape, color, and aesthetics.</p>
 
             </div>
         </div>
@@ -73,13 +72,12 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-
-                <h3>Step 3: Bonding and Final Adjustments</h3>
-                <p>The veneers are securely bonded to your teeth, ensuring a natural appearance and long-lasting durability.</p>
+                <h3>Step 3: Filling and Sealing</h3>
+                <p>The cleaned canals are filled with biocompatible material and sealed to prevent reinfection. A dental crown may be placed for added protection and durability.</p>
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_veneers_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -89,8 +87,8 @@
 
     </div>
 </section>
-<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
+<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
@@ -101,7 +99,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Veneers_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Root_Canal_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -109,16 +107,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Veneers_2.png" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Veneers_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Root_Canal_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -127,7 +116,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Veneers_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Root_Canal_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Root_Canal_4.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -174,6 +172,9 @@
         }
     });
 </script>
+
+
+
 
 
 <?php include 'footer.php'; ?>

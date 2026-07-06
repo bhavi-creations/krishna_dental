@@ -1,38 +1,35 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_wishdomteethremoval.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Bad_Breath_Treatment.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Wisdom Tooth Removal</h1>
+            <h1 class="breadcumb-title">Bad Breath Treatment</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Wisdom Tooth Removal</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Bad Breath Treatment</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
-
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 
+
 <section class="vs-service-wrapper space-top space-md-bottom">
-
-
     <div class="container">
 
         <h1 class="text-center mb-5">
-            Wisdom Tooth Removal in Rajahmundry <br> Safe & Painless Extraction
+            Bad Breath Treatment in Rajahmundry <br> Say Goodbye to Halitosis
 
         </h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
-            At Krishna Dental Cure, we offer expert wisdom tooth removal in Rajahmundry to relieve pain and prevent dental complications. Our painless procedure ensures a smooth recovery and improved oral health.
 
+            At Krishna Dental Cure, we provide effective bad breath treatment in Rajahmundry to eliminate halitosis and restore fresh breath. Our advanced solutions target the root cause for long-term oral health.
         </p>
 
 
@@ -41,15 +38,14 @@
 
             <div class="col-12 col-md-8   service_text_padding">
                 <h3 class="">
-
-                    Step 1: Diagnosis and Preparation
+                    Step 1: Diagnosis and Oral Cleaning
                 </h3>
-                <p>We assess your wisdom tooth with X-rays to determine its position. Local anesthesia is administered to ensure a painless procedure.</p>
+                <p>Our specialists assess your oral health and perform a professional cleaning to remove plaque, bacteria, and food debris.</p>
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_bad_breath_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -58,12 +54,12 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_bad_breath_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                <h3>Step 2: Tooth Extraction</h3>
-                <p>The wisdom tooth is gently extracted using advanced techniques. In some cases, minor incisions may be needed for safe removal.</p>
+                <h3>Step 2: Treating Underlying Causes</h3>
+                <p>We address issues like gum disease, cavities, or infections that contribute to bad breath, ensuring a complete solution.</p>
 
             </div>
         </div>
@@ -76,15 +72,14 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-                <h3>
-                    Step 3: Healing and Aftercare</h3>
-                <p>The area is cleaned, and stitches are placed if required. We provide aftercare instructions to ensure a quick and smooth recovery.</p>
+                <h3>Step 3: Personalized Oral Hygiene Plan</h3>
+                <p>We guide you on proper brushing, flossing, and mouthwash use to maintain long-lasting fresh breath and prevent recurrence.</p>
 
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_bad_breath_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -96,6 +91,7 @@
 </section>
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
+
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
 
@@ -105,7 +101,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Bad_Breath_Treatment_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -113,7 +109,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                     <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_2_image.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Bad_Breath_Treatment_2.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -121,7 +117,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                     <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Bad_Breath_Treatment_3.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -129,7 +125,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                     <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Wisdom_Tooth_Removal_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Bad_Breath_Treatment_4.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -139,8 +135,8 @@
 
     </div>
 </section>
-
 <img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
+
 
 
 <!-- Swiper JS Initialization -->
@@ -175,7 +171,6 @@
         }
     });
 </script>
-
 
 
 <?php include 'footer.php'; ?>

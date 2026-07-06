@@ -1,22 +1,21 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_wishdomteethremoval.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Full_Mouth_Rehabilitation_Treatment.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Invisible Aligners</h1>
+            <h1 class="breadcumb-title">Full Mouth Rehabilitation Treatment</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Invisible Aligners</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Full Mouth Rehabilitation Treatment</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
 
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
@@ -25,31 +24,29 @@
     <div class="container">
 
         <h1 class="text-center mb-5">
-        Invisible Aligners in Rajahmundry <br> Discreet & Comfortable Teeth Straightening
 
-        </h1>
+
+            Full Mouth Rehabilitation in Rajahmundry – Restore Your Smile & Function</h1>
+
         <p class="fs-md text-title mb-4 pb-2 text-center">
-        At Krishna Dental Cure, we provide high-quality invisible aligners in Rajahmundry for a confident, straighter smile. Our advanced aligners offer a comfortable and nearly invisible alternative to traditional braces.
 
-        </p>
+            At Krishna Dental Cure, we offer full mouth rehabilitation in Rajahmundry to restore damaged teeth, improve bite alignment, and enhance oral health.</p>
+
+
 
 
         <div class="row serice_space_div">
 
 
             <div class="col-12 col-md-8   service_text_padding">
-                <h3 class="">
-                Step 1: Consultation and 3D Scanning
+                <h3>Step 1: Comprehensive Oral Evaluation</h3>
+                <p>We assess teeth, gums, and jaw function to create a personalized treatment plan.</p>
 
-                </h3>
-                <p>
-                Our experts assess your teeth and take precise 3D scans to design custom aligners that fit perfectly and align your teeth effectively.
 
-                </p>
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_full_mouth_restrotion_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -58,18 +55,13 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_full_mouth_restrotion_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                <h3>
+                <h3>Step 2: Restorative and Cosmetic Procedures</h3>
+                <p>Treatments like crowns, bridges, implants, or veneers are done to rebuild the smile.</p>
 
-                Step 2: Aligner Fabrication and Fitting
-                </h3>
-                <p>
-                At Krishna Dental Cure, we offer expert wisdom tooth removal in Rajahmundry to relieve pain and prevent dental complications. Our painless procedure ensures a smooth recovery and improved oral health.
-
-                </p>
 
             </div>
         </div>
@@ -82,19 +74,15 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-                <h3>
-                Step 3: Progress Monitoring and Final Results
 
-                </h3>
-                <p>
-                Regular check-ups track progress, and adjustments are made if needed. After treatment, retainers help maintain your perfect smile.
+                <h3>Step 3: Final Adjustments and Smile Enhancement</h3>
+                <p>We ensure proper bite alignment and aesthetics for a long-lasting, confident smile.</p>
 
-                </p>
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_full_mouth_restrotion_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -104,8 +92,8 @@
 
     </div>
 </section>
-<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
+<img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
@@ -116,7 +104,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Full_Mouth_Rehabilitation_Treatment_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -124,16 +112,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_2.png" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Full_Mouth_Rehabilitation_Treatment_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -142,7 +121,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Full_Mouth_Rehabilitation_Treatment_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Full_Mouth_Rehabilitation_Treatment_4.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -154,8 +142,8 @@
     </div>
 </section>
 
-
 <img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
+
 
 <!-- Swiper JS Initialization -->
 <script>

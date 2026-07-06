@@ -154,7 +154,7 @@ $cities = $conn->query("
     <div class="va-container">
 
         <h2>📊 Visitor Analytics</h2>
-        <a href="index.php" class="va-back-btn">⬅ Back</a>
+        <a href="home.php" class="va-back-btn">⬅ Back</a>
 
 
         <!-- Cards -->

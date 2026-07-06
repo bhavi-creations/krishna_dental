@@ -37,7 +37,7 @@
                          <h3 class="widget_title-seven">Links</h3>
                          <div class="menu-all-pages">
                              <ul class="menu-seven">
-                                 <li><a href="index.php">Home </a></li>
+                                 <li><a href="home.php">Home </a></li>
                                  <li><a href="about.php">About</a></li>
                                  <li><a href="doctors.php">Doctors</a></li>
 
@@ -55,14 +55,14 @@
                          <h3 class="widget_title-seven">Services</h3>
                          <div class="menu-all-pages-container">
                              <ul class="menu-seven">
-                                 <li><a href="rootcanal_treatment_in_rajahmundry.php"> Root Canal</a></li>
-                                 <li><a href="wisdomteeth_treatment_in_rajahmundry.php">Wisdom Tooth Removal </a></li>
-                                 <li><a href="badbreath_treatment_in_rajahmundry.php">Bad Breath Treatment </a></li>
-                                 <li><a href="gum_care_treatment_in_rajahmundry.php">Gum Treatment </a></li>
-                                 <li><a href="teethcleaning_treatment_in_rajahmundry.php">Teeth Cleaning </a></li>
-                                 <li><a href="orthodontic_treatment_in_rajahmundry.php">Orthodontic Treatment</a></li>
-                                 <li><a href="dentalcrown_bridge_treatment_in_rajahmundry.php">Dental Crown & Bridge </a></li>
-                                 <li><a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php"> Invisible Aligners</a></li>
+                                 <li><a href="root-canal-treatment-in-rajahmundry.php"> Root Canal</a></li>
+                                 <li><a href="wisdom-teeth-treatment-in-rajahmundry.php">Wisdom Tooth Removal </a></li>
+                                 <li><a href="bad-breath-treatment-in-rajahmundry.php">Bad Breath Treatment </a></li>
+                                 <li><a href="gum-care-treatment-in-rajahmundry.php">Gum Treatment </a></li>
+                                 <li><a href="teeth-cleaning-treatment-in-rajahmundry.php">Teeth Cleaning </a></li>
+                                 <li><a href="orthodontic-treatment-in-rajahmundry.php">Orthodontic Treatment</a></li>
+                                 <li><a href="dental-crown-bridge-treatment-in-rajahmundry.php">Dental Crown & Bridge </a></li>
+                                 <li><a href="invisalign-aligners-treatment-in-rajahmundry.php"> Invisible Aligners</a></li>
 
 
                              </ul>
@@ -74,14 +74,14 @@
                          <h3 class="widget_title-seven">Services</h3>
                          <div class="menu-all-pages-container">
                              <ul class="menu-seven">
-                                 <li><a href="dentalveneers_treatment_in_rajahmundry.php">Dental Veneers </a></li>
-                                 <li><a href="smilemakeover_treatment_in_rajahmundry.php">Smile Makeover </a></li>
-                                 <li><a href="teethwhitening_treatment_in_rajahmundry.php">Teeth Whitening </a></li>
-                                 <li><a href="dentalimplants_treatment_in_rajahmundry.php">Dental Implants </a></li>
-                                 <li><a href="dentaldentures_treatment_in_rajahmundry.php">Dentures </a></li>
-                                 <li><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php">
+                                 <li><a href="dental-veneers-treatment-in-rajahmundry.php">Dental Veneers </a></li>
+                                 <li><a href="smile-makeover-treatment-in-rajahmundry.php">Smile Makeover </a></li>
+                                 <li><a href="teeth-whitening-treatment-in-rajahmundry.php">Teeth Whitening </a></li>
+                                 <li><a href="dental-implants-treatment-in-rajahmundry.php">Dental Implants </a></li>
+                                 <li><a href="dental-dentures-treatment-in-rajahmundry.php">Dentures </a></li>
+                                 <li><a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php">
                                          Fluoride Application & Dental Sealant </a></li>
-                                 <li><a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php">
+                                 <li><a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php">
                                          Full Mouth Rehabilitation Treatment </a></li>
                              </ul>
                          </div>

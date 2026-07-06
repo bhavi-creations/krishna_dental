@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // మెయిల్ పంపడం
     if (mail($to, $subject, $email_content, $headers)) {
         // సక్సెస్ అయితే మెయిన్ పేజీకి వెళ్తుంది
-        header("Location: index.php?booking=success");
+        header("Location: home.php?booking=success");
     } else {
         // ఫెయిల్ అయితే ఎర్రర్ చూపిస్తుంది
-        header("Location: index.php?booking=error");
+        header("Location: home.php?booking=error");
     }
 } else {
     echo "Direct access not allowed.";

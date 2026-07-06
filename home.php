@@ -164,9 +164,9 @@
 
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="rootcanal_treatment_in_rajahmundry.php">Root Canal</a></h6>
+                        <h6 class="title"><a href="root-canal-treatment-in-rajahmundry.php">Root Canal</a></h6>
                         <p>Root canal treatment saves infected teeth by removing decay, cleaning roots, and sealing them to prevent further damage.</p>
-                        <a href="rootcanal_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="root-canal-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -178,9 +178,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="wisdomteeth_treatment_in_rajahmundry.php">Wisdom Tooth Removal</a></h6>
+                        <h6 class="title"><a href="wisdom-teeth-treatment-in-rajahmundry.php">Wisdom Tooth Removal</a></h6>
                         <p>Wisdom tooth removal extracts impacted or painful teeth to prevent infection, crowding, and discomfort. </p>
-                        <a href="wisdomteeth_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="wisdom-teeth-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -192,9 +192,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="badbreath_treatment_in_rajahmundry.php">Bad Breath Treatment</a></h6>
+                        <h6 class="title"><a href="bad-breath-treatment-in-rajahmundry.php">Bad Breath Treatment</a></h6>
                         <p>Bad breath treatment targets bacteria and plaque buildup through proper oral hygiene, hydration, and professional cleaning. </p>
-                        <a href="badbreath_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="bad-breath-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -206,9 +206,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="gum_care_treatment_in_rajahmundry.php">Gum Treatment</a></h6>
+                        <h6 class="title"><a href="gum-care-treatment-in-rajahmundry.php">Gum Treatment</a></h6>
                         <p>Gum treatment heals infections and reduces inflammation through deep cleaning, medication, and proper oral care. </p>
-                        <a href="gum_care_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="gum-care-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -220,9 +220,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="teethcleaning_treatment_in_rajahmundry.php">Teeth Cleaning </a></h6>
+                        <h6 class="title"><a href="teeth-cleaning-treatment-in-rajahmundry.php">Teeth Cleaning </a></h6>
                         <p>Teeth cleaning removes plaque, tartar, and stains to maintain oral health and prevent cavities. </p>
-                        <a href="teethcleaning_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="teeth-cleaning-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -234,9 +234,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="orthodontic_treatment_in_rajahmundry.php">Orthodontic Treatment</a></h6>
+                        <h6 class="title"><a href="orthodontic-treatment-in-rajahmundry.php">Orthodontic Treatment</a></h6>
                         <p>Orthodontic treatment aligns teeth and corrects bite issues using braces, aligners, or retainers for a perfect smile. </p>
-                        <a href="orthodontic_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="orthodontic-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -248,9 +248,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="dentalcrown_bridge_treatment_in_rajahmundry.php">Dental Crown & Bridge</a></h6>
+                        <h6 class="title"><a href="dental-crown-bridge-treatment-in-rajahmundry.php">Dental Crown & Bridge</a></h6>
                         <p>Dental crowns and bridges restore damaged or missing teeth, improving function, appearance, and bite alignment. </p>
-                        <a href="dentalcrown_bridge_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="dental-crown-bridge-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -262,9 +262,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="dentalveneers_treatment_in_rajahmundry.php">Dental Veneers</a></h6>
+                        <h6 class="title"><a href="dental-veneers-treatment-in-rajahmundry.php">Dental Veneers</a></h6>
                         <p>Dental veneers are thin shells that cover teeth to enhance appearance, correct stains, chips, and gaps. </p>
-                        <a href="dentalveneers_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="dental-veneers-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -276,9 +276,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="smilemakeover_treatment_in_rajahmundry.php"> Smile Makeover </a></h6>
+                        <h6 class="title"><a href="smile-makeover-treatment-in-rajahmundry.php"> Smile Makeover </a></h6>
                         <p>A smile makeover enhances teeth and gums using whitening, veneers, braces, or crowns for a perfect smile.</p>
-                        <a href="smilemakeover_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="smile-makeover-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -290,9 +290,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="teethwhitening_treatment_in_rajahmundry.php">Teeth Whitening</a></h6>
+                        <h6 class="title"><a href="teeth-whitening-treatment-in-rajahmundry.php">Teeth Whitening</a></h6>
                         <p>Teeth whitening brightens stained or discolored teeth using bleaching agents for a whiter, radiant smile.</p>
-                        <a href="teethwhitening_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="teeth-whitening-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -307,9 +307,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php"> Invisible Aligners </a></h6>
+                        <h6 class="title"><a href="invisalign-aligners-treatment-in-rajahmundry.php"> Invisible Aligners </a></h6>
                         <p>Invisible aligners straighten teeth discreetly using clear, removable trays, enhancing alignment, comfort, and confidence.</p>
-                        <a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="invisalign-aligners-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -322,9 +322,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="dentalimplants_treatment_in_rajahmundry.php"> Dental Implants </a></h6>
+                        <h6 class="title"><a href="dental-implants-treatment-in-rajahmundry.php"> Dental Implants </a></h6>
                         <p>Dental implants replace missing teeth with artificial roots and crowns, restoring function, appearance, and confidence.</p>
-                        <a href="dentalimplants_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="dental-implants-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -336,9 +336,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="dentaldentures_treatment_in_rajahmundry.php"> Dentures</a></h6>
+                        <h6 class="title"><a href="dental-dentures-treatment-in-rajahmundry.php"> Dentures</a></h6>
                         <p>Dentures are removable prosthetic teeth that restore function and appearance for those with missing teeth. </p>
-                        <a href="dentaldentures_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="dental-dentures-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -350,9 +350,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php"> Fluoride Application & Dental Sealant</a></h6>
+                        <h6 class="title"><a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php"> Fluoride Application & Dental Sealant</a></h6>
                         <p>Fluoride application strengthens enamel to prevent cavities, while dental sealants protect teeth by sealing deep grooves.</p>
-                        <a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -364,9 +364,9 @@
                         <div class="icon-box"><img src="assets/img/about/circle_home.png" class="circle_img" alt=""></div>
                     </div>
                     <div class="specialist-content">
-                        <h6 class="title"><a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php"> Full Mouth Rehabilitation Treatment</a></h6>
+                        <h6 class="title"><a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php"> Full Mouth Rehabilitation Treatment</a></h6>
                         <p>Full mouth rehabilitation restores function and aesthetics using crowns, implants, veneers, and other dental treatments.</p>
-                        <a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php" class="specialist-btn">Know More</a>
+                        <a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php" class="specialist-btn">Know More</a>
                     </div>
                 </div>
             </div>

@@ -158,15 +158,15 @@ Best dental specialist in Rajahmundry">
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <!-- <a href="index.php"><img src="assets/img/logo-mobile.svg" alt="Medixi"></a> -->
-                <a href="index.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
+                <!-- <a href="home.php"><img src="assets/img/logo-mobile.svg" alt="Medixi"></a> -->
+                <a href="home.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
 
             </div>
 
             <div class="vs-mobile-menu">
                 <ul>
                     <li class=" ">
-                        <a href="index.php">Home</a>
+                        <a href="home.php">Home</a>
 
                     </li>
                     <li>
@@ -184,27 +184,27 @@ Best dental specialist in Rajahmundry">
 
                                 <ul class="sub-menu">
 
-                                    <li><a href="rootcanal_treatment_in_rajahmundry.php">Root Canal Treatment </a></li>
-                                    <li><a href="wisdomteeth_treatment_in_rajahmundry.php">Wisdom Tooth Removal </a></li>
+                                    <li><a href="root-canal-treatment-in-rajahmundry.php">Root Canal Treatment </a></li>
+                                    <li><a href="wisdom-teeth-treatment-in-rajahmundry.php">Wisdom Tooth Removal </a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Preventive Care</a>
 
                                 <ul class="sub-menu">
-                                    <li><a href="badbreath_treatment_in_rajahmundry.php">Bad Breath Treatment </a></li>
-                                    <li><a href="gum_care_treatment_in_rajahmundry.php">Gum Treatment </a></li>
-                                    <li><a href="teethcleaning_treatment_in_rajahmundry.php">Teeth Cleaning </a></li>
+                                    <li><a href="bad-breath-treatment-in-rajahmundry.php">Bad Breath Treatment </a></li>
+                                    <li><a href="gum-care-treatment-in-rajahmundry.php">Gum Treatment </a></li>
+                                    <li><a href="teeth-cleaning-treatment-in-rajahmundry.php">Teeth Cleaning </a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Cosmetic Treatment</a>
 
                                 <ul class="sub-menu">
-                                    <li><a href="orthodontic_treatment_in_rajahmundry.php">Orthodontic Treatment</a></li>
-                                    <li><a href="dentalcrown_bridge_treatment_in_rajahmundry.php">Dental Crown & Bridge</a></li>
-                                    <li><a href="dentalveneers_treatment_in_rajahmundry.php">Dental Veneers</a></li>
-                                    <li><a href="smilemakeover_treatment_in_rajahmundry.php">Smile Makeover</a></li>
-                                    <li><a href="teethwhitening_treatment_in_rajahmundry.php">Teeth Whitening</a></li>
-                                    <li><a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php"> Invisible Aligners</a></li>
+                                    <li><a href="orthodontic-treatment-in-rajahmundry.php">Orthodontic Treatment</a></li>
+                                    <li><a href="dental-crown-bridge-treatment-in-rajahmundry.php">Dental Crown & Bridge</a></li>
+                                    <li><a href="dental-veneers-treatment-in-rajahmundry.php">Dental Veneers</a></li>
+                                    <li><a href="smile-makeover-treatment-in-rajahmundry.php">Smile Makeover</a></li>
+                                    <li><a href="teeth-whitening-treatment-in-rajahmundry.php">Teeth Whitening</a></li>
+                                    <li><a href="invisalign-aligners-treatment-in-rajahmundry.php"> Invisible Aligners</a></li>
 
                                 </ul>
                             </li>
@@ -212,9 +212,9 @@ Best dental specialist in Rajahmundry">
 
                                 <ul class="sub-menu">
                                     <li><a href="dentalimplents_treatment_in_rajahmundry.php">Dental Implants</a></li>
-                                    <li><a href="dentaldentures_treatment_in_rajahmundry.php">Dentures</a></li>
-                                    <li><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php">Fluoride Application and Dental Sealant</a></li>
-                                    <li><a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php">Full Mouth Rehabilitation Treatment</a></li>
+                                    <li><a href="dental-dentures-treatment-in-rajahmundry.php">Dentures</a></li>
+                                    <li><a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php">Fluoride Application and Dental Sealant</a></li>
+                                    <li><a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php">Full Mouth Rehabilitation Treatment</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -300,7 +300,7 @@ Best dental specialist in Rajahmundry">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header8-logo">
-                                    <a href="index.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
+                                    <a href="home.php"><img src="assets/img/logo/krishna_new_logo.png" class="img-fluid" alt="Logo"></a>
 
                                 </div>
                             </div>
@@ -308,7 +308,7 @@ Best dental specialist in Rajahmundry">
                                 <nav class="main-menu menu-style8 d-none d-lg-block">
                                     <ul>
                                         <li class="">
-                                            <a href="index.php"><span class="has-new-label">Home</span></a>
+                                            <a href="home.php"><span class="has-new-label">Home</span></a>
 
                                         </li>
                                         <li>
@@ -323,34 +323,34 @@ Best dental specialist in Rajahmundry">
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pain Relief</a>
                                                     <ul>
-                                                        <li><a href="rootcanal_treatment_in_rajahmundry.php"><img src="assets/img/icons/root-canal.png" alt=""> Root Canal Treatment </a></li>
-                                                        <li><a href="wisdomteeth_treatment_in_rajahmundry.php"><img src="assets/img/icons/wisdom-tooth.png" alt=""> Wisdom Tooth Removal </a></li>
+                                                        <li><a href="root-canal-treatment-in-rajahmundry.php"><img src="assets/img/icons/root-canal.png" alt=""> Root Canal Treatment </a></li>
+                                                        <li><a href="wisdom-teeth-treatment-in-rajahmundry.php"><img src="assets/img/icons/wisdom-tooth.png" alt=""> Wisdom Tooth Removal </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Preventive Care</a>
                                                     <ul>
-                                                        <li><a href="badbreath_treatment_in_rajahmundry.php"><img src="assets/img/icons/bad-breath.png" alt=""> Bad Breath Treatment </a></li>
-                                                        <li><a href="gum_care_treatment_in_rajahmundry.php"><img src="assets/img/icons/gum-treatment.png" alt=""> Gum Treatment </a></li>
-                                                        <li><a href="teethcleaning_treatment_in_rajahmundry.php"><img src="assets/img/icons/dental-cleaning.png" alt=""> Teeth Cleaning </a></li>
+                                                        <li><a href="bad-breath-treatment-in-rajahmundry.php"><img src="assets/img/icons/bad-breath.png" alt=""> Bad Breath Treatment </a></li>
+                                                        <li><a href="gum-care-treatment-in-rajahmundry.php"><img src="assets/img/icons/gum-treatment.png" alt=""> Gum Treatment </a></li>
+                                                        <li><a href="teeth-cleaning-treatment-in-rajahmundry.php"><img src="assets/img/icons/dental-cleaning.png" alt=""> Teeth Cleaning </a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Cosmetic Treatment</a>
                                                     <ul>
-                                                        <li><a href="orthodontic_treatment_in_rajahmundry.php"><img src="assets/img/icons/braces.png" alt=""> Orthodontic Treatment</a></li>
-                                                        <li><a href="dentalcrown_bridge_treatment_in_rajahmundry.php"><img src="assets/img/icons/crown.png" alt=""> Dental Crown & Bridge </a></li>
-                                                        <li><a href="dentalveneers_treatment_in_rajahmundry.php"><img src="assets/img/icons/veneer.png" alt=""> Dental Veneers </a></li>
-                                                        <li><a href="smilemakeover_treatment_in_rajahmundry.php"><img src="assets/img/icons/smile.png" alt=""> Smile Makeover </a></li>
-                                                        <li><a href="teethwhitening_treatment_in_rajahmundry.php"><img src="assets/img/icons/tooth-whitening.png" alt=""> Teeth Whitening </a></li>
-                                                        <li><a href="invisalignaligners_clearaligners_treatment_in_rajahmundry.php"><img src="assets/img/icons/retainer.png" alt=""> Invisible Aligners</a></li>
+                                                        <li><a href="orthodontic-treatment-in-rajahmundry.php"><img src="assets/img/icons/braces.png" alt=""> Orthodontic Treatment</a></li>
+                                                        <li><a href="dental-crown-bridge-treatment-in-rajahmundry.php"><img src="assets/img/icons/crown.png" alt=""> Dental Crown & Bridge </a></li>
+                                                        <li><a href="dental-veneers-treatment-in-rajahmundry.php"><img src="assets/img/icons/veneer.png" alt=""> Dental Veneers </a></li>
+                                                        <li><a href="smile-makeover-treatment-in-rajahmundry.php"><img src="assets/img/icons/smile.png" alt=""> Smile Makeover </a></li>
+                                                        <li><a href="teeth-whitening-treatment-in-rajahmundry.php"><img src="assets/img/icons/tooth-whitening.png" alt=""> Teeth Whitening </a></li>
+                                                        <li><a href="invisalign-aligners-treatment-in-rajahmundry.php"><img src="assets/img/icons/retainer.png" alt=""> Invisible Aligners</a></li>
 
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Teeth Replacement</a>
                                                     <ul>
-                                                        <li><a href="dentalimplents_treatment_in_rajahmundry.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
-                                                        <li><a href="dentaldentures_treatment_in_rajahmundry.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
-                                                        <li><a href="fluoride_application_&_dental_sealant_treatment_in_rajahmundry.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
-                                                        <li><a href="fullmouth_rehabilitation_treatment_in_rajahmundry.php"><img src="assets/img/icons/face.png" alt=""> Full Mouth Rehabilitation Treatment </a></li>
+                                                        <li><a href="dental-implants-treatment-in-rajahmundry.php"> <img src="assets/img/icons/dental-implant.png" alt=""> Dental Implants </a></li>
+                                                        <li><a href="dental-dentures-treatment-in-rajahmundry.php"><img src="assets/img/icons/denture.png" alt=""> Dentures </a></li>
+                                                        <li><a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php"><img src="assets/img/icons/sealant.png" alt=""> Fluoride Application and Dental Sealant </a></li>
+                                                        <li><a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php"><img src="assets/img/icons/face.png" alt=""> Full Mouth Rehabilitation Treatment </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

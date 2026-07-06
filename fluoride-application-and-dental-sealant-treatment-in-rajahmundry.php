@@ -1,25 +1,23 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Teeth_Whitening.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Fluoride_Application_Dental_Sealant.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Teeth Whitening</h1>
+            <h1 class="breadcumb-title">Fluoride Application & Dental Sealant</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Teeth Whitening</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Fluoride Application & Dental Sealant</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
-
 
 
 <section class="vs-service-wrapper space-top space-md-bottom">
@@ -28,11 +26,11 @@
         <h1 class="text-center mb-5">
 
 
-            Teeth Whitening in Rajahmundry <br> Brighten Your Smile Instantly</h1>
-
+            Fluoride Application & Dental Sealant in Rajahmundry – Protect Your Teeth</h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-            At Krishna Dental Cure, we offer professional teeth whitening in Rajahmundry to remove stains and discoloration, giving you a whiter, more confident smile.</p>
+
+            At Krishna Dental Cure, we provide fluoride applications and dental sealants in Rajahmundry to strengthen teeth and prevent cavities, especially in children.</p>
 
 
 
@@ -41,13 +39,13 @@
 
             <div class="col-12 col-md-8   service_text_padding">
                 <h3>Step 1: Teeth Cleaning and Preparation</h3>
-                <p>We remove surface plaque and tartar to ensure an even and effective whitening process.</p>
+                <p>We clean and dry the teeth to ensure the fluoride and sealant adhere properly.</p>
 
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_fluoride_applications_dental_sealants_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -56,12 +54,13 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_fluoride_applications_dental_sealants_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                <h3>Step 2: Whitening Gel Application</h3>
-                <p>A specialized whitening gel is applied to your teeth, breaking down deep stains safely.</p>
+                <h3>Step 2: Fluoride and Sealant Application</h3>
+                <p>A fluoride gel is applied to strengthen enamel, followed by a protective sealant on molars.</p>
+
 
 
             </div>
@@ -74,15 +73,14 @@
 
 
             <div class="col-12 col-md-8 service_text_padding">
-
-                <h3>Step 3: Activation and Final Polishing</h3>
-                <p>The gel is activated using a light source, followed by a polish for a long-lasting, radiant smile.</p>
+                <h3>Step 3: Drying and Final Check</h3>
+                <p>The fluoride and sealant are set using a curing light, ensuring long-lasting protection.</p>
 
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_fluoride_applications_dental_sealants_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -95,6 +93,7 @@
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 
+
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
 
@@ -104,7 +103,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_ Fluoride_Application_Dental_Sealant_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -112,16 +111,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_2.png" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_ Fluoride_Application_Dental_Sealant_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -130,7 +120,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_ Fluoride_Application_Dental_Sealant_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_ Fluoride_Application_Dental_Sealant_4.png" alt="Team Area" class="w-100">
 
                         </div>
 

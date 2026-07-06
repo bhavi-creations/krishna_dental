@@ -1,35 +1,36 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_guntreatment.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_wishdomteethremoval.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Gum Treatment</h1>
+            <h1 class="breadcumb-title">Invisible Aligners</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Gum Treatment</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Invisible Aligners</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
+
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
-
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
+        Invisible Aligners in Rajahmundry <br> Discreet & Comfortable Teeth Straightening
 
-            Gum Treatment in Rajahmundry <br> Healthy Gums for a Stronger Smile
         </h1>
         <p class="fs-md text-title mb-4 pb-2 text-center">
+        At Krishna Dental Cure, we provide high-quality invisible aligners in Rajahmundry for a confident, straighter smile. Our advanced aligners offer a comfortable and nearly invisible alternative to traditional braces.
 
-            At Krishna Dental Cure, we offer advanced gum treatment in Rajahmundry to prevent and treat gum disease. Our expert care ensures healthier gums, reducing swelling, bleeding, and discomfort.
         </p>
 
 
@@ -37,14 +38,18 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-                <h3>Step 1: Diagnosis and Deep Cleaning</h3>
-                <p>We examine your gums and perform scaling and root planing to remove plaque, tartar, and bacteria from gum pockets.</p>
+                <h3 class="">
+                Step 1: Consultation and 3D Scanning
 
+                </h3>
+                <p>
+                Our experts assess your teeth and take precise 3D scans to design custom aligners that fit perfectly and align your teeth effectively.
 
+                </p>
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_gum_treatment_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -53,13 +58,18 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_gum_treatment_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                <h3>Step 2: Medication and Treatment</h3>
-                <p>Antibiotics or medicated rinses may be prescribed to reduce infection and inflammation, promoting faster healing.</p>
+                <h3>
 
+                Step 2: Aligner Fabrication and Fitting
+                </h3>
+                <p>
+                At Krishna Dental Cure, we offer expert wisdom tooth removal in Rajahmundry to relieve pain and prevent dental complications. Our painless procedure ensures a smooth recovery and improved oral health.
+
+                </p>
 
             </div>
         </div>
@@ -72,15 +82,19 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
+                <h3>
+                Step 3: Progress Monitoring and Final Results
 
-                <h3>Step 3: Long-Term Gum Care</h3>
-                <p>We provide guidance on oral hygiene, follow-up visits, and lifestyle changes to maintain healthy gums and prevent future issues.</p>
+                </h3>
+                <p>
+                Regular check-ups track progress, and adjustments are made if needed. After treatment, retainers help maintain your perfect smile.
 
+                </p>
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_gum_treatment_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_invisible_aligners_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -93,7 +107,6 @@
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
 
-
 <section class="vs-team-wrapper space-md-bottom">
     <div class="container">
 
@@ -103,7 +116,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Gum_Treatment_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -111,16 +124,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Gum_Treatment_2.png" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Gum_Treatment_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -129,7 +133,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_service_slider _image _Gum_Treatment_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Invisible_Aligners_4.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -141,8 +154,8 @@
     </div>
 </section>
 
-<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
+<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
 
 <!-- Swiper JS Initialization -->
 <script>
@@ -176,5 +189,6 @@
         }
     });
 </script>
+
 
 <?php include 'footer.php'; ?>

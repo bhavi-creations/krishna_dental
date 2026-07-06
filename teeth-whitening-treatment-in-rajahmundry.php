@@ -1,38 +1,38 @@
 <?php include 'header.php'; ?>
 
 <div class="breadcumb-wrapper ">
-    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_crownandbridges.png"></div>
+    <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Teeth_Whitening.png"></div>
 
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Dental Crown & Bridge</h1>
+            <h1 class="breadcumb-title">Teeth Whitening</h1>
             <div class="breadcumb-menu-wrap">
                 <i class="far fa-home-lg"></i>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Dental Crown & Bridge</li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active">Teeth Whitening</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
+
+
 
 <section class="vs-service-wrapper space-top space-md-bottom">
     <div class="container">
 
         <h1 class="text-center mb-5">
 
-            Dental Crown & Bridge in Rajahmundry <br> Restore Your Smile with Confidence</h1>
+
+            Teeth Whitening in Rajahmundry <br> Brighten Your Smile Instantly</h1>
 
         <p class="fs-md text-title mb-4 pb-2 text-center">
 
-
-            At Krishna Dental Cure, we provide high-quality dental crowns and bridges in Rajahmundry to restore damaged or missing teeth, ensuring durability and a natural look.</p>
-
+            At Krishna Dental Cure, we offer professional teeth whitening in Rajahmundry to remove stains and discoloration, giving you a whiter, more confident smile.</p>
 
 
 
@@ -40,13 +40,14 @@
 
 
             <div class="col-12 col-md-8   service_text_padding">
-                <h3>Step 1: Tooth Preparation and Impressions</h3>
-                <p>The affected tooth is reshaped, and impressions are taken to create a custom-fitted crown or bridge.</p>
+                <h3>Step 1: Teeth Cleaning and Preparation</h3>
+                <p>We remove surface plaque and tartar to ensure an even and effective whitening process.</p>
+
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img  ">
-                <img src="assets/img/services_steps/krishnadentacure_services_crown_bridges_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
         </div>
@@ -55,14 +56,12 @@
 
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
 
-                <img src="assets/img/services_steps/krishnadentacure_services_crown_bridges_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
             <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-
-
-                <h3>Step 2: Temporary and Permanent Placement</h3>
-                <p>A temporary crown or bridge is placed while the permanent one is crafted for a perfect fit and function.</p>
+                <h3>Step 2: Whitening Gel Application</h3>
+                <p>A specialized whitening gel is applied to your teeth, breaking down deep stains safely.</p>
 
 
             </div>
@@ -76,14 +75,14 @@
 
             <div class="col-12 col-md-8 service_text_padding">
 
-                <h3>Step 3: Final Fitting and Adjustment</h3>
-                <p>The permanent crown or bridge is cemented securely, ensuring comfort, aesthetics, and long-lasting strength.</p>
+                <h3>Step 3: Activation and Final Polishing</h3>
+                <p>The gel is activated using a light source, followed by a polish for a long-lasting, radiant smile.</p>
 
 
             </div>
 
             <div class="col-12 col-md-4 service_text_padding_img">
-                <img src="assets/img/services_steps/krishnadentacure_services_crown_bridges_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                <img src="assets/img/services_steps/krishnadentacure_services_teeth_whitneing_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
 
             </div>
 
@@ -105,7 +104,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Crown_Bridge_1.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_1.png" alt="Team Area" class="w-100">
                         </div>
 
                     </div>
@@ -113,16 +112,7 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Crown_Bridge_2.png" alt="Team Area" class="w-100">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Crown_Bridge_3.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_2.png" alt="Team Area" class="w-100">
 
                         </div>
 
@@ -131,7 +121,16 @@
                 <div class="swiper-slide">
                     <div class="team-card">
                         <div class="team-head">
-                            <img src="assets/img/service_sliders/krishnadentacure_Dental_Crown_Bridge_4.png" alt="Team Area" class="w-100">
+                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_3.png" alt="Team Area" class="w-100">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="team-head">
+                            <img src="assets/img/service_sliders/krishnadentacure_Teeth_Whitening_4.png" alt="Team Area" class="w-100">
 
                         </div>
 

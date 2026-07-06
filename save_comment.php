@@ -63,7 +63,7 @@ if ($stmt->execute()) {
 
     echo "<script>
             alert('Appointment booked successfully!');
-            window.location.href='index.php';
+            window.location.href='home.php';
           </script>";
 
 } else {
