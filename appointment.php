@@ -73,56 +73,41 @@
                     </div>
 
                     <div class="card-body p-4 bg-white">
-                        <form id="appointmentForm"
-                 method="POST"
-                 action="save_appointment.php"
-                 class="row appointment-form mx-auto">
+                 <form action="contactform.php" method="post" role="form" class="php-email-form p-3 "    data-bg-color="#f3f6f7">
+                        
+                         <div class="row">
+                             <div class="form-title  ">
+                                 <h3 class="mt-n2 fls-n2 mb-0">Send Us a Message</h3>
+                                 <p class="text-theme mb-4">Your email address will not be published*</p>
+                             </div>
+                             <div class="form-group col-md-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactname" id="name" placeholder="Name">
+                                 <i class="fal fa-user"></i>
+                             </div>
+                             <div class="form-group col-md-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactnumber" id="phone" placeholder="Phone">
+                                 <i class="fal fa-phone"></i>
+                             </div>
+                             <div class="form-group col-md-6 mb-15">
+                                 <input type="text" class="form-control style3" name="address" id="address" placeholder="Address">
+                                 <i class="fal fa-map"></i>
+                             </div>
+                             <div class="form-group col-md-6 mb-15">
+                                 <input type="text" class="form-control style3" name="contactemail" id="email" placeholder="Email">
+                                 <i class="fal fa-envelope"></i>
+                             </div>
+                             <div class="form-group mb-15  ">
+                                 <textarea name="contactmessage" id="message" cols="30" rows="3" class="form-control style3" placeholder="Message"></textarea>
+                                 <i class="fal fa-pencil-alt"></i>
+                             </div>
 
-                 <div class="col-md-6 mb-4">
-                     <label>Name</label>
-                     <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
-                 </div>
+                             <div class="form-btn pt-15  col-xl-12 text-center">
+                                 <button class="vs-btn style2">Send Message<i class="fas fa-chevron-right"></i></button>
+                             </div>
+                         </div>
 
-                 <div class="col-md-6 mb-4">
-                     <label>Email</label>
-                     <input type="email" name="email" class="form-control" required placeholder="Email">
-                 </div>
-
-                 <div class="col-md-6 mb-4">
-                     <label>Contact Number</label>
-                     <input type="text" name="phone" class="form-control" required placeholder="Number">
-                 </div>
-
-                 <div class="col-md-6 mb-4">
-                     <label>Select Date</label>
-                     <input type="date"
-                         id="appointment_date"
-                         name="appointment_date"
-                         min="<?= date('Y-m-d') ?>"
-                         class="form-control"
-                         required>
-                 </div>
-
-                 <div id="slotContainer" class="col-md-12 mb-4">
-                     <label>Select Time Slot</label>
-                     <select id="time_slot" name="time_slot" class="form-control" required>
-                         <option value="">-- First Select Date --</option>
-                     </select>
-                 </div>
-
-                 <div class="col-md-12 mb-4">
-                     <label>Message</label>
-                     <textarea name="message" class="form-control" placeholder="Message"></textarea>
-                 </div>
-
-                 <div class="col-md-12">
-                     <button type="submit" class="btn appointment-btn btn-lg w-100">
-                         Book Appointment
-                     </button>
-                 
-                 </div>
-
-             </form>
+                         <p class="form-messages mb-0 mt-3"></p>
+                     </form>
                     </div>
 
                     <div class="card-footer text-center bg-light footer-text" style="font-size: 20px;">
