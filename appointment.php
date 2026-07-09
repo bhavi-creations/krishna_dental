@@ -1,5 +1,24 @@
-<?php include 'header.php'; ?>
+ <?php
+    include './db.connection/db_connection.php';
 
+
+    $selected_date = date('Y-m-d');
+    $slots = [
+
+        "10:00 AM - 11:00 AM",
+        "11:00 AM - 12:00 PM",
+        "12:00 PM - 01:00 PM",
+        "01:00 PM - 02:00 PM",
+        "02:00 PM - 03:00 PM",
+        "03:00 PM - 04:00 PM",
+        "04:00 PM - 05:00 PM",
+        "05:00 PM - 06:00 PM",
+        "06:00 PM - 07:00 PM",
+        "07:00 PM - 08:00 PM"
+    ];
+
+    include 'header.php';
+    ?>
 <style>
     .appointment-card {
         border-radius: 18px;
@@ -54,49 +73,56 @@
                     </div>
 
                     <div class="card-body p-4 bg-white">
-                        <form id="appointmentForm" method="POST" action="save_appointment.php" class="row g-3">
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label">Name</label>
-                                <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
-                            </div>
+                        <form id="appointmentForm"
+                 method="POST"
+                 action="save_appointment.php"
+                 class="row appointment-form mx-auto">
 
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" required placeholder="Email">
-                            </div>
+                 <div class="col-md-6 mb-4">
+                     <label>Name</label>
+                     <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
+                 </div>
 
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label">Contact Number</label>
-                                <input type="text" name="phone" class="form-control" required placeholder="Number">
-                            </div>
+                 <div class="col-md-6 mb-4">
+                     <label>Email</label>
+                     <input type="email" name="email" class="form-control" required placeholder="Email">
+                 </div>
 
-                            <div class="mb-3 col-md-6">
-                                <label class="form-label">Select Date</label>
-                                <input
-                                    type="date"
-                                    id="appointment_date"
-                                    name="appointment_date"
-                                    min="<?= date('Y-m-d') ?>"
-                                    class="form-control"
-                                    required>
-                            </div>
+                 <div class="col-md-6 mb-4">
+                     <label>Contact Number</label>
+                     <input type="text" name="phone" class="form-control" required placeholder="Number">
+                 </div>
 
-                            <div id="slotContainer" class="col-md-12 mb-3">
-                                <label class="form-label">Select Time Slot</label>
-                                <select id="time_slot" name="time_slot" class="form-select" required>
-                                    <option value="">-- First Select Date --</option>
-                                </select>
-                            </div>
+                 <div class="col-md-6 mb-4">
+                     <label>Select Date</label>
+                     <input type="date"
+                         id="appointment_date"
+                         name="appointment_date"
+                         min="<?= date('Y-m-d') ?>"
+                         class="form-control"
+                         required>
+                 </div>
 
-                            <div class="mb-3 col-md-12">
-                                <label class="form-label">Message</label>
-                                <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea>
-                            </div>
+                 <div id="slotContainer" class="col-md-12 mb-4">
+                     <label>Select Time Slot</label>
+                     <select id="time_slot" name="time_slot" class="form-control" required>
+                         <option value="">-- First Select Date --</option>
+                     </select>
+                 </div>
 
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
-                            </div>
-                        </form>
+                 <div class="col-md-12 mb-4">
+                     <label>Message</label>
+                     <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                 </div>
+
+                 <div class="col-md-12">
+                     <button type="submit" class="btn appointment-btn btn-lg w-100">
+                         Book Appointment
+                     </button>
+                 
+                 </div>
+
+             </form>
                     </div>
 
                     <div class="card-footer text-center bg-light footer-text" style="font-size: 20px;">
@@ -108,53 +134,44 @@
     </div>
 </section>
 
-<script>
-    document.getElementById('appointment_date').addEventListener('change', function () {
-        const date = this.value;
-        const slotSelect = document.getElementById('time_slot');
 
-        if (!date) {
-            slotSelect.innerHTML = '<option value="">-- First Select Date --</option>';
-            return;
-        }
+ <script>
+     document.getElementById('appointment_date').addEventListener('change', function() {
+         const date = this.value;
+         const slotSelect = document.getElementById('time_slot');
+         slotSelect.innerHTML = '<option>Loading...</option>';
 
-        slotSelect.innerHTML = '<option value="">Loading...</option>';
+         fetch('get_slots.php?date=' + date)
+             .then(r => r.json())
+             .then(data => {
 
-        fetch('get_slots.php?date=' + encodeURIComponent(date))
-            .then(response => response.json())
-            .then(data => {
-                if (data.isHoliday && data.type === 'fullday') {
-                    alert('Holiday: ' + data.reason);
-                    slotSelect.innerHTML = '<option value="">No Slots Available</option>';
-                    return;
-                }
+                 if (data.isHoliday && data.type == 'fullday') {
+                     alert("Holiday: " + data.reason);
+                     slotSelect.innerHTML = '<option>No Slots Available</option>';
+                     return;
+                 }
 
-                if (data.isHoliday && data.reason) {
-                    alert('Note: ' + data.reason);
-                }
+                 if (data.isHoliday) {
+                     alert("Note: " + data.reason);
+                 }
 
-                if (!Array.isArray(data.slots) || data.slots.length === 0) {
-                    slotSelect.innerHTML = '<option value="">No Slots Available</option>';
-                    return;
-                }
+                 let html = '<option value="">--Select Slot--</option>';
 
-                let html = '<option value="">--Select Slot--</option>';
+                 data.slots.forEach(s => {
+                     let dis = s.available <= 0 ? 'disabled' : '';
+                     let text = s.available <= 0 ?
+                         `${s.time} (FULL)` :
+                         `${s.time} (${s.available} Slots Available)`;
 
-                data.slots.forEach(slot => {
-                    const disabled = slot.available <= 0 ? 'disabled' : '';
-                    const text = slot.available <= 0
-                        ? `${slot.time} (FULL)`
-                        : `${slot.time} (${slot.available} Slots Available)`;
+                     html += `<option ${dis} value="${s.time}">${text}</option>`;
+                 });
 
-                    html += `<option ${disabled} value="${slot.time}">${text}</option>`;
-                });
-
-                slotSelect.innerHTML = html;
-            })
-            .catch(() => {
-                slotSelect.innerHTML = '<option value="">Error loading slots</option>';
-            });
-    });
-</script>
+                 slotSelect.innerHTML = html;
+             })
+             .catch(() => {
+                 slotSelect.innerHTML = '<option>Error loading slots</option>';
+             });
+     });
+ </script>
 
 <?php include 'footer.php'; ?>
