@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+header('Location: appointment.php');
+exit;
+?>
 
 
 <style>

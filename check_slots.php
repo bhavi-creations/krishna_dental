@@ -1,66 +1,83 @@
 <?php
-include './db.connection/db_connection.php';
+header('Content-Type: application/json; charset=UTF-8');
+
+include __DIR__ . '/db.connection/db_connection.php';
+require_once __DIR__ . '/appointment_helpers.php';
 
 $date = $_POST['date'] ?? '';
 
-if (!$date) {
-    echo json_encode([]);
-    exit;
-}
-
-/* =====================
-   CHECK HOLIDAY (ADMIN SET)
-===================== */
-$holiday = $conn->prepare(
-    "SELECT id FROM holidays WHERE holiday_date = ?"
-);
-$holiday->bind_param("s", $date);
-$holiday->execute();
-$res = $holiday->get_result();
-
-if ($res->num_rows > 0) {
+if ($date === '') {
     echo json_encode([
-        "holiday" => true,
-        "message" => "Clinic closed"
+        'holiday' => false,
+        'type' => '',
+        'reason' => '',
+        'slots' => [],
     ]);
     exit;
 }
 
-/* =====================
-   SLOT CONFIG
-===================== */
-$slots = [
-    "10:00 - 11:00AM",
-    "11:00 - 12:00PM",
-    "12:00 - 01:00PM",
-    "01:00 - 02:00PM",
-    "02:00 - 03:00PM",
-    "03:00 - 04:00PM",
-    "04:00 - 05:00PM",
-    "05:00 - 06:00PM",
-    "06:00 - 07:00PM",
-    "07:00 - 08:00PM",
-    "08:00 - 09:00PM"
+$response = [
+    'holiday' => false,
+    'type' => '',
+    'reason' => '',
+    'slots' => [],
 ];
 
+$holidayStmt = $conn->prepare('SELECT holiday_type, reason FROM holidays WHERE holiday_date = ? LIMIT 1');
+if ($holidayStmt) {
+    $holidayStmt->bind_param('s', $date);
+    $holidayStmt->execute();
+    $holiday = $holidayStmt->get_result()->fetch_assoc();
+    $holidayStmt->close();
+
+    if ($holiday) {
+        $response['holiday'] = true;
+        $response['type'] = $holiday['holiday_type'];
+        $response['reason'] = $holiday['reason'];
+    }
+}
+
+$slots = appointment_slot_labels();
+$morningSlots = appointment_morning_slots();
+$afternoonSlots = appointment_afternoon_slots();
+$slotColumn = appointment_slot_column($conn);
 $maxPerSlot = 3;
-$data = [];
 
 foreach ($slots as $slot) {
+    if ($response['holiday']) {
+        if ($response['type'] === 'fullday') {
+            continue;
+        }
 
-    $stmt = $conn->prepare(
-        "SELECT COUNT(*) total 
-         FROM appointments 
-         WHERE appointment_date = ? 
-         AND appointment_time = ?"
+        if ($response['type'] === 'morning' && in_array($slot, $morningSlots, true)) {
+            continue;
+        }
+
+        if ($response['type'] === 'afternoon' && in_array($slot, $afternoonSlots, true)) {
+            continue;
+        }
+    }
+
+    $countStmt = $conn->prepare(
+        "SELECT COUNT(*) AS total
+         FROM appointments
+         WHERE appointment_date = ? AND {$slotColumn} = ?"
     );
-    $stmt->bind_param("ss", $date, $slot);
-    $stmt->execute();
-    $count = $stmt->get_result()->fetch_assoc()['total'];
 
-    $data[$slot] = [
-        "available" => max(0, $maxPerSlot - $count)
+    if (!$countStmt) {
+        continue;
+    }
+
+    $countStmt->bind_param('ss', $date, $slot);
+    $countStmt->execute();
+    $countRow = $countStmt->get_result()->fetch_assoc();
+    $countStmt->close();
+
+    $booked = (int) ($countRow['total'] ?? 0);
+    $response['slots'][] = [
+        'time' => $slot,
+        'available' => max(0, $maxPerSlot - $booked),
     ];
 }
 
-echo json_encode($data);
+echo json_encode($response);
