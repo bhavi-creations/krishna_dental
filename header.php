@@ -142,8 +142,7 @@ Best dental specialist in Rajahmundry">
 </script>
 
 </head>
-<?php include 'view_count.php'; ?>
-<?php include 'visitor-track.php'; ?>
+
 
 <body class="">
 
