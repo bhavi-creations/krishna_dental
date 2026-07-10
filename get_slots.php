@@ -1,77 +1,84 @@
 <?php
+header('Content-Type: application/json');
 include './db.connection/db_connection.php';
 
-$date = $_GET['date'];
+$date = isset($_GET['date']) ? $_GET['date'] : '';
 
 $slots_list = [
-  "9:00 AM - 10:00 AM",
-  "10:00 AM - 11:00 AM",
-  "11:00 AM - 12:00 PM",
-  "12:00 PM - 01:00 PM",
-  "01:00 PM - 02:00 PM",
-  "02:00 PM - 03:00 PM",
-  "03:00 PM - 04:00 PM",
-  "04:00 PM - 05:00 PM",
-  "05:00 PM - 06:00 PM",
-  "06:00 PM - 07:00 PM",
-  "07:00 PM - 08:00 PM",
-  "08:00 PM - 09:00 PM"
+    "09:00 AM - 10:00 AM",
+    "10:00 AM - 11:00 AM",
+    "11:00 AM - 12:00 PM",
+    "12:00 PM - 01:00 PM",
+    "01:00 PM - 02:00 PM",
+    "02:00 PM - 03:00 PM",
+    "03:00 PM - 04:00 PM",
+    "04:00 PM - 05:00 PM",
+    "05:00 PM - 06:00 PM",
+    "06:00 PM - 07:00 PM",
+    "07:00 PM - 08:00 PM",
+    "08:00 PM - 09:00 PM"
 ];
 
-$res = $conn->query("SELECT * FROM holidays WHERE holiday_date='$date'");
-$holiday = $res->fetch_assoc();
+// SQL Injection safety validation
+$stmt = $conn->prepare("SELECT * FROM holidays WHERE holiday_date = ?");
+$stmt->bind_param("s", $date);
+$stmt->execute();
+$holiday = $stmt->get_result()->fetch_assoc();
 
 $response = [
-  'isHoliday' => false,
-  'type' => '',
-  'reason' => '',
-  'slots' => []
+    'isHoliday' => false,
+    'type' => '',
+    'reason' => '',
+    'slots' => []
 ];
 
 if ($holiday) {
-  $response['isHoliday'] = true;
-  $response['type'] = $holiday['holiday_type'];
-  $response['reason'] = $holiday['reason'];
+    $response['isHoliday'] = true;
+    $response['type'] = $holiday['holiday_type'];
+    $response['reason'] = $holiday['reason'];
 }
 
+// Fixed spacing & zeroes match dynamically with master list
 $morningSlots = [
-  "9:00 AM - 10:00 AM",
-  "10:00 AM - 11:00 AM",
-  "11:00 AM - 12:00 PM",
-  "12:00 PM - 01:00 PM"
+    "09:00 AM - 10:00 AM",
+    "10:00 AM - 11:00 AM",
+    "11:00 AM - 12:00 PM",
+    "12:00 PM - 01:00 PM",
+    "01:00 PM - 02:00 PM"
 ];
 
 $afternoonSlots = [
-  "02:00 PM - 03:00 PM",
-  "03:00 PM - 04:00 PM",
-  "04:00 PM - 05:00 PM",
-  "05:00 PM - 06:00 PM",
-  "06:00 PM - 07:00 PM",
-  "07:00 PM - 08:30 PM"
+    "02:00 PM - 03:00 PM",
+    "03:00 PM - 04:00 PM",
+    "04:00 PM - 05:00 PM",
+    "05:00 PM - 06:00 PM",
+    "06:00 PM - 07:00 PM",
+    "07:00 PM - 08:00 PM",
+    "08:00 PM - 09:00 PM"
 ];
 
 foreach ($slots_list as $slot) {
+    if ($holiday) {
+        if ($holiday['holiday_type'] == 'fullday') continue;
+        if ($holiday['holiday_type'] == 'morning' && in_array($slot, $morningSlots)) continue;
+        if ($holiday['holiday_type'] == 'afternoon' && in_array($slot, $afternoonSlots)) continue;
+    }
 
-  // Holiday filtering
-  if ($holiday) {
-    if ($holiday['holiday_type'] == 'fullday') continue;
-    if ($holiday['holiday_type'] == 'morning' && in_array($slot, $morningSlots)) continue;
-    if ($holiday['holiday_type'] == 'afternoon' && in_array($slot, $afternoonSlots)) continue;
-  }
+    // Dynamic slot matching block count check
+    $q_stmt = $conn->prepare("SELECT COUNT(*) as total FROM appointments WHERE appointment_date = ? AND time_slot = ?");
+    $q_stmt->bind_param("ss", $date, $slot);
+    $q_stmt->execute();
+    $r = $q_stmt->get_result()->fetch_assoc();
 
-  $q = $conn->query("SELECT COUNT(*) as total FROM appointments 
-                     WHERE appointment_date='$date' AND time_slot='$slot'");
-  $r = $q->fetch_assoc();
+    $max = 3; 
+    $available = $max - $r['total'];
+    if ($available < 0) $available = 0;
 
-  $max = 3; // per slot limit
-  $available = $max - $r['total'];
-  if ($available < 0) $available = 0;
-
-  $response['slots'][] = [
-    'time' => $slot,
-    'available' => $available
-  ];
+    $response['slots'][] = [
+        'time' => $slot,
+        'available' => $available
+    ];
 }
 
 echo json_encode($response);
-   
+exit;

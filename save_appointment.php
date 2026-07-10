@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include './db.connection/db_connection.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -8,28 +11,44 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Honeypot configuration Check
+if (!empty($_POST['website'])) {
+    die("Bot detected.");
+}
 
-    /* ======================
-       GET & CLEAN INPUT
-       ====================== */
-    $name  = trim($_POST['name']);
-    $email = trim($_POST['email']);
+// Dynamic timing validation
+if (!isset($_SESSION['form_time']) || (time() - $_SESSION['form_time']) < 5) {
+    die("Submission too fast. Bot detected.");
+}
+
+// Google Recaptcha v2 Server Verification
+$secretKey = "6Ldws0ktAAAAAD7pIKreribWZJeii1BzFMfk1sr8";
+$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$recaptchaResponse);
+$responseData = json_decode($verify);
+
+if (empty($recaptchaResponse) || !$responseData->success) {
+    die("Please complete the 'I'm not a robot' verification.");
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name  = trim(htmlspecialchars($_POST['name']));
+    $email = trim(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL));
     $phone = trim($_POST['phone']);
     $date  = $_POST['appointment_date'];
     $slot  = $_POST['time_slot'];
-    $msg   = trim($_POST['message']);
+    $msg   = trim(htmlspecialchars($_POST['message']));
+    $day   = date('l', strtotime($date));
 
-    $day = date('l', strtotime($date));
+    if (!$email) {
+        die("Invalid Email Address.");
+    }
 
     /* ======================
-       HOLIDAY CHECK
+       HOLIDAY MATRIX CHECK
        ====================== */
-    $stmt = $conn->prepare(
-        "SELECT holiday_type, reason 
-         FROM holidays 
-         WHERE holiday_date=?"
-    );
+    $stmt = $conn->prepare("SELECT holiday_type, reason FROM holidays WHERE holiday_date = ?");
     $stmt->bind_param("s", $date);
     $stmt->execute();
     $h = $stmt->get_result();
@@ -38,155 +57,92 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row  = $h->fetch_assoc();
         $type = $row['holiday_type'];
 
-        $morningSlots = [
-            "10:00 AM - 11:00 AM",
-            "11:00 AM - 12:00 PM",
-            "12:00 PM - 01:00 PM",
-            "01:00 PM - 02:00 PM"
-        ];
+        $morningSlots = ["09:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 01:00 PM", "01:00 PM - 02:00 PM"];
+        $afternoonSlots = ["02:00 PM - 03:00 PM", "03:00 PM - 04:00 PM", "04:00 PM - 05:00 PM", "05:00 PM - 06:00 PM", "06:00 PM - 07:00 PM", "07:00 PM - 08:00 PM", "08:00 PM - 09:00 PM"];
 
-        $afternoonSlots = [
-            "04:00 PM - 05:00 PM",
-            "05:00 PM - 06:00 PM",
-            "06:00 PM - 07:00 PM",
-            "07:00 PM - 08:00 PM"
-           
-        ];
-
-        if (
-            $type == 'fullday' ||
-            ($type == 'morning' && in_array($slot, $morningSlots)) ||
-            ($type == 'afternoon' && in_array($slot, $afternoonSlots))
-        ) {
-            echo "<script>
-                alert('".$row['reason']."');
-                window.location='home.php';
-            </script>";
+        if ($type == 'fullday' || ($type == 'morning' && in_array($slot, $morningSlots)) || ($type == 'afternoon' && in_array($slot, $afternoonSlots))) {
+            echo "<script>alert('Holiday: ".$row['reason']."'); window.location='index.php';</script>";
             exit;
         }
     }
 
     /* ======================
-       SLOT LIMIT CHECK
+       LIVE SLOT CAPACITY CHECK
        ====================== */
-    $stmt = $conn->prepare(
-        "SELECT COUNT(*) AS total 
-         FROM appointments 
-         WHERE appointment_date=? AND time_slot=?"
-    );
+    $stmt = $conn->prepare("SELECT COUNT(*) AS total FROM appointments WHERE appointment_date = ? AND time_slot = ?");
     $stmt->bind_param("ss", $date, $slot);
     $stmt->execute();
     $count = $stmt->get_result()->fetch_assoc();
 
     if ($count['total'] >= 3) {
-        echo "<script>
-            alert('This time slot is FULL');
-            window.location='home.php';
-        </script>";
+        echo "<script>alert('This time slot is FULL'); window.location='index.php';</script>";
         exit;
     }
 
     /* ======================
-       INSERT APPOINTMENT
+       EXECUTE DB INSERTION
        ====================== */
-    $stmt = $conn->prepare(
-        "INSERT INTO appointments 
-        (name, email, phone, appointment_date, time_slot, message)
-        VALUES (?,?,?,?,?,?)"
-    );
+    $stmt = $conn->prepare("INSERT INTO appointments (name, email, phone, appointment_date, time_slot, message) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssss", $name, $email, $phone, $date, $slot, $msg);
     $stmt->execute();
 
     /* ======================
-       MAIL TO DOCTOR ONLY
+       PHPMailer Dynamic Dispatch
        ====================== */
-    $mailDoctor = new PHPMailer(true);
-
     try {
+        // Mail to Doctor Setup
+        $mailDoctor = new PHPMailer(true);
         $mailDoctor->isSMTP();
         $mailDoctor->Host       = 'smtp.gmail.com';
         $mailDoctor->SMTPAuth   = true;
-        $mailDoctor->Username   = 'manimalladi05@gmail.com';
-        $mailDoctor->Password   = 'cvarqcchfjpawxvo';
+        $mailDoctor->Username   = 'appledentalclinic2025@gmail.com';
+        $mailDoctor->Password   = 'ixdpuydufjsfxaxb'; // App Password
         $mailDoctor->SMTPSecure = 'tls';
         $mailDoctor->Port       = 587;
 
-        $mailDoctor->setFrom(
-            'manimalladi05@gmail.com',
-            'Clinic Appointment System'
-        );
-
-        $mailDoctor->addAddress('manimalladi05@gmail.com');
-
+        $mailDoctor->setFrom('appledentalclinic2025@gmail.com', 'Clinic Appointment System');
+        $mailDoctor->addAddress('appledentalclinic2025@gmail.com');
         $mailDoctor->isHTML(true);
         $mailDoctor->Subject = 'New Appointment Booked';
-
-        $mailDoctor->Body = "
-            <h2>New Appointment Details</h2>
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Phone:</strong> $phone</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Date:</strong> $date ($day)</p>
-            <p><strong>Time Slot:</strong> $slot</p>
-            <p><strong>Message:</strong> $msg</p>
-        ";
-
+        $mailDoctor->Body    = "<h2>New Appointment Details</h2>
+                                <p><strong>Name:</strong> $name</p>
+                                <p><strong>Phone:</strong> $phone</p>
+                                <p><strong>Email:</strong> $email</p>
+                                <p><strong>Date:</strong> $date ($day)</p>
+                                <p><strong>Time Slot:</strong> $slot</p>
+                                <p><strong>Message:</strong> $msg</p>";
         $mailDoctor->send();
 
-    } catch (Exception $e) {
-        echo 'Doctor Mail Error: ' . $mailDoctor->ErrorInfo;
-        exit;
-    }
-
-    /* ======================
-       MAIL TO PATIENT ONLY
-       ====================== */
-    $mailPatient = new PHPMailer(true);
-
-    try {
+        // Mail to Patient Setup
+        $mailPatient = new PHPMailer(true);
         $mailPatient->isSMTP();
         $mailPatient->Host       = 'smtp.gmail.com';
         $mailPatient->SMTPAuth   = true;
-        $mailPatient->Username   = 'manimalladi05@gmail.com';
-        $mailPatient->Password   = 'cvarqcchfjpawxvo';
+        $mailPatient->Username   = 'appledentalclinic2025@gmail.com';
+        $mailPatient->Password   = 'ixdpuydufjsfxaxb';
         $mailPatient->SMTPSecure = 'tls';
         $mailPatient->Port       = 587;
 
-        $mailPatient->setFrom(
-            'manimalladi05@gmail.com',
-            'Ivy Dental Clinic'
-        );
-
+        $mailPatient->setFrom('appledentalclinic2025@gmail.com', 'Apple Dental Specialities');
         $mailPatient->addAddress($email);
-
         $mailPatient->isHTML(true);
         $mailPatient->Subject = 'Appointment Confirmation';
-
-        $mailPatient->Body = "
-            <h2>Appointment Confirmed ✅</h2>
-            <p>Dear <strong>$name</strong>,</p>
-
-            <p>Your appointment has been successfully booked.</p>
-
-            <table cellpadding='6'>
-                <tr><td><strong>Date</strong></td><td>$date ($day)</td></tr>
-                <tr><td><strong>Time</strong></td><td>$slot</td></tr>
-                <tr><td><strong>Phone</strong></td><td>$phone</td></tr>
-            </table>
-
-            <p>Thank you for choosing<br>
-            <b>Ivy Dental Clinic</b>.</p>
-        ";
-
+        $mailPatient->Body    = "<h2>Appointment Confirmed ✅</h2>
+                                <p>Dear <strong>$name</strong>,</p>
+                                <p>Your appointment has been successfully booked.</p>
+                                <table cellpadding='6' border='0'>
+                                    <tr><td><strong>Date:</strong></td><td>$date ($day)</td></tr>
+                                    <tr><td><strong>Time:</strong></td><td>$slot</td></tr>
+                                    <tr><td><strong>Phone:</strong></td><td>$phone</td></tr>
+                                </table>
+                                <p>Thank you for choosing<br><b>Apple Dental Specialities</b>.</p>";
         $mailPatient->send();
 
-        echo "<script>
-          
-            window.location='thankyou.php';
-        </script>";
+        echo "<script>window.location='thankyou.php';</script>";
+        exit;
 
     } catch (Exception $e) {
-        echo 'Patient Mail Error: ' . $mailPatient->ErrorInfo;
+        echo "Mailer Error details: " . $e->getMessage();
     }
 }
 ?>
