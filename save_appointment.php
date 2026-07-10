@@ -48,43 +48,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     /* ======================
        HOLIDAY MATRIX CHECK
        ====================== */
-    $stmt = $conn->prepare("SELECT holiday_type, reason FROM holidays WHERE holiday_date = ?");
-    $stmt->bind_param("s", $date);
-    $stmt->execute();
-    $h = $stmt->get_result();
+    $stmtHoliday = $conn->prepare("SELECT holiday_type, reason FROM holidays WHERE holiday_date = ?");
+    if ($stmtHoliday) {
+        $stmtHoliday->bind_param("s", $date);
+        $stmtHoliday->execute();
+        $h = $stmtHoliday->get_result();
 
-    if ($h->num_rows > 0) {
-        $row  = $h->fetch_assoc();
-        $type = $row['holiday_type'];
+        if ($h->num_rows > 0) {
+            $row  = $h->fetch_assoc();
+            $type = trim(strtolower($row['holiday_type'])); // Handled case mismatch safely
 
-        $morningSlots = ["09:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 01:00 PM", "01:00 PM - 02:00 PM"];
-        $afternoonSlots = ["02:00 PM - 03:00 PM", "03:00 PM - 04:00 PM", "04:00 PM - 05:00 PM", "05:00 PM - 06:00 PM", "06:00 PM - 07:00 PM", "07:00 PM - 08:00 PM", "08:00 PM - 09:00 PM"];
+            $morningSlots = ["09:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 01:00 PM", "01:00 PM - 02:00 PM"];
+            $afternoonSlots = ["02:00 PM - 03:00 PM", "03:00 PM - 04:00 PM", "04:00 PM - 05:00 PM", "05:00 PM - 06:00 PM", "06:00 PM - 07:00 PM", "07:00 PM - 08:00 PM", "08:00 PM - 09:00 PM"];
 
-        if ($type == 'fullday' || ($type == 'morning' && in_array($slot, $morningSlots)) || ($type == 'afternoon' && in_array($slot, $afternoonSlots))) {
-            echo "<script>alert('Holiday: ".$row['reason']."'); window.location='index.php';</script>";
-            exit;
+            if ($type == 'fullday' || ($type == 'morning' && in_array($slot, $morningSlots)) || ($type == 'afternoon' && in_array($slot, $afternoonSlots))) {
+                $stmtHoliday->close();
+                echo "<script>alert('Holiday: ".$row['reason']."'); window.location='index.php';</script>";
+                exit;
+            }
         }
+        $stmtHoliday->close();
     }
 
     /* ======================
        LIVE SLOT CAPACITY CHECK
        ====================== */
-    $stmt = $conn->prepare("SELECT COUNT(*) AS total FROM appointments WHERE appointment_date = ? AND time_slot = ?");
-    $stmt->bind_param("ss", $date, $slot);
-    $stmt->execute();
-    $count = $stmt->get_result()->fetch_assoc();
+    $stmtCheck = $conn->prepare("SELECT COUNT(*) AS total FROM appointments WHERE appointment_date = ? AND time_slot = ?");
+    if ($stmtCheck) {
+        $stmtCheck->bind_param("ss", $date, $slot);
+        $stmtCheck->execute();
+        $count = $stmtCheck->get_result()->fetch_assoc();
+        $stmtCheck->close();
 
-    if ($count['total'] >= 3) {
-        echo "<script>alert('This time slot is FULL'); window.location='index.php';</script>";
-        exit;
+        if ($count['total'] >= 3) {
+            echo "<script>alert('This time slot is FULL'); window.location='index.php';</script>";
+            exit;
+        }
     }
 
     /* ======================
        EXECUTE DB INSERTION
        ====================== */
-    $stmt = $conn->prepare("INSERT INTO appointments (name, email, phone, appointment_date, time_slot, message) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $name, $email, $phone, $date, $slot, $msg);
-    $stmt->execute();
+    $stmtInsert = $conn->prepare("INSERT INTO appointments (name, email, phone, appointment_date, time_slot, message) VALUES (?, ?, ?, ?, ?, ?)");
+    if ($stmtInsert) {
+        $stmtInsert->bind_param("ssssss", $name, $email, $phone, $date, $slot, $msg);
+        $stmtInsert->execute();
+        $stmtInsert->close();
+    }
 
     /* ======================
        PHPMailer Dynamic Dispatch
