@@ -1,15 +1,14 @@
 <?php
-// Clear output buffering to avoid accidental whitespaces/warnings spilling into JSON
-ob_start();
-header('Content-Type: application/json; charset=utf-8');
+// JSON రెస్పాన్స్ మాత్రమే పంపుతున్నామని బ్రౌజర్‌కి చెప్పడానికి
+header('Content-Type: application/json');
 
-// Clear completely error displays to prevent json format corruption
-error_reporting(0);
-ini_set('display_errors', 0);
+// ఏవైనా చిన్న వార్నింగ్స్ వస్తే JSON బ్రేక్ అవ్వకుండా దాచడానికి (Production లో హెల్ప్ అవుతుంది)
+error_reporting(0); 
 
 include './db.connection/db_connection.php';
 
-$date = isset($_GET['date']) ? trim($_GET['date']) : '';
+// డేట్ సరిగ్గా ఉందో లేదో వెరిఫై చేయడం
+$date = isset($_GET['date']) ? $conn->real_escape_string($_GET['date']) : '';
 
 $response = [
     'isHoliday' => false,
@@ -18,20 +17,14 @@ $response = [
     'slots' => []
 ];
 
-// Check if database connection is alive
-if (!$conn) {
-    ob_end_clean();
-    echo json_encode([
-        'isHoliday' => false,
-        'type' => '',
-        'reason' => 'Database connectivity failed on server',
-        'slots' => []
-    ]);
+if (empty($date)) {
+    echo json_encode($response);
     exit;
 }
 
+// 1. ప్రధాన స్లాట్‌ల లిస్ట్
 $slots_list = [
-    "09:00 AM - 10:00 AM",
+    "9:00 AM - 10:00 AM",
     "10:00 AM - 11:00 AM",
     "11:00 AM - 12:00 PM",
     "12:00 PM - 01:00 PM",
@@ -45,32 +38,16 @@ $slots_list = [
     "08:00 PM - 09:00 PM"
 ];
 
-// 1. Holiday Mapping Check
-$holiday = null;
-$stmt = $conn->prepare("SELECT holiday_type, reason FROM holidays WHERE holiday_date = ?");
-if ($stmt) {
-    $stmt->bind_param("s", $date);
-    $stmt->execute();
-    $holiday = $stmt->get_result()->fetch_assoc();
-    $stmt->close();
-}
-
-if (!empty($holiday)) {
-    $response['isHoliday'] = true;
-    $response['type'] = trim(strtolower($holiday['holiday_type']));
-    $response['reason'] = $holiday['reason'];
-}
-
-// 2. Strict Standard Mappings (Added leading zero matching checks)
+// 2. హాలిడే ఫిల్టరింగ్ కోసం గ్రూప్‌లు (స్లాట్ టెక్స్ట్ లు పైన ఉన్నవాటితో పక్కాగా మ్యాచ్ అవ్వాలి)
 $morningSlots = [
-    "09:00 AM - 10:00 AM",
+    "9:00 AM - 10:00 AM",
     "10:00 AM - 11:00 AM",
     "11:00 AM - 12:00 PM",
-    "12:00 PM - 01:00 PM",
-    "01:00 PM - 02:00 PM"
+    "12:00 PM - 01:00 PM"
 ];
 
 $afternoonSlots = [
+    "01:00 PM - 02:00 PM",
     "02:00 PM - 03:00 PM",
     "03:00 PM - 04:00 PM",
     "04:00 PM - 05:00 PM",
@@ -80,37 +57,43 @@ $afternoonSlots = [
     "08:00 PM - 09:00 PM"
 ];
 
-// 3. Strict loop validation checking
+// హాలిడే చెక్ క్వెరీ
+$res = $conn->query("SELECT * FROM holidays WHERE holiday_date='$date'");
+$holiday = $res ? $res->fetch_assoc() : null;
+
+if ($holiday) {
+    $response['isHoliday'] = true;
+    $response['type'] = $holiday['holiday_type'];
+    $response['reason'] = $holiday['reason'];
+}
+
 foreach ($slots_list as $slot) {
-    if (!empty($holiday)) {
-        $h_type = trim(strtolower($holiday['holiday_type']));
-        if ($h_type === 'fullday') {
-            continue;
+
+    // హాలిడే ఫిల్టరింగ్ లాజిక్
+    if ($holiday) {
+        if ($holiday['holiday_type'] == 'fullday') {
+            continue; // ఫుల్ డే హాలిడే అయితే లూప్ ఆపేసి ఖాళీ స్లాట్స్ పంపుతుంది
         }
-        if ($h_type === 'morning' && in_array($slot, $morningSlots)) {
-            continue;
+        if ($holiday['holiday_type'] == 'morning' && in_array($slot, $morningSlots)) {
+            continue; // మార్నింగ్ హాలిడే అయితే మార్నింగ్ స్లాట్స్ స్కిప్ అవుతాయి
         }
-        if ($h_type === 'afternoon' && in_array($slot, $afternoonSlots)) {
-            continue;
+        if ($holiday['holiday_type'] == 'afternoon' && in_array($slot, $afternoonSlots)) {
+            continue; // ఆఫ్టర్నూన్ హాలిడే అయితే ఆఫ్టర్నూన్ స్లాట్స్ స్కిప్ అవుతాయి
         }
     }
 
-    // Fixed internal parameters execution to pass live hosting drivers safely
-    $total = 0;
-    $q_stmt = $conn->prepare("SELECT COUNT(*) as total FROM appointments WHERE appointment_date = ? AND time_slot = ?");
-    if ($q_stmt) {
-        $q_stmt->bind_param("ss", $date, $slot);
-        $q_stmt->execute();
-        $res = $q_stmt->get_result()->fetch_assoc();
-        $total = isset($res['total']) ? (int)$res['total'] : 0;
-        $q_stmt->close();
+    // ఆ స్లాట్ కి ఆల్రెడీ ఎన్ని బుకింగ్స్ ఉన్నాయో కౌంట్ చేయడం
+    $q = $conn->query("SELECT COUNT(*) as total FROM appointments WHERE appointment_date='$date' AND time_slot='$slot'");
+    
+    $total_booked = 0;
+    if ($q) {
+        $r = $q->fetch_assoc();
+        $total_booked = (int)$r['total'];
     }
 
-    $max = 3; 
-    $available = $max - $total;
-    if ($available < 0) {
-        $available = 0;
-    }
+    $max = 3; // ఒక స్లాట్ కి గరిష్టంగా 3 అపాయింట్‌మెంట్‌లు
+    $available = $max - $total_booked;
+    if ($available < 0) $available = 0;
 
     $response['slots'][] = [
         'time' => $slot,
@@ -118,7 +101,7 @@ foreach ($slots_list as $slot) {
     ];
 }
 
-// Flush all systems cleanly and output valid pure array array data format
-ob_end_clean();
+// పక్కాగా JSON ని మాత్రమే ఎకో చేయడం
 echo json_encode($response);
 exit;
+?>
