@@ -24,14 +24,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'manimalladi05@gmail.com'; // Your Gmail email address
-        $mail->Password = 'ltlxupjfqbobegqg'; // Your Gmail password
+      
+
+ 
+      $mail->Username = 'drsureshkumar1.com@gmail.com'; // Your Gmail email address
+        $mail->Password = 'vsspzvcrooacjcjq'; // Your Gmail password
+    
+
+
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('manimalladi05@gmail.com', 'Krishnadentalcure.com' ); // Your Gmail email and name
-        $mail->addAddress('manimalladi05@gmail.com', 'Krishnadentalcure.com'); // Recipient's email and name
+        $mail->setFrom('drsureshkumar1.com@gmail.com', 'Krishnadentalcure.com' ); // Your Gmail email and name
+        $mail->addAddress('drsureshkumar1.com@gmail.com', 'Krishnadentalcure.com'); // Recipient's email and name
 
 // Content
         $mail->isHTML(true);
