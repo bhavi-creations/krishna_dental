@@ -4,18 +4,7 @@ include './db.connection/db_connection.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// reCAPTCHA వెరిఫికేషన్
-$secretKey = "6Ldws0ktAAAAAD7pIKreribWZJeii1BzFMfk1sr8";
-$response = $_POST['g-recaptcha-response'] ?? '';
 
-$verify = file_get_contents(
-    "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$response
-);
-$responseData = json_decode($verify);
-
-if (empty($response) || !$responseData->success) {
-    die("Please complete the 'I'm not a robot' verification.");
-}
 
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
@@ -171,7 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mailPatient->setFrom(
             'drsureshkumar1.com@gmail.com',
-            'Apple Dental Specialities'
+            'Krishna Dental Specialities'
         );
         $mailPatient->addAddress($email);
 
@@ -188,7 +177,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <tr><td><strong>Phone</strong></td><td>$phone</td></tr>
             </table>
             <p>Thank you for choosing<br>
-            <b>Apple Dental Specialities</b>.</p>
+            <b>Krishna Dental Specialities</b>.</p>
         ";
 
         $mailPatient->send();

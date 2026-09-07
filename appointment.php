@@ -64,8 +64,7 @@ $slots = [
                         <textarea name="message" class="form-control" rows="4" placeholder="Any additional information..."></textarea>
                     </div>
 
-                    <div class="g-recaptcha mb-2" data-sitekey="6Ldws0ktAAAAAD1Y2Q8PZa6aKCMKeqiHAK86IBhr"></div>
-                    <br>
+                   
 
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
