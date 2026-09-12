@@ -149,7 +149,7 @@
 </section>
 <!-- End about-section-seven -->
 
-<section class="specialist-section space" data-bg-src="assets/img/bg/specialist1-1.jpg">
+<!-- <section class="specialist-section space" data-bg-src="assets/img/bg/specialist1-1.jpg">
     <div class="container-style7">
         <div class="title-area-three text-center light  wow fadeInUp" data-wow-delay="400ms">
 
@@ -372,8 +372,93 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End specialist-section -->
+
+<!-- ==========================================================
+     SECTION 03 - OUR SERVICES
+========================================================== -->
+<section class="index_third_section">
+  <div class="index_third_note_left"><span>Healthy</span><span>Smiles</span><span>Happier Lives</span><i></i></div>
+  <div class="index_third_note_right"><span>Smile</span><span>Confidently</span><span>Everyday</span><i></i></div>
+  <div class="index_third_dots top"></div>
+  <div class="index_third_dots bottom"></div>
+  <div class="index_third_toothmark">
+    <img src="assets/icons/decor/tooth-outline.svg" alt="" aria-hidden="true">
+    <div><span>YOUR SMILE</span><span>OUR PRIORITY</span></div>
+  </div>
+
+  <div class="container">
+    <div class="index_third_heading">
+      <div class="index_third_eyebrow"><span class="line"></span><span class="text">COMPLETE DENTAL CARE</span><span class="line"></span></div>
+      <h2>Our <span>Services</span></h2>
+      <p>Advanced Treatments for a Healthier, Brighter Smile</p>
+    </div>
+
+    <div class="index_third_slider_viewport">
+      <div class="row g-0 index_third_cards">
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_root_canal_home.png" alt="Root canal illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/root-canal.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Root Canal</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Root canal treatment saves infected teeth by removing decay, cleaning roots, and sealing them to prevent further damage.</p>
+            <a href="root-canal-treatment-in-rajahmundry.php" class="index_third_btn"><span>Know More</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_wisdom_toothremoval_home.png" alt="Wisdom tooth removal illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/wisdom-tooth.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Wisdom Tooth<br>Removal</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Wisdom tooth removal extracts impacted or painful teeth to prevent infection, crowding, and discomfort.</p>
+            <a href="wisdom-teeth-treatment-in-rajahmundry.php" class="index_third_btn"><span>Know More</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-md-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/img/about/kroshnadentacure_bad_breath_treatment_home.png" alt="Bad breath treatment illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/bad-breath.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Bad Breath<br>Treatment</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Bad breath treatment targets bacteria and plaque buildup through proper oral hygiene, hydration, and professional cleaning.</p>
+            <a href="bad-breath-treatment-in-rajahmundry.php" class="index_third_btn"><span>Know More</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_gum_treatment.png" alt="Gum treatment illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/gum-treatment.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Gum Treatment</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Gum treatment heals infections and reduces inflammation through deep cleaning, medication, and proper oral care.</p>
+            <a href="gum-care-treatment-in-rajahmundry.php" class="index_third_btn"><span>Know More</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+    </div>
+
+    <div class="index_third_bottom"><span></span><p>BETTER DENTAL CARE <b>•</b> BRIGHTER TOMORROWS</p><span></span></div>
+  </div>
+</section>
 
 <!-- testinial-section7 -->
 <section class="testinial-section7 space">
@@ -483,13 +568,13 @@
 <!-- End testimonial section -->
 
 <!-- why-choose-section -->
-<section class="why-choose-section7 space-top" data-bg-src="assets/img/bg/why-choose1-1.jpg">
+<!-- <section class="why-choose-section7 space-top" data-bg-src="assets/img/bg/why-choose1-1.jpg">
     <div class="container-style7">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="choose-content7">
                     <div class="title-area-three choose">
-                        <!-- <span class="sub-title7">7 Star Care & Protection</span> -->
+                        <span class="sub-title7">7 Star Care & Protection</span>
                         <h2>Why choose <br> Krishna Denta Cure</h2>
                         <p>At Krishna Denta Cure, we are committed to providing top-quality dental care with a focus on patient comfort, advanced technology, and personalized treatment plans. Here’s why we stand out:
                         </p>
@@ -547,11 +632,126 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End why-choose-section -->
 
+
+
+<!-- New why-choose-section code  -->
+ <!-- ==========================================================
+     SECTION 04 - WHY CHOOSE
+========================================================== -->
+<section class="index_fourth_section">
+  <div class="index_fourth_top">
+    <div class="index_fourth_plant left"></div>
+    <div class="index_fourth_plant right"></div>
+
+    <div class="container">
+      <div class="row align-items-center index_fourth_main_row">
+        <div class="col-lg-6 col-12">
+          <div class="index_fourth_content">
+            <div class="index_fourth_small">
+              <i></i>
+              <span>YOUR SMILE&nbsp;&nbsp; OUR COMMITMENT</span>
+            </div>
+
+            <h2>Why Choose<br>Krishna Denta Cure</h2>
+
+            <p class="index_fourth_desc">
+              At Krishna Denta Cure, we are committed to providing top-quality dental care
+              with a focus on patient comfort, advanced technology, and personalized
+              treatment plans. Here’s why we stand out:
+            </p>
+
+            <div class="row g-3 index_fourth_features">
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                  </div>
+                  <h4>100% Safe &amp; Trusted</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-user-doctor" aria-hidden="true"></i>
+                  </div>
+                  <h4>Specialised Doctors</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-headset" aria-hidden="true"></i>
+                  </div>
+                  <h4>24/7 Take Care<br>Staff</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-tooth" aria-hidden="true"></i>
+                  </div>
+                  <h4>Painless Treatments</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 index_fourth_visual_col">
+          <div class="index_fourth_visual">
+            <img src="assets/img/about/krishnadentalcure_equipment_chair.png" alt="Modern dental treatment chair and equipment">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid index_fourth_cta_outer">
+    <div class="index_fourth_cta" data-bg-src="assets/img/bg/letter1-1.jpg">
+      <span class="index_fourth_hex h1"></span>
+      <span class="index_fourth_hex h2"></span>
+      <span class="index_fourth_hex h3"></span>
+
+      <div class="container-fluid h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-md-3 col-12">
+            <div class="index_fourth_hospital">
+              <img src="assets/img/widget/letter1-1.png" alt="" aria-hidden="true">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div class="index_fourth_cta_text">
+              <div class="index_fourth_quality">
+                <span>Quality &amp; Excellence</span>
+                <i></i>
+              </div>
+              <h3>Expect Nothing But The Best<br>From Our Team</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-12">
+            <div class="index_fourth_cta_btn_wrap">
+              <a href="about.php" class="index_fourth_cta_btn">
+                <span>Know More</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- news-letter-section -->
-<section class="news-letter-section-two">
+<!-- <section class="news-letter-section-two">
     <div class="container-style7">
         <div class="news-letter-box-two" data-bg-src="assets/img/bg/letter1-1.jpg">
             <div class="row align-items-end">
@@ -572,21 +772,21 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End news letter section -->
 
 <!-- team-section-two -->
-<section class="team-section-three space space-md-bottom">
+<!-- <section class="team-section-three space space-md-bottom">
     <div class="container-style6">
         <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
             <span class="sub-title7">Meet Our Team</span>
             <h2>Certified and experienced <br>doctors in our clinic</h2>
         </div>
 
-        <div class="swiper-container team-slider"> <!-- Swiper Container -->
-            <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                <!-- Team block -->
-                <div class="swiper-slide"> <!-- Swiper Slide -->
+        <div class="swiper-container team-slider"> Swiper Container
+            <div class="swiper-wrapper"> Swiper Wrapper
+                Team block
+                <div class="swiper-slide"> Swiper Slide
                     <div class="team-card-three">
                         <div class="team-img-three">
                             <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="">
@@ -700,7 +900,7 @@
                 </div>
 
 
-                <!-- <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="team-card-three">
                         <div class="team-img-three">
                             <img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="">
@@ -710,20 +910,20 @@
                             <span class="designation">Specialist</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <!-- Pagination and Navigation Buttons -->
+            Pagination and Navigation Buttons
 
         </div>
     </div>
 </section>
 <script>
     var swiper = new Swiper(".team-slider", {
-        slidesPerView: 3, // Show 3 slides at a time
-        spaceBetween: 20, // Adjust spacing between slides
-        loop: true, // Enables infinite scrolling
+        slidesPerView: 3,  Show 3 slides at a time
+        spaceBetween: 20,  Adjust spacing between slides
+        loop: true,  Enables infinite scrolling
         autoplay: {
-            delay: 3000, // Auto-slide every 3 seconds
+            delay: 3000,  Auto-slide every 3 seconds
             disableOnInteraction: false,
         },
 
@@ -743,8 +943,88 @@
             }
         }
     });
-</script>
+</script> -->
 <!-- End team-section-two -->
+
+
+<!-- ==========================================================
+     SECTION 05 - OUR DOCTORS
+========================================================== -->
+<section class="index_fifth_section">
+  <div class="index_fifth_clinic_scene" aria-hidden="true"></div>
+  <div class="index_fifth_note_left"><span>Healthy</span><span>Smiles</span><span>Happier Lives</span><i></i></div>
+  <div class="index_fifth_leaf"></div>
+
+  <div class="container-fluid index_fifth_container">
+    <div class="index_fifth_heading">
+      <div class="eyebrow">Meet Our Team</div>
+      <h2>Certified and experienced<br><span>doctors</span> in our clinic</h2>
+      <p>Skilled Hands <b>|</b> Caring Hearts <b>|</b> Healthier Smiles</p>
+    </div>
+
+    <div class="index_fifth_content_row">
+      <aside class="index_fifth_side_panel" aria-label="Team highlights">
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/expert-team.svg" alt="" aria-hidden="true">
+          <h4>Expert<br>Dental Team</h4>
+        </div>
+        <div class="index_fifth_side_sep"></div>
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/trusted-care.svg" class="line" alt="" aria-hidden="true">
+          <h4>Trusted<br>Care</h4>
+        </div>
+        <div class="index_fifth_side_sep"></div>
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/better-smiles.svg" alt="" aria-hidden="true">
+          <h4>Better<br>Smiles</h4>
+        </div>
+      </aside>
+
+      <div class="index_fifth_doctors">
+        <div class="index_fifth_cards">
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Dr. Malathi Chakravarthy"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. Malathi Chakravarthy</h3>
+              <div class="index_fifth_role">Surgeon</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Dr. M Ganesh"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. M Ganesh</h3>
+              <div class="index_fifth_role">Surgery co-ordinator</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="Dr. R. SriLekhya"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. R. SriLekhya</h3>
+              <div class="index_fifth_role">Specialist</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="index_fifth_dots_nav" aria-hidden="true"><span></span><span class="active"></span><span></span></div>
+      </div>
+
+      <aside class="index_fifth_right_deco" aria-hidden="true">
+        <div class="index_fifth_priority">Your Smile<br>Our Priority</div>
+        <div class="index_fifth_big_tooth">
+          <img src="assets/images/decor/doctors-section-tooth.png" alt="">
+        </div>
+        <div class="index_fifth_vertical_copy">Advanced<br>Dental Care<br>For A<br>Brighter<br>Tomorrow</div>
+      </aside>
+    </div>
+  </div>
+</section>
 
 <!--==============================
     Blog Area

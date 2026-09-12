@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna Denta Cure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+</head>
+<body>
+
+<!-- ==========================================================
+     SECTION 03 - OUR SERVICES
+========================================================== -->
+<section class="index_third_section">
+  <div class="index_third_note_left"><span>Healthy</span><span>Smiles</span><span>Happier Lives</span><i></i></div>
+  <div class="index_third_note_right"><span>Smile</span><span>Confidently</span><span>Everyday</span><i></i></div>
+  <div class="index_third_dots top"></div>
+  <div class="index_third_dots bottom"></div>
+  <div class="index_third_toothmark">
+    <img src="assets/icons/decor/tooth-outline.svg" alt="" aria-hidden="true">
+    <div><span>YOUR SMILE</span><span>OUR PRIORITY</span></div>
+  </div>
+
+  <div class="container">
+    <div class="index_third_heading">
+      <div class="index_third_eyebrow"><span class="line"></span><span class="text">COMPLETE DENTAL CARE</span><span class="line"></span></div>
+      <h2>Our <span>Services</span></h2>
+      <p>Advanced Treatments for a Healthier, Brighter Smile</p>
+    </div>
+
+    <div class="index_third_slider_viewport">
+      <div class="row g-0 index_third_cards">
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/images/services/root-canal.png" alt="Root canal illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/root-canal.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Root Canal</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Root canal treatment saves infected teeth by removing decay, cleaning roots, and sealing them to prevent further damage.</p>
+            <a href="#" class="index_third_btn"><span>Know More</span><img src="assets/icons/common/arrow-right-white.svg" alt="" aria-hidden="true"></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/images/services/wisdom-tooth-removal.png" alt="Wisdom tooth removal illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/wisdom-tooth.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Wisdom Tooth<br>Removal</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Wisdom tooth removal extracts impacted or painful teeth to prevent infection, crowding, and discomfort.</p>
+            <a href="#" class="index_third_btn"><span>Know More</span><img src="assets/icons/common/arrow-right-white.svg" alt="" aria-hidden="true"></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 mb-4 mb-md-0 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/images/services/bad-breath-treatment.png" alt="Bad breath treatment illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/bad-breath.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Bad Breath<br>Treatment</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Bad breath treatment targets bacteria and plaque buildup through proper oral hygiene, hydration, and professional cleaning.</p>
+            <a href="#" class="index_third_btn"><span>Know More</span><img src="assets/icons/common/arrow-right-white.svg" alt="" aria-hidden="true"></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 index_third_slide">
+        <article class="index_third_card">
+          <div class="index_third_card_visual"><img src="assets/images/services/gum-treatment.png" alt="Gum treatment illustration"></div>
+          <div class="index_third_card_circle_icon">
+            <img src="assets/icons/services/gum-treatment.png" alt="" aria-hidden="true">
+          </div>
+          <div class="index_third_card_body">
+            <h3>Gum Treatment</h3>
+            <div class="index_third_divider"><span></span><b></b><span></span></div>
+            <p>Gum treatment heals infections and reduces inflammation through deep cleaning, medication, and proper oral care.</p>
+            <a href="#" class="index_third_btn"><span>Know More</span><img src="assets/icons/common/arrow-right-white.svg" alt="" aria-hidden="true"></a>
+          </div>
+        </article>
+      </div>
+    </div>
+    </div>
+
+    <div class="index_third_bottom"><span></span><p>BETTER DENTAL CARE <b>•</b> BRIGHTER TOMORROWS</p><span></span></div>
+  </div>
+</section>
+
+
+
+<script>
+(function () {
+  const section = document.querySelector('.index_third_section');
+  if (!section) return;
+
+  const viewport = section.querySelector('.index_third_slider_viewport');
+  const track = section.querySelector('.index_third_cards');
+  if (!viewport || !track) return;
+
+  const originalSlides = Array.from(track.children).filter(function (slide) {
+    return !slide.hasAttribute('data-index-third-clone');
+  });
+
+  if (!originalSlides.length) return;
+
+  let currentIndex = 0;
+  let visibleCards = 4;
+  let autoTimer = null;
+  let resetTimer = null;
+  let resizeTimer = null;
+  let paused = false;
+
+  const TRANSITION_MS = 680;
+  const AUTOPLAY_MS = 2800;
+
+  function cardsPerView() {
+    const width = window.innerWidth;
+    if (width >= 1200) return 4;
+    if (width >= 992) return 3;
+    if (width >= 768) return 2;
+    return 1;
+  }
+
+  function removeClones() {
+    track.querySelectorAll('[data-index-third-clone="true"]').forEach(function (clone) {
+      clone.remove();
+    });
+  }
+
+  function addLoopClones() {
+    for (let i = 0; i < visibleCards; i++) {
+      const source = originalSlides[i % originalSlides.length];
+      const clone = source.cloneNode(true);
+      clone.setAttribute('data-index-third-clone', 'true');
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    }
+  }
+
+  function slideStepWidth() {
+    const firstSlide = track.querySelector('.index_third_slide');
+    return firstSlide ? firstSlide.getBoundingClientRect().width : 0;
+  }
+
+  function setPosition(animate) {
+    const step = slideStepWidth();
+    track.style.transition = animate
+      ? 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)'
+      : 'none';
+    track.style.transform = 'translate3d(' + (-(currentIndex * step)) + 'px,0,0)';
+  }
+
+  function startAutoplay() {
+    clearInterval(autoTimer);
+    if (paused) return;
+    autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
+  }
+
+  function nextSlide() {
+    clearTimeout(resetTimer);
+    currentIndex += 1;
+    setPosition(true);
+
+    if (currentIndex >= originalSlides.length) {
+      resetTimer = setTimeout(function () {
+        currentIndex = 0;
+        setPosition(false);
+        /* Force reflow so the next movement animates normally. */
+        void track.offsetWidth;
+        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+      }, TRANSITION_MS + 25);
+    }
+  }
+
+  function rebuildSlider() {
+    clearInterval(autoTimer);
+    clearTimeout(resetTimer);
+
+    removeClones();
+    visibleCards = cardsPerView();
+    addLoopClones();
+
+    currentIndex = 0;
+    setPosition(false);
+    void track.offsetWidth;
+    track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+
+    startAutoplay();
+  }
+
+  section.addEventListener('mouseenter', function () {
+    paused = true;
+    clearInterval(autoTimer);
+  });
+
+  section.addEventListener('mouseleave', function () {
+    paused = false;
+    startAutoplay();
+  });
+
+  section.addEventListener('focusin', function () {
+    paused = true;
+    clearInterval(autoTimer);
+  });
+
+  section.addEventListener('focusout', function () {
+    paused = false;
+    startAutoplay();
+  });
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      clearInterval(autoTimer);
+    } else if (!paused) {
+      startAutoplay();
+    }
+  });
+
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(rebuildSlider, 180);
+  });
+
+  rebuildSlider();
+})();
+</script>
+
+<!-- ==========================================================
+     SECTION 04 - WHY CHOOSE
+========================================================== -->
+<section class="index_fourth_section">
+  <div class="index_fourth_top">
+    <div class="index_fourth_plant left"></div>
+    <div class="index_fourth_plant right"></div>
+
+    <div class="container">
+      <div class="row align-items-center index_fourth_main_row">
+        <div class="col-lg-6 col-12">
+          <div class="index_fourth_content">
+            <div class="index_fourth_small">
+              <i></i>
+              <span>YOUR SMILE&nbsp;&nbsp; OUR COMMITMENT</span>
+            </div>
+
+            <h2>Why Choose<br>Krishna Denta Cure</h2>
+
+            <p class="index_fourth_desc">
+              At Krishna Denta Cure, we are committed to providing top-quality dental care
+              with a focus on patient comfort, advanced technology, and personalized
+              treatment plans. Here’s why we stand out:
+            </p>
+
+            <div class="row g-3 index_fourth_features">
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                  </div>
+                  <h4>100% Safe &amp; Trusted</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-user-doctor" aria-hidden="true"></i>
+                  </div>
+                  <h4>Specialised Doctors</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-headset" aria-hidden="true"></i>
+                  </div>
+                  <h4>24/7 Take Care<br>Staff</h4>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12">
+                <div class="index_fourth_feature">
+                  <div class="index_fourth_feature_icon">
+                    <i class="fas fa-tooth" aria-hidden="true"></i>
+                  </div>
+                  <h4>Painless Treatments</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 index_fourth_visual_col">
+          <div class="index_fourth_visual">
+            <img src="assets/img/about/krishnadentalcure_equipment_chair.png" alt="Modern dental treatment chair and equipment">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid index_fourth_cta_outer">
+    <div class="index_fourth_cta">
+      <span class="index_fourth_hex h1"></span>
+      <span class="index_fourth_hex h2"></span>
+      <span class="index_fourth_hex h3"></span>
+
+      <div class="container-fluid h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-md-3 col-12">
+            <div class="index_fourth_hospital">
+              <img src="assets/img/widget/letter1-1.png" alt="" aria-hidden="true">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div class="index_fourth_cta_text">
+              <div class="index_fourth_quality">
+                <span>Quality &amp; Excellence</span>
+                <i></i>
+              </div>
+              <h3>Expect Nothing But The Best<br>From Our Team</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-12">
+            <div class="index_fourth_cta_btn_wrap">
+              <a href="about.php" class="index_fourth_cta_btn">
+                <span>Know More</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ==========================================================
+     SECTION 05 - OUR DOCTORS
+========================================================== -->
+<section class="index_fifth_section">
+  <div class="index_fifth_clinic_scene" aria-hidden="true"></div>
+  <div class="index_fifth_note_left"><span>Healthy</span><span>Smiles</span><span>Happier Lives</span><i></i></div>
+  <div class="index_fifth_leaf"></div>
+
+  <div class="container-fluid index_fifth_container">
+    <div class="index_fifth_heading">
+      <div class="eyebrow">Meet Our Team</div>
+      <h2>Certified and experienced<br><span>doctors</span> in our clinic</h2>
+      <p>Skilled Hands <b>|</b> Caring Hearts <b>|</b> Healthier Smiles</p>
+    </div>
+
+    <div class="index_fifth_content_row">
+      <aside class="index_fifth_side_panel" aria-label="Team highlights">
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/expert-team.svg" alt="" aria-hidden="true">
+          <h4>Expert<br>Dental Team</h4>
+        </div>
+        <div class="index_fifth_side_sep"></div>
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/trusted-care.svg" class="line" alt="" aria-hidden="true">
+          <h4>Trusted<br>Care</h4>
+        </div>
+        <div class="index_fifth_side_sep"></div>
+        <div class="index_fifth_side_item">
+          <img src="assets/icons/doctors/better-smiles.svg" alt="" aria-hidden="true">
+          <h4>Better<br>Smiles</h4>
+        </div>
+      </aside>
+
+      <div class="index_fifth_doctors">
+        <div class="index_fifth_cards">
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Dr. Malathi Chakravarthy"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. Malathi Chakravarthy</h3>
+              <div class="index_fifth_role">Surgeon</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="#"><span>View Profile</span><img src="assets/icons/common/arrow-right-cyan.svg" alt="" aria-hidden="true"></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Dr. M Ganesh"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. M Ganesh</h3>
+              <div class="index_fifth_role">Surgery co-ordinator</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="#"><span>View Profile</span><img src="assets/icons/common/arrow-right-cyan.svg" alt="" aria-hidden="true"></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-R-SriLekhya_krishnadentacure__doctor.png" alt="Dr. R. SriLekhya"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. R. SriLekhya</h3>
+              <div class="index_fifth_role">Specialist</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="#"><span>View Profile</span><img src="assets/icons/common/arrow-right-cyan.svg" alt="" aria-hidden="true"></a>
+            </div>
+          </article>
+        </div>
+        <div class="index_fifth_dots_nav" aria-hidden="true"><span></span><span class="active"></span><span></span></div>
+      </div>
+
+      <aside class="index_fifth_right_deco" aria-hidden="true">
+        <div class="index_fifth_priority">Your Smile<br>Our Priority</div>
+        <div class="index_fifth_big_tooth">
+          <img src="assets/images/decor/doctors-section-tooth.png" alt="">
+        </div>
+        <div class="index_fifth_vertical_copy">Advanced<br>Dental Care<br>For A<br>Brighter<br>Tomorrow</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+(function () {
+  const section = document.querySelector('.index_fifth_section');
+  if (!section) return;
+
+  const track = section.querySelector('.index_fifth_cards');
+  const dots = Array.from(section.querySelectorAll('.index_fifth_dots_nav span'));
+
+  if (!track) return;
+
+  const originalSlides = Array.from(track.children).filter(function (slide) {
+    return !slide.hasAttribute('data-index-fifth-clone');
+  });
+
+  if (!originalSlides.length) return;
+
+  let currentIndex = 0;
+  let visibleCards = 3;
+  let autoTimer = null;
+  let resetTimer = null;
+  let resizeTimer = null;
+  let paused = false;
+
+  const TRANSITION_MS = 650;
+  const AUTOPLAY_MS = 3000;
+
+  function cardsPerView() {
+    const width = window.innerWidth;
+
+    if (width >= 1024) return 3;
+    if (width >= 768) return 2;
+
+    return 1;
+  }
+
+  function removeClones() {
+    track.querySelectorAll('[data-index-fifth-clone="true"]').forEach(function (clone) {
+      clone.remove();
+    });
+  }
+
+  function addLoopClones() {
+    for (let i = 0; i < visibleCards; i++) {
+      const source = originalSlides[i % originalSlides.length];
+      const clone = source.cloneNode(true);
+
+      clone.setAttribute('data-index-fifth-clone', 'true');
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    }
+  }
+
+  function slideStepWidth() {
+    const slides = track.querySelectorAll('.index_fifth_card');
+
+    if (slides.length > 1) {
+      return slides[1].offsetLeft - slides[0].offsetLeft;
+    }
+
+    return slides.length ? slides[0].getBoundingClientRect().width : 0;
+  }
+
+  function updateDots() {
+    if (!dots.length) return;
+
+    dots.forEach(function (dot, index) {
+      dot.classList.toggle('active', index === (currentIndex % dots.length));
+    });
+  }
+
+  function setPosition(animate) {
+    const step = slideStepWidth();
+
+    track.style.transition = animate
+      ? 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)'
+      : 'none';
+
+    track.style.transform = 'translate3d(' + (-(currentIndex * step)) + 'px,0,0)';
+    updateDots();
+  }
+
+  function startAutoplay() {
+    clearInterval(autoTimer);
+
+    if (paused) return;
+
+    autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
+  }
+
+  function nextSlide() {
+    clearTimeout(resetTimer);
+
+    currentIndex += 1;
+    setPosition(true);
+
+    if (currentIndex >= originalSlides.length) {
+      resetTimer = setTimeout(function () {
+        currentIndex = 0;
+        setPosition(false);
+        void track.offsetWidth;
+        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+      }, TRANSITION_MS + 25);
+    }
+  }
+
+  function rebuildSlider() {
+    clearInterval(autoTimer);
+    clearTimeout(resetTimer);
+
+    removeClones();
+    visibleCards = cardsPerView();
+    addLoopClones();
+
+    currentIndex = 0;
+    setPosition(false);
+    void track.offsetWidth;
+    track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+
+    startAutoplay();
+  }
+
+  section.addEventListener('mouseenter', function () {
+    paused = true;
+    clearInterval(autoTimer);
+  });
+
+  section.addEventListener('mouseleave', function () {
+    paused = false;
+    startAutoplay();
+  });
+
+  section.addEventListener('focusin', function () {
+    paused = true;
+    clearInterval(autoTimer);
+  });
+
+  section.addEventListener('focusout', function () {
+    paused = false;
+    startAutoplay();
+  });
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      clearInterval(autoTimer);
+    } else if (!paused) {
+      startAutoplay();
+    }
+  });
+
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(rebuildSlider, 180);
+  });
+
+  rebuildSlider();
+})();
+</script>
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+<footer class="footer">
+  <div class="footer_leaf_left"></div>
+  <div class="footer_leaf_right"></div>
+
+  <div class="footer_main">
+    <div class="container footer_container">
+      <div class="row g-4">
+
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12 footer_brand_col">
+          <div class="footer_logo_wrap">
+            <img src="assets/images/footer/krishna-denta-cure-logo.png" alt="Krishna Denta Cure logo">
+          </div>
+
+          <div class="footer_brand_tag">
+            Healthy Smiles
+            <span>Happier Lives</span>
+          </div>
+
+          <div class="footer_address">
+            <img src="assets/icons/footer/location.svg" class="footer_address_icon" alt="" aria-hidden="true">
+            <span>29-33-9/10, Alluri Sita Rama Raju Junction<br>Devichowk, Rajahmundry</span>
+          </div>
+
+          <div class="footer_socials">
+            <a class="footer_social" href="#" aria-label="Facebook">
+              <img src="assets/icons/footer/facebook.svg" alt="Facebook" aria-hidden="true">
+            </a>
+            <a class="footer_social" href="#" aria-label="Instagram">
+              <img src="assets/icons/footer/instagram.svg" alt="Instagram" aria-hidden="true">
+            </a>
+            <a class="footer_social" href="#" aria-label="Google">
+              <img src="assets/icons/footer/google.svg" alt="Google" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-9 col-lg-9 col-md-6 col-12 footer_links_area">
+          <div class="row g-4">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 col-12 footer_column_block">
+              <h3 class="footer_column_title">Quick <span>Links</span></h3>
+              <ul class="footer_links">
+                <li><a href="#"><i class="footer_arrow"></i>Home</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>About Us</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Our Doctors</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Services</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Blogs</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Patient Info</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Appointments</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 col-12 footer_column_block">
+              <h3 class="footer_column_title">Our <span>Services</span></h3>
+              <ul class="footer_links">
+                <li><a href="#"><i class="footer_arrow"></i>Root Canal</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Wisdom Tooth Removal</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Dental Implants</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Gum Treatments</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Teeth Cleaning</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Orthodontic Treatments</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Cosmetic Dentistry</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Pediatric Dentistry</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 footer_column_block">
+              <h3 class="footer_column_title">More <span>Services</span></h3>
+              <ul class="footer_links">
+                <li><a href="#"><i class="footer_arrow"></i>General Dentistry</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Smile Makeover</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Tooth Whitening</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Dental Aligners</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Dentures</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Preventive &amp; Pediatric Dentistry</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Full Mouth Rehabilitation</a></li>
+                <li><a href="#"><i class="footer_arrow"></i>Oral Cancer Screening</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer_right_deco">
+      <div class="footer_smile_note">Your Smile<br>Our Priority</div>
+      <img class="footer_tooth_img" src="assets/images/footer/footer-tooth.png" alt="Decorative tooth">
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="footer_bottom_inner">
+      <div class="footer_copy">
+        <span class="footer_copy_icon">C</span>
+        <span>2024 Krishna Denta Cure. All Rights Reserved.</span>
+      </div>
+      <div class="footer_bottom_links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

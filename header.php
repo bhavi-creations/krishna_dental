@@ -44,6 +44,14 @@ Best dental specialist in Rajahmundry">
     <!--==============================
 	   Google Web Fonts
 	============================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -72,6 +80,9 @@ Best dental specialist in Rajahmundry">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- New CSS Stylings -->
+    <link rel="stylesheet" href="assets/css/New_Stylings.css">
 
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -129,7 +140,7 @@ Best dental specialist in Rajahmundry">
     </script>
 
 
-    <meta name="google-site-verification" content="JDS_jictIoYQDNxW1AQ_NnVduJ72DZigoUTERTYmI_c"   />
+    <meta name="google-site-verification" content="JDS_jictIoYQDNxW1AQ_NnVduJ72DZigoUTERTYmI_c" />
 
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18194143256"></script>
@@ -146,12 +157,12 @@ Best dental specialist in Rajahmundry">
 
 <body class="">
 
-    <div class="preloader  ">
+    <!-- <div class="preloader  ">
 
         <div class="preloader-inner">
             <img src="assets/img/logo/krishnadentacure_logo.png" class="img-fluid" alt="">
         </div>
-    </div>
+    </div> -->
 
     <div class="vs-menu-wrapper">
         <div class="vs-menu-area text-center">
@@ -261,7 +272,7 @@ Best dental specialist in Rajahmundry">
                 <div class="row justify-content-center justify-content-xl-between">
                     <div class="col-lg-3">
                         <div class="login-btn-eight">
-                            <a href="#" class="register-btn"> <i class="far fa-clock"></i> Monday - Saturday 10:00 — 9:00 </li></a>
+                            <a href="#" class="register-btn"><i class="far fa-clock"></i> Monday - Saturday 10:00 — 9:00</a>
                         </div>
                     </div>
                     <div class="col-lg-9">
