@@ -187,10 +187,13 @@
         </div>
 
         <div class="col-xl-9 col-lg-9 col-md-6 col-12 footer_links_area">
-          <div class="row g-4">
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 col-12 footer_column_block">
-              <h3 class="footer_column_title">Quick <span>Links</span></h3>
-              <ul class="footer_links">
+    <div class="row g-4">
+
+        <!-- Quick Links -->
+        <div class="col-xl-4 col-lg-4 col-md-12 col-12 footer_column_block footer_quick_links">
+            <h3 class="footer_column_title">Quick <span>Links</span></h3>
+
+            <ul class="footer_links">
                 <li><a href="home.php"><i class="footer_arrow"></i>Home</a></li>
                 <li><a href="about.php"><i class="footer_arrow"></i>About Us</a></li>
                 <li><a href="doctors.php"><i class="footer_arrow"></i>Our Doctors</a></li>
@@ -199,12 +202,15 @@
                 <li><a href="services.php"><i class="footer_arrow"></i>Patient Info</a></li>
                 <li><a href="appointment.php"><i class="footer_arrow"></i>Appointments</a></li>
                 <li><a href="contact.php"><i class="footer_arrow"></i>Contact</a></li>
-              </ul>
-            </div>
+            </ul>
+        </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 col-12 footer_column_block">
-              <h3 class="footer_column_title">Our <span>Services</span></h3>
-              <ul class="footer_links">
+
+        <!-- Our Services -->
+        <div class="col-xl-4 col-lg-4 col-md-12 col-12 footer_column_block footer_our_services">
+            <h3 class="footer_column_title">Our <span>Services</span></h3>
+
+            <ul class="footer_links">
                 <li><a href="root-canal-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Root Canal</a></li>
                 <li><a href="wisdom-teeth-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Wisdom Tooth Removal</a></li>
                 <li><a href="dental-implants-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Dental Implants</a></li>
@@ -213,24 +219,36 @@
                 <li><a href="orthodontic-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Orthodontic Treatments</a></li>
                 <li><a href="dental-veneers-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Cosmetic Dentistry</a></li>
                 <li><a href="services.php"><i class="footer_arrow"></i>Pediatric Dentistry</a></li>
-              </ul>
-            </div>
+            </ul>
+        </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 footer_column_block">
-              <h3 class="footer_column_title">More <span>Services</span></h3>
-              <ul class="footer_links">
+
+        <!-- More Services -->
+        <div class="col-xl-4 col-lg-4 col-md-12 col-12 footer_column_block footer_more_services">
+            <h3 class="footer_column_title">More <span>Services</span></h3>
+
+            <ul class="footer_links">
                 <li><a href="services.php"><i class="footer_arrow"></i>General Dentistry</a></li>
                 <li><a href="smile-makeover-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Smile Makeover</a></li>
                 <li><a href="teeth-whitening-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Tooth Whitening</a></li>
                 <li><a href="invisalign-aligners-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Dental Aligners</a></li>
                 <li><a href="dental-dentures-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Dentures</a></li>
-                <li><a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Preventive &amp; Pediatric Dentistry</a></li>
-                <li><a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php"><i class="footer_arrow"></i>Full Mouth Rehabilitation</a></li>
+                <li>
+                    <a href="fluoride-application-and-dental-sealant-treatment-in-rajahmundry.php">
+                        <i class="footer_arrow"></i>Preventive &amp; Pediatric Dentistry
+                    </a>
+                </li>
+                <li>
+                    <a href="full-mouth-rehabilitation-treatment-in-rajahmundry.php">
+                        <i class="footer_arrow"></i>Full Mouth Rehabilitation
+                    </a>
+                </li>
                 <li><a href="services.php"><i class="footer_arrow"></i>Oral Cancer Screening</a></li>
-              </ul>
-            </div>
-          </div>
+            </ul>
         </div>
+
+    </div>
+</div>
 
       </div>
     </div>

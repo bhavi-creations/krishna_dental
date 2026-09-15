@@ -10045,3 +10045,57 @@ section.review_premium_section::before{
     animation-delay:1.2s;
 }
 
+
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+   ========================================= */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+
+    .footer_quick_links,
+    .footer_our_services {
+        display: none !important;
+    }
+
+    .footer_more_services {
+        display: none !important;
+    }
+
+}
+
+
+/* =========================================
+   TABLET FOOTER
+   768px - 1199px
+========================================= */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* Logo + Social Icons - LEFT */
+    .footer_logo_area {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Quick Links area - RIGHT */
+    .footer_links_area {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Only Quick Links */
+    .footer_quick_links {
+        display: none !important;
+    }
+
+    /* Hide these on tablet */
+    .footer_our_services,
+    .footer_more_services {
+        display: none !important;
+    }
+}
