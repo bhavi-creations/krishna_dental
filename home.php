@@ -105,7 +105,7 @@
 
 
 <!-- about-section-seven -->
-<section class="about-section-seven space space-md-bottom-0">
+<!-- <section class="about-section-seven space space-md-bottom-0">
     <div class="container-style7">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
@@ -131,7 +131,7 @@
                         </p>
 
                     </div>
-                    <!-- <div class="about-block-content seven">
+                    <div class="about-block-content seven">
                         <div class="about-block one">
                             <div class="icon"><img src="assets/img/about/about7-1.svg" alt=""></div>
                             <h4 class="title">Infection<br> Prevention</h4>
@@ -140,14 +140,100 @@
                             <div class="icon"><img src="assets/img/about/about7-2.svg" alt=""></div>
                             <h4 class="title">Inpatient<br> Services</h4>
                         </div>
-                    </div> -->
+                    </div>
                     <a href="about.php" class="btn-style7 v3 wow fadeInUp" data-wow-delay="500ms">Know More</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End about-section-seven -->
+
+
+
+<!-- ==========================================================
+     SECTION 02 - ABOUT / WELCOME
+     Bootstrap responsive section
+========================================================== -->
+<section class="index_second_section position-relative overflow-hidden">
+
+  <!-- decorative background elements -->
+  <span class="index_second_curve index_second_curve_top" aria-hidden="true"></span>
+  <span class="index_second_curve index_second_curve_bottom" aria-hidden="true"></span>
+  <span class="index_second_glow index_second_glow_one" aria-hidden="true"></span>
+  <span class="index_second_glow index_second_glow_two" aria-hidden="true"></span>
+  <span class="index_second_spark index_second_spark_one" aria-hidden="true"></span>
+  <span class="index_second_spark index_second_spark_two" aria-hidden="true"></span>
+  <span class="index_second_spark index_second_spark_three" aria-hidden="true"></span>
+
+  <div class="container index_second_container">
+    <div class="row align-items-center g-4 g-xl-5 index_second_row">
+
+      <!-- LEFT : SINGLE IMAGE -->
+      <div class="col-xl-6 col-lg-6 col-12">
+        <div class="index_second_visual_wrap">
+
+          <div class="index_second_visual_glow" aria-hidden="true"></div>
+
+          <div class="index_second_image_card">
+            <img
+              src="assets/img/about/krishandentalcure_staff_and_hospital.png"
+              alt="Krishna Denta Cure clinic and team"
+              class="img-fluid index_second_main_image"
+            >
+          </div>
+
+          <div class="index_second_experience_card top-animation">
+            <div class="index_second_experience_number">27+</div>
+            <div class="index_second_experience_text">Years Experience</div>
+          </div>
+
+          <div class="index_second_image_corner index_second_image_corner_one" aria-hidden="true"></div>
+          <div class="index_second_image_corner index_second_image_corner_two" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT : CONTENT -->
+      <div class="col-xl-6 col-lg-6 col-12">
+        <div class="index_second_content">
+
+          <div class="index_second_welcome_row">
+            <span class="index_second_welcome">Welcome To</span>
+            <span class="index_second_welcome_line" aria-hidden="true"></span>
+          </div>
+
+          <h2 class="index_second_title">Krishna Denta Cure</h2>
+
+          <p class="index_second_text">
+            At Krishna Denta Cure, Rajahmundry, we deliver exceptional dental care combining expertise, technology, and compassion. Led by Dr. B. Suresh Kumar (MDS, Orthodontist)—one of the best dentists in Rajahmundry—our skilled team ensures personalized and high-quality treatments for every patient. We use advanced dental technology for accurate diagnosis and painless procedures suitable for all age groups.
+          </p>
+
+          <p class="index_second_text index_second_text_second">
+            From routine check-ups to orthodontic and cosmetic care, we offer safe, effective, and long-lasting solutions. Our focus on preventive and conservative dentistry helps detect issues early and protect your natural teeth for life. Comfort, safety, and precision define every treatment at our clinic, making us a best dental clinic in Rajahmundry for trusted and ethical dental care. At Krishna Denta Cure, our patient-first approach ensures a healthy, confident, and naturally beautiful smile for every individual.
+          </p>
+
+          <a href="about.php" class="index_second_btn">
+            <span>Know More</span>
+            <span class="index_second_btn_icon" aria-hidden="true">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- decorative tooth watermark -->
+  <div class="index_second_tooth_mark" aria-hidden="true">
+    <i class="fas fa-tooth"></i>
+  </div>
+
+</section>
+
+
+
 
 <!-- <section class="specialist-section space" data-bg-src="assets/img/bg/specialist1-1.jpg">
     <div class="container-style7">
@@ -384,7 +470,7 @@
   <div class="index_third_dots top"></div>
   <div class="index_third_dots bottom"></div>
   <div class="index_third_toothmark">
-    <img src="assets/icons/decor/tooth-outline.svg" alt="" aria-hidden="true">
+    <i class="fas fa-tooth index_third_toothmark_icon" aria-hidden="true"></i>
     <div><span>YOUR SMILE</span><span>OUR PRIORITY</span></div>
   </div>
 
@@ -401,7 +487,7 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_root_canal_home.png" alt="Root canal illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/icons/services/root-canal.png" alt="" aria-hidden="true">
+            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Root Canal</h3>
@@ -415,7 +501,7 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_wisdom_toothremoval_home.png" alt="Wisdom tooth removal illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/icons/services/wisdom-tooth.png" alt="" aria-hidden="true">
+            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Wisdom Tooth<br>Removal</h3>
@@ -429,7 +515,7 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/kroshnadentacure_bad_breath_treatment_home.png" alt="Bad breath treatment illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/icons/services/bad-breath.png" alt="" aria-hidden="true">
+            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Bad Breath<br>Treatment</h3>
@@ -443,7 +529,7 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_gum_treatment.png" alt="Gum treatment illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/icons/services/gum-treatment.png" alt="" aria-hidden="true">
+            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Gum Treatment</h3>
@@ -461,7 +547,7 @@
 </section>
 
 <!-- testinial-section7 -->
-<section class="testinial-section7 space">
+<!-- <section class="testinial-section7 space">
     <div class="container-style7">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp need_center_part" data-wow-delay="400ms">
@@ -564,8 +650,225 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End testimonial section -->
+
+
+
+
+<!-- ==============================
+    Premium Reviews / Testimonial Section
+================================== -->
+<section class="testinial-section7 review_premium_section space">
+    <div class="review_premium_bg_elements">
+        <span class="review_glow review_glow_1"></span>
+        <span class="review_glow review_glow_2"></span>
+        <span class="review_glow review_glow_3"></span>
+
+        <!-- FAQ-style premium starting decoration -->
+        <div class="review_faq_start_deco" aria-hidden="true">
+            <span class="review_faq_start_dots"></span>
+            <span class="review_faq_start_curve review_faq_start_curve_1"></span>
+            <span class="review_faq_start_curve review_faq_start_curve_2"></span>
+            <span class="review_faq_start_curve review_faq_start_curve_3"></span>
+
+            <span class="review_faq_start_tooth">
+                <i class="fas fa-tooth"></i>
+                <b class="review_faq_start_shine"></b>
+            </span>
+        </div>
+
+        <!-- Existing subtle middle decorations -->
+        <span class="review_dots review_dots_right"></span>
+
+        <!-- FAQ-style premium ending decoration -->
+        <div class="review_faq_end_deco" aria-hidden="true">
+            <span class="review_faq_end_curve review_faq_end_curve_1"></span>
+            <span class="review_faq_end_curve review_faq_end_curve_2"></span>
+            <span class="review_faq_end_curve review_faq_end_curve_3"></span>
+            <span class="review_faq_end_dots"></span>
+        </div>
+    </div>
+
+    <div class="container-fluid review_premium_container">
+        <div class="row align-items-center review_premium_row">
+
+            <!-- Left Image Card -->
+            <div class="col-lg-6 col-md-12 wow fadeInUp need_center_part" data-wow-delay="400ms">
+                <div class="review_image_outer">
+                    <div class="review_image_frame">
+                        <div class="review_image_inner">
+                            <img src="assets/img/about/krishnadentacure_reviews.png" alt="Krishna Denta Cure Reviews" class="img-fluid">
+                        </div>
+
+                        <div class="review_small_badge">
+                            <div class="review_small_badge_icon">
+                                <i class="fas fa-hospital-alt"></i>
+                            </div>
+                            <div class="review_small_badge_text">
+                                <span>A HEALTHIER SMILE</span>
+                                <strong>BRIGHTER TOMORROW</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Slider -->
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="600ms">
+                <div class="review_content_box">
+                    <div class="review_priority_text">
+                        <span>YOUR SMILE</span>
+                        <span>OUR PRIORITY</span>
+                        <i></i>
+                    </div>
+
+                    <div class="title-area-three seven review_title_area">
+                        <span class="sub-title7 review_subtitle">know what our clients says</span>
+                        <h2>Here Are The <span>Reviews</span> Of Our Clients Have Shared With Us.</h2>
+                    </div>
+
+                    <div class="review_quote_mark">”</div>
+
+                    <div class="testi-slider review_premium_slider arrows-style-7">
+
+                        <!-- Slide 1 -->
+                        <div class="testi-slide review_premium_slide">
+                            <ul class="ratig-list7 review_rating_list">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+
+                            <p class="text review_text">
+                                Recently I Visited the Clinic. The Clinic was clean, and the staff was friendly.
+                                Doctor provided excellent care during my visit. I felt comfortable throughout the
+                                entire procedure. Highly recommended for anyone looking for a great dentist! Thanks
+                                Dr. Divya For the best treatment.
+                            </p>
+
+                            <div class="testi-auther review_author_box">
+                                <div class="auther-img review_author_img">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_1.png" class="test_img" alt="Jagu Sekhar">
+                                </div>
+                                <h6 class="name review_author_name">Jagu Sekhar</h6>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testi-slide review_premium_slide">
+                            <ul class="ratig-list7 review_rating_list">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+
+                            <p class="text review_text">
+                                I recently visited, and I was impressed with their state-of-the-art facilities and
+                                attentive staff. The dentist explained every step of my procedure clearly and made me
+                                feel at ease. The clinic was spotless, and the waiting time was minimal. While the
+                                pricing was on the higher side, the quality of care justified the cost. I highly
+                                recommend this hospital for anyone seeking professional dental care.
+                            </p>
+
+                            <div class="testi-auther review_author_box">
+                                <div class="auther-img review_author_img">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_2.png" class="test_img" alt="Pulidandi Saikishore">
+                                </div>
+                                <h6 class="name review_author_name">Pulidandi Saikishore</h6>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testi-slide review_premium_slide">
+                            <ul class="ratig-list7 review_rating_list">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+
+                            <p class="text review_text">
+                                I had an outstanding experience with the dental care I received here. The dentist was
+                                incredibly considerate and meticulous, paying close attention to every detail. He took
+                                the time to thoroughly explain the issues I was facing and even showed me photos,
+                                which made me feel much more informed and comfortable about my condition.
+                            </p>
+
+                            <div class="testi-auther review_author_box">
+                                <div class="auther-img review_author_img">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_3.png" class="test_img" alt="Prathyusha Vudatha">
+                                </div>
+                                <h6 class="name review_author_name">Prathyusha Vudatha</h6>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="testi-slide review_premium_slide">
+                            <ul class="ratig-list7 review_rating_list">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+
+                            <p class="text review_text">
+                                Very Good hospital and Good service. Overall experience was good, even after closing
+                                time they have provided service with utmost importance. Dr. Abhinay Sir has given
+                                painless root canal treatment and Asst Bharathi has helped me through out the Rc
+                                treatment by scheduling, following. I would highly recommend this hospital for all
+                                dental treatments.
+                            </p>
+
+                            <div class="testi-auther review_author_box">
+                                <div class="auther-img review_author_img">
+                                    <img src="assets/img/about/krishnadentacure_testmonial_review_4.png" class="test_img" alt="Sriram Murthy Mamidi">
+                                </div>
+                                <h6 class="name review_author_name">Sriram Murthy Mamidi</h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="review_custom_arrows">
+                        <button type="button" class="review_arrow review_prev" aria-label="Previous Review">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <button type="button" class="review_arrow review_next" aria-label="Next Review">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="review_bottom_text">
+            <div class="review_bottom_text_left">
+                <span>CONFIDENT SMILES</span>
+                <strong>BRIGHTER LIVES</strong>
+                <i></i>
+            </div>
+
+            <div class="review_faq_bottom_labels" aria-label="Review section highlights">
+                <span>EXPERT CARE</span>
+                <i></i>
+                <span>ADVANCED TECHNOLOGY</span>
+                <i></i>
+                <span>HEALTHIER SMILES</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==============================
+    End Premium Reviews / Testimonial Section
+================================== -->
 
 <!-- why-choose-section -->
 <!-- <section class="why-choose-section7 space-top" data-bg-src="assets/img/bg/why-choose1-1.jpg">
@@ -645,6 +948,7 @@
   <div class="index_fourth_top">
     <div class="index_fourth_plant left"></div>
     <div class="index_fourth_plant right"></div>
+    <div class="index_fourth_tooth_deco" aria-hidden="true"><i class="fas fa-tooth"></i></div>
 
     <div class="container">
       <div class="row align-items-center index_fourth_main_row">
@@ -965,17 +1269,17 @@
     <div class="index_fifth_content_row">
       <aside class="index_fifth_side_panel" aria-label="Team highlights">
         <div class="index_fifth_side_item">
-          <img src="assets/icons/doctors/expert-team.svg" alt="" aria-hidden="true">
+          <i class="fas fa-user-md index_fifth_side_icon" aria-hidden="true"></i>
           <h4>Expert<br>Dental Team</h4>
         </div>
         <div class="index_fifth_side_sep"></div>
         <div class="index_fifth_side_item">
-          <img src="assets/icons/doctors/trusted-care.svg" class="line" alt="" aria-hidden="true">
+          <i class="fas fa-shield-alt index_fifth_side_icon" aria-hidden="true"></i>
           <h4>Trusted<br>Care</h4>
         </div>
         <div class="index_fifth_side_sep"></div>
         <div class="index_fifth_side_item">
-          <img src="assets/icons/doctors/better-smiles.svg" alt="" aria-hidden="true">
+          <i class="fas fa-tooth index_fifth_side_icon" aria-hidden="true"></i>
           <h4>Better<br>Smiles</h4>
         </div>
       </aside>
@@ -983,22 +1287,23 @@
       <div class="index_fifth_doctors">
         <div class="index_fifth_cards">
           <article class="index_fifth_card">
+                        <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS_krishnadentacure__doctor.png" alt="About Image"  class="img-fluid  ">
+            <!-- <div class="index_fifth_card_img"><img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Dr. Malathi Chakravarthy"></div> -->
+            <div class="index_fifth_card_body">
+              <h3>Dr. B.Suresh Kumar</h3>
+              <div class="index_fifth_role">MDD(Ortho)</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
             <div class="index_fifth_card_img"><img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Dr. Malathi Chakravarthy"></div>
             <div class="index_fifth_card_body">
               <h3>Dr. Malathi Chakravarthy</h3>
               <div class="index_fifth_role">Surgeon</div>
               <div class="index_fifth_divider"><span></span><i></i><span></span></div>
-              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </article>
-
-          <article class="index_fifth_card">
-            <div class="index_fifth_card_img"><img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Dr. M Ganesh"></div>
-            <div class="index_fifth_card_body">
-              <h3>Dr. M Ganesh</h3>
-              <div class="index_fifth_role">Surgery co-ordinator</div>
-              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
-              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </article>
 
@@ -1008,7 +1313,17 @@
               <h3>Dr. R. SriLekhya</h3>
               <div class="index_fifth_role">Specialist</div>
               <div class="index_fifth_divider"><span></span><i></i><span></span></div>
-              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Profile</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/divya.png" alt="Team Area" class="w-100"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. Divya</h3>
+              <div class="index_fifth_role">Surgeon</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </article>
         </div>
@@ -1018,7 +1333,7 @@
       <aside class="index_fifth_right_deco" aria-hidden="true">
         <div class="index_fifth_priority">Your Smile<br>Our Priority</div>
         <div class="index_fifth_big_tooth">
-          <img src="assets/images/decor/doctors-section-tooth.png" alt="">
+          <i class="fas fa-tooth index_fifth_big_tooth_icon" aria-hidden="true"></i>
         </div>
         <div class="index_fifth_vertical_copy">Advanced<br>Dental Care<br>For A<br>Brighter<br>Tomorrow</div>
       </aside>
@@ -1128,14 +1443,14 @@
 
 
 
-<section class="py-5">
+<!-- <section class="py-5">
     <div class="container">
 
         <h3 class="text-center">Frequently Ask Question (FAQ)</h3>
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="accordion">
-                    <!-- Accordion 1 -->
+                    Accordion 1
 
                     <div class="faq_section">
 
@@ -1173,7 +1488,7 @@
 
 
 
-                    <!-- Accordion 3 -->
+                    Accordion 3
                     <div class="faq_section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
                             <h2 class="faq_heading_section">How long does clear aligner treatment take?
@@ -1188,7 +1503,7 @@
                         </div>
                     </div>
 
-                    <!-- Accordion 4 -->
+                    Accordion 4
 
 
 
@@ -1206,8 +1521,8 @@
                                 Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment. With expert care and high patient satisfaction, we are widely recognized as one of the best dental hospitals in Rajahmundry for endodontic procedures
                         </div>
                     </div>
-                    <!-- Accordion 5 -->
-                    <!-- <div class="faq_section">
+                    Accordion 5
+                    <div class="faq_section">
               <div class="accordion-header" onclick="toggleAccordion(this)">
                 <h2 class="faq_heading_section">Can cancer be prevented?
                 </h2>
@@ -1218,7 +1533,7 @@
                   Not all cancers are preventable, but up to 30-50% of cases can be avoided through healthy lifestyle choices, regular screenings, vaccinations (like HPV), and avoiding carcinogens such as tobacco and processed foods
                 </p>
               </div> 
-            </div>-->
+            </div>
 
                 </div>
 
@@ -1227,9 +1542,9 @@
 
 
                 <div class="accordion">
-                    <!-- Accordion 1 -->
+                    Accordion 1
 
-                    <!-- Accordion 2 -->
+                    Accordion 2
 
 
 
@@ -1246,7 +1561,7 @@
                                 Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction
                         </div>
                     </div>
-                    <!-- Accordion 2 -->
+                    Accordion 2
 
 
 
@@ -1267,7 +1582,7 @@
 
 
 
-                    <!-- Accordion 3 -->
+                    Accordion 3
                     <div class="faq_section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
                             <h2 class="faq_heading_section">Why choose Krishna Denta Cure for dental care in Rajahmundry?
@@ -1281,7 +1596,7 @@
                                 We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city
                         </div>
                     </div>
-                    <!-- Accordion 4 -->
+                    Accordion 4
                     <div class="faq_section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
                             <h2 class="faq_heading_section">Are clear aligners painful?
@@ -1296,8 +1611,8 @@
                                 Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned </p>
                         </div>
                     </div>
-                    <!-- Accordion 5 -->
-                    <!-- <div class="faq_section">
+                    Accordion 5
+                    <div class="faq_section">
               <div class="accordion-header" onclick="toggleAccordion(this)">
                 <h2 class="faq_heading_section"> Can cancer be cured if detected early?
                 </h2>
@@ -1308,11 +1623,206 @@
                   Yes, many types of cancer can be effectively treated or even cured if detected at an early stage. Regular screenings, awareness of symptoms, and early intervention improve survival rates significantly
                 </p>
               </div>
-            </div> -->
+            </div>
 
                 </div>
             </div>
         </div>
+    </div>
+</section> -->
+
+
+
+<!-- ==========================================================
+     SECTION 06 - FAQ
+========================================================== -->
+<section class="index_sixth_section">
+    <!-- Decorative background -->
+    <div class="index_sixth_curve index_sixth_curve_top" aria-hidden="true"></div>
+    <div class="index_sixth_curve index_sixth_curve_bottom" aria-hidden="true"></div>
+
+    <div class="index_sixth_dots index_sixth_dots_top" aria-hidden="true"></div>
+    <div class="index_sixth_dots index_sixth_dots_bottom" aria-hidden="true"></div>
+
+    <div class="index_sixth_tooth_deco" aria-hidden="true">
+        <i class="fas fa-tooth"></i>
+        <span class="index_sixth_tooth_shine"></span>
+    </div>
+
+    <div class="index_sixth_script_note" aria-hidden="true">
+        <span>Healthy</span>
+        <span>Smiles</span>
+        <span>Happier Lives</span>
+        <i></i>
+    </div>
+
+    <span class="index_sixth_orb orb_one" aria-hidden="true"></span>
+    <span class="index_sixth_orb orb_two" aria-hidden="true"></span>
+    <span class="index_sixth_orb orb_three" aria-hidden="true"></span>
+
+    <span class="index_sixth_spark spark_one" aria-hidden="true"></span>
+    <span class="index_sixth_spark spark_two" aria-hidden="true"></span>
+    <span class="index_sixth_spark spark_three" aria-hidden="true"></span>
+
+    <div class="container index_sixth_container">
+
+        <div class="index_sixth_heading text-center">
+            <div class="index_sixth_eyebrow">
+                <span></span>
+                <p>YOUR SMILE&nbsp;&nbsp; OUR PRIORITY</p>
+                <span></span>
+            </div>
+
+            <h2>Frequently Ask Question <b>(FAQ)</b></h2>
+            <p class="index_sixth_subtitle">Clear Answers for a Healthier, Brighter Smile</p>
+        </div>
+
+        <div class="row g-xl-5 g-lg-4 g-3 index_sixth_faq_row">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-lg-6 col-12">
+                <div class="index_sixth_faq_column">
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">What are clear aligners and how<br class="d-none d-md-block"> do they work?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Clear aligners are transparent, custom-made trays designed to straighten your teeth gradually. They are a comfortable and discreet alternative to traditional braces.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Are clear aligners better than<br class="d-none d-md-block"> metal braces?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Yes. Clear aligners are removable, nearly invisible, and cause less discomfort. They’re especially preferred by adults and teens looking for a more aesthetic option.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">How long does clear aligner<br class="d-none d-md-block"> treatment take?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Treatment usually takes 6 to 18 months, depending on the severity of misalignment. Regular check-ups at Krishna Denta Cure help ensure effective and timely results.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Is root canal treatment available at<br class="d-none d-md-block"> Krishna Denta Cure, Rajahmundry?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Yes, Krishna Denta Cure offers advanced, painless root canal treatments using modern techniques and equipment.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-6 col-12">
+                <div class="index_sixth_faq_column">
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Do you offer clear aligner treatment<br class="d-none d-md-block"> in Rajahmundry?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Yes, Krishna Denta Cure provides advanced clear aligner treatments in Rajahmundry with 3D scans and personalized plans for precision smile correction.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Who is the best dentist in Rajahmundry<br class="d-none d-md-block"> for clear aligners?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Dr. B. Suresh Kumar, with over 25 years of experience, is a trusted name in Rajahmundry for orthodontics and cosmetic dental treatments, including clear aligners.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Why choose Krishna Denta Cure for<br class="d-none d-md-block"> dental care in Rajahmundry?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                We offer expert care, modern technology, and a wide range of treatments under one roof. Our focus on comfort and hygiene makes us one of the most preferred clinics in the city.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="index_sixth_faq_item">
+                        <button class="index_sixth_faq_button accordion-header"
+                                type="button"
+                                onclick="toggleAccordion(this)"
+                                aria-expanded="false">
+                            <span class="index_sixth_question">Are clear aligners painful?</span>
+                            <span class="index_sixth_icon_wrap accordion-icon">+</span>
+                        </button>
+                        <div class="index_sixth_answer_wrap accordion-content">
+                            <div class="index_sixth_answer">
+                                Aligners are generally not painful. You might feel mild pressure when switching to a new set, which indicates your teeth are moving as planned.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="index_sixth_bottom_labels">
+            <span>EXPERT CARE</span>
+            <i></i>
+            <span>ADVANCED TECHNOLOGY</span>
+            <i></i>
+            <span>HEALTHIER SMILES</span>
+        </div>
+
     </div>
 </section>
 
@@ -1321,7 +1831,8 @@
 
 
 
-<script>
+
+<!-- <script>
     function toggleAccordion(header) {
         const content = header.nextElementSibling;
         const icon = header.querySelector(".accordion-icon");
@@ -1331,6 +1842,24 @@
 
         icon.textContent = content.classList.contains("open") ? "−" : "+";
     }
+</script> -->
+
+<script>
+function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector(".accordion-icon");
+
+    if (!content || !icon) return;
+
+    const isOpen = content.classList.contains("open");
+
+    content.classList.toggle("open");
+    icon.classList.toggle("rotate");
+    header.classList.toggle("active");
+    header.setAttribute("aria-expanded", String(!isOpen));
+
+    icon.textContent = content.classList.contains("open") ? "−" : "+";
+}
 </script>
 
 

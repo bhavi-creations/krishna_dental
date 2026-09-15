@@ -19,7 +19,7 @@
 <!--==============================
     About Area
     ==============================-->
-<section class="vs-about-wrapper space">
+<!-- <section class="vs-about-wrapper space">
     <div class="container">
         <div class="row flex-row-reverse">
             <div class="col-lg-6 mb-40 mb-lg-0">
@@ -27,12 +27,12 @@
                     <div class="about-img3 position-relative">
                         <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_image_building_hospital.png" alt="About Image" class="w-100">
 
-                        <!-- <div class="exp-box-bottom bg-white">
+                        <div class="exp-box-bottom bg-white">
                             <div class="exp-year text-theme">
                                 <span class="counter">30</span>+
                             </div>
                             <p class="exp-text text-title mb-0">Years of Experience</p>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,133 @@
                 </div>
             </div>
         </div>
+</section> -->
+
+<!-- ==========================================================
+     ABOUT SECOND SECTION
+========================================================== -->
+<section class="about_second_section">
+    <!-- Decorative background layers -->
+    <span class="about_second_curve about_second_curve_top" aria-hidden="true"></span>
+    <span class="about_second_curve about_second_curve_bottom" aria-hidden="true"></span>
+    <span class="about_second_curve about_second_curve_bottom_inner" aria-hidden="true"></span>
+
+    <span class="about_second_dot_grid about_second_dot_grid_left" aria-hidden="true"></span>
+    <span class="about_second_dot_grid about_second_dot_grid_right" aria-hidden="true"></span>
+
+    <span class="about_second_glow about_second_glow_one" aria-hidden="true"></span>
+    <span class="about_second_glow about_second_glow_two" aria-hidden="true"></span>
+
+    <div class="about_second_tooth_watermark" aria-hidden="true">
+        <i class="fas fa-tooth"></i>
+        <span></span>
+    </div>
+
+    <div class="about_second_script_note" aria-hidden="true">
+        <span>Healthy</span>
+        <span>Smiles</span>
+        <span>Brighter</span>
+        <span>Lives</span>
+        <i></i>
+    </div>
+
+    <div class="container-fluid about_second_container">
+        <div class="row align-items-center about_second_main_row">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-xl-6 col-lg-6 col-12">
+                <div class="about_second_left">
+
+                    <div class="about_second_feature_rail">
+                        <div class="about_second_feature_item">
+                            <div class="about_second_feature_icon">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            </div>
+                            <h4>Trusted<br>Care</h4>
+                        </div>
+
+                        <div class="about_second_feature_item">
+                            <div class="about_second_feature_icon about_second_feature_icon_users">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h4>Experienced<br>Team</h4>
+                        </div>
+
+                        <div class="about_second_feature_item">
+                            <div class="about_second_feature_icon about_second_feature_icon_tooth">
+                                <i class="fas fa-tooth" aria-hidden="true"></i>
+                            </div>
+                            <h4>Advanced<br>Technology</h4>
+                        </div>
+                    </div>
+
+                    <div class="about_second_content">
+                        <div class="about_second_kicker">
+                            <span>About</span>
+                            <i></i>
+                        </div>
+
+                        <h2>Krishna <span>Denta Cure</span></h2>
+
+                        <p>
+                            At Krishna Denta Cure, Rajahmundry, we deliver exceptional
+                            dental care combining expertise, technology, and compassion.
+                            Led by Dr. B. Suresh Kumar (MDS, Orthodontist), our skilled
+                            team ensures personalized and high-quality treatments. We use
+                            advanced dental technology for accurate diagnosis and painless
+                            procedures for all age groups.
+                        </p>
+
+                        <p>
+                            From routine check-ups to orthodontic and cosmetic care, we offer
+                            safe, effective, and long-lasting solutions. Our focus on preventive
+                            and conservative dentistry helps detect and treat issues early.
+                            Comfort, safety, and precision define every treatment at our clinic,
+                            making us a trusted choice in Rajahmundry.
+                        </p>
+
+                        <a href="tel:+919246658770" class="about_second_call_card" aria-label="Call Krishna Denta Cure">
+                            <span class="about_second_call_icon">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            </span>
+
+                            <span class="about_second_call_text">
+                                <small>CALL US</small>
+                                <strong>+91 92466 58770</strong>
+                            </span>
+
+                            <span class="about_second_call_arrow">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-xl-6 col-lg-6 col-12">
+                <div class="about_second_visual_wrap">
+                    <div class="about_second_visual_glow" aria-hidden="true"></div>
+
+                    <div class="about_second_image_card">
+                                                <img src="assets/img/about/kroshnadentacure_bad_breath_treatment_image_building_hospital.png" alt="About Image" class="w-100">
+
+                    </div>
+
+                    <span class="about_second_image_shine about_second_image_shine_one" aria-hidden="true"></span>
+                    <span class="about_second_image_shine about_second_image_shine_two" aria-hidden="true"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about_second_bottom_copy">
+            <i></i>
+            <span>ADVANCED CARE<br>FOR HEALTHIER SMILES</span>
+        </div>
+    </div>
 </section>
+
 
 
 <div class="pb-30 pb-lg-0">

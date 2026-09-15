@@ -1,6 +1,4 @@
- <!--==============================
-			Footer Area
-	==============================-->
+<!-- Footer Area -->
 
  <div class="image-container">
      <img src="assets/img/special/cutie_cleaning.png" class="cleaning_teeth img-fluid" alt="">
@@ -150,21 +148,42 @@
           </div>
 
           <div class="footer_address">
-            <img src="assets/icons/footer/location.svg" class="footer_address_icon" alt="" aria-hidden="true">
-            <span>29-33-9/10, Alluri Sita Rama Raju Junction<br>Devichowk, Rajahmundry</span>
-          </div>
+    <i class="far fa-map-marker-alt footer_address_icon" aria-hidden="true"></i>
 
-          <div class="footer_socials">
-            <a class="footer_social" href="https://www.facebook.com/krishnadentacure/" target="_blank" rel="noopener" aria-label="Facebook">
-              <img src="assets/icons/footer/facebook.svg" alt="Facebook" aria-hidden="true">
-            </a>
-            <a class="footer_social" href="https://www.instagram.com/krishnadentacure/" target="_blank" rel="noopener" aria-label="Instagram">
-              <img src="assets/icons/footer/instagram.svg" alt="Instagram" aria-hidden="true">
-            </a>
-            <a class="footer_social" href="https://g.co/kgs/GfmdtLu" target="_blank" rel="noopener" aria-label="Google">
-              <img src="assets/icons/footer/google.svg" alt="Google" aria-hidden="true">
-            </a>
-          </div>
+    <span>
+        29-33-9/10, Alluri Sita Rama Raju Junction<br>
+        Devichowk, Rajahmundry
+    </span>
+</div>
+
+<div class="footer_socials">
+
+    <a class="footer_social"
+       href="https://www.facebook.com/krishnadentacure/"
+       target="_blank"
+       rel="noopener"
+       aria-label="Facebook">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+
+    <a class="footer_social"
+       href="https://www.instagram.com/krishnadentacure/"
+       target="_blank"
+       rel="noopener"
+       aria-label="Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+
+    <a class="footer_social"
+       href="https://g.co/kgs/GfmdtLu"
+       target="_blank"
+       rel="noopener"
+       aria-label="Google">
+        <i class="fab fa-google" aria-hidden="true"></i>
+    </a>
+
+</div>
+
         </div>
 
         <div class="col-xl-9 col-lg-9 col-md-6 col-12 footer_links_area">
@@ -218,7 +237,8 @@
 
     <div class="footer_right_deco">
       <div class="footer_smile_note">Your Smile<br>Our Priority</div>
-      <img class="footer_tooth_img" src="assets/images/footer/footer-tooth.png" alt="Decorative tooth">
+      <!-- <img class="footer_tooth_img" src="assets/images/footer/footer-tooth.png" alt="Decorative tooth"> -->
+       <i class="fas fa-tooth footer_tooth_img" aria-hidden="true"></i>
     </div>
   </div>
 
@@ -600,7 +620,71 @@
 })();
 </script>
 
+<script>
+(function ($) {
+    'use strict';
 
+    function setupReviewPremiumSlider() {
+        var $slider = $('.review_premium_slider');
+        var $prev = $('.review_prev');
+        var $next = $('.review_next');
+
+        if (!$slider.length) {
+            return;
+        }
+
+        /*
+         * main.js already initializes the existing .testi-slider.
+         * The new reviews slider keeps that original class, so do not
+         * initialize Slick twice. This is only a fallback.
+         */
+        if (!$slider.hasClass('slick-initialized')) {
+            $slider.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                speed: 700,
+                adaptiveHeight: false,
+                autoplay: false,
+                fade: false,
+                cssEase: 'ease'
+            });
+        }
+
+        $prev
+            .off('click.reviewPremium')
+            .on('click.reviewPremium', function (event) {
+                event.preventDefault();
+
+                if ($slider.hasClass('slick-initialized')) {
+                    $slider.slick('slickPrev');
+                }
+            });
+
+        $next
+            .off('click.reviewPremium')
+            .on('click.reviewPremium', function (event) {
+                event.preventDefault();
+
+                if ($slider.hasClass('slick-initialized')) {
+                    $slider.slick('slickNext');
+                }
+            });
+    }
+
+    /*
+     * This block is intentionally placed after main.js in footer.php.
+     * main.js gets the first chance to initialize .testi-slider,
+     * then these premium buttons are connected to that slider.
+     */
+    $(document).ready(function () {
+        window.setTimeout(setupReviewPremiumSlider, 50);
+    });
+
+})(jQuery);
+</script>
  
 
  </body>

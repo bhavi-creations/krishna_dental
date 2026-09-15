@@ -89,6 +89,18 @@
                         <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
+                                    <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
+                                </div>
+                                <div class="team-body">
+                                    <h3 class="h4 mb-0"><a class="text-reset"> Dr. B.Suresh Kumar</a></h3>
+                                    <p class="fs-xs degi text-theme mb-2">MDD(Ortho)</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-head">
                                     <img src="assets/img/about/Dr-B-Ratna-Vineela_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
                                 </div>
                                 <div class="team-body">
@@ -97,8 +109,8 @@
                                 </div>
                             </div>
                            
-                        </div>
-                        <div class="swiper-slide">
+                        </div> -->
+                        <!-- <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
                                     <img src="assets/img/about/Dr-B-Sai-Sruthi_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
@@ -108,8 +120,8 @@
                                     <p class="fs-xs degi text-theme mb-2">ortho co-ordinator</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </div> -->
+                        <!-- <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
                                     <img src="assets/img/about/Dr-G-Niharika_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
@@ -119,7 +131,7 @@
                                     <p class="fs-xs degi text-theme mb-2">Pediatrician</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                                     <!-- <div class="swiper-slide">
                                 <div class="team-card">
                                     <div class="team-head">
@@ -143,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
                                     <img src="assets/img/about/Dr-Jyothsna-Kalepu_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
@@ -153,8 +165,8 @@
                                     <p class="fs-xs degi text-theme mb-2">patient hygiene & diet co-ordinator</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </div> -->
+                        <!-- <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
                                     <img src="assets/img/about/Dr-M-Ganesh_krishnadentacure__doctor.png" alt="Team Area" class="w-100">
@@ -164,7 +176,7 @@
                                     <p class="fs-xs degi text-theme mb-2">Surgery co-ordinator</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="swiper-slide">
                             <div class="team-card">
                                 <div class="team-head">
@@ -172,7 +184,7 @@
                                 </div>
                                 <div class="team-body">
                                     <h3 class="h4 mb-0"><a class="text-reset">Dr. R. SriLekhya</a></h3>
-                                    <p class="fs-xs degi text-theme mb-2">Surgeon</p>
+                                    <p class="fs-xs degi text-theme mb-2">Specialist</p>
                                 </div>
                             </div>
                         </div>

@@ -21562,6 +21562,7 @@ body {
 
 .cleaning_teeth {
   width: 20%;
+  z-index: 4;
 }
 
 
