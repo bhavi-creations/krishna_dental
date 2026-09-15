@@ -676,6 +676,18 @@
                 <i class="fas fa-tooth"></i>
                 <b class="review_faq_start_shine"></b>
             </span>
+
+            <!-- NEW: Top-left decorative tooth -->
+    <span class="review_top_corner_tooth review_top_corner_tooth_left">
+        <i class="fas fa-tooth"></i>
+        <b class="review_top_corner_tooth_shine"></b>
+    </span>
+
+    <!-- NEW: Top-right decorative tooth -->
+    <span class="review_top_corner_tooth review_top_corner_tooth_right">
+        <i class="fas fa-tooth"></i>
+        <b class="review_top_corner_tooth_shine"></b>
+    </span>
         </div>
 
         <!-- Existing subtle middle decorations -->
@@ -692,9 +704,11 @@
 
     <div class="container-fluid review_premium_container">
         <div class="row align-items-center review_premium_row">
+            
 
             <!-- Left Image Card -->
             <div class="col-lg-6 col-md-12 wow fadeInUp need_center_part" data-wow-delay="400ms">
+                
                 <div class="review_image_outer">
                     <div class="review_image_frame">
                         <div class="review_image_inner">
@@ -863,6 +877,12 @@
                 <i></i>
                 <span>HEALTHIER SMILES</span>
             </div>
+
+            <!-- Reference-style decorative tooth -->
+            <span class="review_faq_end_tooth" aria-hidden="true">
+                <i class="fas fa-tooth"></i>
+                <b class="review_faq_end_tooth_shine"></b>
+            </span>
         </div>
     </div>
 </section>
