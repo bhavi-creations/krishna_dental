@@ -204,9 +204,11 @@
         <div class="row serice_space_div service_premium_step service_premium_step_2 align-items-center">
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step2.png"
+                    <!-- <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step2.png"
                          alt="Service Image"
-                         class="my-2 img-fluid service_border_radius_images">
+                         class="my-2 img-fluid service_border_radius_images"> -->
+                    <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
                 </div>
             </div>
 
@@ -218,7 +220,7 @@
                         <div class="service_premium_step_label">Step 2:</div>
                         <h3>Tooth Extraction</h3>
                         <p>
-                            
+                          The wisdom tooth is gently extracted using advanced techniques. In some cases, minor incisions may be needed for safe removal.
                         </p>
                     </div>
                 </div>
@@ -233,9 +235,9 @@
 
                     <div class="service_premium_step_copy">
                         <div class="service_premium_step_label">Step 3:</div>
-                        <h3>Filling and Sealing</h3>
+                        <h3>Healing and Aftercare</h3>
                         <p>
-                            The cleaned canals are filled with biocompatible material and sealed to prevent reinfection. A dental crown may be placed for added protection and durability.
+                          The area is cleaned, and stitches are placed if required. We provide aftercare instructions to ensure a quick and smooth recovery.
                         </p>
                     </div>
                 </div>
@@ -243,9 +245,10 @@
 
             <div class="col-12 col-md-4 service_text_padding_img">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step3.png"
+                    <!-- <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step3.png"
                          alt="Service Image"
-                         class="my-2 img-fluid service_border_radius_images">
+                         class="my-2 img-fluid service_border_radius_images"> -->
+                <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
                 </div>
             </div>
         </div>
