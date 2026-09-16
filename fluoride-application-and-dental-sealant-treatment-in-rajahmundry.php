@@ -185,7 +185,7 @@
 
 
 
-<section class="vs-team-wrapper space-md-bottom" style="background:#0066a3>
+<section class="vs-team-wrapper space-md-bottom" style="background:#0066a3">
     <div class="container">
 
         <!-- Swiper Container -->
