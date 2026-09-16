@@ -204,7 +204,7 @@
 <div class="pb-30 pb-lg-0">
     <div class="parallax" data-parallax-image="assets/img/bg/bg-8.jpg"></div>
 
-    <section class="vs-skill-wrapper  ">
+    <!-- <section class="vs-skill-wrapper  ">
         <div class="container">
             <div class="skill-wrap1 bg-white">
                 <div class="row justify-content-center justify-content-lg-between">
@@ -238,9 +238,152 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="vs-accordion-wrapper space-top space-md-bottom" >
+
+    <!-- ==========================================================
+     ABOUT THIRD SECTION - PREMIUM STATS
+========================================================== -->
+<section class="vs-skill-wrapper about_third_section">
+
+    <!-- Decorative background -->
+    <span class="about_third_curve about_third_curve_top_1" aria-hidden="true"></span>
+    <span class="about_third_curve about_third_curve_top_2" aria-hidden="true"></span>
+
+    <span class="about_third_curve about_third_curve_bottom_1" aria-hidden="true"></span>
+    <span class="about_third_curve about_third_curve_bottom_2" aria-hidden="true"></span>
+
+    <span class="about_third_dots about_third_dots_left" aria-hidden="true"></span>
+    <span class="about_third_dots about_third_dots_right" aria-hidden="true"></span>
+
+    <span class="about_third_shine about_third_shine_1" aria-hidden="true"></span>
+    <span class="about_third_shine about_third_shine_2" aria-hidden="true"></span>
+    <span class="about_third_shine about_third_shine_3" aria-hidden="true"></span>
+
+
+    <!-- Right decorative text -->
+    <div class="about_third_priority" aria-hidden="true">
+        <span>Your Smile</span>
+        <span>Our Priority</span>
+        <i></i>
+    </div>
+
+
+    <div class="container about_third_container">
+
+        <div class="skill-wrap1 about_third_stats_box">
+
+            <div class="row justify-content-center align-items-center g-0">
+
+                <!-- ==================================================
+                     01 - YEARS EXPERIENCE
+                =================================================== -->
+                <div class="col-12 col-md-4 about_third_stat_col">
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start skill-box about_third_stat">
+
+                        <span class="ripple-icon hover-style2 about_third_icon">
+
+                            <i class="flaticon-discuss"></i>
+
+                        </span>
+
+                        <div class="media-body about_third_stat_content">
+
+                            <h2 class="mt-n2 mb-0 text-theme">
+                                27+
+                            </h2>
+
+                            <p class="text-title fs-md fw-medium mb-0">
+                                Years Of Experience
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about_third_separator d-none d-md-block"
+                     aria-hidden="true"></div>
+
+
+                <!-- ==================================================
+                     02 - DOCTORS
+                =================================================== -->
+                <div class="col-12 col-md-4 about_third_stat_col">
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start skill-box about_third_stat">
+
+                        <span class="ripple-icon hover-style2 about_third_icon">
+
+                            <i class="flaticon-medical-equipment"></i>
+
+                        </span>
+
+                        <div class="media-body about_third_stat_content">
+
+                            <h2 class="mt-n2 mb-0 text-theme">
+                                7+
+                            </h2>
+
+                            <p class="text-title fs-md fw-medium mb-0">
+                                Experienced Doctor's
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about_third_separator d-none d-md-block"
+                     aria-hidden="true"></div>
+
+
+                <!-- ==================================================
+                     03 - HAPPY PATIENTS
+                =================================================== -->
+                <div class="col-12 col-md-4 about_third_stat_col">
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start skill-box about_third_stat">
+
+                        <span class="ripple-icon hover-style2 about_third_icon">
+
+                            <i class="flaticon-healthcare"></i>
+
+                        </span>
+
+                        <div class="media-body about_third_stat_content">
+
+                            <h2 class="mt-n2 mb-0 text-theme">
+                                40k+
+                            </h2>
+
+                            <p class="text-title fs-md fw-medium mb-0">
+                                Happy Patients
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     END ABOUT THIRD SECTION
+========================================================== -->
+
+    <!-- <section class="vs-accordion-wrapper space-top space-md-bottom" >
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 mb-30 mb-xl-0">
@@ -296,7 +439,166 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </div>
+
+
+
+<!-- ==========================================================
+     ABOUT FOURTH SECTION - PREMIUM WHY CHOOSE US
+     Old .vs-accordion-wrapper section can remain commented above this.
+========================================================== -->
+<section class="vs-accordion-wrapper space-top space-md-bottom about_fourth_section">
+
+    <!-- Decorative premium background -->
+    <span class="about_fourth_curve about_fourth_curve_top_1" aria-hidden="true"></span>
+    <span class="about_fourth_curve about_fourth_curve_top_2" aria-hidden="true"></span>
+    <span class="about_fourth_curve about_fourth_curve_bottom_1" aria-hidden="true"></span>
+    <span class="about_fourth_curve about_fourth_curve_bottom_2" aria-hidden="true"></span>
+
+    <span class="about_fourth_dots about_fourth_dots_left" aria-hidden="true"></span>
+    <span class="about_fourth_dots about_fourth_dots_right" aria-hidden="true"></span>
+
+    <span class="about_fourth_shine about_fourth_shine_1" aria-hidden="true"></span>
+    <span class="about_fourth_shine about_fourth_shine_2" aria-hidden="true"></span>
+    <span class="about_fourth_shine about_fourth_shine_3" aria-hidden="true"></span>
+    <span class="about_fourth_shine about_fourth_shine_4" aria-hidden="true"></span>
+
+    <div class="about_fourth_priority" aria-hidden="true">
+        <span>Your Smile</span>
+        <span>Our Priority</span>
+        <i></i>
+    </div>
+
+    <div class="about_fourth_note_left" aria-hidden="true">
+        <span>Healthy Smiles</span>
+        <span>Happier Lives</span>
+        <i></i>
+    </div>
+
+    <div class="container about_fourth_container">
+        <div class="row align-items-center g-4 g-xl-5">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-xl-5 col-lg-6 col-12 mb-30 mb-xl-0">
+                <div class="about-content about_fourth_content">
+
+                    <span class="h3 text-theme sec-subtitle mb-2 mb-md-0 about_fourth_subtitle">
+                        7 Star Care &amp; Protection
+                    </span>
+
+                    <h2 class="h1 about_fourth_title">
+                        Why <span>Choose Us?</span>
+                    </h2>
+
+                    <div class="about_fourth_title_line" aria-hidden="true"></div>
+
+                    <p class="pe-xl-2 text-title about_fourth_intro">
+                        At Krishna Denta Cure, we are dedicated to delivering premium-quality dental care focused on patient comfort, advanced technology, and personalized treatment plans. Here’s what makes us different:
+                    </p>
+
+                    <div class="row pt-3 about_fourth_features g-3">
+
+                        <div class="col-sm-6 col-12">
+                            <div class="d-flex align-items-center mb-25 about_fourth_feature_card">
+                                <span class="text-theme mr-20 about_fourth_feature_icon">
+                                    <i class="fas fa-shield-alt fa-2x lh-1" aria-hidden="true"></i>
+                                </span>
+                                <div class="media-body">
+                                    <h3 class="h5 mb-2 pb-1">100% Safe &amp;<br>Trusted</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12">
+                            <div class="d-flex align-items-center mb-25 about_fourth_feature_card">
+                                <span class="text-theme mr-20 about_fourth_feature_icon">
+                                    <i class="fas fa-stethoscope fa-2x lh-1" aria-hidden="true"></i>
+                                </span>
+                                <div class="media-body">
+                                    <h3 class="h5 mb-2 pb-1">Specialised<br>Doctors</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12">
+                            <div class="d-flex align-items-center mb-25 about_fourth_feature_card">
+                                <span class="text-theme mr-20 about_fourth_feature_icon">
+                                    <i class="fas fa-headset fa-2x lh-1" aria-hidden="true"></i>
+                                </span>
+                                <div class="media-body">
+                                    <h3 class="h5 mb-2 pb-1">24/7 Take<br>Care Staff</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12">
+                            <div class="d-flex align-items-center mb-25 about_fourth_feature_card">
+                                <span class="text-theme mr-20 about_fourth_feature_icon">
+                                    <i class="fas fa-tooth fa-2x lh-1" aria-hidden="true"></i>
+                                </span>
+                                <div class="media-body">
+                                    <h3 class="h5 mb-2 pb-1">Painless<br>Treatments</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-xl-7 col-lg-6 col-12">
+                <div class="vs-accordion accordion accordion-style2 about_fourth_visual" id="vsaccordion">
+
+                    <div class="about_fourth_image_frame">
+                        <img src="assets/img/about/krishnadentacure-team.png" class="img-fluid about_fourth_team_image" alt="Krishna Denta Cure Team">
+
+                        <div class="about_fourth_image_caption">
+                            <span>A TEAM DEDICATED TO</span>
+                            <strong>Your Healthier, <em>Brighter Smile</em></strong>
+                            <i></i>
+                        </div>
+                    </div>
+
+                    <div class="about_fourth_round_note" aria-hidden="true">
+                        <span>Caring</span>
+                        <span>Smiles</span>
+                        <span>Everyday</span>
+                        <b>♡</b>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom premium strip -->
+        <div class="about_fourth_bottom_strip" aria-label="Dental care highlights">
+            <div class="about_fourth_bottom_item">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <span>EXPERT CARE</span>
+            </div>
+
+            <b class="about_fourth_bottom_sep" aria-hidden="true"></b>
+
+            <div class="about_fourth_bottom_item">
+                <i class="fas fa-tooth" aria-hidden="true"></i>
+                <span>ADVANCED TECHNOLOGY</span>
+            </div>
+
+            <b class="about_fourth_bottom_sep" aria-hidden="true"></b>
+
+            <div class="about_fourth_bottom_item">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span>HEALTHIER SMILES</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==========================================================
+     END ABOUT FOURTH SECTION
+========================================================== -->
+
 
 <?php include 'footer.php'; ?>
