@@ -20,74 +20,164 @@
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 
-<section class="vs-service-wrapper space-top space-md-bottom">
-    <div class="container">
+<section class="vs-service-wrapper service_premium_section space-top space-md-bottom">
 
-        <h1 class="text-center mb-5">
+    <!-- Premium background decorations -->
+    <div class="service_premium_decor" aria-hidden="true">
+        <span class="service_premium_dots service_premium_dots_top"></span>
+        <span class="service_premium_dots service_premium_dots_left"></span>
+        <span class="service_premium_dots service_premium_dots_right"></span>
 
+        <span class="service_premium_curve service_premium_curve_top_1"></span>
+        <span class="service_premium_curve service_premium_curve_top_2"></span>
+        <span class="service_premium_curve service_premium_curve_top_3"></span>
 
-            Dentures in Rajahmundry <br> Restore Your Smile with Comfort
-            <p class="fs-md text-title mb-4 pb-2 text-center">
+        <span class="service_premium_curve service_premium_curve_bottom_1"></span>
+        <span class="service_premium_curve service_premium_curve_bottom_2"></span>
+        <span class="service_premium_curve service_premium_curve_bottom_3"></span>
 
+        <span class="service_premium_glow service_premium_glow_1"></span>
+        <span class="service_premium_glow service_premium_glow_2"></span>
+        <span class="service_premium_glow service_premium_glow_3"></span>
+        <span class="service_premium_glow service_premium_glow_4"></span>
 
-                At Krishna Dental Cure, we provide high-quality dentures in Rajahmundry to replace missing teeth, ensuring a natural look and improved oral function.</p>
+        <div class="service_premium_tooth service_premium_tooth_left">
+            <i class="fas fa-tooth"></i>
+            <b></b>
+        </div>
 
+        <div class="service_premium_tooth service_premium_tooth_right">
+            <i class="fas fa-tooth"></i>
+            <b></b>
+        </div>
 
+        <div class="service_premium_note service_premium_note_left_top">
+            <span>Healthy</span>
+            <span>Smiles</span>
+            <span>Happier Lives</span>
+            <i></i>
+        </div>
 
+        <div class="service_premium_note service_premium_note_right_top">
+            <span>Your Smile</span>
+            <span>Our Priority</span>
+            <i></i>
+        </div>
 
-            <div class="row serice_space_div">
+        <div class="service_premium_note service_premium_note_left_bottom">
+            <span>Gentle Care</span>
+            <span>Lasting Smiles</span>
+            <i></i>
+        </div>
 
+        <div class="service_premium_vertical_copy">
+            ADVANCED<br>
+            DENTAL CARE<br>
+            FOR A<br>
+            BRIGHTER<br>
+            TOMORROW
+            <i></i>
+        </div>
 
-                <div class="col-12 col-md-8   service_text_padding">
-                    <h3>Step 1: Oral Examination and Impressions</h3>
-                    <p class="fs-md">We assess your oral health and take precise impressions to create custom-fitted dentures.</p>
-
-
-
-                </div>
-
-                <div class="col-12 col-md-4 service_text_padding_img  ">
-                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
-
-                </div>
-            </div>
-
-            <div class="row  serice_space_div">
-
-                <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
-
-                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
-
-                </div>
-                <div class="col-12 col-md-8 service_text_padding  order-0 order-md-1">
-                    <h3>Step 2: Trial and Adjustments</h3>
-                    <p class="fs-md">A trial set is fitted to check comfort, bite alignment, and aesthetics before finalizing.</p>
-
-
-                </div>
-            </div>
-
-
-
-
-            <div class="row  serice_space_div">
-
-
-                <div class="col-12 col-md-8 service_text_padding">
-
-                    <h3>Step 3: Final Denture Placement</h3>
-                    <p class="fs-md">The permanent dentures are placed, ensuring a secure fit and natural appearance.</p>
-
-                </div>
-
-                <div class="col-12 col-md-4 service_text_padding_img">
-                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
-
-                </div>
-
-            </div>
+        <!-- <div class="service_premium_character">
+            <i class="fas fa-tooth"></i>
+            <span class="service_premium_character_bandage"></span>
+        </div> -->
     </div>
 
+    <div class="container service_premium_container">
+
+        <!-- Section heading -->
+        <div class="service_premium_heading text-center">
+            <h1 class="mb-0">Dentures <span>in Rajahmundry</span> <br> Restore Your Smile with Comfort</h1>
+
+            <p class="fs-md text-title mb-0 service_premium_intro">At Krishna Dental Cure, we provide high-quality dentures in Rajahmundry to replace missing teeth, ensuring a natural look and improved oral function.</p>
+        </div>
+
+        <!-- STEP 01 -->
+        <div class="row serice_space_div service_premium_step service_premium_step_1 align-items-center">
+            <div class="col-12 col-md-8 service_text_padding">
+                <div class="service_premium_step_content">
+                    <div class="service_premium_step_number">01</div>
+
+                    <div class="service_premium_step_copy">
+                        <div class="service_premium_step_label">Step 1:</div>
+                        <h3>Oral Examination and Impressions</h3>
+                        <p>We assess your oral health and take precise impressions to create custom-fitted dentures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <div class="service_premium_image_card">
+                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="row serice_space_div service_premium_step service_premium_step_2 align-items-center">
+            <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
+                <div class="service_premium_image_card">
+                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 service_text_padding order-0 order-md-1">
+                <div class="service_premium_step_content service_premium_step_content_reverse">
+                    <div class="service_premium_step_number">02</div>
+
+                    <div class="service_premium_step_copy">
+                        <div class="service_premium_step_label">Step 2:</div>
+                        <h3>Trial and Adjustments</h3>
+                        <p>A trial set is fitted to check comfort, bite alignment, and aesthetics before finalizing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="row serice_space_div service_premium_step service_premium_step_3 align-items-center">
+            <div class="col-12 col-md-8 service_text_padding">
+                <div class="service_premium_step_content">
+                    <div class="service_premium_step_number">03</div>
+
+                    <div class="service_premium_step_copy">
+                        <div class="service_premium_step_label">Step 3:</div>
+                        <h3>Final Denture Placement</h3>
+                        <p>The permanent dentures are placed, ensuring a secure fit and natural appearance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 service_text_padding_img">
+                <div class="service_premium_image_card">
+                    <img src="assets/img/services_steps/krishnadentacure_services_dentures_3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom highlights -->
+        <div class="service_premium_bottom_bar">
+            <div class="service_premium_bottom_item">
+                <span class="service_premium_bottom_icon"><i class="fas fa-shield-alt"></i></span>
+                <span>EXPERT CARE</span>
+            </div>
+
+            <i class="service_premium_bottom_sep"></i>
+
+            <div class="service_premium_bottom_item">
+                <span class="service_premium_bottom_icon"><i class="fas fa-tooth"></i></span>
+                <span>ADVANCED TECHNOLOGY</span>
+            </div>
+
+            <i class="service_premium_bottom_sep"></i>
+
+            <div class="service_premium_bottom_item">
+                <span class="service_premium_bottom_icon"><i class="far fa-heart"></i></span>
+                <span>HEALTHIER SMILES</span>
+            </div>
+        </div>
 
     </div>
 </section>
