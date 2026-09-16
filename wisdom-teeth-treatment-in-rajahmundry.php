@@ -280,7 +280,7 @@
 
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
-<section class="vs-team-wrapper space-md-bottom">
+<section class="vs-team-wrapper space-md-bottom" style="background:#0066a3">
     <div class="container">
 
         <!-- Swiper Container -->
@@ -324,7 +324,7 @@
     </div>
 </section>
 
-<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
+<!-- <img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt=""> -->
 
 
 <!-- Swiper JS Initialization -->

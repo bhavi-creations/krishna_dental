@@ -8051,7 +8051,8 @@ textarea.form-control.is-invalid {
 .breadcumb-wrapper {
   padding-bottom: 0.05px;
   padding-top: 160px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-bottom: 0px;
 }
 
 /* Large devices */
@@ -20777,10 +20778,10 @@ body {
   padding-top: 100px;
 }
 
-.space-md,
+/* .space-md,
 .space-md-bottom {
   padding-bottom: 100px;
-}
+} */
 
 /* Medium devices */
 @media (max-width: 992px) {
@@ -21994,4 +21995,162 @@ body {
 
 
 
-/* blogs color  */
+/* ==========================================================
+   BREADCRUMB ONLY - COMPACT + NO OVERLAP FIX
+========================================================== */
+
+.breadcumb-menu-wrap {
+    width: max-content;
+    max-width: calc(100% - 40px);
+
+    margin-left: auto;
+    margin-right: 45px;
+
+    /* banner bottom daggara */
+    margin-top: 38px !important;
+
+    /* IMPORTANT:
+       second section meeda overlap kakunda */
+    margin-bottom: 22px !important;
+
+    left: auto !important;
+
+    --icon-size: 34px;
+    --shape-size: 46px;
+
+    position: relative;
+    z-index: 20;
+}
+
+
+/* Compact white pill */
+.breadcumb-menu {
+    padding: 16px 32px !important;
+
+    min-height: 58px;
+
+    border-radius: 40px !important;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow:
+        0 8px 20px rgba(39, 71, 125, 0.10) !important;
+}
+
+
+/* Compact text */
+.breadcumb-menu li,
+.breadcumb-menu a,
+.breadcumb-menu span {
+    font-size: 15px !important;
+    line-height: 1.35;
+}
+
+
+/* Home icon */
+.breadcumb-menu-wrap > i:before {
+    width: var(--icon-size);
+    height: var(--icon-size);
+
+    line-height: var(--icon-size);
+
+    font-size: 14px;
+
+    border-radius: 50%;
+}
+
+
+/* White circle behind home icon */
+.breadcumb-menu-wrap > i:after {
+    width: var(--shape-size);
+    height: var(--shape-size);
+
+    margin:
+        calc(var(--shape-size) / -2)
+        0
+        0
+        calc(var(--shape-size) / -2);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .breadcumb-menu-wrap {
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+
+        max-width: calc(100% - 32px);
+
+        --icon-size: 32px;
+        --shape-size: 44px;
+    }
+
+    .breadcumb-menu {
+        padding: 14px 28px !important;
+        min-height: 54px;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .breadcumb-menu-wrap {
+        margin-top: 24px !important;
+        margin-bottom: 18px !important;
+
+        max-width: calc(100% - 28px);
+
+        --icon-size: 30px;
+        --shape-size: 40px;
+    }
+
+    .breadcumb-menu {
+        padding: 12px 22px !important;
+        min-height: 50px;
+
+        border-radius: 26px !important;
+    }
+
+    .breadcumb-menu li,
+    .breadcumb-menu a,
+    .breadcumb-menu span {
+        font-size: 13px !important;
+    }
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .breadcumb-menu-wrap {
+        margin-top: 20px !important;
+        margin-bottom: 16px !important;
+
+        max-width: calc(100% - 24px);
+    }
+
+    .breadcumb-menu {
+        padding: 11px 18px !important;
+    }
+
+    .breadcumb-menu li,
+    .breadcumb-menu a,
+    .breadcumb-menu span {
+        font-size: 12px !important;
+    }
+}

@@ -203,7 +203,7 @@
         <div class="row serice_space_div service_premium_step service_premium_step_2 align-items-center">
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step2.png"
+                    <img src="assets/img/services_steps/root-canal-step-2.png"
                          alt="Service Image"
                          class="my-2 img-fluid service_border_radius_images">
                 </div>
@@ -242,7 +242,7 @@
 
             <div class="col-12 col-md-4 service_text_padding_img">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step3.png"
+                    <img src="assets/img/services_steps/Root-canal-step-3.png"
                          alt="Service Image"
                          class="my-2 img-fluid service_border_radius_images">
                 </div>
@@ -276,7 +276,7 @@
 
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
-<section class="vs-team-wrapper space-md-bottom">
+<section class="vs-team-wrapper" style="background:#0066a3">
     <div class="container">
 
         <!-- Swiper Container -->
@@ -323,7 +323,7 @@
     </div>
 </section>
 
-<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
+<!-- <img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt=""> -->
 
 
 <!-- Swiper JS Initialization -->

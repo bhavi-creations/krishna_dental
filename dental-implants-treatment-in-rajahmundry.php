@@ -110,7 +110,7 @@
 
             <div class="col-12 col-md-4 service_text_padding_img">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                    <img src="assets/img/about/dental-implants-step-1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="row serice_space_div service_premium_step service_premium_step_2 align-items-center">
             <div class="col-12 col-md-4 service_text_padding_img order-1 order-md-0">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                    <img src="assets/img/about/dental-implants-step-2.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
                 </div>
             </div>
 
@@ -152,7 +152,7 @@
 
             <div class="col-12 col-md-4 service_text_padding_img">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/about/root_canal_sm.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+                    <img src="assets/img/about/Dental-implants-step-3.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@
 
 <img src="assets/img/special/stand.png" class="special_teeth_service_left img-fluid" alt="">
 
-<section class="vs-team-wrapper space-md-bottom">
+<section class="vs-team-wrapper space-md-bottom" style="background:#0066a3>
     <div class="container">
 
         <!-- Swiper Container -->
@@ -231,7 +231,7 @@
     </div>
 </section>
 
-<img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt="">
+<!-- <img src="assets/img/special/slider_edge.jpg" class="special_teeth_edge img-fluid" alt=""> -->
 
 
 <!-- Swiper JS Initialization -->

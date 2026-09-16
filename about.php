@@ -240,7 +240,7 @@
         </div>
     </section>
 
-    <section class="vs-accordion-wrapper space-top space-md-bottom">
+    <section class="vs-accordion-wrapper space-top space-md-bottom" >
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 mb-30 mb-xl-0">
