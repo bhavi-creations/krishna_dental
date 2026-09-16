@@ -284,7 +284,8 @@
 
                         <span class="ripple-icon hover-style2 about_third_icon">
 
-                            <i class="flaticon-discuss"></i>
+                            <!-- <i class="flaticon-discuss"></i> -->
+                             <i class="fa-solid fa-award"></i>
 
                         </span>
 
@@ -318,7 +319,8 @@
 
                         <span class="ripple-icon hover-style2 about_third_icon">
 
-                            <i class="flaticon-medical-equipment"></i>
+                            <!-- <i class="flaticon-medical-equipment"></i> -->
+                             <i class="fa-solid fa-user-doctor"></i>
 
                         </span>
 
@@ -352,7 +354,8 @@
 
                         <span class="ripple-icon hover-style2 about_third_icon">
 
-                            <i class="flaticon-healthcare"></i>
+                            <!-- <i class="flaticon-healthcare"></i> -->
+                             <i class="fa-solid fa-face-smile"></i>
 
                         </span>
 
@@ -513,7 +516,7 @@
                         <div class="col-sm-6 col-12">
                             <div class="d-flex align-items-center mb-25 about_fourth_feature_card">
                                 <span class="text-theme mr-20 about_fourth_feature_icon">
-                                    <i class="fas fa-stethoscope fa-2x lh-1" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-user-doctor fa-2x lh-1" aria-hidden="true"></i>
                                 </span>
                                 <div class="media-body">
                                     <h3 class="h5 mb-2 pb-1">Specialised<br>Doctors</h3>
