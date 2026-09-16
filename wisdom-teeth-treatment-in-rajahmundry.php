@@ -191,9 +191,11 @@
 
             <div class="col-12 col-md-4 service_text_padding_img">
                 <div class="service_premium_image_card">
-                    <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step1.png"
+                    <!-- <img src="assets/img/services_steps/krishnadentacure_services_rootcanal_treatment_step1.png"
                          alt="Service Image"
-                         class="my-2 img-fluid service_border_radius_images">
+                         class="my-2 img-fluid service_border_radius_images"> -->
+                   <img src="assets/img/services_steps/krishnadentacure_services_wisdomtooth_removal_1.png" alt="Service Image" class=" my-2 img-fluid service_border_radius_images">
+
                 </div>
             </div>
         </div>
@@ -214,9 +216,9 @@
 
                     <div class="service_premium_step_copy">
                         <div class="service_premium_step_label">Step 2:</div>
-                        <h3>Cleaning and Disinfection</h3>
+                        <h3>Tooth Extraction</h3>
                         <p>
-                            The infected pulp is removed, and the root canals are thoroughly cleaned and disinfected to eliminate bacteria and prevent further infection.
+                            
                         </p>
                     </div>
                 </div>
