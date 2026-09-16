@@ -487,7 +487,9 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_root_canal_home.png" alt="Root canal illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
+            <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
+            <img src="assets/img/service img/root-canal (1).png" alt="" aria-hidden="true">
+
           </div>
           <div class="index_third_card_body">
             <h3>Root Canal</h3>
@@ -501,7 +503,9 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_wisdom_toothremoval_home.png" alt="Wisdom tooth removal illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
+            <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
+            <img src="assets/img/service img/wisdom-tooth.png" alt="" aria-hidden="true">
+
           </div>
           <div class="index_third_card_body">
             <h3>Wisdom Tooth<br>Removal</h3>
@@ -515,7 +519,8 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/kroshnadentacure_bad_breath_treatment_home.png" alt="Bad breath treatment illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
+            <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
+            <img src="assets/img/service img/breath.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Bad Breath<br>Treatment</h3>
@@ -529,7 +534,8 @@
         <article class="index_third_card">
           <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_gum_treatment.png" alt="Gum treatment illustration"></div>
           <div class="index_third_card_circle_icon">
-            <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true">
+            <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
+            <img src="assets/img/service img/dental-surgery.png" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Gum Treatment</h3>
@@ -1307,7 +1313,7 @@
       <div class="index_fifth_doctors">
         <div class="index_fifth_cards">
           <article class="index_fifth_card">
-                        <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS_krishnadentacure__doctor.png" alt="About Image"  class="img-fluid  ">
+            <img src="assets/img/about/Dr-B-Suresh-Kumar-MDS_krishnadentacure__doctor.png" alt="About Image" class="img-fluid">
             <!-- <div class="index_fifth_card_img"><img src="assets/img/about/Dr-Malathi-Chakravarthy_krishnadentacure__doctor.png" alt="Dr. Malathi Chakravarthy"></div> -->
             <div class="index_fifth_card_body">
               <h3>Dr. B.Suresh Kumar</h3>
@@ -1341,6 +1347,16 @@
             <div class="index_fifth_card_img"><img src="assets/img/about/divya.png" alt="Team Area" class="w-100"></div>
             <div class="index_fifth_card_body">
               <h3>Dr. Divya</h3>
+              <div class="index_fifth_role">Surgeon</div>
+              <div class="index_fifth_divider"><span></span><i></i><span></span></div>
+              <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="index_fifth_card">
+            <div class="index_fifth_card_img"><img src="assets/img/about/sravani.png" alt="Team Area" class="w-100"></div>
+            <div class="index_fifth_card_body">
+              <h3>Dr. sravani</h3>
               <div class="index_fifth_role">Surgeon</div>
               <div class="index_fifth_divider"><span></span><i></i><span></span></div>
               <a class="index_fifth_profile_btn" href="doctors.php"><span>View Our team</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
