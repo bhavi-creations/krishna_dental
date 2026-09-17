@@ -1,8 +1,8 @@
 <!-- Footer Area -->
 
- <div class="image-container">
+ <!-- <div class="image-container">
      <img src="assets/img/special/cutie_cleaning.png" class="cleaning_teeth img-fluid" alt="">
- </div>
+ </div> -->
 
 
  <!-- <footer class="footer-wrapper footer-layout7" data-bg-src="assets/img/bg/footer-bg-7-1.jpg">

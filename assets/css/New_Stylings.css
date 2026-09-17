@@ -2709,6 +2709,7 @@ footer.footer {
   position: absolute;
   isolation: isolate;
   border: 2px solid #0066a3;
+  background: #fff;
   top: 173px;
   right: 30px;
 }
