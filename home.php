@@ -485,7 +485,7 @@
       <div class="row g-0 index_third_cards">
       <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
         <article class="index_third_card">
-          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_root_canal_home.png" alt="Root canal illustration"></div>
+          <div class="index_third_card_visual"><img src="assets/img/about/Root-canal-1.png" alt="Root canal illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
             <img src="assets/img/service img/root-canal (1).png" alt="" aria-hidden="true">
@@ -501,7 +501,7 @@
       </div>
       <div class="col-xl-3 col-md-6 col-12 mb-4 mb-xl-0 index_third_slide">
         <article class="index_third_card">
-          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_wisdom_toothremoval_home.png" alt="Wisdom tooth removal illustration"></div>
+          <div class="index_third_card_visual"><img src="assets/img/about/Wisdom-teeth-removal-1.png" alt="Wisdom tooth removal illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
             <img src="assets/img/service img/wisdom-tooth.png" alt="" aria-hidden="true">
@@ -532,7 +532,7 @@
       </div>
       <div class="col-xl-3 col-md-6 col-12 index_third_slide">
         <article class="index_third_card">
-          <div class="index_third_card_visual"><img src="assets/img/about/krishnadentacure_gum_treatment.png" alt="Gum treatment illustration"></div>
+          <div class="index_third_card_visual"><img src="assets/img/about/Gun-treatment-1.png" alt="Gum treatment illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
             <img src="assets/img/service img/dental-surgery.png" alt="" aria-hidden="true">
