@@ -2937,7 +2937,7 @@ footer.footer {
 }
 
 .index_third_section .index_third_btn {
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 /* ==========================================================
@@ -5302,7 +5302,7 @@ section.index_sixth_section::after{
     align-items:center;
     justify-content:center;
     gap:38px;
-    margin-top:48px;
+    margin-top:20px;
     color:#cdefff;
     font-size:12px;
     font-weight:600;
@@ -6989,6 +6989,8 @@ section.services_new_section::after{
     color:#fff;
     font-size:13px;
     font-weight:600;
+    z-index: 2; /* బ్యాక్‌గ్రౌండ్ కర్వ్ పైన టెక్స్ట్ స్పష్టంగా కనిపించడానికి */
+    padding-top: 20px;
 }
 
 .services_new_section .services_new_bottom_item small{
@@ -11135,7 +11137,7 @@ section.review_premium_section::before{
 }
 
 .index_fifth_dots_nav::after{
-  content:"EXPERT CARE     |     ADVANCED TECHNOLOGY     |     HEALTHIER SMILES";
+  /* content:"EXPERT CARE     |     ADVANCED TECHNOLOGY     |     HEALTHIER SMILES"; */
   position:absolute;
   left:50%;
   top:42px;
@@ -11545,7 +11547,7 @@ section.review_premium_section::before{
   margin:0;
   color:rgba(240,248,255,.92);
   font-family:var(--body-font,'Roboto',sans-serif);
-  font-size:18px;
+  font-size:20px;
   line-height:1.72;
   font-weight:400;
 }
@@ -11677,11 +11679,11 @@ section.review_premium_section::before{
 /* Experience badge */
 .doctor_second_section .doctor_second_experience{
   position:absolute;
-  left:-18px;
+  /* left:-18px; */
   bottom:-8px;
   z-index:5;
-  width:255px;
-  min-height:150px;
+  /* width:255px; */
+  /* min-height:150px; */
   padding:21px 24px 18px 32px;
   border-radius:34px 76px 0 34px;
   border:2px solid rgba(91,235,255,.95);
@@ -15489,6 +15491,7 @@ section.about_fourth_section::after{
     font-weight:600;
     letter-spacing:5px;
     white-space:nowrap;
+    margin-bottom: 30px;
 }
 
 .about_fourth_section .about_fourth_bottom_sep{
@@ -16441,3 +16444,378 @@ section.about_fourth_section::after{
         transition:none !important;
     }
 }
+
+
+
+
+
+
+
+/* ==========================================================
+   APPOINTMENT FORM - PREMIUM CONTACT THEME
+   PHP structure unchanged. Existing classes reused.
+========================================================== */
+
+.card_wrapper {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 72px 0 84px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(27, 202, 255, .18), transparent 22%),
+    radial-gradient(circle at 88% 18%, rgba(39, 216, 255, .13), transparent 24%),
+    radial-gradient(circle at 52% 82%, rgba(20, 127, 238, .18), transparent 30%),
+    linear-gradient(118deg, #00386f 0%, #00579a 45%, #004883 72%, #00396f 100%);
+  color: #fff;
+}
+
+.card_wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  opacity: .20;
+  background-image: radial-gradient(circle, rgba(63, 224, 255, .86) 2px, transparent 2.8px);
+  background-size: 18px 18px;
+  -webkit-mask-image:
+    radial-gradient(circle at 7% 20%, #000 0 8%, transparent 22%),
+    radial-gradient(circle at 94% 68%, #000 0 8%, transparent 22%);
+  mask-image:
+    radial-gradient(circle at 7% 20%, #000 0 8%, transparent 22%),
+    radial-gradient(circle at 94% 68%, #000 0 8%, transparent 22%);
+}
+
+.card_wrapper::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -235px;
+  height: 330px;
+  z-index: -2;
+  pointer-events: none;
+  border-radius: 50%;
+  border-top: 4px solid rgba(87, 238, 255, .96);
+  box-shadow:
+    0 -3px 14px rgba(102, 241, 255, .62),
+    0 -18px 0 22px rgba(11, 124, 220, .16),
+    0 -34px 0 42px rgba(6, 91, 182, .10);
+}
+
+.card_wrapper > .container {
+  position: relative;
+  z-index: 3;
+  max-width: 1240px;
+}
+
+.card_wrapper > .container::before {
+  content: "\f5c9";
+  position: absolute;
+  right: -25px;
+  top: -42px;
+  z-index: -1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 170px;
+  line-height: 1;
+  color: rgba(84, 221, 247, .12);
+  transform: rotate(-8deg);
+  filter:
+    drop-shadow(0 0 18px rgba(70, 221, 255, .14))
+    drop-shadow(0 0 42px rgba(21, 138, 231, .08));
+}
+
+.card_wrapper > .container::after {
+  content: "";
+  position: absolute;
+  left: -160px;
+  top: -115px;
+  width: 780px;
+  height: 230px;
+  border-radius: 50%;
+  border-bottom: 3px solid rgba(87, 238, 255, .92);
+  box-shadow:
+    0 5px 14px rgba(93, 237, 255, .50),
+    0 15px 0 18px rgba(13, 125, 219, .12);
+  transform: rotate(-8deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card_wrapper h1.text-center {
+  position: relative;
+  margin: 0 auto 34px;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -.8px;
+  text-shadow: 0 0 18px rgba(77, 227, 255, .18);
+}
+
+.card_wrapper h1.text-center::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #56ecff, transparent);
+  box-shadow: 0 0 10px rgba(86, 236, 255, .65);
+}
+
+.card_wrapper .appointment-form {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto !important;
+  padding: 34px 34px 32px;
+  border-radius: 30px;
+  border: 1.6px solid rgba(107, 234, 255, .76);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(83, 224, 255, .09), transparent 25%),
+    linear-gradient(145deg, rgba(3, 88, 165, .93), rgba(4, 62, 129, .96));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .045),
+    inset 0 0 26px rgba(81, 224, 255, .04),
+    0 0 10px rgba(103, 233, 255, .54),
+    0 0 30px rgba(26, 189, 255, .20),
+    0 22px 48px rgba(1, 22, 72, .26);
+}
+
+.card_wrapper .appointment-form::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: -2px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #c8ffff 18%, #59ebff 50%, #c8ffff 82%, transparent);
+  box-shadow:
+    0 0 8px rgba(153, 247, 255, .85),
+    0 0 22px rgba(61, 224, 255, .55);
+  pointer-events: none;
+}
+
+.card_wrapper .appointment-form::after {
+  content: "\f5c9";
+  position: absolute;
+  right: 34px;
+  bottom: 22px;
+  z-index: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 125px;
+  line-height: 1;
+  color: rgba(85, 221, 247, .07);
+  transform: rotate(-6deg);
+  pointer-events: none;
+}
+
+.card_wrapper .appointment-form > * {
+  position: relative;
+  z-index: 2;
+}
+
+.card_wrapper .appointment-form label {
+  display: block;
+  margin-bottom: 9px;
+  color: #d9f4ff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.card_wrapper .appointment-form .form-control {
+  width: 100%;
+  min-height: 58px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1.4px solid rgba(112, 226, 255, .52);
+  background: linear-gradient(180deg, rgba(5, 73, 144, .64), rgba(4, 55, 119, .72));
+  color: #fff;
+  font-size: 15px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .02),
+    0 0 12px rgba(65, 213, 255, .08);
+  outline: none;
+  transition: border-color .25s ease, box-shadow .25s ease, background .25s ease, transform .25s ease;
+}
+
+.card_wrapper .appointment-form .form-control::placeholder {
+  color: rgba(219, 243, 255, .66);
+}
+
+.card_wrapper .appointment-form select.form-control,
+.card_wrapper .appointment-form input[type="date"] {
+  color-scheme: dark;
+}
+
+.card_wrapper .appointment-form textarea.form-control {
+  min-height: 138px;
+  resize: vertical;
+}
+
+.card_wrapper .appointment-form .form-control:focus {
+  border-color: #68efff;
+  background: linear-gradient(180deg, rgba(6, 89, 165, .76), rgba(3, 65, 132, .84));
+  box-shadow:
+    0 0 0 3px rgba(78, 228, 255, .10),
+    0 0 18px rgba(78, 228, 255, .24),
+    inset 0 0 0 1px rgba(255, 255, 255, .025);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.card_wrapper .appointment-form .btn.btn-primary {
+  position: relative;
+  overflow: hidden;
+  min-height: 58px;
+  border: 1.6px solid rgba(156, 245, 255, .94) !important;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #08bde8 0%, #10d5e9 48%, #078fd8 100%) !important;
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  box-shadow:
+    0 0 10px rgba(116, 241, 255, .72),
+    0 0 28px rgba(31, 194, 255, .34),
+    inset 0 0 0 1px rgba(255, 255, 255, .18);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+.card_wrapper .appointment-form .btn.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -35%;
+  width: 28%;
+  height: 140%;
+  transform: skewX(-24deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .40), transparent);
+  transition: left .55s ease;
+}
+
+.card_wrapper .appointment-form .btn.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow:
+    0 0 13px rgba(132, 245, 255, .90),
+    0 0 34px rgba(39, 203, 255, .46),
+    inset 0 0 0 1px rgba(255, 255, 255, .22);
+}
+
+.card_wrapper .appointment-form .btn.btn-primary:hover::before {
+  left: 110%;
+}
+
+.card_wrapper .row::after {
+  content: "Your Smile\A Our Priority";
+  white-space: pre;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  color: rgba(193, 248, 255, .42);
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  line-height: .92;
+  transform: rotate(-5deg);
+  pointer-events: none;
+}
+
+.card_wrapper .row::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 42px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    0 0 4px #fff,
+    0 0 12px #74efff,
+    285px -420px 0 0 rgba(255,255,255,.95),
+    285px -420px 10px 0 rgba(80,230,255,.45),
+    880px -320px 0 0 rgba(255,255,255,.92),
+    880px -320px 10px 0 rgba(80,230,255,.42);
+  pointer-events: none;
+}
+
+@media (max-width: 1199.98px) {
+  .card_wrapper { padding: 62px 0 72px; }
+  .card_wrapper > .container { max-width: 1040px; }
+  .card_wrapper h1.text-center { font-size: 44px; }
+  .card_wrapper .appointment-form { max-width: 940px; padding: 30px 28px 28px; }
+}
+
+@media (max-width: 991.98px) {
+  .card_wrapper { padding: 54px 0 64px; }
+  .card_wrapper > .container { padding-left: 20px; padding-right: 20px; }
+  .card_wrapper h1.text-center { font-size: 39px; margin-bottom: 28px; }
+  .card_wrapper .appointment-form { padding: 26px 22px 24px; border-radius: 25px; }
+  .card_wrapper > .container::before { font-size: 130px; right: 10px; top: -16px; }
+  .card_wrapper .row::after { display: none; }
+}
+
+@media (max-width: 767.98px) {
+  .card_wrapper { padding: 44px 0 52px; }
+  .card_wrapper > .container { padding-left: 14px; padding-right: 14px; }
+  .card_wrapper h1.text-center { font-size: 32px; line-height: 1.1; margin-bottom: 24px; }
+  .card_wrapper h1.text-center::after { width: 110px; }
+  .card_wrapper .appointment-form { padding: 22px 16px 20px; border-radius: 22px; }
+  .card_wrapper .appointment-form .mb-4 { margin-bottom: 16px !important; }
+  .card_wrapper .appointment-form .form-control { min-height: 54px; padding: 13px 14px; border-radius: 12px; }
+  .card_wrapper .appointment-form textarea.form-control { min-height: 120px; }
+  .card_wrapper .appointment-form .btn.btn-primary { min-height: 54px; }
+  .card_wrapper > .container::before { font-size: 100px; opacity: .75; }
+  .card_wrapper > .container::after { width: 560px; height: 170px; left: -280px; top: -85px; }
+}
+
+@media (max-width: 575.98px) {
+  .card_wrapper { padding: 38px 0 46px; }
+  .card_wrapper h1.text-center { font-size: 28px; }
+  .card_wrapper .appointment-form { padding: 18px 12px 16px; }
+  .card_wrapper .appointment-form label { font-size: 13px; }
+  .card_wrapper .appointment-form .form-control { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card_wrapper *,
+  .card_wrapper *::before,
+  .card_wrapper *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+
+
+.services_new_section .services_new_bottom_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2; /* బ్యాక్‌గ్రౌండ్ కర్వ్ పైన టెక్స్ట్ స్పష్టంగా కనిపించడానికి */
+    padding-top: 20px; /* కర్వ్ కి కిందకు జరగడానికి ఈ స్పేసింగ్ ఉపయోగపడుతుంది */
+}
+
+.services_new_section .services_new_bottom_item strong {
+    display: block;
+    /* font-size: 1.1rem; */
+    color: #ffffff;
+    margin-bottom: -15px;
+}
+
+.services_new_section .services_new_bottom_item small {
+    color: #a0c4e8;
+    /* font-size: 0.85rem; */
+}
+
+
+
+

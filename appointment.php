@@ -25,7 +25,7 @@ $slots = [
     <h1 style="position: relative; z-index: 2; color: white; font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">Appointment</h1>
 </section>
 
-<section class=" my-5 card_wrapper">
+<section class="my-5 card_wrapper">
     <div class="container">
         <h1 class="text-center">Appointment Form</h1>
         <div class="row">
@@ -64,8 +64,6 @@ $slots = [
                         <textarea name="message" class="form-control" rows="4" placeholder="Any additional information..."></textarea>
                     </div>
 
-                   
-
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
                     </div>
@@ -85,7 +83,6 @@ document.getElementById('appointment_date').addEventListener('change', function(
     
     slotSelect.innerHTML = '<option>Loading...</option>';
 
-    // Cache-busting కోసం random timestamp యాడ్ చేశాను, దీనివల్ల పాత డేటా బ్రౌజర్‌లో స్టోర్ అవ్వదు
     fetch('get_slots.php?date=' + date + '&t=' + new Date().getTime())
         .then(response => {
             if (!response.ok) {
@@ -94,7 +91,6 @@ document.getElementById('appointment_date').addEventListener('change', function(
             return response.json();
         })
         .then(data => {
-            // Full Day Holiday చెక్
             if (data.isHoliday && data.type === 'fullday') {
                 alert("Holiday: " + data.reason);
                 slotSelect.innerHTML = '<option value="">No Slots Available</option>';
@@ -107,7 +103,6 @@ document.getElementById('appointment_date').addEventListener('change', function(
 
             let html = '<option value="">--Select Slot--</option>';
 
-            // slots array సరిగ్గా ఉందో లేదో వెరిఫై చేయడం
             if (data.slots && Array.isArray(data.slots)) {
                 if (data.slots.length === 0) {
                     html = '<option value="">No Slots Available for this day</option>';
@@ -128,7 +123,6 @@ document.getElementById('appointment_date').addEventListener('change', function(
             slotSelect.innerHTML = html;
         })
         .catch(error => {
-            // బ్రౌజర్ Console (F12) లో అసలు ఎర్రర్ ఏంటో చూడటానికి
             console.error('Fetch Error:', error);
             slotSelect.innerHTML = '<option value="">Error loading slots</option>';
         });

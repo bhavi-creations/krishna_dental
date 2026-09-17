@@ -171,13 +171,13 @@
       <span class="doctor_second_bottom_wave doctor_second_bottom_wave_2"></span>
       <span class="doctor_second_bottom_wave doctor_second_bottom_wave_3"></span>
 
-      <div class="doctor_second_bottom_labels">
+      <!-- <div class="doctor_second_bottom_labels">
         <span>EXPERT CARE</span>
         <i></i>
         <span>ADVANCED TECHNOLOGY</span>
         <i></i>
         <span>HEALTHIER SMILES</span>
-      </div>
+      </div> -->
     </div>
 
   </div>
@@ -512,7 +512,7 @@
 
 
 
-<img src="assets/img/about/krishnadental_team.png" class='img-fluid my-4' alt="">
+<img src="assets/img/about/krishnadental_team.png" class='img-fluid' alt="">
 
 
 
