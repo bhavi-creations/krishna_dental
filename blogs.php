@@ -56,6 +56,12 @@ $result = $stmt->get_result();
     border-radius: 4px;
     font-weight: 600;
   }
+
+.blog_section_stylings{
+  background: radial-gradient(circle at 90% 0%, rgba(80, 223, 255, .15), transparent 34%), linear-gradient(115deg, #0878b8 0%, #075f9d 52%, #045188 100%) !important;
+
+}
+
 </style>
 
 <main class="blog_section_stylings">

@@ -21368,7 +21368,7 @@ body {
   border-radius: 22px;
   padding: 9px 22px;
   font-weight: 800;
-  background-color: transparent;
+  /* background-color: transparent; */
   /* initial background color */
 
   /* Add transition to smooth the hover effects */
@@ -21389,7 +21389,8 @@ body {
 }
 
 .box-title {
-  color: #28386a !important;
+  color: #ffffff !important;
+  /* color: #28386a !important; */
 }
 
 .box-title:hover {
@@ -21409,7 +21410,8 @@ body {
 }
 
 .post-desc {
-  color: #848e9f;
+  /* color: #848e9f; */
+  color:#fdfeff !important;
 }
 
 .card_bg_div_box {
