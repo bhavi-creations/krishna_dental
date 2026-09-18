@@ -64,6 +64,7 @@ $result = $stmt->get_result();
 
 </style>
 
+
 <main class="blog_section_stylings">
   <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
     <div class="row">

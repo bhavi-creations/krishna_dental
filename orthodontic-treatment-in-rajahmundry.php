@@ -1,6 +1,8 @@
 <?php include 'header.php'; ?>
 
-<div class="breadcumb-wrapper ">
+<img src="./assets/img/bg/Orthodontic_1.png" alt="about" class="img-fluid">
+
+<!-- <div class="breadcumb-wrapper ">
     <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_slider_Orthodontic_Treatment.png"></div>
 
     <div class="container z-index-common">
@@ -15,7 +17,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <img src="assets/img/special/services_page_bg.png" class="special_teeth_service img-fluid" alt="">
 <img src="assets/img/special/smile.png" class="special_teeth_edge_left img-fluid" alt="">
 

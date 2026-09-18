@@ -1,7 +1,9 @@
 <?php include 'header.php'; ?>
 
+<img src="./assets/img/bg/about_1.png" alt="about" class="img-fluid">
 
-<div class="breadcumb-wrapper ">
+
+<!-- <div class="breadcumb-wrapper ">
     <div class="parallax" data-parallax-image="assets/img/about/krishnadentacure_about_slider.png"></div>
     <div class="container z-index-common">
         <div class="breadcumb-content">
@@ -15,7 +17,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--==============================
     About Area
     ==============================-->

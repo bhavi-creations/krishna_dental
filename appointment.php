@@ -20,6 +20,8 @@ $slots = [
 
 <?php include 'header.php'; ?>
 
+<img src="./assets/img/bg/appointment_1.png" alt="about" class="img-fluid">
+
 <section class="dsdl-hero text-center" style="position: relative; height: 40vh; background-image: url('images1/about-bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div>
     <h1 style="position: relative; z-index: 2; color: white; font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">Appointment</h1>
