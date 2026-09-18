@@ -488,7 +488,7 @@
           <div class="index_third_card_visual"><img src="assets/img/about/Root-canal-1.png" alt="Root canal illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
-            <img src="assets/img/service img/root-canal (1).png" alt="" aria-hidden="true">
+            <img src="assets/img/service img/root-canal (1).png" style="height:45px; width:33px;" alt="" aria-hidden="true">
 
           </div>
           <div class="index_third_card_body">
@@ -504,7 +504,7 @@
           <div class="index_third_card_visual"><img src="assets/img/about/Wisdom-teeth-removal-1.png" alt="Wisdom tooth removal illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
-            <img src="assets/img/service img/wisdom-tooth.png" alt="" aria-hidden="true">
+            <img src="assets/img/service img/wisdom-tooth.png" style="height:35px; width:40px;" alt="" aria-hidden="true">
 
           </div>
           <div class="index_third_card_body">
@@ -520,7 +520,7 @@
           <div class="index_third_card_visual"><img src="assets/img/about/kroshnadentacure_bad_breath_treatment_home.png" alt="Bad breath treatment illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
-            <img src="assets/img/service img/breath.png" alt="" aria-hidden="true">
+            <img src="assets/img/service img/breath.png" style="height:45px; width:40px;" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Bad Breath<br>Treatment</h3>
@@ -535,7 +535,7 @@
           <div class="index_third_card_visual"><img src="assets/img/about/Gun-treatment-1.png" alt="Gum treatment illustration"></div>
           <div class="index_third_card_circle_icon">
             <!-- <img src="assets/img/about/circle_home.png" alt="" aria-hidden="true"> -->
-            <img src="assets/img/service img/dental-surgery.png" alt="" aria-hidden="true">
+            <img src="assets/img/service img/dental-surgery.png" style="height:45px; width:40px;" alt="" aria-hidden="true">
           </div>
           <div class="index_third_card_body">
             <h3>Gum Treatment</h3>
