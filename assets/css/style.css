@@ -22156,3 +22156,109 @@ body {
         font-size: 12px !important;
     }
 }
+
+
+
+
+
+
+
+  /* 1. Home Page Blog Section Main Theme */
+  section.blog_section {
+    background: radial-gradient(circle at 90% 0%, rgba(80, 223, 255, .18), transparent 35%), 
+                linear-gradient(115deg, #0878b8 0%, #075f9d 52%, #045188 100%) !important;
+    padding: 60px 0 !important;
+    color: #ffffff !important;
+  }
+
+  /* 2. Title & Subtitle Styling */
+  section.blog_section .title-area-three h2 {
+    color: #ffffff !important;
+  }
+
+  section.blog_section .sub-title7 {
+    color: #50dfff !important; /* Cyan accent glow color */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* 3. Cards Styling with Cyan Curved Stroke Border */
+  section.blog_section .card {
+    background: rgba(4, 51, 88, 0.75) !important; /* Translucent dark blue backdrop */
+    border: 1px solid rgba(80, 223, 255, 0.5) !important; /* Cyan curve stroke line */
+    border-radius: 12px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(80, 223, 255, 0.15) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    transition: all 0.3s ease-in-out !important;
+    overflow: hidden;
+  }
+
+  /* Card Hover Glow Effect */
+  section.blog_section .card:hover {
+    border-color: #50dfff !important; /* Bright cyan glow on hover */
+    box-shadow: 0 12px 30px rgba(80, 223, 255, 0.4) !important;
+    transform: translateY(-6px) !important;
+  }
+
+  /* 4. Card Media (Images & Videos) */
+  section.blog_section .card-img-top,
+  section.blog_section .main-video {
+    border-radius: 8px !important;
+    max-height: 200px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+  }
+
+  /* 5. Card Title & Text Colors */
+  section.blog_section .card-title {
+    color: #ffffff !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  section.blog_section .card-text {
+    color: #d1e8f7 !important; /* Ice blue readable text */
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* 6. Read More Button Styling inside Cards */
+  section.blog_section a.btn-style7 {
+    background: linear-gradient(90deg, #50dfff 0%, #00b0ff 100%) !important;
+    color: #043358 !important;
+    font-weight: 700 !important;
+    border-radius: 25px !important;
+    padding: 8px 22px !important;
+    border: none !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out !important;
+    margin-top: 10px !important;
+  }
+
+  section.blog_section a.btn-style7:hover {
+    background: #ffffff !important;
+    color: #075f9d !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  /* 7. Bottom View More Link Styling */
+  section.blog_section .view_more_btn {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  section.blog_section .view_more_btn:hover {
+    color: #50dfff !important;
+  }
+
+  section.blog_section .arrowmark_right,
+  section.blog_section .fa-arrow-right {
+    margin-left: 8px;
+    color: #50dfff !important;
+  }

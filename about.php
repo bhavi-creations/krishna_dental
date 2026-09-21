@@ -579,7 +579,7 @@
         </div>
 
         <!-- Bottom premium strip -->
-        <div class="about_fourth_bottom_strip" aria-label="Dental care highlights">
+        <!-- <div class="about_fourth_bottom_strip" aria-label="Dental care highlights">
             <div class="about_fourth_bottom_item">
                 <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <span>EXPERT CARE</span>
@@ -598,7 +598,7 @@
                 <i class="far fa-heart" aria-hidden="true"></i>
                 <span>HEALTHIER SMILES</span>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- ==========================================================

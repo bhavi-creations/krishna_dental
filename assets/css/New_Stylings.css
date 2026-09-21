@@ -2076,7 +2076,7 @@
       }
 
       .index_third_eyebrow .text {
-        font-size: 7px;
+        font-size: 12px;
         letter-spacing: 2.4px;
       }
 
@@ -3572,7 +3572,7 @@ footer.footer {
   }
 
   .index_third_section .index_third_card_body p {
-    font-size: 11.7px;
+    font-size: 14px;
   }
 
   .index_third_section .index_third_btn {
@@ -3922,7 +3922,7 @@ footer.footer {
 
   .footer .footer_bottom_links {
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     row-gap: 10px;
   }
 
@@ -3995,7 +3995,7 @@ footer.footer {
 
   .footer .footer_bottom_links a {
     font-size: 12px;
-    margin-right: 9px;
+    margin-right: -5px;
     padding-right: 9px;
   }
 }
@@ -10439,7 +10439,7 @@ section.review_premium_section::before{
    768px - 1199px
 ========================================= */
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     /* Logo + Social Icons - LEFT */
     .footer_logo_area {
@@ -12834,7 +12834,7 @@ section.review_premium_section::before{
     color:#d8f3ff;
     font-size:11px;
     font-weight:600;
-    letter-spacing:4px;
+    /* letter-spacing:4px; */
 }
 
 .service_premium_section .service_premium_bottom_icon{
@@ -15720,7 +15720,8 @@ section.about_fourth_section::after{
 
 .header_section .header_section_socials{
     justify-content:flex-end;
-    gap:14px;
+    gap:10px;
+    margin-right: 24px;
 }
 
 .header_section .header_section_socials a{
@@ -16819,3 +16820,313 @@ section.about_fourth_section::after{
 
 
 
+@media (max-width: 575.98px) {
+  .footer .footer_bottom_links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px; /* Links madyalo gap kosam */
+    width: 100%;
+  }
+
+  .footer .footer_bottom_links a {
+     /* Small screens lo text oke line lo patteలా font-size thagginchandi */
+    white-space: nowrap; /* Text next line ki vellakunda chusthundi */
+  }
+}
+
+
+
+/* Tablet Screens (Up to 1199px screen size) */
+@media (min-width: 768px) and (max-width:991px) {
+  
+  /* 1. Toggle Button Tablet lo Show avvadaniki */
+  .vs-menu-toggle.header_section_mobile_toggle {
+    display: inline-flex !important;
+  }
+
+  /* 2. Desktop Normal Menu Navbar Hide avvadaniki */
+  .header_section_nav {
+    display: none !important;
+  }
+
+  /* 3. Slide-out Side Menu Panel (Drawer) Tablet lo proper ga fit avvadaniki */
+  .vs-menu-wrapper {
+    width: 320px !important; /* Drawer menu width */
+    max-width: 85% !important;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Default hidden position */
+    height: 100vh;
+    z-index: 99999;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Toggle Button click chesinappudu Menu visible avvadaniki */
+  .vs-menu-wrapper.vs-body-visible,
+  .vs-menu-wrapper.open {
+    left: 0 !important;
+  }
+}
+
+
+/* 768px nundi 991px screen devices kosam */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  
+  /* 1. Main Header lo unna "Book Appointment" button ni hide cheyaniki */
+  .header_section_actions .header_section_book {
+    display: none !important;
+  }
+
+  /* 2. Header actions container overlay/spacing fix cheyaniki */
+  .header_section_actions {
+    display: flex !important;
+    align-items: center;
+  }
+
+  /* 3. Mobile toggle icon display avvadaniki */
+  .header_section_mobile_toggle {
+    display: inline-flex !important;
+  }
+
+  /* 4. Drawer Menu (Toggle Menu) lopala unna Book Appointment button show avvadaniki */
+  .vs-mobile-menu .header_section_book,
+  .vs-menu-wrapper .header_section_book {
+    display: flex !important;
+    width: 100% !important;
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+
+
+
+
+/* 768px nundi 991px tablet devices lo bottom bar completely hide cheyaniki */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .service_premium_bottom_bar {
+    display: none !important;
+  }
+}
+
+
+
+
+/* 1024px screen response view lo hide cheyadaniki */
+@media screen and (max-width: 1024px) {
+
+  /* 1. "Healthy Smiles Happier Lives" text section hide */
+  .footer .footer_brand_tag {
+    display: none !important;
+  }
+
+  /* 2. Footer lo unna background curved design lines / graphics hide */
+  .footer .footer_leaf_left,
+  .footer .footer_leaf_right,
+  .footer_main::before,
+  .footer_main::after {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+
+
+
+
+
+/* ==========================================
+   Blog Section Dark Theme Styles
+   ========================================== */
+
+/* 1. Main Background Gradient Theme */
+section.blog_section {
+  background: radial-gradient(circle at 90% 0%, rgba(80, 223, 255, .18), transparent 35%), 
+              linear-gradient(115deg, #0878b8 0%, #075f9d 52%, #045188 100%) !important;
+  padding: 60px 0 !important;
+  color: #ffffff !important;
+}
+
+/* 2. Headings Text Color */
+section.blog_section .title-area-three h2,
+section.blog_section h2 {
+  color: #ffffff !important;
+}
+
+section.blog_section .sub-title7 {
+  color: #50dfff !important; /* Cyan glow text */
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* 3. Cards - Cyan Curved Border Stroke & Translucent Fill */
+section.blog_section .card {
+  background: rgba(4, 51, 88, 0.75) !important;
+  border: 1px solid rgba(80, 223, 255, 0.5) !important; /* Cyan curve stroke line */
+  border-radius: 12px !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(80, 223, 255, 0.15) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.3s ease-in-out !important;
+  overflow: hidden;
+}
+
+/* Card Hover Glow */
+section.blog_section .card:hover {
+  border-color: #50dfff !important;
+  box-shadow: 0 12px 30px rgba(80, 223, 255, 0.4) !important;
+  transform: translateY(-6px) !important;
+}
+
+/* 4. Images & Videos Inside Card */
+section.blog_section .card-img-top,
+section.blog_section .main-video {
+  border-radius: 8px !important;
+  max-height: 200px !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
+/* 5. Title & Paragraph Text inside Cards */
+section.blog_section .card-title,
+section.blog_section .card-title a {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+section.blog_section .card-text {
+  color: #d1e8f7 !important; /* Light ice blue text */
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+/* 6. Read More Buttons Inside Card */
+section.blog_section a.btn-style7,
+section.blog_section .btn-style7 {
+  background: linear-gradient(90deg, #50dfff 0%, #00b0ff 100%) !important;
+  color: #043358 !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
+  padding: 8px 22px !important;
+  border: none !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out !important;
+  margin-top: 10px !important;
+}
+
+section.blog_section a.btn-style7:hover {
+  background: #ffffff !important;
+  color: #075f9d !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 7. Bottom View More Link */
+section.blog_section .view_more_btn {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+section.blog_section .view_more_btn:hover {
+  color: #50dfff !important;
+}
+
+section.blog_section .arrowmark_right,
+section.blog_section .fa-arrow-right {
+  margin-left: 8px;
+  color: #50dfff !important;
+}
+
+
+
+/* Contact Heading Position Adjustment */
+.contact_new_heading {
+  margin-top: 35px !important; /* Text ni curve lines kindaki thevadaniki */
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Heading H2 Margin Adjust */
+.contact_new_heading h2 {
+  margin-top: 10px !important;
+  padding-top: 5px !important;
+}
+
+
+
+.contact_new_section .contact_new_eyebrow {
+  margin-top: -15px !important; /* Text inka paiki jargadaaniki (-15px to -25px target cheyandi) */
+  margin-bottom: 5px !important; /* Text kindaki space thagginchadaniki */
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+
+
+/* ==========================================
+   Mobile Responsive Adjustments for Contact Section
+   ========================================== */
+
+@media (max-width: 767.98px) {
+  /* 1. GET IN TOUCH text ni mobile lo inka paiki జరపడానికి */
+  .contact_new_section .contact_new_eyebrow {
+    margin-top: -20px !important; /* Visual ga text paiki velthundi */
+    margin-bottom: 2px !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  /* 2. Heading text ni curve lines kindaki thevadaniki */
+  .contact_new_heading {
+    margin-top: 25px !important;
+  }
+
+  .contact_new_heading h2 {
+    font-size: 22px !important; /* Mobile readability kosam size Adjust */
+    line-height: 1.3 !important;
+    margin-top: 8px !important;
+  }
+}
+
+/* Extra small mobile screens (Phones with width <= 480px) */
+@media (max-width: 480px) {
+  .contact_new_section .contact_new_eyebrow {
+    transform: translateY(-15px) !important;
+  }
+
+  .contact_new_heading h2 {
+    font-size: 20px !important;
+  }
+}
+
+
+
+
+/* Bottom Right Tooth Watermark Blend Styling */
+.contact_new_section .contact_new_character {
+  position: absolute !important;
+  right: -17px !important;
+  bottom: -35px !important;
+  z-index: 1 !important; /* Send slightly back behind active text */
+  width: 190px !important;
+  height: 190px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  /* Color, Opacity & Blend Mode to match top watermark */
+  color: rgba(255, 255, 255, 0.12) !important; /* Low opacity soft white tint */
+  opacity: 0.9 !important; /* Tooth opacity tagginchadaaniki */
+  mix-blend-mode: overlay !important; /* Background gradient thoni merge avthundi */
+  filter: none !important; /* Drop-shadow overlay bright solid look ni remove chestundi */
+  
+  transform: rotate(7deg) !important;
+  pointer-events: none !important;
+}
