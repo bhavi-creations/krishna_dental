@@ -199,7 +199,7 @@
                 <li><a href="doctors.php"><i class="footer_arrow"></i>Our Doctors</a></li>
                 <li><a href="services.php"><i class="footer_arrow"></i>Services</a></li>
                 <li><a href="blogs.php"><i class="footer_arrow"></i>Blogs</a></li>
-                <li><a href="services.php"><i class="footer_arrow"></i>Patient Info</a></li>
+                <!-- <li><a href="services.php"><i class="footer_arrow"></i>Patient Info</a></li> -->
                 <li><a href="appointment.php"><i class="footer_arrow"></i>Appointments</a></li>
                 <li><a href="contact.php"><i class="footer_arrow"></i>Contact</a></li>
             </ul>
@@ -269,7 +269,7 @@
       <div class="footer_bottom_links">
         <a href="privacy.php">Privacy Policy</a>
         <a href="terms.php">Terms &amp; Conditions</a>
-        <a href="services.php">Sitemap</a>
+        <!-- <a href="services.php">Sitemap</a> -->
       </div>
     </div>
   </div>
@@ -388,6 +388,9 @@
       const clone = source.cloneNode(true);
       clone.setAttribute('data-index-third-clone', 'true');
       clone.setAttribute('aria-hidden', 'true');
+      clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(function (element) {
+        element.setAttribute('tabindex', '-1');
+      });
       track.appendChild(clone);
     }
   }
@@ -407,7 +410,7 @@
 
   function startAutoplay() {
     clearInterval(autoTimer);
-    if (paused) return;
+    if (paused || document.hidden) return;
     autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
   }
 
@@ -443,22 +446,15 @@
     startAutoplay();
   }
 
-  section.addEventListener('mouseenter', function () {
-    paused = true;
-    clearInterval(autoTimer);
-  });
-
-  section.addEventListener('mouseleave', function () {
-    paused = false;
-    startAutoplay();
-  });
+  // Pointer hover and touch interaction must not interrupt autoplay.
 
   section.addEventListener('focusin', function () {
     paused = true;
     clearInterval(autoTimer);
   });
 
-  section.addEventListener('focusout', function () {
+  section.addEventListener('focusout', function (event) {
+    if (event.relatedTarget && section.contains(event.relatedTarget)) return;
     paused = false;
     startAutoplay();
   });
@@ -528,6 +524,9 @@
 
       clone.setAttribute('data-index-fifth-clone', 'true');
       clone.setAttribute('aria-hidden', 'true');
+      clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(function (element) {
+        element.setAttribute('tabindex', '-1');
+      });
       track.appendChild(clone);
     }
   }
@@ -564,7 +563,7 @@
   function startAutoplay() {
     clearInterval(autoTimer);
 
-    if (paused) return;
+    if (paused || document.hidden) return;
 
     autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
   }
@@ -601,22 +600,15 @@
     startAutoplay();
   }
 
-  section.addEventListener('mouseenter', function () {
-    paused = true;
-    clearInterval(autoTimer);
-  });
-
-  section.addEventListener('mouseleave', function () {
-    paused = false;
-    startAutoplay();
-  });
+  // Pointer hover and touch interaction must not interrupt autoplay.
 
   section.addEventListener('focusin', function () {
     paused = true;
     clearInterval(autoTimer);
   });
 
-  section.addEventListener('focusout', function () {
+  section.addEventListener('focusout', function (event) {
+    if (event.relatedTarget && section.contains(event.relatedTarget)) return;
     paused = false;
     startAutoplay();
   });

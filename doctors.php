@@ -167,17 +167,11 @@
     <div class="doctor_second_bottom_area" aria-hidden="true">
       <span class="doctor_second_bottom_fill doctor_second_bottom_fill_1"></span>
       <span class="doctor_second_bottom_fill doctor_second_bottom_fill_2"></span>
-      <span class="doctor_second_bottom_wave doctor_second_bottom_wave_1"></span>
-      <span class="doctor_second_bottom_wave doctor_second_bottom_wave_2"></span>
-      <span class="doctor_second_bottom_wave doctor_second_bottom_wave_3"></span>
+      <!-- <span class="doctor_second_bottom_wave doctor_second_bottom_wave_1"></span>
+      <span class="doctor_second_bottom_wave doctor_second_bottom_wave_2"></span> -->
+      <!-- <span class="doctor_second_bottom_wave doctor_second_bottom_wave_3"></span> -->
 
-      <!-- <div class="doctor_second_bottom_labels">
-        <span>EXPERT CARE</span>
-        <i></i>
-        <span>ADVANCED TECHNOLOGY</span>
-        <i></i>
-        <span>HEALTHIER SMILES</span>
-      </div> -->
+     
     </div>
 
   </div>

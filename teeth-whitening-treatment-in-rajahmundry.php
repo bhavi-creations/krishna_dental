@@ -56,7 +56,7 @@
             <b></b>
         </div>
 
-        <div class="service_premium_note service_premium_note_left_top">
+        <!-- <div class="service_premium_note service_premium_note_left_top">
             <span>Healthy</span>
             <span>Smiles</span>
             <span>Happier Lives</span>
@@ -82,7 +82,7 @@
             BRIGHTER<br>
             TOMORROW
             <i></i>
-        </div>
+        </div> -->
 
         <!-- <div class="service_premium_character">
             <i class="fas fa-tooth"></i>

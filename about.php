@@ -164,7 +164,8 @@
                                 <i class="fas fa-phone-alt" aria-hidden="true"></i>
                             </span>
 
-                            <span class="about_second_call_text">
+                            <span class="about_second_call_text" >
+                                
                                 <small>CALL US</small>
                                 <strong>+91 92466 58770</strong>
                             </span>
@@ -173,6 +174,16 @@
                                 <i class="fas fa-chevron-right" aria-hidden="true"></i>
                             </span>
                         </a>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -194,10 +205,10 @@
 
         </div>
 
-        <div class="about_second_bottom_copy">
+        <!-- <div class="about_second_bottom_copy">
             <i></i>
             <span>ADVANCED CARE<br>FOR HEALTHIER SMILES</span>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -249,7 +260,7 @@
 <section class="vs-skill-wrapper about_third_section">
 
     <!-- Decorative background -->
-    <span class="about_third_curve about_third_curve_top_1" aria-hidden="true"></span>
+    <!-- <span class="about_third_curve about_third_curve_top_1" aria-hidden="true"></span>
     <span class="about_third_curve about_third_curve_top_2" aria-hidden="true"></span>
 
     <span class="about_third_curve about_third_curve_bottom_1" aria-hidden="true"></span>
@@ -263,12 +274,12 @@
     <span class="about_third_shine about_third_shine_3" aria-hidden="true"></span>
 
 
-    <!-- Right decorative text -->
+   
     <div class="about_third_priority" aria-hidden="true">
         <span>Your Smile</span>
         <span>Our Priority</span>
         <i></i>
-    </div>
+    </div> -->
 
 
     <div class="container about_third_container">
