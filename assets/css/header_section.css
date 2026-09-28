@@ -1,0 +1,181 @@
+/* Shared header sizing. Loaded after the theme and New_Stylings.css. */
+.header_section .header_section_container,
+.header_section .header_section_top_container {
+  width: 100%;
+  max-width: 1460px;
+}
+
+.header_section .header_section_container > .row {
+  flex-wrap: nowrap;
+  margin-inline: 0;
+}
+
+.header_section .header_section_container > .row > * {
+  min-width: 0;
+}
+
+.header_section .header_section_logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header_section .header_section_address {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding-block: 8px;
+}
+
+/* Anchor the wide services menu to the header, not a single menu item. */
+.header_section .header_section_nav > ul > .header_section_has_children {
+  position: static;
+}
+
+.header_section .header_section_mega_menu {
+  width: min(950px, calc(100% - 32px));
+  max-height: calc(100dvh - 150px);
+  overflow-y: auto;
+}
+
+.header_section .header_section_has_children:focus-within .header_section_mega_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header_section .header_section_emergency {
+    display: none;
+  }
+}
+
+/* Use the drawer before the desktop navigation runs out of space. */
+@media (max-width: 1199.98px) {
+  .header_section .header_section_top,
+  .header_section .header_section_nav {
+    display: none !important;
+  }
+
+  .header_section .header_section_mobile_toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+  }
+
+  .header_section .header_section_main_inner,
+  .header_section .header_section_container {
+    height: auto;
+    min-height: 74px;
+  }
+
+  .header_section .header_section_container {
+    padding-right: 16px;
+  }
+
+  .header_section .header_section_logo_col {
+    flex: 0 1 auto;
+    padding-inline: 0;
+  }
+
+  .header_section .header_section_logo {
+    width: clamp(152px, 28vw, 220px);
+    min-height: 74px;
+    padding: 8px 24px 8px 12px;
+  }
+
+  .header_section .header_section_nav_col {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 12px;
+  }
+
+  .header_section .header_section_actions_col {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header_section .header_section_actions {
+    padding: 0;
+  }
+
+  .header_section .header_section_emergency {
+    display: none;
+  }
+
+  .header_section .header_section_actions .header_section_book {
+    display: inline-flex !important;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .header_section .header_section_stars,
+  .header_section .header_section_wave,
+  .header_section .header_section_glow {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header_section .header_section_actions_col {
+    display: none;
+  }
+}
+
+/* A full viewport backdrop and a separately scrollable drawer at every size. */
+.vs-menu-wrapper {
+  inset: 0;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100%;
+  height: 100dvh;
+  background: rgba(0, 0, 0, .6);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+.vs-menu-wrapper.vs-body-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.vs-menu-wrapper .vs-menu-area {
+  width: min(340px, 90vw);
+  max-width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.vs-menu-wrapper .mobile-logo {
+  max-width: 100%;
+  padding-inline: 24px;
+}
+
+.vs-menu-wrapper .mobile-logo img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.vs-menu-wrapper .vs-mobile-menu a {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.vs-menu-wrapper .vs-mobile-menu {
+  max-height: none;
+  overflow: visible;
+}

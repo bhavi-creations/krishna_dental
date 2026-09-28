@@ -387,7 +387,7 @@ if($dataV >= 51){
       allowRestartOnResize: true,
       maxRatio: (d('maxratio') ? d('maxratio') : 1),
       type: (d('slidertype') ? d('slidertype') : 'responsive'),
-      pauseOnHover: (d('pauseonhover') ? true : false),
+      pauseOnHover: false,
       navPrevNext: (d('navprevnext') ? true : false),
       hoverPrevNext: (d('hoverprevnext') ? true : false),
       hoverBottomNav: (d('hoverbottomnav') ? true : false),
@@ -819,6 +819,8 @@ if($dataV >= 51){
 
   /*----------- 25. Service Slider Active ----------*/
   $('.service-slider1').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     dots: true,
     arrows: true,
     infinite: true,
@@ -869,6 +871,8 @@ if($dataV >= 51){
   });
 
   $('.service-slider-7').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     dots: false,
     arrows: false,
     infinite: true,
@@ -916,6 +920,8 @@ if($dataV >= 51){
 
 
   $('.specialist-slider').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     dots: true,
     arrows: false,
     infinite: true,
@@ -960,6 +966,8 @@ if($dataV >= 51){
   });
 
   $('.banner-slider-v7').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     autoplay: false,
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -969,6 +977,8 @@ if($dataV >= 51){
     }).slickAnimation();
 
   $('.banner-slide-eight').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     autoplay: false,
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -979,6 +989,8 @@ if($dataV >= 51){
     }).slickAnimation();
 
   $('.testi-slider').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     dots: false,
     arrows: true,
     infinite: true,
@@ -988,6 +1000,8 @@ if($dataV >= 51){
   });
 
   $('.testi-slider-eight').slick({
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     dots: true,
     arrows: false,
     infinite: true,

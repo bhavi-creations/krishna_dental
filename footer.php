@@ -650,6 +650,8 @@
          */
         if (!$slider.hasClass('slick-initialized')) {
             $slider.slick({
+                pauseOnHover: false,
+                pauseOnDotsHover: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
