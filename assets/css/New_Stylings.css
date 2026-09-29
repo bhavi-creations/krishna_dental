@@ -19711,6 +19711,22 @@
     color-scheme: dark;
   }
 
+  .card_wrapper .appointment-form select#time_slot {
+    color-scheme: light;
+    border-color: #70d9eb;
+    background: #e3f7fc !important;
+    color: #06456b !important;
+  }
+
+  .card_wrapper .appointment-form select#time_slot option {
+    background: #eaf8fc;
+    color: #083c60;
+  }
+
+  .card_wrapper .appointment-form select#time_slot option:disabled {
+    color: #718899;
+  }
+
   .card_wrapper .appointment-form textarea.form-control {
     min-height: 138px;
     resize: vertical;
