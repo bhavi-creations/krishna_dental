@@ -920,8 +920,8 @@ Best dental specialist in Rajahmundry">
         </div>
 
         <!-- Premium navigation bar -->
-        <div class="header_section_main sticky-wrap">
-            <div class="sticky-active">
+        <div class="header_section_main">
+            <div>
                 <div class="header_section_main_inner">
                     <span class="header_section_stars" aria-hidden="true"></span>
                     <span class="header_section_wave" aria-hidden="true"></span>

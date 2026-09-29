@@ -548,6 +548,11 @@
     </div>
     </div>
 
+        <div class="index_carousel_controls index_third_slider_controls" aria-label="Service carousel controls">
+            <button type="button" class="index_carousel_arrow" data-index-third-prev aria-label="Previous services"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <button type="button" class="index_carousel_arrow" data-index-third-next aria-label="Next services"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+
     <div class="index_third_bottom"><span></span><p>BETTER DENTAL CARE <b>•</b> BRIGHTER TOMORROWS</p><span></span></div>
   </div>
 </section>
@@ -1363,7 +1368,11 @@
             </div>
           </article>
         </div>
-        <div class="index_fifth_dots_nav" aria-hidden="true"><span></span><span class="active"></span><span></span></div>
+                <div class="index_fifth_dots_nav" aria-label="Team carousel controls">
+                    <button type="button" class="index_carousel_arrow" data-index-fifth-prev aria-label="Previous team members"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <span aria-hidden="true"></span><span class="active" aria-hidden="true"></span><span aria-hidden="true"></span>
+                    <button type="button" class="index_carousel_arrow" data-index-fifth-next aria-label="Next team members"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
       </div>
 
       <aside class="index_fifth_right_deco" aria-hidden="true">

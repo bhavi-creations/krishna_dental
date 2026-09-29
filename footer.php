@@ -350,6 +350,8 @@
 
   const viewport = section.querySelector('.index_third_slider_viewport');
   const track = section.querySelector('.index_third_cards');
+  const previousButton = section.querySelector('[data-index-third-prev]');
+  const nextButton = section.querySelector('[data-index-third-next]');
   if (!viewport || !track) return;
 
   const originalSlides = Array.from(track.children).filter(function (slide) {
@@ -383,6 +385,17 @@
   }
 
   function addLoopClones() {
+    for (let i = visibleCards - 1; i >= 0; i--) {
+      const source = originalSlides[(originalSlides.length - visibleCards + i) % originalSlides.length];
+      const clone = source.cloneNode(true);
+      clone.setAttribute('data-index-third-clone', 'true');
+      clone.setAttribute('aria-hidden', 'true');
+      clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(function (element) {
+        element.setAttribute('tabindex', '-1');
+      });
+      track.insertBefore(clone, track.firstChild);
+    }
+
     for (let i = 0; i < visibleCards; i++) {
       const source = originalSlides[i % originalSlides.length];
       const clone = source.cloneNode(true);
@@ -405,7 +418,7 @@
     track.style.transition = animate
       ? 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)'
       : 'none';
-    track.style.transform = 'translate3d(' + (-(currentIndex * step)) + 'px,0,0)';
+    track.style.transform = 'translate3d(' + (-((currentIndex + visibleCards) * step)) + 'px,0,0)';
   }
 
   function startAutoplay() {
@@ -428,6 +441,29 @@
         track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
       }, TRANSITION_MS + 25);
     }
+  }
+
+  function previousSlide() {
+    clearTimeout(resetTimer);
+    currentIndex -= 1;
+    setPosition(true);
+
+    if (currentIndex < 0) {
+      resetTimer = setTimeout(function () {
+        currentIndex = originalSlides.length - 1;
+        setPosition(false);
+        void track.offsetWidth;
+        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+      }, TRANSITION_MS + 25);
+    }
+  }
+
+  function handleManualNavigation(direction) {
+    paused = false;
+    clearInterval(autoTimer);
+    if (direction > 0) nextSlide();
+    else previousSlide();
+    startAutoplay();
   }
 
   function rebuildSlider() {
@@ -459,6 +495,18 @@
     startAutoplay();
   });
 
+  if (previousButton) {
+    previousButton.addEventListener('click', function () {
+      handleManualNavigation(-1);
+    });
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener('click', function () {
+      handleManualNavigation(1);
+    });
+  }
+
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
       clearInterval(autoTimer);
@@ -483,6 +531,8 @@
 
   const track = section.querySelector('.index_fifth_cards');
   const dots = Array.from(section.querySelectorAll('.index_fifth_dots_nav span'));
+  const previousButton = section.querySelector('[data-index-fifth-prev]');
+  const nextButton = section.querySelector('[data-index-fifth-next]');
 
   if (!track) return;
 
@@ -518,6 +568,18 @@
   }
 
   function addLoopClones() {
+    for (let i = visibleCards - 1; i >= 0; i--) {
+      const source = originalSlides[(originalSlides.length - visibleCards + i) % originalSlides.length];
+      const clone = source.cloneNode(true);
+
+      clone.setAttribute('data-index-fifth-clone', 'true');
+      clone.setAttribute('aria-hidden', 'true');
+      clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(function (element) {
+        element.setAttribute('tabindex', '-1');
+      });
+      track.insertBefore(clone, track.firstChild);
+    }
+
     for (let i = 0; i < visibleCards; i++) {
       const source = originalSlides[i % originalSlides.length];
       const clone = source.cloneNode(true);
@@ -545,7 +607,7 @@
     if (!dots.length) return;
 
     dots.forEach(function (dot, index) {
-      dot.classList.toggle('active', index === (currentIndex % dots.length));
+      dot.classList.toggle('active', index === ((currentIndex % dots.length) + dots.length) % dots.length);
     });
   }
 
@@ -556,7 +618,7 @@
       ? 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)'
       : 'none';
 
-    track.style.transform = 'translate3d(' + (-(currentIndex * step)) + 'px,0,0)';
+    track.style.transform = 'translate3d(' + (-((currentIndex + visibleCards) * step)) + 'px,0,0)';
     updateDots();
   }
 
@@ -582,6 +644,30 @@
         track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
       }, TRANSITION_MS + 25);
     }
+  }
+
+  function previousSlide() {
+    clearTimeout(resetTimer);
+
+    currentIndex -= 1;
+    setPosition(true);
+
+    if (currentIndex < 0) {
+      resetTimer = setTimeout(function () {
+        currentIndex = originalSlides.length - 1;
+        setPosition(false);
+        void track.offsetWidth;
+        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
+      }, TRANSITION_MS + 25);
+    }
+  }
+
+  function handleManualNavigation(direction) {
+    paused = false;
+    clearInterval(autoTimer);
+    if (direction > 0) nextSlide();
+    else previousSlide();
+    startAutoplay();
   }
 
   function rebuildSlider() {
@@ -612,6 +698,18 @@
     paused = false;
     startAutoplay();
   });
+
+  if (previousButton) {
+    previousButton.addEventListener('click', function () {
+      handleManualNavigation(-1);
+    });
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener('click', function () {
+      handleManualNavigation(1);
+    });
+  }
 
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {

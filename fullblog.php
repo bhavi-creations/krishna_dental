@@ -70,102 +70,418 @@ $count_stmt->close();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* body {
-            background-color: black;
-            color: white;
-        } */
-
         .fullblogs_section {
-            /* background-color: black; */
-            /* padding-bottom: 50px; */
+            padding-bottom: 30px;
+            background: #e8f4f9;
         }
 
-        .blog-title,
-        .main-content,
-        .main-content *,
-        .full-content,
-        .full-content * {
-            color: #000000 !important;
+        .fullblog_hero {
+            position: relative;
+            overflow: hidden;
+            padding: 30px 0 76px;
+            color: #fff;
+            background:
+                radial-gradient(circle at 86% 18%, rgba(45, 207, 245, .22), transparent 28%),
+                radial-gradient(circle at 10% 95%, rgba(0, 172, 231, .18), transparent 34%),
+                linear-gradient(112deg, #003f70 0%, #075f9d 54%, #034574 100%);
         }
 
+        .fullblog_hero::after {
+            position: absolute;
+            right: -110px;
+            bottom: -210px;
+            width: 440px;
+            height: 440px;
+            border: 1px solid rgba(83, 221, 249, .22);
+            border-radius: 50%;
+            content: "";
+            pointer-events: none;
+        }
 
+        .fullblog_hero .container,
+        .fullblog_article_container,
+        .fullblog_related .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1180px;
+        }
+
+        .fullblog_utility_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 38px;
+        }
+
+        .fullblog_back_link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, .9);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .fullblog_back_link:hover {
+            color: #64e5fa;
+        }
+
+        .fullblog_lang_switch {
+            display: inline-flex;
+            gap: 4px;
+            padding: 4px;
+            border: 1px solid rgba(158, 231, 249, .45);
+            border-radius: 8px;
+            background: rgba(0, 38, 71, .3);
+        }
+
+        .fullblog_lang_switch .lang-btn {
+            min-height: 40px;
+            padding: 8px 16px;
+            border: 0;
+            border-radius: 5px;
+            color: rgba(255, 255, 255, .86);
+            background: transparent;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .fullblog_lang_switch .lang-btn.active {
+            color: #003f70;
+            background: #59def3;
+        }
 
         .badge_service_name {
-            background-color: gold;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            min-height: 32px;
+            margin-bottom: 18px;
+            padding: 6px 13px;
+            border: 1px solid rgba(95, 228, 248, .5);
+            border-radius: 4px;
+            color: #8cecff;
+            background: rgba(0, 29, 57, .28);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
-        .lang-btn.active {
-            background: gold !important;
-            color: black !important;
-            border: 2px solid gold !important;
+        .fullblog_hero .blog-title {
+            max-width: 900px;
+            margin: 0 auto;
+            color: #fff;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.16;
+            text-align: center;
+            overflow-wrap: anywhere;
         }
 
-        .custom-card {
-            background: #111;
-            border: 1px solid #333;
-            transition: 0.3s;
+        .fullblog_article_container {
+            margin-top: -42px;
         }
 
-        .custom-card:hover {
-            border-color: gold;
+        .fullblog_media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+            max-height: 560px;
+            overflow: hidden;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            background: #062f52;
+            box-shadow: 0 16px 40px rgba(0, 43, 77, .2);
         }
 
-        .blog-card-text {
-            color: gold;
-            text-decoration: none;
-            font-size: 14px;
+        .fullblog_media img,
+        .fullblog_media video {
+            display: block;
+            width: 100%;
+            max-height: 550px;
+            object-fit: contain;
         }
 
-        img {
+        .fullblog_article {
+            margin-top: 28px;
+            padding: 36px 42px;
+            border: 1px solid #cfe5ef;
+            border-radius: 8px;
+            /* background: #f1f8fb; */
+            background: radial-gradient(circle at 86% 18%, rgba(45, 207, 245, .22), transparent 28%), radial-gradient(circle at 10% 95%, rgba(0, 172, 231, .18), transparent 34%), linear-gradient(112deg, #003f70 0%, #075f9d 54%, #034574 100%);
+            box-shadow: 0 12px 34px rgba(0, 57, 99, .06);
+        }
+
+        .fullblog_article .main-content,
+        .fullblog_article .full-content,
+        .fullblog_article .main-content *,
+        .fullblog_article .full-content * {
+            color: #fcfdfd !important;
+            /* color: #183a54 !important; */
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1.85;
+            overflow-wrap: anywhere;
+        }
+
+        .fullblog_article .main-content {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e0edf3;
+            font-size: 17px;
+        }
+
+        .fullblog_article .full-content {
+            margin-top: 24px !important;
+            font-size: 16px;
+        }
+
+        .fullblog_article .full-content h2,
+        .fullblog_article .full-content h3,
+        .fullblog_article .main-content h2,
+        .fullblog_article .main-content h3 {
+            margin-top: 1.6em;
+            color: #075f9d !important;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .fullblog_article img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 6px;
         }
 
-
-
-
-        /* card images for slider   */
-        .custom-card {
-            background: #111;
-            border: 1px solid #333;
-            transition: 0.3s;
-            height: 100%;
-            /* Card height align avvadaniki */
+        .fullblog_reactions {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 34px;
+            padding-top: 24px;
+            border-top: 1px solid #e0edf3;
         }
 
-        .custom-card img {
-            width: 100%;
-            height: 200px;
-            /* Fixed height for consistency */
-            object-fit: contain;
-            /* Image cut avvakunda full ga chupisthundhi */
-            background-color: #000;
-            /* Gap unte black cover chesthundhi */
-            border-radius: 10px;
-        }
-
-        .blog-card-text {
-            color: gold;
-            text-decoration: none;
+        .fullblog_reactions .btn {
+            min-height: 44px;
+            padding: 10px 17px;
+            border: 1px solid #0a8fbd;
+            border-radius: 5px;
+            color: #087eaa;
+            background: #fff;
             font-size: 14px;
-            margin-top: 10px;
+            font-weight: 600;
         }
 
-        
-
-        .blogs_color {
-            color: black !important;
-           
+        .fullblog_reactions .btn:hover:not(:disabled) {
+            color: #fff;
+            background: #078dbb;
         }
 
-        .fullblogs_section_1 {
-            background-color: white !important;
+        .fullblog_reactions .btn:disabled {
+            opacity: .55;
+        }
+
+        .fullblog_related {
+            padding: 62px 0 68px;
+            overflow: hidden;
+            color: #fff;
+            background:
+                radial-gradient(circle at 85% 0%, rgba(0, 186, 244, .18), transparent 30%),
+                linear-gradient(105deg, #003f70 0%, #075f9d 52%, #034574 100%);
+        }
+
+        .fullblog_related_heading {
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .fullblog_related_heading span {
+            color: #73e8f7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .fullblog_related_heading h2 {
+            margin: 8px 0 0;
+            color: #fff;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .fullblog_related_heading p {
+            margin: 9px 0 0;
+            color: rgba(255, 255, 255, .7);
+        }
+
+        .fullblog_related .swiper {
+            overflow: hidden;
+            padding: 4px 4px 15px;
+        }
+
+        .fullblog_related_card {
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid rgba(112, 226, 246, .45);
+            border-radius: 7px;
+            background: rgba(0, 43, 78, .72);
+            box-shadow: 0 10px 24px rgba(0, 23, 50, .18);
+        }
+
+        .fullblog_related_image {
+            display: block;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            background: #062f52;
+        }
+
+        .fullblog_related_image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .3s ease;
+        }
+
+        .fullblog_related_card:hover .fullblog_related_image img {
+            transform: scale(1.04);
+        }
+
+        .fullblog_related_title {
+            display: block;
+            min-height: 74px;
+            padding: 16px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .fullblog_related_title:hover {
+            color: #73e8f7;
+        }
+
+        .fullblog_related_controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 22px;
+        }
+
+        .fullblog_related_controls button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border: 1px solid rgba(111, 229, 248, .75);
+            border-radius: 50%;
+            color: #fff;
+            background: #078dbb;
+            cursor: pointer;
+        }
+
+        .fullblog_related_controls button:hover {
+            background: #08b8dd;
+        }
+
+        .fullblog_related_controls .swiper-pagination {
+            position: static;
+            width: auto;
+        }
+
+        .fullblog_related_controls .swiper-pagination-bullet {
+            background: #9eefff;
+        }
+
+        @media (max-width: 767.98px) {
+            .fullblog_hero {
+                padding: 22px 0 68px;
+            }
+
+            .fullblog_utility_row {
+                align-items: flex-start;
+                margin-bottom: 28px;
+            }
+
+            .fullblog_back_link {
+                min-height: 44px;
+                padding-top: 10px;
+            }
+
+            .fullblog_lang_switch .lang-btn {
+                padding: 8px 11px;
+            }
+
+            .fullblog_hero .blog-title {
+                font-size: 32px;
+            }
+
+            .fullblog_article_container {
+                margin-top: -34px;
+            }
+
+            .fullblog_media {
+                min-height: 140px;
+                border-width: 3px;
+            }
+
+            .fullblog_article {
+                margin-top: 18px;
+                padding: 23px 18px;
+            }
+
+            .fullblog_article .main-content {
+                font-size: 16px;
+            }
+
+            .fullblog_article .full-content {
+                font-size: 15px;
+            }
+
+            .fullblog_reactions {
+                flex-wrap: wrap;
+            }
+
+            .fullblog_related {
+                padding: 38px 0 22px;
+            }
+
+            .fullblog_related .swiper {
+                padding-bottom: 6px;
+            }
+
+            .fullblog_related_controls {
+                margin-top: 12px;
+            }
+
+            .fullblog_related_heading h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .fullblog_utility_row {
+                gap: 8px;
+            }
+
+            .fullblog_back_link {
+                gap: 6px;
+                font-size: 12px;
+            }
+
+            .fullblog_lang_switch .lang-btn {
+                padding: 7px 9px;
+                font-size: 12px;
+            }
+
+            .fullblog_hero .blog-title {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
@@ -175,51 +491,58 @@ $count_stmt->close();
     <?php include 'header.php'; ?>
 
     <main class="fullblogs_section">
-        <div class="container py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <button id="english-btn" class="lang-btn active btn btn-outline-warning">English</button>
-                <button id="telugu-btn" class="lang-btn ms-3 btn btn-outline-warning">తెలుగు</button>
-            </div>
-
-            <?php if (!empty($service)): ?>
-                <div class="text-center mb-4">
-                    <span class="badge_service_name px-4 py-2"><?= htmlspecialchars($service) ?></span>
+        <section class="fullblog_hero">
+            <div class="container">
+                <div class="fullblog_utility_row">
+                    <a class="fullblog_back_link" href="blogs.php"><i class="fas fa-arrow-left" aria-hidden="true"></i><span>All Blogs</span></a>
+                    <div class="fullblog_lang_switch" role="group" aria-label="Article language">
+                        <button id="english-btn" class="lang-btn active" type="button">English</button>
+                        <button id="telugu-btn" class="lang-btn" type="button">తెలుగు</button>
+                    </div>
                 </div>
-            <?php endif; ?>
 
-            <div class="text-center mb-5">
+                <?php if (!empty($service)): ?>
+                    <div class="text-center">
+                        <span class="badge_service_name"><?= htmlspecialchars($service) ?></span>
+                    </div>
+                <?php endif; ?>
+
+                <h1 class="blog-title">
+                    <span id="title-en"><?= $title ?></span>
+                    <span id="title-te" style="display:none;"><?= $telugu_TeTitle = !empty($telugu_title) ? $telugu_title : $title ?></span>
+                </h1>
+            </div>
+        </section>
+
+        <div class="container fullblog_article_container">
+            <?php if (!empty($video) || !empty($main_image)): ?>
+                <div class="fullblog_media">
                 <?php if (!empty($video)): ?>
-                    <video controls class="w-100 shadow" style="max-width:800px; border-radius:15px;">
+                    <video controls>
                         <source src="./admin/uploads/videos/<?= $video ?>" type="video/mp4">
                     </video>
                 <?php elseif (!empty($main_image)): ?>
-                    <img src="./admin/uploads/photos/<?= $main_image ?>" class="shadow" style="max-height:500px; width:auto;">
+                    <img src="./admin/uploads/photos/<?= $main_image ?>" alt="<?= htmlspecialchars($title) ?>">
                 <?php endif; ?>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <h1 class="blog-title text-center mb-4" style="font-weight:800;">
-                        <span id="title-en"><?= $title ?></span>
-                        <span id="title-te" style="display:none;"><?= $telugu_TeTitle = !empty($telugu_title) ? $telugu_title : $title ?></span>
-                    </h1>
-
-                    <div class="main-content fs-5">
-                        <div id="main-en"><?= $main_content ?></div>
-                        <div id="main-te" style="display:none;"><?= $telugu_main_content ?></div>
-                    </div>
-
-                    <div class="full-content mt-4">
-                        <div id="full-en"><?= $full_content ?></div>
-                        <div id="full-te" style="display:none;"><?= $telugu_full_content ?></div>
-                    </div>
-
-                    <div class="d-flex justify-content-center mt-5">
-                        <button id="like-btn" class="btn btn-outline-success me-3">👍 Like (<span id="like-count"><?= $likes_count ?></span>)</button>
-                        <button id="dislike-btn" class="btn btn-outline-danger">👎 Dislike (<span id="dislike-count"><?= $dislikes_count ?></span>)</button>
-                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
+
+            <article class="fullblog_article">
+                <div class="main-content">
+                    <div id="main-en"><?= $main_content ?></div>
+                    <div id="main-te" style="display:none;"><?= $telugu_main_content ?></div>
+                </div>
+
+                <div class="full-content">
+                    <div id="full-en"><?= $full_content ?></div>
+                    <div id="full-te" style="display:none;"><?= $telugu_full_content ?></div>
+                </div>
+
+                <div class="fullblog_reactions">
+                    <button id="like-btn" class="btn" type="button"><i class="fas fa-thumbs-up me-2" aria-hidden="true"></i>Like (<span id="like-count"><?= $likes_count ?></span>)</button>
+                    <button id="dislike-btn" class="btn" type="button"><i class="fas fa-thumbs-down me-2" aria-hidden="true"></i>Dislike (<span id="dislike-count"><?= $dislikes_count ?></span>)</button>
+                </div>
+            </article>
         </div>
     </main>
 
@@ -252,59 +575,55 @@ $count_stmt->close();
 
 
 
-    <div class="fullblogs_section_1">
-        <div class="container ">
-            <div class="blogs_side ">
-                <div class="side-bar">
-                    <h1 class="d-flex justify-content-center py-5 blogs_color">LATEST BLOGS</h1>
-                    <div class="swiper blog-swiper">
-                        <div class="swiper-wrapper">
-                            <?php
-                            // DB connection
-                            $conn = new mysqli($servername, $username, $password, $dbname);
-                            if ($conn->connect_error) {
-                                die("Connection failed: " . $conn->connect_error);
-                            }
+    <!-- <section class="fullblog_related">
+        <div class="container">
+            <div class="fullblog_related_heading">
+                <span>More from our journal</span>
+                <h2>Latest Blogs</h2>
+                <p>Explore more dental care insights from our team.</p>
+            </div>
+            <div class="swiper blog-swiper">
+                <div class="swiper-wrapper">
+                    <?php
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
 
-                            $sql = "SELECT id, title, main_image FROM blogs ORDER BY created_at DESC";
-                            $result = $conn->query($sql);
+                    $sql = "SELECT id, title, main_image FROM blogs ORDER BY created_at DESC";
+                    $result = $conn->query($sql);
 
-                            if ($result->num_rows > 0) {
-                                while ($row = $result->fetch_assoc()) {
-                                    $sidebar_image_path = !empty($row['main_image']) ? "./admin/uploads/photos/{$row['main_image']}" : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
-                                    $title_short = strlen($row['title']) > 50 ? substr($row['title'], 0, 50) . '...' : $row['title'];
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $sidebar_image_path = !empty($row['main_image']) ? "./admin/uploads/photos/" . rawurlencode($row['main_image']) : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
+                            $title_short = strlen($row['title']) > 50 ? substr($row['title'], 0, 50) . '...' : $row['title'];
+                            $related_title = htmlspecialchars($title_short, ENT_QUOTES, 'UTF-8');
+                            $related_image = htmlspecialchars($sidebar_image_path, ENT_QUOTES, 'UTF-8');
 
-                                    echo "
-                            <div class='swiper-slide d-flex justify-content-center'>
-                                <div class='custom-card background_sidebar text-center' 
-                                    style='width:100%; max-width:400px; height:350px; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; padding:10px; border-radius:8px; box-shadow:0px 2px 10px rgba(0,0,0,0.1);'>
-                                    <div style='flex:1; display:flex; align-items:center; justify-content:center; width:100%; overflow:hidden;'>
-                                        <img src='{$sidebar_image_path}' class='img-fluid' style='width:100%; height:100%; object-fit:cover;' alt='Blog Image'>
-                                    </div>
-                                    <a href='fullblog.php?id={$row['id']}'>
-                                        <p class='blog-card-text mt-2'>{$title_short}</p>
+                            echo "
+                            <div class='swiper-slide'>
+                                <article class='fullblog_related_card'>
+                                    <a class='fullblog_related_image' href='fullblog.php?id=" . (int) $row['id'] . "'>
+                                        <img src='{$related_image}' alt='{$related_title}'>
                                     </a>
-                                </div>
+                                    <a class='fullblog_related_title' href='fullblog.php?id=" . (int) $row['id'] . "'>{$related_title}</a>
+                                </article>
                             </div>";
-                                }
-                            } else {
-                                echo "<p>No blog posts found.</p>";
-                            }
-                            $conn->close();
-                            ?>
-                        </div>
-
-                        <!-- Navigation -->
-                        <!-- <div class="swiper-button-next blog-swiper-button-next"></div>
-                    <div class="swiper-button-prev blog-swiper-button-prev"></div> -->
-
-                        <!-- Pagination -->
-                        <!-- <div class="swiper-pagination blog-swiper-pagination"></div> -->
-                    </div>
+                        }
+                    } else {
+                        echo "<p>No blog posts found.</p>";
+                    }
+                    $conn->close();
+                    ?>
                 </div>
             </div>
+            <div class="fullblog_related_controls" aria-label="Latest blogs carousel controls">
+                <button type="button" class="blog-swiper-button-prev" aria-label="Previous blogs"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="swiper-pagination blog-swiper-pagination" aria-hidden="true"></div>
+                <button type="button" class="blog-swiper-button-next" aria-label="Next blogs"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
         </div>
-    </div>
+    </section> -->
     <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -365,11 +684,16 @@ $count_stmt->close();
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 3000
+                delay: 3000,
+                disableOnInteraction: false
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".blog-swiper-pagination",
                 clickable: true
+            },
+            navigation: {
+                nextEl: ".blog-swiper-button-next",
+                prevEl: ".blog-swiper-button-prev"
             },
             breakpoints: {
                 768: {
