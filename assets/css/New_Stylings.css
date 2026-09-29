@@ -20314,6 +20314,60 @@
     pointer-events: none !important;
   }
 
+/* Footer: brand only on phones; brand and quick links on tablets. */
+@media (max-width: 767.98px) {
+  .footer .footer_links_area {
+    display: none !important;
+  }
+
+  .footer .footer_brand_col {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .footer .footer_container > .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .footer .footer_brand_col,
+  .footer .footer_links_area {
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 0;
+  }
+
+  .footer .footer_links_area {
+    padding-left: 24px;
+  }
+
+  .footer .footer_links_area > .row {
+    display: block;
+    margin: 0;
+  }
+
+  .footer .footer_links_area .footer_quick_links {
+    display: block !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .footer_links_area .footer_our_services,
+  .footer .footer_links_area .footer_more_services,
+  .footer .footer_right_deco {
+    display: none !important;
+  }
+}
+
 /* Responsive content and carousel alignment safeguards. */
 .index_third_section .index_third_cards {
   margin-left: 0 !important;
