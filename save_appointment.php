@@ -27,13 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     /* ======================
        HOLIDAY CHECK
        ====================== */
+    try {
     $stmt = $conn->prepare(
         "SELECT holiday_type, reason 
          FROM holidays 
          WHERE holiday_date=?"
     );
+    if (!$stmt) throw new RuntimeException($conn->error);
     $stmt->bind_param("s", $date);
-    $stmt->execute();
+    if (!$stmt->execute()) throw new RuntimeException($stmt->error);
     $h = $stmt->get_result();
 
     if ($h->num_rows > 0) {
@@ -67,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ) {
             echo "<script>
                 alert('".addslashes($row['reason'])."');
-                window.location='index.php';
+                window.location='appointment.php';
             </script>";
             exit;
         }
@@ -81,14 +83,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          FROM appointments 
          WHERE appointment_date=? AND time_slot=?"
     );
+    if (!$stmt) throw new RuntimeException($conn->error);
     $stmt->bind_param("ss", $date, $slot);
-    $stmt->execute();
+    if (!$stmt->execute()) throw new RuntimeException($stmt->error);
     $count = $stmt->get_result()->fetch_assoc();
 
     if ($count['total'] >= 3) {
         echo "<script>
             alert('This time slot is FULL');
-            window.location='index.php';
+            window.location='appointment.php';
         </script>";
         exit;
     }
@@ -101,8 +104,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         (name, email, phone, appointment_date, time_slot, message)
         VALUES (?, ?, ?, ?, ?, ?)"
     );
+    if (!$stmt) throw new RuntimeException($conn->error);
     $stmt->bind_param("ssssss", $name, $email, $phone, $date, $slot, $msg);
-    $stmt->execute();
+    if (!$stmt->execute()) throw new RuntimeException($stmt->error);
+    $stmt->close();
+    } catch (Throwable $e) {
+        error_log('Appointment database error: ' . $e->getMessage());
+        http_response_code(503);
+        echo '<p>Unable to save your appointment right now. Please try again later.</p>';
+        exit;
+    }
 
     /* ======================
        MAIL TO DOCTOR ONLY
@@ -113,16 +124,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mailDoctor->isSMTP();
         $mailDoctor->Host       = 'smtp.gmail.com';
         $mailDoctor->SMTPAuth   = true;
-        $mailDoctor->Username   = 'drsureshkumar1.com@gmail.com';
-        $mailDoctor->Password   = 'vsspzvcrooacjcjq';
+        $mailDoctor->Username   = 'krishnadentalcureclinic@gmail.com';
+        $mailDoctor->Password   = 'tegzynegjhskkwwp';
         $mailDoctor->SMTPSecure = 'tls';
         $mailDoctor->Port       = 587;
 
         $mailDoctor->setFrom(
-            'drsureshkumar1.com@gmail.com',
+            'krishnadentalcureclinic@gmail.com',
             'Clinic Appointment System'
         );
-        $mailDoctor->addAddress('drsureshkumar1.com@gmail.com');
+        $mailDoctor->addAddress('krishnadentalcureclinic@gmail.com');
 
         $mailDoctor->isHTML(true);
         $mailDoctor->Subject = 'New Appointment Booked';
@@ -153,13 +164,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mailPatient->isSMTP();
         $mailPatient->Host       = 'smtp.gmail.com';
         $mailPatient->SMTPAuth   = true;
-        $mailPatient->Username   = 'drsureshkumar1.com@gmail.com';
-        $mailPatient->Password   = 'vsspzvcrooacjcjq';
+        $mailPatient->Username   = 'krishnadentalcureclinic@gmail.com';
+        $mailPatient->Password   = 'tegzynegjhskkwwp';
         $mailPatient->SMTPSecure = 'tls';
         $mailPatient->Port       = 587;
 
         $mailPatient->setFrom(
-            'drsureshkumar1.com@gmail.com',
+            'krishnadentalcureclinic@gmail.com',
             'Krishna Dental Specialities'
         );
         $mailPatient->addAddress($email);
