@@ -5,7 +5,7 @@ include './db.connection/db_connection.php';
 $service = isset($_GET['service']) ? $_GET['service'] : '';
 
 // Query
-$sql = "SELECT id, title, main_content, main_image, created_at FROM blogs";
+$sql = "SELECT id, title, slug, main_content, main_image, created_at FROM blogs";
 if (!empty($service)) {
   $sql .= " WHERE service = ?";
 }
@@ -158,8 +158,7 @@ $result = $stmt->get_result();
                 : "default_image.png";
 
               // ✅ SEO URL (slug)
-              $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
-              $final_url = "fullblog.php?id=" . $blog_link_val;
+              $final_url = !empty($row['slug']) ? (preg_match('/^[a-zA-Z0-9_-]+$/D', $row['slug']) ? './' : 'fullblog.php?slug=') . rawurlencode($row['slug']) : 'fullblog.php?id=' . (int) $row['id'];
 
               // ✅ Date format
               $formatted_date = date("d M Y, h:i A", strtotime($row['created_at']));

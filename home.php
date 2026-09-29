@@ -1412,7 +1412,7 @@
             include './db.connection/db_connection.php';
 
             // Fetch latest 3 blogs with video
-            $sql = "SELECT id, title, main_content, main_image, video FROM blogs ORDER BY created_at DESC LIMIT 3";
+            $sql = "SELECT id, title, slug, main_content, main_image, video FROM blogs ORDER BY created_at DESC LIMIT 3";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -1420,6 +1420,7 @@
 
                 while ($row = $result->fetch_assoc()) {
                     $blog_id = $row['id'];
+                    $blog_url = !empty($row['slug']) ? (preg_match('/^[a-zA-Z0-9_-]+$/D', $row['slug']) ? './' : 'fullblog.php?slug=') . rawurlencode($row['slug']) : 'fullblog.php?id=' . (int) $blog_id;
                     $title = $row['title'];
                     $main_content = $row['main_content'];
                     $main_image = $row['main_image'];
@@ -1450,7 +1451,7 @@
                     echo "<p class='card-text'>" . substr($main_content, 0, 90) . "...</p>";
 
                     // Link to full blog post
-                    echo "<a href='fullblog.php?id={$blog_id}' class='btn-style7 v6 wow fadeInUp animated'>Read more</a>";
+                    echo "<a href='{$blog_url}' class='btn-style7 v6 wow fadeInUp animated'>Read more</a>";
 
 
                     echo "</div>"; // End card body

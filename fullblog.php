@@ -3,9 +3,9 @@
 include './db.connection/db_connection.php';
 
 // Identifier capture
-$blog_input = isset($_GET['id']) ? $_GET['id'] : '';
+$blog_input = $_GET['slug'] ?? $_GET['id'] ?? '';
 
-if (empty($blog_input)) {
+if (!is_string($blog_input) || $blog_input === '') {
     echo "<h1 style='color:gold; text-align:center; margin-top:50px;'>Invalid Blog Request</h1>";
     exit;
 }
@@ -18,13 +18,23 @@ $stmt = $conn->prepare("
         telugu_title, telugu_main_content, telugu_full_content,
         section1_image, service, hashtags, keypoints
     FROM blogs 
-    WHERE id = ? OR slug = ?
+    WHERE slug = ?
+    LIMIT 1
 ");
 
-$stmt->bind_param("ss", $blog_input, $blog_input);
+$stmt->bind_param("s", $blog_input);
 $stmt->execute();
 $result = $stmt->get_result();
 $blog = $result->fetch_assoc();
+
+// Keep old ID links working without treating numeric slug prefixes as IDs.
+if (!$blog && !isset($_GET['slug']) && ctype_digit($blog_input)) {
+    $stmt->close();
+    $stmt = $conn->prepare("SELECT * FROM blogs WHERE id = ? LIMIT 1");
+    $stmt->bind_param("s", $blog_input);
+    $stmt->execute();
+    $blog = $stmt->get_result()->fetch_assoc();
+}
 
 if (!$blog) {
     echo "<h1 style='color:gold; text-align:center; margin-top:50px;'>Blog Not Found!</h1>";
@@ -557,7 +567,7 @@ $count_stmt->close();
                     $latest_res = $conn->query($latest_sql);
                     while ($row = $latest_res->fetch_assoc()):
                         $img = !empty($row['main_image']) ? "./admin/uploads/photos/" . $row['main_image'] : "placeholder.jpg";
-                        $link = "fullblog.php?id=" . $row['slug']; // Slug base link for better SEO
+                        $link = !empty($row['slug']) ? (preg_match('/^[a-zA-Z0-9_-]+$/D', $row['slug']) ? './' : 'fullblog.php?slug=') . rawurlencode($row['slug']) : 'fullblog.php?id=' . (int) $row['id'];
                     ?>
                         <div class="swiper-slide">
                             <div class="custom-card p-3 rounded text-center">
@@ -590,7 +600,7 @@ $count_stmt->close();
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT id, title, main_image FROM blogs ORDER BY created_at DESC";
+                    $sql = "SELECT id, title, slug, main_image FROM blogs ORDER BY created_at DESC";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -599,14 +609,15 @@ $count_stmt->close();
                             $title_short = strlen($row['title']) > 50 ? substr($row['title'], 0, 50) . '...' : $row['title'];
                             $related_title = htmlspecialchars($title_short, ENT_QUOTES, 'UTF-8');
                             $related_image = htmlspecialchars($sidebar_image_path, ENT_QUOTES, 'UTF-8');
+                            $related_url = !empty($row['slug']) ? (preg_match('/^[a-zA-Z0-9_-]+$/D', $row['slug']) ? './' : 'fullblog.php?slug=') . rawurlencode($row['slug']) : 'fullblog.php?id=' . (int) $row['id'];
 
                             echo "
                             <div class='swiper-slide'>
                                 <article class='fullblog_related_card'>
-                                    <a class='fullblog_related_image' href='fullblog.php?id=" . (int) $row['id'] . "'>
+                                    <a class='fullblog_related_image' href='{$related_url}'>
                                         <img src='{$related_image}' alt='{$related_title}'>
                                     </a>
-                                    <a class='fullblog_related_title' href='fullblog.php?id=" . (int) $row['id'] . "'>{$related_title}</a>
+                                    <a class='fullblog_related_title' href='{$related_url}'>{$related_title}</a>
                                 </article>
                             </div>";
                         }
