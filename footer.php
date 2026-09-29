@@ -365,7 +365,7 @@
   let autoTimer = null;
   let resetTimer = null;
   let resizeTimer = null;
-  let paused = false;
+  let isAnimating = false;
 
   const TRANSITION_MS = 680;
   const AUTOPLAY_MS = 2800;
@@ -423,43 +423,37 @@
 
   function startAutoplay() {
     clearInterval(autoTimer);
-    if (paused || document.hidden) return;
+    if (document.hidden) return;
     autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
   }
 
-  function nextSlide() {
+  function moveSlide(direction) {
+    // Finish each movement before accepting another, including at loop edges.
+    if (isAnimating) return;
+    isAnimating = true;
     clearTimeout(resetTimer);
-    currentIndex += 1;
+    currentIndex += direction;
     setPosition(true);
 
-    if (currentIndex >= originalSlides.length) {
-      resetTimer = setTimeout(function () {
-        currentIndex = 0;
+    resetTimer = setTimeout(function () {
+      if (currentIndex < 0 || currentIndex >= originalSlides.length) {
+        currentIndex = (currentIndex + originalSlides.length) % originalSlides.length;
         setPosition(false);
-        /* Force reflow so the next movement animates normally. */
         void track.offsetWidth;
-        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
-      }, TRANSITION_MS + 25);
-    }
+      }
+      isAnimating = false;
+    }, TRANSITION_MS + 25);
+  }
+
+  function nextSlide() {
+    moveSlide(1);
   }
 
   function previousSlide() {
-    clearTimeout(resetTimer);
-    currentIndex -= 1;
-    setPosition(true);
-
-    if (currentIndex < 0) {
-      resetTimer = setTimeout(function () {
-        currentIndex = originalSlides.length - 1;
-        setPosition(false);
-        void track.offsetWidth;
-        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
-      }, TRANSITION_MS + 25);
-    }
+    moveSlide(-1);
   }
 
   function handleManualNavigation(direction) {
-    paused = false;
     clearInterval(autoTimer);
     if (direction > 0) nextSlide();
     else previousSlide();
@@ -470,6 +464,7 @@
     clearInterval(autoTimer);
     clearTimeout(resetTimer);
 
+    isAnimating = false;
     removeClones();
     visibleCards = cardsPerView();
     addLoopClones();
@@ -482,18 +477,7 @@
     startAutoplay();
   }
 
-  // Pointer hover and touch interaction must not interrupt autoplay.
-
-  section.addEventListener('focusin', function () {
-    paused = true;
-    clearInterval(autoTimer);
-  });
-
-  section.addEventListener('focusout', function (event) {
-    if (event.relatedTarget && section.contains(event.relatedTarget)) return;
-    paused = false;
-    startAutoplay();
-  });
+  // Hover, focus and manual navigation keep autoplay running.
 
   if (previousButton) {
     previousButton.addEventListener('click', function () {
@@ -510,7 +494,7 @@
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
       clearInterval(autoTimer);
-    } else if (!paused) {
+    } else {
       startAutoplay();
     }
   });
@@ -547,7 +531,7 @@
   let autoTimer = null;
   let resetTimer = null;
   let resizeTimer = null;
-  let paused = false;
+  let isAnimating = false;
 
   const TRANSITION_MS = 650;
   const AUTOPLAY_MS = 3000;
@@ -625,45 +609,38 @@
   function startAutoplay() {
     clearInterval(autoTimer);
 
-    if (paused || document.hidden) return;
+    if (document.hidden) return;
 
     autoTimer = setInterval(nextSlide, AUTOPLAY_MS);
   }
 
-  function nextSlide() {
+  function moveSlide(direction) {
+    // Finish each movement before accepting another, including at loop edges.
+    if (isAnimating) return;
+    isAnimating = true;
     clearTimeout(resetTimer);
-
-    currentIndex += 1;
+    currentIndex += direction;
     setPosition(true);
 
-    if (currentIndex >= originalSlides.length) {
-      resetTimer = setTimeout(function () {
-        currentIndex = 0;
+    resetTimer = setTimeout(function () {
+      if (currentIndex < 0 || currentIndex >= originalSlides.length) {
+        currentIndex = (currentIndex + originalSlides.length) % originalSlides.length;
         setPosition(false);
         void track.offsetWidth;
-        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
-      }, TRANSITION_MS + 25);
-    }
+      }
+      isAnimating = false;
+    }, TRANSITION_MS + 25);
+  }
+
+  function nextSlide() {
+    moveSlide(1);
   }
 
   function previousSlide() {
-    clearTimeout(resetTimer);
-
-    currentIndex -= 1;
-    setPosition(true);
-
-    if (currentIndex < 0) {
-      resetTimer = setTimeout(function () {
-        currentIndex = originalSlides.length - 1;
-        setPosition(false);
-        void track.offsetWidth;
-        track.style.transition = 'transform ' + TRANSITION_MS + 'ms cubic-bezier(.22,.61,.36,1)';
-      }, TRANSITION_MS + 25);
-    }
+    moveSlide(-1);
   }
 
   function handleManualNavigation(direction) {
-    paused = false;
     clearInterval(autoTimer);
     if (direction > 0) nextSlide();
     else previousSlide();
@@ -674,6 +651,7 @@
     clearInterval(autoTimer);
     clearTimeout(resetTimer);
 
+    isAnimating = false;
     removeClones();
     visibleCards = cardsPerView();
     addLoopClones();
@@ -686,18 +664,7 @@
     startAutoplay();
   }
 
-  // Pointer hover and touch interaction must not interrupt autoplay.
-
-  section.addEventListener('focusin', function () {
-    paused = true;
-    clearInterval(autoTimer);
-  });
-
-  section.addEventListener('focusout', function (event) {
-    if (event.relatedTarget && section.contains(event.relatedTarget)) return;
-    paused = false;
-    startAutoplay();
-  });
+  // Hover, focus and manual navigation keep autoplay running.
 
   if (previousButton) {
     previousButton.addEventListener('click', function () {
@@ -714,7 +681,7 @@
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
       clearInterval(autoTimer);
-    } else if (!paused) {
+    } else {
       startAutoplay();
     }
   });
